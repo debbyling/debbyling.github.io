@@ -43,6 +43,12 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
+section#note {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
 a.mfp-projectLink.linkpage {
   border-left:100000px;
 }
