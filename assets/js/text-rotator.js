@@ -73,7 +73,7 @@
             percentTime = 0;
             
             // Run interval every 0.01 second
-            tick = setInterval(interval, 10);
+            tick = setInterval(interval, 5);
         };
         
         function interval(){

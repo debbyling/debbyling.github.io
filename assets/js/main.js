@@ -341,3 +341,19 @@
         }
     });
 })(jQuery);
+
+
+
+
+function myFunction() {
+    document.getElementById("errortext").innerHTML = "<br> Thank you for your interest. I'm in the process of revising my resume. Contact me at debby.lingzl@gmail.com or visit my Linkedin profile instead";
+  
+  }
+
+  $('#button123').click(function(){
+
+
+    $(this).css('cssText', 'background-color: gray !important;');
+
+ });
+ 
