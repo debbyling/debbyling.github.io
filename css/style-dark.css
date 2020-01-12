@@ -60,6 +60,7 @@ p {
   position: absolute;
   width: 220px;
   opacity: 0;
+  font-size: 18px;
 }
 
 .letter {
