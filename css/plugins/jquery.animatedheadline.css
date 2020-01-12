@@ -1,3 +1,4 @@
+
 .cd-headline {
     font-size: 3rem;
     line-height: 1.2;
@@ -6,34 +7,41 @@
     .cd-headline {
         font-size: 4.4rem;
         font-weight: 300;
+
     }
+
 }
 @media only screen and (min-width: 1170px) {
     .cd-headline {
         font-size: 6rem;
+
     }
 }
 
 .cd-words-wrapper {
     display: inline-block;
     position: relative;
-    text-align: left;
+
 }
 .cd-words-wrapper b {
     display: inline-block;
     position: absolute;
     white-space: nowrap;
+
     left: 0;
     top: 0;
 }
 .cd-words-wrapper b.is-visible {
     position: relative;
+
 }
 .no-js .cd-words-wrapper b {
     opacity: 0;
+
 }
 .no-js .cd-words-wrapper b.is-visible {
     opacity: 1;
+
 }
 
 /* -------------------------------- 
@@ -45,6 +53,7 @@
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
     perspective: 300px;
+    
 }
 .cd-headline.rotate-1 b {
     opacity: 0;
@@ -58,6 +67,7 @@
     -ms-transform: rotateX(180deg);
     -o-transform: rotateX(180deg);
     transform: rotateX(180deg);
+   
 }
 .cd-headline.rotate-1 b.is-visible {
     opacity: 1;
@@ -69,6 +79,7 @@
     -webkit-animation: cd-rotate-1-in 1.2s;
     -moz-animation: cd-rotate-1-in 1.2s;
     animation: cd-rotate-1-in 1.2s;
+    
 }
 .cd-headline.rotate-1 b.is-hidden {
     -webkit-transform: rotateX(180deg);
@@ -79,6 +90,7 @@
     -webkit-animation: cd-rotate-1-out 1.2s;
     -moz-animation: cd-rotate-1-out 1.2s;
     animation: cd-rotate-1-out 1.2s;
+    
 }
 
 @-webkit-keyframes cd-rotate-1-in {
@@ -215,6 +227,8 @@
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
     overflow: hidden;
+    
+    
 }
 .cd-headline.type .cd-words-wrapper::after {
     /* vertical bar */
@@ -568,6 +582,7 @@
     -webkit-animation: slide-out 0.6s;
     -moz-animation: slide-out 0.6s;
     animation: slide-out 0.6s;
+    color: red;
 }
 
 @-webkit-keyframes slide-in {
@@ -706,7 +721,7 @@
 }
 .cd-headline.clip b.is-visible {
     opacity: 1;
-    text-align: center;
+
 }
 
 /* -------------------------------- 
