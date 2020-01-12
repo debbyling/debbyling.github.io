@@ -37,7 +37,12 @@ body {
 }
 
 .rotating {
-	margin-right: 100px;
+	margin-right: 140px;
+}
+
+
+h1.entrytext {
+	margin-bottom: 0px !important;
 }
 
 .text {
@@ -60,7 +65,7 @@ p {
   position: absolute;
   width: 220px;
   opacity: 0;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .letter {
