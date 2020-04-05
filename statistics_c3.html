@@ -11,9 +11,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <head>
         <meta charset="utf-8">
         <title>
-            Analytics Dashboard - Application Intel - SmartAdmin v4.4.5
+            C3 Charts - Statistics - SmartAdmin v4.4.5
         </title>
-        <meta name="description" content="Analytics Dashboard">
+        <meta name="description" content="C3 Charts">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
         <!-- Call App Mode on ios devices -->
@@ -27,11 +27,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <link rel="apple-touch-icon" sizes="180x180" href="c19img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="c19img/favicon/favicon-32x32.png">
         <link rel="mask-icon" href="c19img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="stylesheet" media="screen, print" href="c19css/miscellaneous/reactions/reactions.css">
-        <link rel="stylesheet" media="screen, print" href="c19css/miscellaneous/fullcalendar/fullcalendar.bundle.css">
-        <link rel="stylesheet" media="screen, print" href="c19css/miscellaneous/jqvmap/jqvmap.bundle.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+        <link rel="stylesheet" media="screen, print" href="c19css/statistics/c3/c3.css">
     </head>
     <body class="mod-bg-1 mod-nav-link ">
         <!-- DOC: script to save and load page settings -->
@@ -133,13 +129,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             </a>
                         </div>
                         <ul id="js-nav-menu" class="nav-menu">
-                            <li class="active open">
+                            <li>
                                 <a href="#" title="Application Intel" data-filter-tags="application intel">
                                     <i class="fal fa-info-circle"></i>
                                     <span class="nav-link-text" data-i18n="nav.application_intel">Application Intel</span>
                                 </a>
                                 <ul>
-                                    <li class="active">
+                                    <li>
                                         <a href="intel_analytics_dashboard.html" title="Analytics Dashboard" data-filter-tags="application intel analytics dashboard">
                                             <span class="nav-link-text" data-i18n="nav.application_intel_analytics_dashboard">Analytics Dashboard</span>
                                         </a>
@@ -725,7 +721,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="active open">
                                 <a href="#" title="Statistics" data-filter-tags="statistics chart graphs">
                                     <i class="fal fa-chart-pie"></i>
                                     <span class="nav-link-text" data-i18n="nav.statistics">Statistics</span>
@@ -749,7 +745,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <span class="dl-ref label bg-primary-600 ml-2">39 KB</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <a href="statistics_c3.html" title="C3 Charts" data-filter-tags="statistics chart graphs c3 charts">
                                             <span class="nav-link-text" data-i18n="nav.statistics_c3_charts">C3 Charts</span>
                                             <span class="dl-ref label bg-primary-600 ml-2">197 KB</span>
@@ -1690,394 +1686,385 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <main id="js-page-content" role="main" class="page-content">
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0);">SmartAdmin</a></li>
-                            <li class="breadcrumb-item">Application Intel</li>
-                            <li class="breadcrumb-item active">Analytics Dashboard</li>
+                            <li class="breadcrumb-item">Statistics</li>
+                            <li class="breadcrumb-item active">C3 Charts</li>
                             <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="js-get-date"></span></li>
                         </ol>
                         <div class="subheader">
                             <h1 class="subheader-title">
-                                <i class='subheader-icon fal fa-chart-area'></i> Analytics <span class='fw-300'>Dashboard</span>
+                                <i class='subheader-icon fal fa-chart-pie'></i> C3 Charts<sup class='badge badge-primary fw-500'>ADDON</sup>
+                                <small>
+                                    Dygraphs is a fast, flexible open source JavaScript charting library.
+                                </small>
                             </h1>
-                            <div class="subheader-block d-lg-flex align-items-center">
-                                <div class="d-inline-flex flex-column justify-content-center mr-3">
-                                    <span class="fw-300 fs-xs d-block opacity-50">
-                                        <small>EXPENSES</small>
-                                    </span>
-                                    <span class="fw-500 fs-xl d-block color-primary-500">
-                                        $47,000
-                                    </span>
-                                </div>
-                                <span class="sparklines hidden-lg-down" sparkType="bar" sparkBarColor="#886ab5" sparkHeight="32px" sparkBarWidth="5px" values="3,4,3,6,7,3,3,6,2,6,4"></span>
-                            </div>
-                            <div class="subheader-block d-lg-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
-                                <div class="d-inline-flex flex-column justify-content-center mr-3">
-                                    <span class="fw-300 fs-xs d-block opacity-50">
-                                        <small>MY PROFITS</small>
-                                    </span>
-                                    <span class="fw-500 fs-xl d-block color-danger-500">
-                                        $38,500
+                        </div>
+                        <div class="alert alert-primary">
+                            <div class="d-flex flex-start w-100">
+                                <div class="mr-2 hidden-md-down">
+                                    <span class="icon-stack icon-stack-lg">
+                                        <i class="base base-6 icon-stack-3x opacity-100 color-primary-500"></i>
+                                        <i class="base base-10 icon-stack-2x opacity-100 color-primary-300 fa-flip-vertical"></i>
+                                        <i class="ni ni-blog-read icon-stack-1x opacity-100 color-white"></i>
                                     </span>
                                 </div>
-                                <span class="sparklines hidden-lg-down" sparkType="bar" sparkBarColor="#fe6bb0" sparkHeight="32px" sparkBarWidth="5px" values="1,4,3,6,5,3,9,6,5,9,7"></span>
+                                <div class="d-flex flex-fill">
+                                    <div class="flex-fill">
+                                        <span class="h5">Features:</span>
+                                        <p>
+                                            C3 makes it easy to generate D3-based charts by wrapping the code required to construct the entire chart. We don't need to write D3 code any more. The plugin adds classes to each element when generating, so you can define a custom style by the class and it's possible to extend the structure directly by D3. Provides a variety of APIs and callbacks to access the state of the chart.
+                                        </p>
+                                        <p class="m-0">
+                                            Find more examples and guidelines on C3's <a href="https://c3js.org/examples.html" target="_blank">official documentation</a> and <a href="https://groups.google.com/forum/#!forum/c3js" target="_blank">community support</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div id="panel-1" class="panel panel-locked" data-panel-lock="false" data-panel-close="false" data-panel-fullscreen="false" data-panel-collapsed="false" data-panel-color="false" data-panel-locked="false" data-panel-refresh="false" data-panel-reset="false">
-                                    <div class="panel-hdr">
-
-
-
-                                        <h2>
-                                            Size of COVID-19 Relief Fund Packages Around The World
-                                        </h2>     
-
-
-                                    </div>
-
-
-                                    <div class="panel-container show">
-                                        <div class="panel-content jqvmap-bg-ocean p-0" style="height: 330px;">
-                                            <div id="vector-map" class="w-100 h-100 p-4"></div>
-                                        </div>
-                                        <div class="panel-content jqvmap-bg-ocean">
-                                            <div class="d-flex align-items-center">
-                                                <img class="d-inline-block js-jqvmap-flag mr-3 border-faded" alt="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/sg.svg" style="width:55px; height: auto;">
-                                                <h4 class="d-inline-block fw-300 m-0 text-muted fs-lg">
-                                                    Size of COVID-19 Relief Package:
-                                                    <small class="js-jqvmap-country mb-0 fw-500 text-dark">Singapore - S$48,400,000,000</small>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                     
-                                </div>
-
-
-                                <div id="panel-1" class="panel panel-locked" data-panel-lock="false" data-panel-close="false" data-panel-fullscreen="false" data-panel-collapsed="false" data-panel-color="false" data-panel-locked="false" data-panel-refresh="false" data-panel-reset="false">
-                                    
-                                    <div class="panel-hdr">
-                                        <h2>
-                                            Accordion <span class="fw-300"><i>Outline</i></span>
-                                        </h2>
-                                        <div class="panel-toolbar">
-
-                                            <select id='purpose'>
-                                                <option value="0">All</option>
-                                                <option value="2">Text 2</option>
-                                                <option value="3">Text 3</option>
-                                                </select>
-
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content">
-                                            <div class="accordion accordion-outline" id="js_demo_accordion-3">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a href="javascript:void(0);" class="card-title" data-toggle="collapse" data-target="#js_demo_accordion-3a" aria-expanded="true">
-                                                            <i class="fal fa-file-medical-alt width-2 fs-xl"></i>
-                                                            Medical Records
-                                                            <span class="ml-auto">
-                                                                <span class="collapsed-reveal">
-                                                                    <i class="fal fa-minus fs-xl"></i>
-                                                                </span>
-                                                                <span class="collapsed-hidden">
-                                                                    <i class="fal fa-plus fs-xl"></i>
-                                                                </span>
-                                                            </span>
-                                                        </a>
-                                                    </div>
-
-
-
-
-
-
-                                                    <script>
-
-                                                        /* text filter */
-                                                        
-                                                            $(document).ready(function(){
-                                                                $('#purpose').on('change', function() {
-                                                                if ( this.value == '3')
-                                                                {
-                                                                    $("span.text1").hide();
-                                                                    $("span.text2").hide();
-                                                                    $("span.text3").show();
-                                                                }
-                                                                else if ( this.value == '2')
-                                                                {
-                                                                    $("span.text1").hide();
-                                                                    $("span.text3").hide();
-                                                                    $("span.text2").show();
-                                                                }
-                                                                else 
-                                                                {
-                                                                    $("span.text1").show();
-                                                                    $("span.text2").show();
-                                                                    $("span.text3").show();
-                                                                }
-                                                        
-                                                                });
-                                                            });
-                                                        
-                                                        
-                                                        
-                                                            </script>
-                                                        
-
-
-                                                    <div id="js_demo_accordion-3a" class="collapse show" data-parent="#js_demo_accordion-3">
-                                                        <div class="card-body">
-
-                                                            <div class="panel-tag">
-                                                                Change the style of your accordion by adding class <code>.accordion-outline</code> to <code>.accordion</code>
-                                                            </div>    
-
-
-                                                            <span  class="text1">
-                                                            <li>Text1</li>
-                                                            </span>
-                                                            <span  class="text2">
-                                                            <li>Text2</li>
-                                                            </span>
-                                                            <span  class="text3">
-                                                             <li>Text3</li>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a href="javascript:void(0);" class="card-title collapsed" data-toggle="collapse" data-target="#js_demo_accordion-3b" aria-expanded="false">
-                                                            <i class="fal fa-video width-2 fs-xl"></i>
-                                                            Video logs
-                                                            <span class="ml-auto">
-                                                                <span class="collapsed-reveal">
-                                                                    <i class="fal fa-minus fs-xl"></i>
-                                                                </span>
-                                                                <span class="collapsed-hidden">
-                                                                    <i class="fal fa-plus fs-xl"></i>
-                                                                </span>
-                                                            </span>
-                                                        </a>
-                                                    </div>
-                                                    <div id="js_demo_accordion-3b" class="collapse" data-parent="#js_demo_accordion-3">
-                                                        <div class="card-body">
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a href="javascript:void(0);" class="card-title collapsed" data-toggle="collapse" data-target="#js_demo_accordion-3c" aria-expanded="false">
-                                                            <i class="fal fa-first-aid width-2 fs-xl"></i>
-                                                            Medical history
-                                                            <span class="ml-auto">
-                                                                <span class="collapsed-reveal">
-                                                                    <i class="fal fa-minus fs-xl"></i>
-                                                                </span>
-                                                                <span class="collapsed-hidden">
-                                                                    <i class="fal fa-plus fs-xl"></i>
-                                                                </span>
-                                                            </span>
-                                                        </a>
-                                                    </div>
-                                                    <div id="js_demo_accordion-3c" class="collapse" data-parent="#js_demo_accordion-3">
-                                                        <div class="card-body">
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div id="panel-2" class="panel" data-panel-fullscreen="false">
-                                    <div class="panel-hdr">
-                                        <h2>
-                                            Size of COVID-19 Relief Fund Packages Around The World
-                                        </h2>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content p-0">
-                                            <div class="d-flex flex-column">
-                                                <div class="bg-subtlelight-fade custom-scroll" style="height: 244px">
-                                                    <div class="h-100">
-                                                        <!-- message -->
-                                                        <div class="d-flex flex-row px-3 pt-3 pb-2">
-                                                            <!-- profile photo : lazy loaded -->
-                                                            <span class="status status-danger">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-j.png')"></span>
-                                                            </span>
-                                                            <!-- profile photo end -->
-                                                            <div class="ml-3">
-                                                                <a href="javascript:void(0);" title="Lisa Hatchensen" class="d-block fw-700 text-dark">Lisa Hatchensen</a>
-                                                                Hey did you meet the new board of director? He's a bit of a geek if you ask me...anyway here is the report you requested. I am off to launch with Lisa and Andrew, you wanna join?
-                                                                <!-- file download -->
-                                                                <div class="d-flex mt-3 flex-wrap">
-                                                                    <div class="btn-group mr-1 mt-1" role="group" aria-label="Button group with nested dropdown ">
-                                                                        <button type="button" class="btn btn-default btn-xs btn-block px-1 py-1 fw-500" data-action="toggle">
-                                                                            <span class="d-block text-truncate text-truncate-sm">
-                                                                                <i class="fal fa-file-pdf mr-1 color-danger-700"></i> Report-2013-demographic-repo
-                                                                            </span>
-                                                                        </button>
-                                                                        <div class="btn-group" role="group">
-                                                                            <button id="btnGroupDrop1" type="button" class="btn btn-default btn-xs dropdown-toggle px-2 js-waves-off" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                                                            <div class="dropdown-menu p-0 fs-xs" aria-labelledby="btnGroupDrop1">
-                                                                                <a class="dropdown-item px-3 py-2" href="#">Forward</a>
-                                                                                <a class="dropdown-item px-3 py-2" href="#">Open</a>
-                                                                                <a class="dropdown-item px-3 py-2" href="#">Delete</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="btn-group mr-1 mt-1" role="group" aria-label="Button group with nested dropdown ">
-                                                                        <button type="button" class="btn btn-default btn-xs btn-block px-1 py-1 fw-500" data-action="toggle">
-                                                                            <span class="d-block text-truncate text-truncate-sm">
-                                                                                <i class="fal fa-file-pdf mr-1 color-danger-700"></i> Bloodworks Patient 34124BA
-                                                                            </span>
-                                                                        </button>
-                                                                        <div class="btn-group" role="group">
-                                                                            <button id="btnGroupDrop2" type="button" class="btn btn-default btn-xs dropdown-toggle px-2 js-waves-off" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                                                            <div class="dropdown-menu p-0 fs-xs" aria-labelledby="btnGroupDrop2">
-                                                                                <a class="dropdown-item px-3 py-2" href="#">Forward</a>
-                                                                                <a class="dropdown-item px-3 py-2" href="#">Open</a>
-                                                                                <a class="dropdown-item px-3 py-2" href="#">Delete</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- file download end -->
-                                                            </div>
-                                                        </div>
-                                                        <!-- message end -->
-                                                        <!-- message reply -->
-                                                        <div class="d-flex flex-row px-3 pt-3 pb-2">
-                                                            <!-- profile photo : lazy loaded -->
-                                                            <span class="status status-danger">
-                                                                <span class="profile-image rounded-circle d-inline-block" style="background-image:url('img/demo/avatars/avatar-admin.png')"></span>
-                                                            </span>
-                                                            <!-- profile photo end -->
-                                                            <div class="ml-3">
-                                                                <a href="javascript:void(0);" title="Lisa Hatchensen" class="d-block fw-700 text-dark">Dr. Codex Lantern</a>
-                                                                Thanks for the file! You guys go ahead, I have to call some of my patients.
-                                                            </div>
-                                                        </div>
-                                                        <!-- message reply end -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 bg-faded">
-                                            <textarea rows="3" class="form-control rounded-top border-bottom-left-radius-0 border-bottom-right-radius-0 border" placeholder="write a reply..."></textarea>
-                                            <div class="d-flex align-items-center py-2 px-2 bg-white border border-top-0 rounded-bottom">
-                                                <div class="btn-group dropup">
-                                                    <button type="button" class="btn btn-icon fs-lg dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fal fa-smile"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu dropdown-menu-animated text-center rounded-pill overflow-hidden" style="width: 280px">
-                                                        <div class="px-1 py-0">
-                                                            <a href="javascript:void(0);" class="emoji emoji--like" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like">
-                                                                <div class="emoji__hand">
-                                                                    <div class="emoji__thumb"></div>
-                                                                </div>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="emoji emoji--love" data-toggle="tooltip" data-placement="top" title="" data-original-title="Love">
-                                                                <div class="emoji__heart"></div>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="emoji emoji--haha" data-toggle="tooltip" data-placement="top" title="" data-original-title="Haha">
-                                                                <div class="emoji__face">
-                                                                    <div class="emoji__eyes"></div>
-                                                                    <div class="emoji__mouth">
-                                                                        <div class="emoji__tongue"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="emoji emoji--yay" data-toggle="tooltip" data-placement="top" title="" data-original-title="Yay">
-                                                                <div class="emoji__face">
-                                                                    <div class="emoji__eyebrows"></div>
-                                                                    <div class="emoji__mouth"></div>
-                                                                </div>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="emoji emoji--wow" data-toggle="tooltip" data-placement="top" title="" data-original-title="Wow">
-                                                                <div class="emoji__face">
-                                                                    <div class="emoji__eyebrows"></div>
-                                                                    <div class="emoji__eyes"></div>
-                                                                    <div class="emoji__mouth"></div>
-                                                                </div>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="emoji emoji--sad" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sad">
-                                                                <div class="emoji__face">
-                                                                    <div class="emoji__eyebrows"></div>
-                                                                    <div class="emoji__eyes"></div>
-                                                                    <div class="emoji__mouth"></div>
-                                                                </div>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="emoji emoji--angry" data-toggle="tooltip" data-placement="top" title="" data-original-title="Angry">
-                                                                <div class="emoji__face">
-                                                                    <div class="emoji__eyebrows"></div>
-                                                                    <div class="emoji__eyes"></div>
-                                                                    <div class="emoji__mouth"></div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button type="button" class="btn btn-icon fs-lg">
-                                                    <i class="fal fa-paperclip"></i>
+                            <div class="col-xl-12">
+                                <div class="card m-auto border mb-g">
+                                    <div class="card-body position-relative">
+                                        <h3 class="mb-4">
+                                            Kitchen Sink Interactive Demo
+                                            <small>
+                                                See how easy it is to manipulate and transform grdsasaphs using c3 engine!
+                                            </small>
+                                        </h3>
+                                        <div class="position-absolute pos-top pos-right mt-5 mr-5">
+                                            <div class="border-faded border-left-0 border-top-0 border-bottom-0" id="playDemo">
+                                                <button class="btn btn-success" onclick="startDemo();">
+                                                    <i class="fal fa-play mr-sm-2"></i><span class="hidden-sm-down">Play Demo</span>
                                                 </button>
-                                                <div class="custom-control custom-checkbox custom-control-inline ml-auto hidden-sm-down">
-                                                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
-                                                    <label class="custom-control-label" for="defaultInline1">Press <strong>ENTER</strong> to send</label>
-                                                </div>
-                                                <button class="btn btn-primary btn-sm ml-auto ml-sm-0">
-                                                    Reply
+                                            </div>
+                                            <div class="border-faded border-left-0 border-top-0 border-bottom-0" id="pauseDemo" style="display:none;">
+                                                <button class="btn btn-danger" onclick="pauseDemo();">
+                                                    <i class="fal fa-pause mr-sm-2"></i> <span class="hidden-sm-down">Pause Demo</span>
                                                 </button>
                                             </div>
                                         </div>
+                                        <div class="d-flex position-absolute pos-left pos-right mt-8 mr-8 align-items-center justify-content-center" style="z-index:1; margin-top: 100px">
+                                            <div id="message" class="bg-fusion-100 rounded"></div>
+                                        </div>
+                                        <div id='chart' class="mt-2"></div>
                                     </div>
-                                </div>
-                                <div id="panel-3" class="panel">
-                                    <div class="panel-hdr">
-                                        <h2 class="js-get-date"></h2>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content">
-                                            <div id="calendar"></div>
+                                    <div class="card-footer p-0">
+                                        <div class="progress rounded-0" style="height: 3px;">
+                                            <div id="demo-progress" class="progress-bar bg-primary-500" role="progressbar" style="width:100%; opacity: 0.5"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div id="panel-4" class="panel">
-                                <!-- start pie chart -->
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div id="panel-1" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Simple <span class="fw-300"><i>Line</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Line chart with sequential data
+                                                    </div>
+                                                    <div id="simpleLine" style="width:100%; height:300px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div id="panel-2" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Line <span class="fw-300"><i>Regions</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Set regions for each data with style using the <code>regions</code> option
+                                                    </div>
+                                                    <div id="linleRegions" style="width:100%; height:300px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div id="panel-3" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Time <span class="fw-300"><i>Series</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Simple line chart with timeseries data using <code>xFormat</code> and <code>axis</code> options
+                                                    </div>
+                                                    <div id="timeSeries" style="width:100%; height:300px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div id="panel-4" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Spline <span class="fw-300"><i>Line</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Display as Spline Chart
+                                                    </div>
+                                                    <div id="splilneLine" style="width:100%; height:300px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div id="panel-5" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Scatter <span class="fw-300"><i>Chart</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag d-flex">
+                                                        Display as Scatter Plot
+                                                    </div>
+                                                    <div id="scatterChart" style="width:100%; height:300px;"></div>
+                                                    <div class="text-right">
+                                                        <button id="scatterChartLoad" onclick="scatterChartLoad();" class="btn btn-sm btn-dark ml-auto">Load New Data</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div id="panel-6" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Bar <span class="fw-300"><i>Chart</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Display as Bar Chart
+                                                    </div>
+                                                    <div id="barChart" style="width:100%; height:300px;"></div>
+                                                    <div class="text-right">
+                                                        <button id="barChartLoad" onclick="barChartLoad();" class="btn btn-sm btn-dark ml-auto">Load New Data</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div id="panel-7" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Stacked <span class="fw-300"><i>Bar</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Display as Stacked Bar Chart
+                                                    </div>
+                                                    <div id="stackedBar" style="width:100%; height:300px;"></div>
+                                                    <div class="text-right">
+                                                        <button id="stackedBarLoad" onclick="stackedBarLoad();" class="btn btn-sm btn-dark ml-auto">Load New Data</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div id="panel-8" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Step <span class="fw-300"><i>Chart</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        An example of area and line Step Charts
+                                                    </div>
+                                                    <div id="stepChart" style="width:100%; height:300px;"></div>
+                                                    <div class="text-right">
+                                                        <button id="stepChartLoad" onclick="stepChartLoad();" class="btn btn-sm btn-dark ml-auto">Load New Data</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div id="panel-9" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Pie <span class="fw-300"><i>Chart</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Display as Pie Chart
+                                                    </div>
+                                                    <div id="pieChart" style="width:100%; height:300px;"></div>
+                                                    <div class="text-right">
+                                                        <button id="pieChartUnload" onclick="pieChartUnload();" class="btn btn-sm btn-dark ml-auto">Unload Data</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div id="panel-10" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Donut <span class="fw-300"><i>Chart</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Donut chart example
+                                                    </div>
+                                                    <div id="donutChart" style="width:100%; height:300px;"></div>
+                                                    <div class="text-right">
+                                                        <button id="donutChartUnload" onclick="donutChartUnload();" class="btn btn-sm btn-dark ml-auto">Unload Data</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div id="panel-11" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Combination <span class="fw-300"><i>Chart</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        An example of multiple charts in one canvas - "all in one"
+                                                    </div>
+                                                    <div id="combinationChart" style="width:100%; height:300px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div id="panel-12" class="panel">
+                                            <div class="panel-hdr">
+                                                <h2>
+                                                    Interactive <span class="fw-300"><i>Mouse wheel</i></span>
+                                                </h2>
+                                                <div class="panel-toolbar">
+                                                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                                                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                                                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-container show">
+                                                <div class="panel-content">
+                                                    <div class="panel-tag">
+                                                        Zoom by mouse wheel event and slide by drag
+                                                    </div>
+                                                    <div id="interactiveWheel" style="width:100%; height:300px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div id="panel-13" class="panel">
                                     <div class="panel-hdr">
                                         <h2>
-                                            Pie <span class="fw-300"><i>Chart</i></span>
+                                            Interactive <span class="fw-300"><i>Example</i></span>
                                         </h2>
                                         <div class="panel-toolbar">
                                             <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
@@ -2088,93 +2075,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                     <div class="panel-container show">
                                         <div class="panel-content">
                                             <div class="panel-tag">
-                                                Pie charts are probably the most commonly used chart there are. They are divided into segments, the arc of each segment shows the proportional value of each piece of data
+                                                Show sub chart for zoom and selection range
                                             </div>
-                                            <div id="pieChart">
-                                                <canvas style="width:100%; height:300px;"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- end pie chart -->
-
-
-
-
-
-
-
-
-
-
-                                </div>
-                                <div id="panel-5" class="panel">
-                                    <div class="panel-hdr">
-                                        <h2>Subscriptions Hourly</h2>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content">
-                                            <h5>Subscription Views / hour</h5>
-                                            <div id="flotBar1" style="width: 100%; height: 160px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="panel-6" class="panel">
-                                    <div class="panel-hdr">
-                                        <h2>Secession Scale </h2>
-                                    </div>
-                                    <div class="panel-container show">
-                                        <div class="panel-content p-0 mb-g">
-                                            <div class="alert alert-success alert-dismissible fade show border-faded border-left-0 border-right-0 border-top-0 rounded-0 m-0" role="alert">
-                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                                                </button>
-                                                <strong>Last update was on <span class="js-get-date"></span></strong> - Your logs are all up to date.
-                                            </div>
-                                        </div>
-                                        <div class="panel-content">
-                                            <div class="row  mb-g">
-                                                <div class="col-md-6 d-flex align-items-center">
-                                                    <div id="flotPie" class="w-100" style="height:250px"></div>
-                                                </div>
-                                                <div class="col-md-6 col-lg-5 mr-lg-auto">
-                                                    <div class="d-flex mt-2 mb-1 fs-xs text-primary">
-                                                        Current Usage
-                                                    </div>
-                                                    <div class="progress progress-xs mb-3">
-                                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="d-flex mt-2 mb-1 fs-xs text-info">
-                                                        Net Usage
-                                                    </div>
-                                                    <div class="progress progress-xs mb-3">
-                                                        <div class="progress-bar bg-info-500" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="d-flex mt-2 mb-1 fs-xs text-warning">
-                                                        Users blocked
-                                                    </div>
-                                                    <div class="progress progress-xs mb-3">
-                                                        <div class="progress-bar bg-warning-500" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="d-flex mt-2 mb-1 fs-xs text-danger">
-                                                        Custom cases
-                                                    </div>
-                                                    <div class="progress progress-xs mb-3">
-                                                        <div class="progress-bar bg-danger-500" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="d-flex mt-2 mb-1 fs-xs text-success">
-                                                        Test logs
-                                                    </div>
-                                                    <div class="progress progress-xs mb-3">
-                                                        <div class="progress-bar bg-success-500" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="d-flex mt-2 mb-1 fs-xs text-dark">
-                                                        Uptime records
-                                                    </div>
-                                                    <div class="progress progress-xs mb-3">
-                                                        <div class="progress-bar bg-fusion-500" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div id="interactiveExample" style="width:100%; height:350px;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -2857,43 +2760,43 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                         <a href="#" id="myapp-0" data-action="theme-update" data-themesave data-theme="" data-toggle="tooltip" data-placement="top" title="Wisteria (base css)" data-original-title="Wisteria (base css)"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-1" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-1.css" data-toggle="tooltip" data-placement="top" title="Tapestry" data-original-title="Tapestry"></a>
+                                        <a href="#" id="myapp-1" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-1.css" data-toggle="tooltip" data-placement="top" title="Tapestry" data-original-title="Tapestry"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-2" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-2.css" data-toggle="tooltip" data-placement="top" title="Atlantis" data-original-title="Atlantis"></a>
+                                        <a href="#" id="myapp-2" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-2.css" data-toggle="tooltip" data-placement="top" title="Atlantis" data-original-title="Atlantis"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-3" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-3.css" data-toggle="tooltip" data-placement="top" title="Indigo" data-original-title="Indigo"></a>
+                                        <a href="#" id="myapp-3" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-3.css" data-toggle="tooltip" data-placement="top" title="Indigo" data-original-title="Indigo"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-4" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-4.css" data-toggle="tooltip" data-placement="top" title="Dodger Blue" data-original-title="Dodger Blue"></a>
+                                        <a href="#" id="myapp-4" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-4.css" data-toggle="tooltip" data-placement="top" title="Dodger Blue" data-original-title="Dodger Blue"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-5" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-5.css" data-toggle="tooltip" data-placement="top" title="Tradewind" data-original-title="Tradewind"></a>
+                                        <a href="#" id="myapp-5" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-5.css" data-toggle="tooltip" data-placement="top" title="Tradewind" data-original-title="Tradewind"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-6" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-6.css" data-toggle="tooltip" data-placement="top" title="Cranberry" data-original-title="Cranberry"></a>
+                                        <a href="#" id="myapp-6" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-6.css" data-toggle="tooltip" data-placement="top" title="Cranberry" data-original-title="Cranberry"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-7" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-7.css" data-toggle="tooltip" data-placement="top" title="Oslo Gray" data-original-title="Oslo Gray"></a>
+                                        <a href="#" id="myapp-7" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-7.css" data-toggle="tooltip" data-placement="top" title="Oslo Gray" data-original-title="Oslo Gray"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-8" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-8.css" data-toggle="tooltip" data-placement="top" title="Chetwode Blue" data-original-title="Chetwode Blue"></a>
+                                        <a href="#" id="myapp-8" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-8.css" data-toggle="tooltip" data-placement="top" title="Chetwode Blue" data-original-title="Chetwode Blue"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-9" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-9.css" data-toggle="tooltip" data-placement="top" title="Apricot" data-original-title="Apricot"></a>
+                                        <a href="#" id="myapp-9" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-9.css" data-toggle="tooltip" data-placement="top" title="Apricot" data-original-title="Apricot"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-10" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-10.css" data-toggle="tooltip" data-placement="top" title="Blue Smoke" data-original-title="Blue Smoke"></a>
+                                        <a href="#" id="myapp-10" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-10.css" data-toggle="tooltip" data-placement="top" title="Blue Smoke" data-original-title="Blue Smoke"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-11" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-11.css" data-toggle="tooltip" data-placement="top" title="Green Smoke" data-original-title="Green Smoke"></a>
+                                        <a href="#" id="myapp-11" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-11.css" data-toggle="tooltip" data-placement="top" title="Green Smoke" data-original-title="Green Smoke"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-12" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-12.css" data-toggle="tooltip" data-placement="top" title="Wild Blue Yonder" data-original-title="Wild Blue Yonder"></a>
+                                        <a href="#" id="myapp-12" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-12.css" data-toggle="tooltip" data-placement="top" title="Wild Blue Yonder" data-original-title="Wild Blue Yonder"></a>
                                     </li>
                                     <li>
-                                        <a href="#" id="myapp-13" data-action="theme-update" data-themesave data-theme="css/themes/cust-theme-13.css" data-toggle="tooltip" data-placement="top" title="Emerald" data-original-title="Emerald"></a>
+                                        <a href="#" id="myapp-13" data-action="theme-update" data-themesave data-theme="c19css/themes/cust-theme-13.css" data-toggle="tooltip" data-placement="top" title="Emerald" data-original-title="Emerald"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -2929,1750 +2832,577 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 						+ src/../jquery-snippets.js (core) -->
         <script src="c19js/vendors.bundle.js"></script>
         <script src="c19js/app.bundle.js"></script>
-        <script type="text/javascript">
-            /* Activate smart panels */
-            $('#js-page-content').smartPanel();
-
-        </script>
-        <!-- The order of scripts is irrelevant. Please check out the plugin pages for more details about these plugins below: -->
-        <script src="c19js/dependency/moment/moment.js"></script>
-        <script src="c19js/miscellaneous/fullcalendar/fullcalendar.bundle.js"></script>
-        <script src="c19js/statistics/sparkline/sparkline.bundle.js"></script>
-        <script src="c19js/statistics/easypiechart/easypiechart.bundle.js"></script>
-        <script src="c19js/statistics/flot/flot.bundle.js"></script>
-        <script src="c19js/miscellaneous/jqvmap/jqvmap.bundle.js"></script>
+        <!-- dependency for c3 charts : this dependency is a BSD license with clause 3 -->
+        <script src="c19js/statistics/d3/d3.js"></script>
+        <!-- c3 charts : MIT license -->
+        <script src="c19js/statistics/c3/c3.js"></script>
+        <script src="c19js/statistics/demo-data/demo-c3.js"></script>
         <script>
-            $(document).ready(function()
+            var colors = [color.success._500, color.danger._500, color.info._500, color.primary._500, color.warning._500];
+
+            var simpleLine = c3.generate(
             {
-                //$('#js-page-content').smartPanel(); 
+                bindto: "#simpleLine",
+                data:
+                {
+                    columns: [
+                        ["data1", 100, 165, 140, 270, 200, 140, 220],
+                        ["data2", 110, 80, 100, 85, 125, 90, 100]
+                    ]
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
 
-                //
-                //
-                var dataSetPie = [
+            var linleRegions = c3.generate(
+            {
+                bindto: "#linleRegions",
+                data:
                 {
-                    label: "Asia",
-                    data: 4119630000,
-                    color: color.primary._500
-                },
-                {
-                    label: "Latin America",
-                    data: 590950000,
-                    color: color.info._500
-                },
-                {
-                    label: "Africa",
-                    data: 1012960000,
-                    color: color.warning._500
-                },
-                {
-                    label: "Oceania",
-                    data: 95100000,
-                    color: color.danger._500
-                },
-                {
-                    label: "Europe",
-                    data: 727080000,
-                    color: color.success._500
-                },
-                {
-                    label: "North America",
-                    data: 344120000,
-                    color: color.fusion._400
-                }];
-
-
-                $.plot($("#flotPie"), dataSetPie,
-                {
-                    series:
+                    columns: [
+                        ['data1', 30, 200, 100, 400, 150, 250],
+                        ['data2', 50, 20, 10, 40, 15, 25]
+                    ],
+                    regions:
                     {
-                        pie:
+                        'data1': [
                         {
-                            innerRadius: 0.5,
-                            show: true,
-                            radius: 1,
-                            label:
-                            {
-                                show: true,
-                                radius: 2 / 3,
-                                threshold: 0.1
-                            }
+                            'start': 1,
+                            'end': 2,
+                            'style': 'dashed'
+                        },
+                        {
+                            'start': 3
+                        }], // currently 'dashed' style only
+                        'data2': [
+                        {
+                            'end': 3
+                        }]
+                    }
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var timeSeries = c3.generate(
+            {
+                bindto: "#timeSeries",
+                data:
+                {
+                    x: 'x',
+                    xFormat: '%Y',
+                    columns: [
+                        ['x', '2010', '2011', '2012', '2013', '2014', '2015'],
+                        ['data1', 30, 200, 100, 400, 150, 250],
+                        ['data2', 130, 340, 200, 500, 250, 350]
+                    ]
+                },
+                color:
+                {
+                    pattern: colors
+                },
+                axis:
+                {
+                    x:
+                    {
+                        type: 'timeseries',
+                        // if true, treat x value as localtime (Default)
+                        // if false, convert to UTC internally
+                        localtime: false,
+                        tick:
+                        {
+                            format: '%Y-%m-%d %H:%M:%S'
+                        }
+                    }
+                }
+            });
+
+            var splilneLine = c3.generate(
+            {
+                bindto: "#splilneLine",
+                data:
+                {
+                    columns: [
+                        ['data1', 30, 200, 100, 400, 150, 250],
+                        ['data2', 130, 100, 140, 200, 150, 50]
+                    ],
+                    type: 'spline'
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var scatterChart = c3.generate(
+            {
+                bindto: "#scatterChart",
+                data:
+                {
+                    xs:
+                    {
+                        setosa: 'setosa_x',
+                        versicolor: 'versicolor_x',
+                    },
+                    // iris data from R
+                    columns: [
+                        ["setosa_x", 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.4, 3.0, 3.0, 4.0, 4.4, 3.9, 3.5, 3.8, 3.8, 3.4, 3.7, 3.6, 3.3, 3.4, 3.0, 3.4, 3.5, 3.4, 3.2, 3.1, 3.4, 4.1, 4.2, 3.1, 3.2, 3.5, 3.6, 3.0, 3.4, 3.5, 2.3, 3.2, 3.5, 3.8, 3.0, 3.8, 3.2, 3.7, 3.3],
+                        ["versicolor_x", 3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2.0, 3.0, 2.2, 2.9, 2.9, 3.1, 3.0, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3.0, 2.8, 3.0, 2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3.0, 3.4, 3.1, 2.3, 3.0, 2.5, 2.6, 3.0, 2.6, 2.3, 2.7, 3.0, 2.9, 2.9, 2.5, 2.8],
+                        ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                        ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                    ],
+                    type: 'scatter'
+                },
+                color:
+                {
+                    pattern: colors
+                },
+                axis:
+                {
+                    x:
+                    {
+                        label: 'Sepal.Width',
+                        tick:
+                        {
+                            fit: false
                         }
                     },
-                    legend:
+                    y:
+                    {
+                        label: 'Petal.Width'
+                    }
+                }
+            });
+
+            var scatterChartLoad = function()
+            {
+
+                $("#scatterChartLoad").attr("disabled", true);
+
+                setTimeout(function()
+                {
+                    scatterChart.load(
+                    {
+                        xs:
+                        {
+                            virginica: 'virginica_x'
+                        },
+                        columns: [
+                            ["virginica_x", 3.3, 2.7, 3.0, 2.9, 3.0, 3.0, 2.5, 2.9, 2.5, 3.6, 3.2, 2.7, 3.0, 2.5, 2.8, 3.2, 3.0, 3.8, 2.6, 2.2, 3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3.0, 2.8, 3.0, 2.8, 3.8, 2.8, 2.8, 2.6, 3.0, 3.4, 3.1, 3.0, 3.1, 3.1, 3.1, 2.7, 3.2, 3.3, 3.0, 2.5, 3.0, 3.4, 3.0],
+                            ["virginica", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                        ]
+                    });
+                }, 1000);
+
+                setTimeout(function()
+                {
+                    scatterChart.unload(
+                    {
+                        ids: 'setosa'
+                    });
+                }, 2000);
+
+                setTimeout(function()
+                {
+                    scatterChart.load(
+                    {
+                        columns: [
+                            ["virginica", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                        ]
+                    });
+                }, 3000);
+
+                setTimeout(function()
+                {
+                    scatterChart.load(
+                    {
+                        columns: [
+                            ["setosa_x", 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.4, 3.0, 3.0, 4.0, 4.4, 3.9, 3.5, 3.8, 3.8, 3.4, 3.7, 3.6, 3.3, 3.4, 3.0, 3.4, 3.5, 3.4, 3.2, 3.1, 3.4, 4.1, 4.2, 3.1, 3.2, 3.5, 3.6, 3.0, 3.4, 3.5, 2.3, 3.2, 3.5, 3.8, 3.0, 3.8, 3.2, 3.7, 3.3],
+                            ["versicolor_x", 3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2.0, 3.0, 2.2, 2.9, 2.9, 3.1, 3.0, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3.0, 2.8, 3.0, 2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3.0, 3.4, 3.1, 2.3, 3.0, 2.5, 2.6, 3.0, 2.6, 2.3, 2.7, 3.0, 2.9, 2.9, 2.5, 2.8],
+                            ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                            ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                        ]
+                    });
+                }, 4000);
+
+                setTimeout(function()
+                {
+                    $("#scatterChartLoad").attr("disabled", false);
+                }, 5000)
+            }
+
+            var barChart = c3.generate(
+            {
+                bindto: "#barChart",
+                data:
+                {
+                    columns: [
+                        ['data1', 30, 200, 100, 400, 150, 250],
+                        ['data2', 130, 100, 140, 200, 150, 50]
+                    ],
+                    type: 'bar'
+                },
+                color:
+                {
+                    pattern: colors
+                },
+                bar:
+                {
+                    width:
+                    {
+                        ratio: 0.8 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                }
+            });
+
+            var barChartLoad = function()
+            {
+                $("#barChartLoad").attr("disabled", true);
+                $("#barChartLoad").text("loading...")
+
+                setTimeout(function()
+                {
+                    barChart.load(
+                    {
+                        columns: [
+                            ['data3', 130, -150, 200, 300, -200, 100]
+                        ]
+                    });
+                }, 1000);
+
+                setTimeout(function()
+                {
+                    barChart.load(
+                    {
+                        columns: [
+                            ['data4', 50, -70, 130, 170, 100, 50]
+                        ]
+                    });
+                }, 2000);
+
+                setTimeout(function()
+                {
+                    barChart.load(
+                    {
+                        columns: [
+                            ['data5', 70, -50, -110, 70, 40, -70]
+                        ]
+                    });
+                }, 3000);
+
+                setTimeout(function()
+                {
+                    $("#barChartLoad").text("load complete")
+                }, 4000)
+            };
+
+            var stackedBar = c3.generate(
+            {
+                bindto: "#stackedBar",
+                data:
+                {
+                    columns: [
+                        ['data1', -30, 200, 200, 400, -150, 250],
+                        ['data2', 130, 100, -100, 200, -150, 50],
+                        ['data3', -230, 200, 200, -300, 250, 250]
+                    ],
+                    type: 'bar',
+                    groups: [
+                        ['data1', 'data2']
+                    ]
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var stackedBarLoad = function()
+            {
+
+                $("#stackedBarLoad").attr("disabled", true);
+                $("#stackedBarLoad").text("loading...");
+
+                setTimeout(function()
+                {
+                    $("#stackedBarLoad").text("grouping...")
+                    stackedBar.groups([
+                        ['data1', 'data2', 'data3']
+                    ])
+                }, 1000);
+
+                setTimeout(function()
+                {
+                    $("#stackedBarLoad").text("grouping...")
+                    stackedBar.load(
+                    {
+                        columns: [
+                            ['data4', 100, -50, 150, 200, -300, -100]
+                        ]
+                    });
+                }, 2000);
+
+                setTimeout(function()
+                {
+                    $("#stackedBarLoad").text("grouping...")
+                    stackedBar.groups([
+                        ['data1', 'data2', 'data3', 'data4']
+                    ])
+                }, 3000);
+
+                setTimeout(function()
+                {
+                    $("#stackedBarLoad").text("load complete")
+                }, 4000)
+            };
+
+            var stepChart = c3.generate(
+            {
+                bindto: "#stepChart",
+                data:
+                {
+                    columns: [
+                        ['data1', 300, 350, 300, 0, 0, 100],
+                        ['data2', 130, 100, 140, 200, 150, 50]
+                    ],
+                    types:
+                    {
+                        data1: 'step',
+                        data2: 'area-step'
+                    }
+                },
+                color:
+                {
+                    pattern: [color.info._500, color.warning._500, color.success._500, color.danger._500, color.fusion._300]
+                }
+            });
+
+            var stepChartLoad = function()
+            {
+                $("#stepChartLoad").attr("disabled", true);
+                $("#stepChartLoad").text("loading...");
+
+                setTimeout(function()
+                {
+                    stepChart.load(
+                    {
+                        columns: [
+                            ['data3', 130, -50, 200, 300, -200, 100]
+                        ],
+                        type: 'area-step',
+                    });
+                }, 1000);
+
+                setTimeout(function()
+                {
+                    stepChart.load(
+                    {
+                        columns: [
+                            ['data4', 50, 70, 130, 170, 100, 50]
+                        ],
+                        type: 'area-step'
+                    });
+                }, 2000);
+
+                setTimeout(function()
+                {
+                    stepChart.load(
+                    {
+                        columns: [
+                            ['data5', 70, -50, -110, 70, 40, -70]
+                        ],
+                        type: 'step'
+                    });
+                }, 3000);
+
+                setTimeout(function()
+                {
+                    $("#stepChartLoad").text("load complete")
+                }, 4000)
+            }
+
+            var combinationChart = c3.generate(
+            {
+                bindto: "#combinationChart",
+                data:
+                {
+                    columns: [
+                        ['data1', 30, 20, 50, 40, 60, 50],
+                        ['data2', 200, 130, 90, 240, 130, 220],
+                        ['data3', 300, 200, 160, 400, 250, 250],
+                        ['data4', 200, 130, 90, 240, 130, 220],
+                        ['data5', 130, 120, 150, 140, 160, 150],
+                        ['data6', 90, 70, 20, 50, 60, 120],
+                    ],
+                    type: 'bar',
+                    types:
+                    {
+                        data3: 'spline',
+                        data4: 'line',
+                        data6: 'area',
+                    },
+                    groups: [
+                        ['data1', 'data2']
+                    ]
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var pieChart = c3.generate(
+            {
+                bindto: "#pieChart",
+                data:
+                {
+                    // iris data from R
+                    columns: [
+                        ['virtigo', 30],
+                        ['clarfy', 120],
+                        ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                        ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                        ["virginica", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                    ],
+                    type: 'pie' //,
+                    /*onclick: function (d, i) { console.log("onclick", d, i); },
+                    onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+                    onmouseout: function (d, i) { console.log("onmouseout", d, i); }*/
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var pieChartUnload = function()
+            {
+                $("#pieChartUnload").attr("disabled", true);
+                $("#pieChartUnload").text("unloading datasets...")
+                setTimeout(function()
+                {
+                    pieChart.unload(
+                    {
+                        ids: 'virtigo'
+                    });
+                    pieChart.unload(
+                    {
+                        ids: 'clarfy'
+                    });
+                }, 1000);
+                setTimeout(function()
+                {
+                    $("#pieChartUnload").text("unload complete")
+                }, 2000);
+            };
+
+            var donutChart = c3.generate(
+            {
+                bindto: "#donutChart",
+                data:
+                {
+                    // iris data from R
+                    columns: [
+                        ['IE', 30],
+                        ['Firefox', 120],
+                        ["Opera", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                        ["Safari", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                        ["Chrome", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                    ],
+                    type: 'donut' //,
+                    /*onclick: function (d, i) { console.log("onclick", d, i); },
+                    onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+                    onmouseout: function (d, i) { console.log("onmouseout", d, i); }*/
+                },
+                donut:
+                {
+                    title: "SmartAdmin Browsers"
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var donutChartUnload = function()
+            {
+                $("#donutChartUnload").attr("disabled", true);
+                $("#donutChartUnload").text("unloading datasets...")
+                setTimeout(function()
+                {
+                    donutChart.unload(
+                    {
+                        ids: 'Chrome'
+                    });
+                    donutChart.unload(
+                    {
+                        ids: 'Opera'
+                    });
+                }, 1000);
+                setTimeout(function()
+                {
+                    $("#donutChartUnload").text("unload complete")
+                }, 2000);
+            };
+
+            var interactiveExample = c3.generate(
+            {
+                bindto: "#interactiveExample",
+                data:
+                {
+                    columns: [
+                        ["data1", 100, 165, 140, 170, 200, 140, 220, 210, 190, 200, 170, 250],
+                        ["data2", 110, 80, 100, 85, 125, 110, 100, 130, 120, 100, 130, 145],
+                        ["data3", 75, 60, 70, 65, 85, 80, 70, 100, 100, 70, 90, 100]
+                    ],
+                    type: "area-spline"
+                },
+                subchart:
+                {
+                    show: true
+                },
+                color:
+                {
+                    pattern: colors
+                }
+            });
+
+            var interactiveWheel = c3.generate(
+            {
+                bindto: "#interactiveWheel",
+                data:
+                {
+                    columns: [
+                        ['sample', 30, 200, 100, 400, 150, 250, 150, 200, 170, 240, 350, 150, 100, 400, 150, 250, 150, 200, 170, 240, 100, 150, 250, 150, 200, 170, 240, 30, 200, 100, 400, 150, 250, 150, 200, 170, 240, 350, 150, 100, 400, 350, 220, 250, 300, 270, 140, 150, 90, 150, 50, 120, 70, 40]
+                    ]
+                },
+                zoom:
+                {
+                    enabled: true
+                },
+                color:
+                {
+                    pattern: [color.primary._500, color.danger._500, color.info._500, color.success._500, color.warning._500]
+                },
+                grid:
+                {
+                    x:
+                    {
+                        show: true
+                    },
+                    y:
                     {
                         show: false
                     }
-                });
-
-
-                $.plot('#flotBar1', [
-                {
-                    data: [
-                        [1, 0],
-                        [2, 0],
-                        [3, 0],
-                        [4, 1],
-                        [5, 3],
-                        [6, 3],
-                        [7, 10],
-                        [8, 11],
-                        [9, 10],
-                        [10, 9],
-                        [11, 12],
-                        [12, 8],
-                        [13, 10],
-                        [14, 6],
-                        [15, 3]
-                    ],
-                    bars:
-                    {
-                        show: true,
-                        lineWidth: 0,
-                        fillColor: color.fusion._50,
-                        barWidth: .3,
-                        order: 'left'
-                    }
-                },
-                {
-                    data: [
-                        [1, 0],
-                        [2, 0],
-                        [3, 1],
-                        [4, 2],
-                        [5, 2],
-                        [6, 5],
-                        [7, 8],
-                        [8, 12],
-                        [9, 10],
-                        [10, 11],
-                        [11, 3]
-                    ],
-                    bars:
-                    {
-                        show: true,
-                        lineWidth: 0,
-                        fillColor: color.success._500,
-                        barWidth: .3,
-                        align: 'right'
-                    }
-                }],
-                {
-                    grid:
-                    {
-                        borderWidth: 0,
-                    },
-                    yaxis:
-                    {
-                        min: 0,
-                        max: 15,
-                        tickColor: '#F0F0F0',
-                        ticks: [
-                            [0, ''],
-                            [5, '$5000'],
-                            [10, '$25000'],
-                            [15, '$45000']
-                        ],
-                        font:
-                        {
-                            color: '#444',
-                            size: 10
-                        }
-                    },
-                    xaxis:
-                    {
-                        mode: 'categories',
-                        tickColor: '#F0F0F0',
-                        ticks: [
-                            [0, '3am'],
-                            [1, '4am'],
-                            [2, '5am'],
-                            [3, '6am'],
-                            [4, '7am'],
-                            [5, '8am'],
-                            [6, '9am'],
-                            [7, '10am'],
-                            [8, '11am'],
-                            [9, '12nn'],
-                            [10, '1pm'],
-                            [11, '2pm'],
-                            [12, '3pm'],
-                            [13, '4pm'],
-                            [14, '5pm']
-                        ],
-                        font:
-                        {
-                            color: '#999',
-                            size: 9
-                        }
-                    }
-                });
-
-
-                /*
-                 * VECTOR MAP
-                 */
-
-                var data_array = {
-                    "au": "1219.72",
-                    /* "cm": "21.88",*/
-                    "cn": "5735.13",
-                   /* "co": "283.11", */
-                    "gq": "14.55",
-                    "hk": "226.49",
-                   /* "hu": "132.28", 
-                    "in": "1430.02",
-                    "id": "695.06",
-                    "ir": "337.9",
-                    "iq": "84.14",*/
-                    "jp": "5390.9",
-                   /* "jo": "27.13",
-                    "kz": "129.76", */
-                    "my": "218.95",
-                   /* "mv": "1.43",
-                    "ml": "9.08",
-                    "mt": "7.8",
-                    "mr": "3.49",
-                    "mu": "9.43",
-                    "mx": "1004.04",
-                    "md": "5.36",
-                    "rw": "5.69",
-                    "ws": "0.55",
-                    "st": "0.19",
-                    "sa": "434.44",
-                    "sn": "12.66",
-                    "rs": "38.92",
-                    "sc": "0.92",
-                    "sl": "1.9", */
-                    "sg": "217.38",
-                    "sk": "86.26",
-                    /*"si": "46.44",
-                    "sb": "0.67",
-                    "za": "354.41",
-                    "es": "1374.78",
-                    "lk": "48.24",
-                    "kn": "0.56",
-                    "lc": "1",
-                    "vc": "0.58",
-                    "sd": "65.93",
-                    "sr": "3.3",
-                    "sz": "3.17",
-                    "se": "444.59",
-                    "ch": "522.44",
-                    "sy": "59.63",*/
-                    "tw": "426.98",
-                  /*  "tj": "5.58",
-                    "tz": "22.43",
-                    "th": "312.61",
-                    "tl": "0.62",
-                    "tg": "3.07",
-                    "to": "0.3",
-                    "tt": "21.2",
-                    "tn": "43.86",
-                    "tr": "729.05",
-                    "tm": "0",
-                    "ug": "17.12",
-                    "ua": "136.56",
-                    "ae": "239.65", */
-                    "gb": "2258.57",
-                    "us": "14624.18",
-                  /*  "uy": "40.71",
-                    "uz": "37.72",
-                    "vu": "0.72",
-                    "ve": "285.21",
-                    "vn": "101.99",
-                    "ye": "30.02",
-                    "zm": "15.69",
-                    "zw": "0" */
-                };
-
-                $('#vector-map').vectorMap(
-                {
-                    map: 'world_en',
-                    backgroundColor: 'transparent', 
-
-
-                    color: color.warning._50,
-                    borderOpacity: 0.5,
-                    borderWidth: 1,
-                    hoverColor: color.success._300,
-                    hoverOpacity: null,
-                    selectedColor: color.success._500,
-                    selectedRegions: ['SG'],
-                    enableZoom: true,
-                    showTooltip: true,
-                    scaleColors: [color.primary._400, color.primary._50],
-                    values: data_array,
-                    normalizeFunction: 'polynomial',
-                    onRegionClick: function(element, code, region)
-                    
-
-
-                    {
-                        /*var message = 'You clicked "'
-						+ region
-						+ '" which has the code: '
-						+ code.toLowerCase();
-			 
-					console.log(message);*/
-
-
-
-                    
-
-                        var us = 2000000000000;
-                        var jp = 135000000000;
-                        var cn = 3000000000000;
-                        var au = 9000000000000;
-                        var arrow;
-
-                        if (Math.random() >= 0.5 == true)
-                        {
-                            arrow = '<div class="ml-2 d-inline-flex"><i class="fal fa-caret-up text-success fs-xs"></i></div>'
-                        }
-                        else
-                        {
-                            arrow = '<div class="ml-2 d-inline-flex"><i class="fal fa-caret-down text-danger fs-xs"></i></div>'
-                        }
-
-                        $('.js-jqvmap-flag').attr('src', 'https://lipis.github.io/flag-icon-css/flags/4x3/' + code.toLowerCase() + '.svg');
-
-
-                        if (code=="us"){
-                            $('.js-jqvmap-country').html(region + ' - ' + 'USD $' + us.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + arrow);
-                        }
-
-                        if (code=="cn"){
-                            $('.js-jqvmap-country').html(region + ' - ' + '¥' + cn.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + arrow);
-                        }
-
-
-                        if (code=="jp"){
-                            $('.js-jqvmap-country').html(region + ' - ' + '¥' + cn.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + arrow);
-                        }
-
-
-                        if (code=="au"){
-                            $('.js-jqvmap-country').html(region + ' - ' + 'AUD $' + cn.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + arrow);
-                        }
-
-
-                        else {
-                            $('.js-jqvmap-country').html(region + ' - ' + '$dds' + randomNumber.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + arrow);
-                        }
-
-
-
-                        
-                       
-                    }
-                });
-
-
-                /* TAB 1: UPDATING CHART */
-                var data = [],
-                    totalPoints = 200;
-                var getRandomData = function()
-                {
-                    if (data.length > 0)
-                        data = data.slice(1);
-
-                    // do a random walk
-                    while (data.length < totalPoints)
-                    {
-                        var prev = data.length > 0 ? data[data.length - 1] : 50;
-                        var y = prev + Math.random() * 10 - 5;
-                        if (y < 0)
-                            y = 0;
-                        if (y > 100)
-                            y = 100;
-                        data.push(y);
-                    }
-
-                    // zip the generated y values with the x values
-                    var res = [];
-                    for (var i = 0; i < data.length; ++i)
-                        res.push([i, data[i]])
-                    return res;
                 }
-                // setup control widget
-                var updateInterval = 1500;
-                $("#updating-chart").val(updateInterval).change(function()
-                {
-
-                    var v = $(this).val();
-                    if (v && !isNaN(+v))
-                    {
-                        updateInterval = +v;
-                        $(this).val("" + updateInterval);
-                    }
-
-                });
-                // setup plot
-                var options = {
-                    colors: [color.primary._700],
-                    series:
-                    {
-                        lines:
-                        {
-                            show: true,
-                            lineWidth: 0.5,
-                            fill: 0.9,
-                            fillColor:
-                            {
-                                colors: [
-                                {
-                                    opacity: 0.6
-                                },
-                                {
-                                    opacity: 0
-                                }]
-                            },
-                        },
-
-                        shadowSize: 0 // Drawing is faster without shadows
-                    },
-                    grid:
-                    {
-                        borderColor: '#F0F0F0',
-                        borderWidth: 1,
-                        labelMargin: 5
-                    },
-                    xaxis:
-                    {
-                        color: '#F0F0F0',
-                        font:
-                        {
-                            size: 10,
-                            color: '#999'
-                        }
-                    },
-                    yaxis:
-                    {
-                        min: 0,
-                        max: 100,
-                        color: '#F0F0F0',
-                        font:
-                        {
-                            size: 10,
-                            color: '#999'
-                        }
-                    }
-                };
-                var plot = $.plot($("#updating-chart"), [getRandomData()], options);
-                /* live switch */
-                $('input[type="checkbox"]#start_interval').click(function()
-                {
-                    if ($(this).prop('checked'))
-                    {
-                        $on = true;
-                        updateInterval = 1500;
-                        update();
-                    }
-                    else
-                    {
-                        clearInterval(updateInterval);
-                        $on = false;
-                    }
-                });
-                var update = function()
-                {
-                    if ($on == true)
-                    {
-                        plot.setData([getRandomData()]);
-                        plot.draw();
-                        setTimeout(update, updateInterval);
-
-                    }
-                    else
-                    {
-                        clearInterval(updateInterval)
-                    }
-
-                }
-
-
-
-                /*calendar */
-                var todayDate = moment().startOf('day');
-                var YM = todayDate.format('YYYY-MM');
-                var YESTERDAY = todayDate.clone().subtract(1, 'day').format('YYYY-MM-DD');
-                var TODAY = todayDate.format('YYYY-MM-DD');
-                var TOMORROW = todayDate.clone().add(1, 'day').format('YYYY-MM-DD');
-
-
-                var calendarEl = document.getElementById('calendar');
-
-                var calendar = new FullCalendar.Calendar(calendarEl,
-                {
-                    plugins: ['dayGrid', 'list', 'timeGrid', 'interaction', 'bootstrap'],
-                    themeSystem: 'bootstrap',
-                    timeZone: 'UTC',
-                    dateAlignment: "month", //week, month
-                    buttonText:
-                    {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day',
-                        list: 'list'
-                    },
-                    eventTimeFormat:
-                    {
-                        hour: 'numeric',
-                        minute: '2-digit',
-                        meridiem: 'short'
-                    },
-                    navLinks: true,
-                    header:
-                    {
-                        left: 'title',
-                        center: '',
-                        right: 'today prev,next'
-                    },
-                    footer:
-                    {
-                        left: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek',
-                        center: '',
-                        right: ''
-                    },
-                    editable: true,
-                    eventLimit: true, // allow "more" link when too many events
-                    events: [
-                    {
-                        title: 'All Day Event',
-                        start: YM + '-01',
-                        description: 'This is a test description', //this is currently bugged: https://github.com/fullcalendar/fullcalendar/issues/1795
-                        className: "border-warning bg-warning text-dark"
-                    },
-                    {
-                        title: 'Reporting',
-                        start: YM + '-14T13:30:00',
-                        end: YM + '-14',
-                        className: "bg-white border-primary text-primary"
-                    },
-                    {
-                        title: 'Surgery oncall',
-                        start: YM + '-02',
-                        end: YM + '-03',
-                        className: "bg-primary border-primary text-white"
-                    },
-                    {
-                        title: 'NextGen Expo 2019 - Product Release',
-                        start: YM + '-03',
-                        end: YM + '-05',
-                        className: "bg-info border-info text-white"
-                    },
-                    {
-                        title: 'Dinner',
-                        start: YM + '-12',
-                        end: YM + '-10'
-                    },
-                    {
-                        id: 999,
-                        title: 'Repeating Event',
-                        start: YM + '-09T16:00:00',
-                        className: "bg-danger border-danger text-white"
-                    },
-                    {
-                        id: 1000,
-                        title: 'Repeating Event',
-                        start: YM + '-16T16:00:00'
-                    },
-                    {
-                        title: 'Conference',
-                        start: YESTERDAY,
-                        end: TOMORROW,
-                        className: "bg-success border-success text-white"
-                    },
-                    {
-                        title: 'Meeting',
-                        start: TODAY + 'T10:30:00',
-                        end: TODAY + 'T12:30:00',
-                        className: "bg-primary text-white border-primary"
-                    },
-                    {
-                        title: 'Lunch',
-                        start: TODAY + 'T12:00:00',
-                        className: "bg-info border-info"
-                    },
-                    {
-                        title: 'Meeting',
-                        start: TODAY + 'T14:30:00',
-                        className: "bg-warning text-dark border-warning"
-                    },
-                    {
-                        title: 'Happy Hour',
-                        start: TODAY + 'T17:30:00',
-                        className: "bg-success border-success text-white"
-                    },
-                    {
-                        title: 'Dinner',
-                        start: TODAY + 'T20:00:00',
-                        className: "bg-danger border-danger text-white"
-                    },
-                    {
-                        title: 'Birthday Party',
-                        start: TOMORROW + 'T07:00:00',
-                        className: "bg-primary text-white border-primary text-white"
-                    },
-                    {
-                        title: 'Gotbootstrap Meeting',
-                        url: 'http://gotbootstrap.com/',
-                        start: YM + '-28',
-                        className: "bg-info border-info text-white"
-                    }],
-                    viewSkeletonRender: function()
-                    {
-                        $('.fc-toolbar .btn-default').addClass('btn-sm');
-                        $('.fc-header-toolbar h2').addClass('fs-md');
-                        $('#calendar').addClass('fc-reset-order')
-                    },
-
-                });
-
-                calendar.render();
             });
 
         </script>
     </body>
 </html>
-
-
-
-<script src="c19js/app.bundle.js"></script>
-<!-- plugin Chart.js : MIT license -->
-<script src="c19js/statistics/chartjs/chartjs.bundle.js"></script>
-
-
-<script>
-
-
-
-    /* pie chart */
-    var pieChart = function()
-    {
-        var config = {
-            type: 'pie',
-            data:
-            {
-                datasets: [
-                {
-                    data: [
-                        11,
-                        16,
-                        7,
-                        3,
-                        14
-                    ],
-                    backgroundColor: [
-                        color.primary._200,
-                        color.primary._400,
-                        color.success._50,
-                        color.success._300,
-                        color.success._500
-                    ],
-                    label: 'My dataset' // for legend
-                }],
-                labels: [
-                    "USA",
-                    "Germany",
-                    "Austalia",
-                    "Canada",
-                    "France"
-                ]
-            },
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    display: true,
-                    position: 'bottom',
-                }
-            }
-        };
-        new Chart($("#pieChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* pie chart -- end */
-
-
-
-
-
-
-
-
-    /* line chart */
-    var lineChart = function()
-    {
-        var config = {
-            type: 'line',
-            data:
-            {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [
-                {
-                    label: "Success",
-                    borderColor: color.success._500,
-                    pointBackgroundColor: color.success._700,
-                    pointBorderColor: 'rgba(0, 0, 0, 0)',
-                    pointBorderWidth: 1,
-                    borderWidth: 1,
-                    pointRadius: 3,
-                    pointHoverRadius: 4,
-                    data: [
-                        23,
-                        75,
-                        60, -48, -9,
-                        26,
-                        45
-                    ],
-                    fill: false
-                }]
-            },
-            options:
-            {
-                responsive: true,
-                title:
-                {
-                    display: false,
-                    text: 'Line Chart'
-                },
-                tooltips:
-                {
-                    mode: 'index',
-                    intersect: false,
-                },
-                hover:
-                {
-                    mode: 'nearest',
-                    intersect: true
-                },
-                scales:
-                {
-                    xAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: '6 months forecast'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    yAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: 'Profit margin (approx)'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        };
-        new Chart($("#lineChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* line chart -- end */
-
-    /* area chart */
-    var areaChart = function()
-    {
-        var config = {
-            type: 'line',
-            data:
-            {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [
-                {
-                    label: "Primary",
-                    backgroundColor: 'rgba(136,106,181, 0.2)',
-                    borderColor: color.primary._500,
-                    pointBackgroundColor: color.primary._700,
-                    pointBorderColor: 'rgba(0, 0, 0, 0)',
-                    pointBorderWidth: 1,
-                    borderWidth: 1,
-                    pointRadius: 3,
-                    pointHoverRadius: 4,
-                    data: [
-                        45,
-                        75,
-                        26,
-                        23,
-                        60, -48, -9
-                    ],
-                    fill: true
-                },
-                {
-                    label: "Success",
-                    backgroundColor: 'rgba(29,201,183, 0.2)',
-                    borderColor: color.success._500,
-                    pointBackgroundColor: color.success._700,
-                    pointBorderColor: 'rgba(0, 0, 0, 0)',
-                    pointBorderWidth: 1,
-                    borderWidth: 1,
-                    pointRadius: 3,
-                    pointHoverRadius: 4,
-                    data: [-10,
-                        16,
-                        72,
-                        93,
-                        29, -74,
-                        64
-                    ],
-                    fill: true
-                }]
-            },
-            options:
-            {
-                responsive: true,
-                title:
-                {
-                    display: false,
-                    text: 'Area Chart'
-                },
-                tooltips:
-                {
-                    mode: 'index',
-                    intersect: false,
-                },
-                hover:
-                {
-                    mode: 'nearest',
-                    intersect: true
-                },
-                scales:
-                {
-                    xAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: '6 months forecast'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    yAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: 'Profit margin (approx)'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        };
-        new Chart($("#areaChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* area chart -- end */
-
-    /* horizontal bar chart */
-    var horizontalBarChart = function()
-    {
-        var horizontalBarChart = {
-            labels: ["January", "February", "March", "April"],
-            datasets: [
-            {
-                label: "Red",
-                backgroundColor: color.success._300,
-                borderColor: color.success._500,
-                borderWidth: 1,
-                data: [
-                    45,
-                    60, -28, -9
-                ]
-            },
-            {
-                label: "Blue",
-                backgroundColor: color.primary._300,
-                borderColor: color.primary._500,
-                borderWidth: 1,
-                data: [-10,
-                    29, -34,
-                    64
-                ]
-            }]
-
-        };
-        var config = {
-            type: 'horizontalBar',
-            data: horizontalBarChart,
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    position: 'top',
-                },
-                title:
-                {
-                    display: false,
-                    text: 'Horizontal Bar Chart'
-                },
-                scales:
-                {
-                    xAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: 'Profit margin (approx)'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    yAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: 'Quarterly forecast'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#horizontalBarChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* horizontal bar chart -- end */
-
-    /* bar chart */
-    var barChart = function()
-    {
-        var barChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-            {
-                label: "Red",
-                backgroundColor: color.success._300,
-                borderColor: color.success._500,
-                borderWidth: 1,
-                data: [
-                    45,
-                    75,
-                    26,
-                    23,
-                    60, -48, -9
-                ]
-            },
-            {
-                label: "Blue",
-                backgroundColor: color.primary._300,
-                borderColor: color.primary._500,
-                borderWidth: 1,
-                data: [-10,
-                    16,
-                    72,
-                    93,
-                    29, -74,
-                    64
-                ]
-            }]
-
-        };
-        var config = {
-            type: 'bar',
-            data: barChartData,
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    position: 'top',
-                },
-                title:
-                {
-                    display: false,
-                    text: 'Bar Chart'
-                },
-                scales:
-                {
-                    xAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: '6 months forecast'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    yAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: 'Profit margin (approx)'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#barChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* bar chart -- end */
-
-    /* bar stacked */
-    var barStacked = function()
-    {
-        var barStackedData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-            {
-                label: "Red",
-                backgroundColor: color.primary._300,
-                borderColor: color.primary._500,
-                borderWidth: 1,
-                data: [
-                    45,
-                    75,
-                    26,
-                    23,
-                    60, -48, -9
-                ]
-            },
-            {
-                label: "Blue",
-                backgroundColor: color.success._300,
-                borderColor: color.success._500,
-                borderWidth: 1,
-                data: [-10,
-                    16,
-                    72,
-                    93,
-                    29, -74,
-                    64
-                ]
-            }]
-
-        };
-        var config = {
-            type: 'bar',
-            data: barStackedData,
-            options:
-            {
-                legend:
-                {
-                    display: false,
-                    labels:
-                    {
-                        display: false
-                    }
-                },
-                scales:
-                {
-                    yAxes: [
-                    {
-                        stacked: true,
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    xAxes: [
-                    {
-                        stacked: true,
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#barStacked > canvas").get(0).getContext("2d"), config);
-    }
-    /* bar stacked -- end */
-
-    /* bar horizontal stacked */
-    var barHorizontalStacked = function()
-    {
-        var barHorizontalStackedData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-            {
-                label: "Red",
-                backgroundColor: color.primary._300,
-                borderColor: color.primary._500,
-                borderWidth: 1,
-                data: [
-                    45,
-                    75,
-                    26,
-                    23,
-                    60, -48, -9
-                ]
-            },
-            {
-                label: "Blue",
-                backgroundColor: color.success._300,
-                borderColor: color.success._500,
-                borderWidth: 1,
-                data: [-10,
-                    16,
-                    72,
-                    93,
-                    29, -74,
-                    64
-                ]
-            }]
-
-        };
-        var config = {
-            type: 'horizontalBar',
-            data: barHorizontalStackedData,
-            options:
-            {
-                legend:
-                {
-                    display: false,
-                    labels:
-                    {
-                        display: false
-                    }
-                },
-                scales:
-                {
-                    yAxes: [
-                    {
-                        stacked: true,
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    xAxes: [
-                    {
-                        stacked: true,
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#barHorizontalStacked > canvas").get(0).getContext("2d"), config);
-    }
-    /* bar horizontal stacked -- end */
-
-    /* grid color */
-    var gridColor = function()
-    {
-        var config = {
-            type: 'line',
-            data:
-            {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                datasets: [
-                {
-                    data: [10, 24, 20, 25, 35, 50],
-                    backgroundColor: 'rgba(0,0,0, 0.07)',
-                    borderColor: color.fusion._300,
-                    borderWidth: 1,
-                    fill: true
-                },
-                {
-                    data: [20, 30, 28, 33, 45, 65],
-                    backgroundColor: 'rgba(0,0,0, 0.03)',
-                    borderColor: color.fusion._100,
-                    borderWidth: 1,
-                    fill: true
-                }]
-            },
-            options:
-            {
-                legend:
-                {
-                    display: false,
-                    labels:
-                    {
-                        display: false
-                    }
-                },
-                scales:
-                {
-                    yAxes: [
-                    {
-                        gridLines:
-                        {
-                            drawBorder: false,
-                            color: ['', color.danger._500, color.success._500]
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11,
-                            max: 80
-                        }
-                    }],
-                    xAxes: [
-                    {
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#gridColor > canvas").get(0).getContext("2d"), config);
-    }
-    /* grid color -- end */
-
-    /* bar & line combine */
-    var barlineCombine = function()
-    {
-        var barlineCombineData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-            {
-                type: 'line',
-                label: 'Dataset 1',
-                borderColor: color.danger._300,
-                pointBackgroundColor: color.danger._500,
-                pointBorderColor: color.danger._500,
-                pointBorderWidth: 1,
-                borderWidth: 2,
-                pointRadius: 4,
-                pointHoverRadius: 5,
-                fill: false,
-                data: [
-                    -10,
-                    16,
-                    72,
-                    93,
-                    29,
-                    -74,
-                    64
-                ]
-            },
-            {
-                type: 'bar',
-                label: 'Dataset 2',
-                backgroundColor: color.primary._300,
-                borderColor: color.primary._500,
-                data: [
-                    45,
-                    75,
-                    26,
-                    23,
-                    60,
-                    -48,
-                    -9
-                ],
-                borderWidth: 1
-            },
-            {
-                type: 'bar',
-                label: 'Dataset 3',
-                backgroundColor: color.success._300,
-                borderColor: color.success._500,
-                data: [
-                    -10,
-                    16,
-                    72,
-                    93,
-                    29,
-                    -74,
-                    64
-                ],
-                borderWidth: 1
-            }]
-
-        };
-        var config = {
-            type: 'bar',
-            data: barlineCombineData,
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    position: 'top',
-                },
-                title:
-                {
-                    display: true,
-                    text: 'Chart.js Bar Chart'
-                },
-                scales:
-                {
-                    xAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: '6 months forecast'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }],
-                    yAxes: [
-                    {
-                        display: true,
-                        scaleLabel:
-                        {
-                            display: false,
-                            labelString: 'Profit margin (approx)'
-                        },
-                        gridLines:
-                        {
-                            display: true,
-                            color: "#f2f2f2"
-                        },
-                        ticks:
-                        {
-                            beginAtZero: true,
-                            fontSize: 11
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#barlineCombine > canvas").get(0).getContext("2d"), config);
-    }
-    /* bar & line combine -- end */
-
-    /* polar area */
-    var polarArea = function()
-    {
-        var config = {
-            type: 'polarArea',
-            data:
-            {
-                datasets: [
-                {
-                    data: [
-                        11,
-                        16,
-                        7,
-                        3,
-                        14
-                    ],
-                    backgroundColor: [
-                        color.primary._200,
-                        color.primary._400,
-                        color.success._100,
-                        color.success._400,
-                        color.success._600
-                    ],
-                    label: 'My dataset' // for legend
-                }],
-                labels: [
-                    "USA",
-                    "Germany",
-                    "Austalia",
-                    "Canada",
-                    "France"
-                ]
-            },
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    display: true,
-                    position: 'bottom',
-                }
-            }
-        };
-        new Chart($("#polarArea > canvas").get(0).getContext("2d"), config);
-    }
-    /* polar area -- end */
-
-    /* radar chart */
-    var radarChart = function()
-    {
-        var config = {
-            type: "radar",
-            data:
-            {
-                labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Partying", "Running"],
-                datasets: [
-                {
-                    label: "First",
-                    pointRadius: 4,
-                    borderDashOffset: 2,
-                    backgroundColor: "rgba(136,106,181, 0.2)",
-                    borderColor: "rgba(0,0,0,0)",
-                    pointBackgroundColor: color.primary._500,
-                    pointBorderColor: color.primary._500,
-                    pointHoverBackgroundColor: color.primary._500,
-                    pointHoverBorderColor: color.primary._500,
-                    data: [65, 59, 90, 81, 56, 55, 40]
-                },
-                {
-                    label: "Second",
-                    pointRadius: 4,
-                    borderDashOffset: 2,
-                    backgroundColor: "rgba(29,201,183, 0.2)",
-                    borderColor: "rgba(0,0,0,0)",
-                    pointBackgroundColor: color.success._500,
-                    pointBorderColor: color.success._500,
-                    pointHoverBackgroundColor: color.success._500,
-                    pointHoverBorderColor: color.success._500,
-                    data: [28, 48, 40, 19, 96, 27, 100]
-                }]
-            },
-            options:
-            {
-                responsive: true,
-            }
-        }
-
-        new Chart($("#radarChart > canvas").get(0).getContext("2d"), config);
-
-    }
-    /* radar chart -- end */
-
-    /* bubble chart */
-    var bubbleChart = function()
-    {
-        var config = {
-            type: 'bubble',
-            data:
-            {
-                labels: "Africa",
-                datasets: [
-                {
-                    label: ["China"],
-                    backgroundColor: color.primary._300,
-                    borderColor: color.primary._500,
-                    data: [
-                    {
-                        x: 21269017,
-                        y: 5.245,
-                        r: 15
-                    }]
-                },
-                {
-                    label: ["Denmark"],
-                    backgroundColor: color.success._300,
-                    borderColor: color.success._500,
-                    data: [
-                    {
-                        x: 258702,
-                        y: 7.526,
-                        r: 10
-                    }]
-                },
-                {
-                    label: ["Germany"],
-                    backgroundColor: color.info._300,
-                    borderColor: color.info._500,
-                    data: [
-                    {
-                        x: 3979083,
-                        y: 6.994,
-                        r: 15
-                    }]
-                },
-                {
-                    label: ["Japan"],
-                    backgroundColor: color.danger._300,
-                    borderColor: color.danger._500,
-                    data: [
-                    {
-                        x: 4931877,
-                        y: 5.921,
-                        r: 15
-                    }]
-                }]
-            },
-            options:
-            {
-                title:
-                {
-                    display: true,
-                    text: 'Predicted world population (millions) in 2050'
-                },
-                scales:
-                {
-                    yAxes: [
-                    {
-                        scaleLabel:
-                        {
-                            display: true,
-                            labelString: "Happiness"
-                        }
-                    }],
-                    xAxes: [
-                    {
-                        scaleLabel:
-                        {
-                            display: true,
-                            labelString: "GDP (PPP)"
-                        }
-                    }]
-                }
-            }
-        }
-        new Chart($("#bubbleChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* bubble chart -- end*/
-
-    /* pie chart */
-    var pieChart = function()
-    {
-        var config = {
-            type: 'pie',
-            data:
-            {
-                datasets: [
-                {
-                    data: [
-                        11,
-                        16,
-                        7,
-                        3,
-                        14
-                    ],
-                    backgroundColor: [
-                        color.primary._200,
-                        color.primary._400,
-                        color.success._50,
-                        color.success._300,
-                        color.success._500
-                    ],
-                    label: 'My dataset' // for legend
-                }],
-                labels: [
-                    "USA",
-                    "Germany",
-                    "Austalia",
-                    "Canada",
-                    "France"
-                ]
-            },
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    display: true,
-                    position: 'bottom',
-                }
-            }
-        };
-        new Chart($("#pieChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* pie chart -- end */
-
-    /* doughnut chart */
-    var doughnutChart = function()
-    {
-        var config = {
-            type: 'doughnut',
-            data:
-            {
-                datasets: [
-                {
-                    data: [
-                        11,
-                        16,
-                        7,
-                        3,
-                        14
-                    ],
-                    backgroundColor: [
-                        color.success._200,
-                        color.success._400,
-                        color.primary._50,
-                        color.primary._300,
-                        color.primary._500
-                    ],
-                    label: 'My dataset' // for legend
-
-
-                }],
-                labels: [
-                    "USA",
-                    "Germany",
-                    "Austalia",
-                    "Canada",
-                    "France"
-                ]
-            },
-            options:
-            {
-                responsive: true,
-                legend:
-                {
-                    display: true,
-                    position: 'bottom',
-                }
-            }
-        };
-        new Chart($("#doughnutChart > canvas").get(0).getContext("2d"), config);
-    }
-    /* doughnut chart -- end */
-
-    /* initialize all charts */
-    $(document).ready(function()
-    {
-        pieChart();
-        lineChart();
-        areaChart();
-        horizontalBarChart();
-        barChart();
-        barStacked();
-        barHorizontalStacked();
-        bubbleChart();
-        barlineCombine();
-        polarArea();
-        radarChart();
-        pieChart();
-        doughnutChart();
-    });
-
-
-
-
-
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
-
-
-
-<style>
-
-
-select#purpose {
-
-    border-right-width:20px !important;
-}
-
-
-</style>
-

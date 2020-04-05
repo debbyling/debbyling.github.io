@@ -6889,9 +6889,15 @@ button.bg-dark:focus {
 .m-5 {
   margin: 2rem !important; }
 
-.mt-5,
+.mt-8,
+.my-8 {
+  margin-top: 8rem !important; }
+
+
+  .mt-10,
 .my-5 {
   margin-top: 2rem !important; }
+
 
 .mr-5,
 .mx-5 {
