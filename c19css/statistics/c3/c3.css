@@ -5,6 +5,11 @@
 
 
 
+  .c3-region.test {
+    fill: red;
+  }
+
+
 
 
 .c3 path, .c3 line {
