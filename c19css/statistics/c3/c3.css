@@ -14,7 +14,7 @@
 
 .c3 path, .c3 line {
   fill: none;
-  stroke: #000; }
+  stroke: #fff; }
 
 .c3 text {
   -webkit-user-select: none;
@@ -170,10 +170,10 @@
 
 .c3-chart-arcs .c3-chart-arcs-background {
   fill: #e0e0e0;
-  stroke: #FFF; }
+  stroke: #fff; }
 
 .c3-chart-arcs .c3-chart-arcs-gauge-unit {
-  fill: #000;
+  fill: #fff;
   font-size: 16px; }
 
 .c3-chart-arcs .c3-chart-arcs-gauge-max {
@@ -183,7 +183,7 @@
   fill: #777; }
 
 .c3-chart-arc .c3-gauge-value {
-  fill: #000;
+  fill: #fff;
   /*  font-size: 28px !important;*/ }
 
 .c3-chart-arc.c3-target g path {
@@ -203,5 +203,45 @@
 
 .c3-drag-zoom .extent {
   fill-opacity: 0.1; }
+
+
+
+  .c3 .c3-axis-x path, .c3 .c3-axis-x line {
+    stroke: white;
+}
+.c3 .c3-axis-y path, .c3 .c3-axis-y line {
+    stroke: white;
+}
+
+
+
+.c3 .c3-legend-item {
+    fill: white;
+}
+
+
+.c3 .c3-axis-y-label {
+  fill: white;
+}
+
+
+.c3 .c3-legend-item-data text {
+  fill: white;
+}
+
+
+.c3 .c3-axis-x g,
+.c3 .c3-axis-y g,
+.c3 .c3-legend-item-data text,
+.c3 .c3-axis-y-label,
+.c3 .c3-axis-x-label,
+.c3 .c3-legend-item {
+    fill: whitesmoke;
+}
+
+
+.card.m-auto.border.mb-g {
+  background-color: black;
+}
 
 /*# sourceMappingURL=c3.css.map */
