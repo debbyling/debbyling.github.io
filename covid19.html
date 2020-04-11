@@ -139,26 +139,74 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
 
 
-<!--alert 
+
+
                         <div class="alert alert-primary">
                             <div class="d-flex flex-start w-100">
                                 <div class="mr-2 hidden-md-down">
-                                    <span class="icon-stack icon-stack-lg">
-                                        
-                                        <i class="fas fa-exclamation-triangle icon-stack-2x opacity-100 color-primary-300 fa-flip"></i>
-                                        
-                                    </span>
+
                                 </div>
                                 <div class="d-flex flex-fill">
                                     <div class="flex-fill">
-                                        <span class="h5">Features:</span>
-                                        <p>
-                                            While all efforts have been made to ensure that the data is accurate.
-                                        </p>
+                                        <div id="container1">
+                                            <h3>Countdown to end of circuit breaker:<br>(5 May 2020, 00:00:00)</h3>
+                                            <ul>
+                                              <li><span id="days"></span>days</li>
+                                              <li><span id="hours"></span>Hours</li>
+                                              <li><span id="minutes"></span>Minutes</li>
+                                              <li><span id="seconds"></span>Seconds</li>
+                                            </ul>
+                                          </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+
+
+
+
+
+                        <script>
+
+
+
+                            const second = 1000,
+                                minute = second * 60,
+                                hour = minute * 60,
+                                day = hour * 24;
+
+                            let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+                                x = setInterval(function() {    
+
+                                let now = new Date().getTime(),
+                                    distance = countDown - now;
+
+                                document.getElementById('days').innerText = Math.floor(distance / (day)),
+                                    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                                    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                                    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+                                //do something later when date is reached
+                                //if (distance < 0) {
+                                //  clearInterval(x);
+                                //  'IT'S MY BIRTHDAY!;
+                                //}
+
+                                }, second)
+                           
+                            </script>
+                            
+
+
+
+
+
+
+
+
+
+
+
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="card m-auto border mb-g">
