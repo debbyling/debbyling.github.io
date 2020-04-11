@@ -265,18 +265,19 @@ h3.mb-4 {
 
 
 small, .small {
-  color: lightgrey;
+  color: lightgrey !important;
 }
 
 
 .subheader-title {
-  color: lightgray;
+  color: lightgray !important;
   text-shadow: none;
 }
 
 .alert.alert-primary {
   padding-bottom: 10px;
 }
+
 
 
 
