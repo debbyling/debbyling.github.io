@@ -241,7 +241,7 @@
 
 
 .card.m-auto.border.mb-g {
-  background-color: black;
+  background-color: #1d2529;
   border: none !important;
 }
 
@@ -254,6 +254,7 @@ h3.mb-4 {
 
 .page-content-wrapper {
   background-color: black;
+  background-image: linear-gradient(to bottom right, black, #301934);
 
 }
 
@@ -272,6 +273,7 @@ small, .small {
 .subheader-title {
   color: lightgray !important;
   text-shadow: none;
+  font-weight:700 !important;
 }
 
 .alert.alert-primary {
