@@ -242,6 +242,33 @@
 
 .card.m-auto.border.mb-g {
   background-color: black;
+  border: none !important;
 }
+
+
+h3.mb-4 {
+  color: white;
+}
+
+
+
+.page-content-wrapper {
+  background-color: black;
+
+}
+
+
+
+.border {
+  border: none;
+}
+
+
+small, .small {
+  color: white;
+}
+
+
+
 
 /*# sourceMappingURL=c3.css.map */
