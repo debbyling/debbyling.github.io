@@ -384,3 +384,16 @@ span#titletext {
 
 
 }
+
+
+
+@media (min-width: 992px) li#liseconds {
+
+}
+
+
+@media (max-width: 992px) {
+  li#liseconds, li#limins {
+      display: none;
+ }
+}

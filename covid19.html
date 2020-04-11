@@ -149,12 +149,12 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 <div class="d-flex flex-fill">
                                     <div class="flex-fill">
                                         <div id="container1">
-                                            <h3>Countdown to end of circuit breaker:<br>(5 May 2020, 00:00:00)<br>#stayhomeforSG</h3> 
+                                            <h3><b>Circuit Breaker:</b><br>Day <span id="daycount"></span> of 30<br>#stayhomeforSG</h3> 
                                             <ul>
-                                              <li><span id="days"></span>days</li>
-                                              <li><span id="hours"></span>Hours</li>
-                                              <li><span id="minutes"></span>Minutes</li>
-                                              <li><span id="seconds"></span>Seconds</li>
+                                              <li id="lidays"><span id="days"></span>days</li>
+                                              <li id="lihours"><span id="hours"></span>Hours</li>
+                                              <li id="limins"><span id="minutes"></span>Minutes</li>
+                                              <li id="liseconds"><span id="seconds"></span>Seconds</li>
                                             </ul>
                                           </div>
                                     </div>
@@ -175,17 +175,26 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 hour = minute * 60,
                                 day = hour * 24;
 
-                            let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+
+
+                    
+
+                            let countDown = new Date('May 5, 2020 00:00:00').getTime(),
                                 x = setInterval(function() {    
 
+
                                 let now = new Date().getTime(),
+                                   
                                     distance = countDown - now;
+
+
+
 
                                 document.getElementById('days').innerText = Math.floor(distance / (day)),
                                     document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
                                     document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
                                     document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
+                                    
                                 //do something later when date is reached
                                 //if (distance < 0) {
                                 //  clearInterval(x);
@@ -193,12 +202,42 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 //}
 
                                 }, second)
-                           
+                        
+                        
+
                             </script>
                             
 
 
+                            <script>
 
+
+
+window.onload = function() {
+  // Month Day, Year Hour:Minute:Second, id-of-element-container
+  countUpFromTime("Apr 7, 2020 00:00:00", 'countup1'); // ****** Change this line!
+};
+function countUpFromTime(countFrom, id) {
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+    
+  var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+    
+  days = Math.floor(timeDifference / (secondsInADay) * 1);
+
+
+  document.getElementById('daycount').innerText = days;
+
+
+
+}
+
+    
+                                </script>
+                                
 
 
 
