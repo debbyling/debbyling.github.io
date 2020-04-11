@@ -226,7 +226,7 @@
 
 
 .c3 .c3-legend-item-data text {
-  fill: white;
+  fill: lightgray;
 }
 
 
@@ -236,7 +236,7 @@
 .c3 .c3-axis-y-label,
 .c3 .c3-axis-x-label,
 .c3 .c3-legend-item {
-    fill: whitesmoke;
+    fill: lightgray;
 }
 
 
@@ -247,7 +247,7 @@
 
 
 h3.mb-4 {
-  color: white;
+  color: lightgrey;
 }
 
 
@@ -265,7 +265,17 @@ h3.mb-4 {
 
 
 small, .small {
-  color: white;
+  color: lightgrey;
+}
+
+
+.subheader-title {
+  color: lightgray;
+  text-shadow: none;
+}
+
+.alert.alert-primary {
+  padding-bottom: 10px;
 }
 
 
