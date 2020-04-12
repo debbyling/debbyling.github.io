@@ -57,7 +57,7 @@ var defaultMessage = $('#message').html(),
 
 
 
-			setProgressBar('84')
+			setProgressBar('5')
 		},
 
 
@@ -68,7 +68,7 @@ var defaultMessage = $('#message').html(),
 
 			chart.select(['Cases'], [0]);
 			setMessage('First case reported');
-			setProgressBar('12')
+			setProgressBar('10')
 			chart.xgrids([{
 				value: '2020-1-23',
 				class:'hoge'
@@ -91,6 +91,7 @@ var defaultMessage = $('#message').html(),
 				],
 				type: 'area'
 			});
+			setProgressBar('15')
 			
 
 			
@@ -115,7 +116,7 @@ var defaultMessage = $('#message').html(),
 			setMessage('First patient discharged');
 			chart.focus('Discharged');
 			chart.unselect();
-			setProgressBar('4')
+			setProgressBar('20')
 			
 		},
 
@@ -142,6 +143,7 @@ var defaultMessage = $('#message').html(),
 				value: 24,
 				text: '24 cases'
 			}]);
+			setProgressBar('25')
 		},
 
 
@@ -162,7 +164,7 @@ var defaultMessage = $('#message').html(),
 				text: '81 cases'
 			}]);
 			setMessage('Gov releases Budget 2020');
-			setProgressBar('12')
+			setProgressBar('30')
 		},
 
 
@@ -177,6 +179,7 @@ var defaultMessage = $('#message').html(),
 				value: 81,
 				text: '81 cases'
 			}]);
+			setProgressBar('35')
 		},
 
 
@@ -209,7 +212,7 @@ var defaultMessage = $('#message').html(),
 			chart.focus('Cases');
 			chart.select(['Cases'], [37]);
 	
-			setProgressBar('4')
+			setProgressBar('40')
 			
 		},
 
@@ -232,6 +235,7 @@ var defaultMessage = $('#message').html(),
 				text: '29 Feb',
 				class:'hoge'
 			}]);
+			setProgressBar('45')
 
 
 			
@@ -255,7 +259,7 @@ var defaultMessage = $('#message').html(),
 			});
 			
 
-			setProgressBar('84')
+			setProgressBar('50')
 
 
 		},
@@ -275,7 +279,7 @@ var defaultMessage = $('#message').html(),
 				value: 432,
 				text: '432 cases'
 			}]);
-
+			setProgressBar('55')
 			
 			
 
@@ -305,14 +309,7 @@ var defaultMessage = $('#message').html(),
 				ids: 'Cases'
 			});
 
-			setProgressBar('84')
-		},
-
-
-
-
-
-		function () {
+			setProgressBar('60')
 		},
 
 
@@ -335,7 +332,7 @@ var defaultMessage = $('#message').html(),
 				} 
 			});
 
-			setProgressBar('88')
+			setProgressBar('65')
 		},
 
 
@@ -349,8 +346,8 @@ var defaultMessage = $('#message').html(),
 
 
 		function () {
-			setMessage('Gov releases Supplementary Resilience Budget 2020');
-			setMessagedisplay('Gov releases Supplementary Resilience Budget 2020');
+			setMessage('Gov releases Resilience Budget 2020');
+			setMessagedisplay('Gov releases Resilience Budget 2020');
 			chart.focus('Cases');
 			chart.select(['Cases'], [63]);
 			chart.xgrids([{
@@ -363,7 +360,7 @@ var defaultMessage = $('#message').html(),
 				value: 683,
 				text: '683 cases'
 			}]);
-			setProgressBar('24')
+			setProgressBar('70')
 		},
 
 
@@ -380,6 +377,7 @@ var defaultMessage = $('#message').html(),
 				value: 683,
 				text: '683 cases'
 			}]);
+			setProgressBar('75')
 		},
 
 
@@ -409,11 +407,8 @@ var defaultMessage = $('#message').html(),
 				class: 'test',
 			}]);
 
-
-
-
 			setMessage('Stricter measures: All entertainment venues shut');
-			setProgressBar('48')
+			setProgressBar('80')
 		},
 
 
@@ -422,10 +417,6 @@ var defaultMessage = $('#message').html(),
 		function () {
 			chart.focus('Cases');
 			chart.select(['Cases'], [69]);
-
-
-
-		
 
 			chart.xgrids([{
 				value: '2020-4-1',
@@ -437,7 +428,7 @@ var defaultMessage = $('#message').html(),
 		
 			}]);
 			setMessage('Singapore hits 1,000 cases');
-			setProgressBar('60')
+			setProgressBar('85')
 		},
 
 
@@ -450,10 +441,6 @@ var defaultMessage = $('#message').html(),
 			}]);
 			chart.revert();
 			chart.unselect();
-
-
-
-
 
 		},
 
@@ -483,16 +470,45 @@ var defaultMessage = $('#message').html(),
 
 
 
-			setProgressBar('92')
+			setProgressBar('90')
 		},
+
+
+
+		function () {
+			setMessage('Gov releases Solidarity Budget 2020');
+			setMessagedisplay('Gov releases Solidarity Budget 2020');
+			chart.focus('Cases');
+			chart.select(['Cases'], [74]);
+			chart.xgrids([{
+				value: '2020-4-6',
+				text: '6 Apr',
+				class:'hoge'
+			}]);
+			
+			chart.ygrids([{
+				value: 1375,
+				text: '1,375 cases'
+			}]);
+			setProgressBar('95')
+		},
+
+
 
 
 		
 		function () {
+			chart.revert();
+			chart.unselect();
 			chart.regions.add([{
 				axis: 'x',
 				start: '2020-4-7',
 				class: 'circuitbreaker',
+			}]);
+
+			chart.ygrids.remove([{
+				value: 683,
+				text: '1,375 cases'
 			}]);
 
 			chart.xgrids([{
@@ -501,7 +517,7 @@ var defaultMessage = $('#message').html(),
 				class:'hoge'
 			}]);
 			setMessage('Stricter measures in-place: Circuit Breaker');
-			setProgressBar('92')
+			setProgressBar('100')
 		},
 
 

@@ -409,3 +409,24 @@ span#titletext {
 h3#cbtext {
   text-align: left;
 }
+
+
+@media (max-width: 992px) {
+
+
+  div#demoMessage {
+    font-size: 0.6rem !important;
+    padding: 10px !important;
+  }
+
+
+  div#message {
+    margin-top: 100px;
+  }
+
+  g.c3-axis.c3-axis-x {
+    font-size: 0.6em !important;
+  }
+
+
+}
