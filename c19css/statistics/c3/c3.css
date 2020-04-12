@@ -6,6 +6,17 @@
 
 
   .c3-region.test {
+    fill: yellow;
+  }
+
+
+
+  .c3-region.empty {
+    fill: none;
+  }
+
+
+  .c3-region.circuitbreaker {
     fill: red;
   }
 
