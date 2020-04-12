@@ -267,6 +267,7 @@ var defaultMessage = $('#message').html(),
 
 
 
+
 		function () {
 
 
@@ -301,6 +302,9 @@ var defaultMessage = $('#message').html(),
 				text: '432 cases'
 			}]);
 
+			setMessage('Adding #deaths as bar chart...');
+			setMessagedisplay('Adding #deaths as bar chart...');
+
 
 			chart.unload({
 				ids: 'Discharged'
@@ -317,6 +321,9 @@ var defaultMessage = $('#message').html(),
 
 
 		function () {
+
+			setMessage('Back to full charts...');
+			setMessagedisplay('Back to full charts...');
 
 			
 			chart.load({
@@ -507,7 +514,7 @@ var defaultMessage = $('#message').html(),
 			}]);
 
 			chart.ygrids.remove([{
-				value: 683,
+				value: 1375,
 				text: '1,375 cases'
 			}]);
 
