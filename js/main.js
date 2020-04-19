@@ -32,7 +32,7 @@ $(window).on('load', function() {
 	/* -----------------------------------
 				1. Preloader
 	----------------------------------- */
-	$("#preloader").delay(1000).addClass('loaded');
+	$("#preloader").delay(4000).addClass('loaded');
 	
 	/* -----------------------------------
 			  2. Sound Setup
