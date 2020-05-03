@@ -36,7 +36,7 @@ $(window).on('load', function() {
 
     setTimeout(function() {
 		$("#preloader").delay(1).addClass('loaded'); 
-  }, 3);
+  }, 3000000000000000000000000);
   
  
 	/* -----------------------------------
