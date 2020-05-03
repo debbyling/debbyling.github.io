@@ -34,10 +34,9 @@ $(window).on('load', function() {
     ----------------------------------- */
     
 
-    setTimeout(function() {
-		$("#preloader").delay(1000000000000000000000000000000000).addClass('loaded'); 
-  }, 3);
-  
+
+		$("#preloader").delay(1000).addClass('loaded'); 
+
  
 	/* -----------------------------------
 			  2. Sound Setup
