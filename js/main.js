@@ -49,7 +49,7 @@ $(window).on('load', function() {
         
         setTimeout(function(){
             $('#preloader').addClass('loaded');
-        }, 1500); 
+        }, 500); 
 
 
  
