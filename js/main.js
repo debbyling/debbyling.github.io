@@ -40,9 +40,17 @@ $(window).on('load', function() {
 
 
 
+
+        document.getElementsByTagName("html")[0].style.display = "initial";
+
+   
+
+
+        
         setTimeout(function(){
             $('#preloader').addClass('loaded');
-        }, 1500);
+        }, 1500); 
+
 
  
 	/* -----------------------------------
