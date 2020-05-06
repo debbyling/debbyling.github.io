@@ -2672,8 +2672,8 @@ blockquote:before,
 			border-radius: 50%;
 	border: 3px solid #fff;
 	border-top-color: #0e0f10;
-	-webkit-animation: spinner 1s infinite linear;
-			animation: spinner 1s infinite linear;
+	-webkit-animation: spinner 1.5s infinite linear;
+			animation: spinner 1.5s infinite linear;
 }
 
 #preloader.loaded .left-side {

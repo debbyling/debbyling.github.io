@@ -2622,8 +2622,8 @@ blockquote:before,
 	width: 50%;
     height: 100%;
 	background: #fff;
-    -webkit-transition: all .7s ease-in-out;
-			transition: all .7s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
 }
 
 /* ---------------------------------

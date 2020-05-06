@@ -35,7 +35,14 @@ $(window).on('load', function() {
     
 
 
-		$("#preloader").delay(1000).addClass('loaded'); 
+      /*  $("#preloader").delay(10000000000000000000000000000000).addClass('loaded'); */
+        
+
+
+
+        setTimeout(function(){
+            $('#preloader').addClass('loaded');
+        }, 1500);
 
  
 	/* -----------------------------------
