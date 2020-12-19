@@ -35,8 +35,6 @@ html {
 }
 
 
-
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -121,6 +119,9 @@ p {
   color: #2c3e50;
 }
 
+h4 {
+	line-height: 18px !important;
+}
 
 
 /* -----------------------------------
@@ -132,7 +133,7 @@ p {
 * {
 	margin: 0;
 	padding: 0;
-	font-family: inherit;
+	font-family: 'Open Sans', sans-serif;
 	outline: none !important;
 	list-style: none !important;
 	text-decoration: none !important;
@@ -3029,7 +3030,7 @@ blockquote:before,
 				transform: rotate(0deg);
 	}
 	to {
-		-webkit-transform: rotate(360deg);
+		-webkit-transform: rotate(180deg);
 				transform: rotate(360deg);
 	}
 }
