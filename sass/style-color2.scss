@@ -1,0 +1,14 @@
+
+@import "variables";
+$titleFont : "Gilroy", "Poppins","Montserrat";
+
+.display-title{
+    font-family: $titleFont;
+}
+.title-font{
+    font-family: $titleFont;
+}
+
+.navbar-top-alpha .navbar-mainmenu .nav-item{
+    font-family: $titleFont;
+}

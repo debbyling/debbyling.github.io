@@ -1,0 +1,201 @@
+/*
+ * Layout position
+ */
+
+
+/* Flexbox centered elements */
+
+.center-vh {
+    /* width needed for Firefox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dir-col{
+    flex-direction: column;
+}
+
+.center-v {
+    display: flex;
+    align-items: center;
+}
+
+.center-lg-v {
+    @media (min-width: $large-up) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.center-h {
+    /* width needed for Firefox */
+    display: flex;
+    justify-content: center;
+}
+.end-h{
+    justify-content: flex-end;
+}
+.start-h{
+    justify-content: flex-start;
+}
+
+/* Table block centered elements */
+
+.table {
+    display: table;
+    height: inherit;
+    margin: auto;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+.mt-80{
+    margin-top: 20px;
+    @media screen and (min-width: $medium-up) {
+        margin-top: 80px;
+    }
+}
+
+/*
+ *Layout size
+  */
+
+.fullscreen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.fullscreen-md {
+    @media (min-width: $small-up) {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+.fullscreen-lg {
+    @media (min-width: $medium-up) {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+.fullscreen-position {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fullheight {
+    min-height: 100vh;
+}
+.fullheight-sm-only {
+    @media (max-width: ($medium-up - 1px)) {
+        min-height: 100vh;
+    }
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.plr-sm-4{
+    @media (max-width: ($medium-up - 1px)) {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+.plr-sm-8{
+    @media (max-width: ($medium-up - 1px)) {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+.row-mlr-sm-4{
+    @media (max-width: ($medium-up - 1px)) {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+}
+.row-mlr-sm-8{
+    @media (max-width: ($medium-up - 1px)) {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+.mb-sm-2{
+    @media (max-width: ($medium-up - 1px)) {
+        margin-bottom: 8px !important;
+    }
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.hidden-sm {
+    @media (max-width: ($small-up - 1px)) {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+.hidden-md {
+    @media (max-width: ($small-up - 1px)) {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
+.text-lg-left{
+    @media (min-width: $large-up) {
+        text-align: left;
+    }
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}

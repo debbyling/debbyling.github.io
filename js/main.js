@@ -1,287 +1,433 @@
-/* -----------------------------------------------
-					Js Main
---------------------------------------------------
+'use strict';
+// var mainDocument = $(document);
 
-    Template Name: Baha - Personal Portfolio Template
-    Author: Malyarchuk
-    Copyright: 2019
+// init foundation
+// $(document).foundation();
 
---------------------------------------------------
+// Init all plugin when document is ready 
+$(document).on('ready', function () {
+	// 0. Init console to avoid error
+	var method;
+	var noop = function () { };
+	var methods = [
+		'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+		'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+		'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+		'timeStamp', 'trace', 'warn'
+	];
+	var length = methods.length;
+	var console = (window.console = window.console || {});
+	var contextWindow = $(window);
+	var $root = $('html, body');
+	while (length--) {
+		method = methods[length];
+		// Only stub undefined methods.
+		if (!console[method]) {
+			console[method] = noop;
+		}
+	}
 
-Table of Content
+	// 1. Background image as data attribut 
+	var list = $('.bg-img');
+	for (var i = 0; i < list.length; i++) {
+		var src = list[i].getAttribute('data-image-src');
+		list[i].style.backgroundImage = "url('" + src + "')";
+		list[i].style.backgroundRepeat = "no-repeat";
+		list[i].style.backgroundPosition = "center";
+		list[i].style.backgroundSize = "cover";
+	}
+	// Image block to Background image 
+	var listImgBlock = $('.img-block');
+	for (var i = 0; i < listImgBlock.length; i++) {
+		var src = listImgBlock[i].getAttribute('src');
+		var divBlock = document.createElement("div");
+		divBlock.setAttribute("class", "img");
+		divBlock.style.backgroundImage = "url('" + src + "')";
+		divBlock.style.backgroundRepeat = "no-repeat";
+		divBlock.style.backgroundPosition = "center";
+		divBlock.style.backgroundSize = "cover";
+		$(listImgBlock[i]).after(divBlock);
+		listImgBlock[i].style.display = "none";
+	}
+	// Background color as data attribut
+	var listColor = $('.bg-color');
+	for (var i = 0; i < listColor.length; i++) {
+		var src = listColor[i].getAttribute('data-bgcolor');
+		listColor[i].style.backgroundColor = src;
+	}
 
-	1. Preloader
-	2. Sound Start
-	3. Isotope Portfolio Setup
-	4. Blogs Masonry Setup
-	5. Active Current Link
-	6. Mobile Toggle Click Setup
-	7. Testimonials OwlCarousel
-	8. Chart Setup
-	9. Portfolio Tilt Setup
-	10. Portfolio Image Link
-	11. Portfolio Video Link
-	12. Blog Video Link
-	13. Validate Contact Form
-	14. Google Map
-
------------------------------------ */
-
-$(window).on('load', function() {
-		
-	/* -----------------------------------
-				1. Preloader
-    ----------------------------------- */
-    
-
-
-      /*  $("#preloader").delay(10000000000000000000000000000000).addClass('loaded'); */
-        
-
-
-
-
-        document.getElementsByTagName("html")[0].style.display = "initial";
-
-   
-
-
-        
-        setTimeout(function(){
-            $('#preloader').addClass('loaded');
-        }, 10); 
-
-
- 
-	/* -----------------------------------
-			  2. Sound Setup
-	----------------------------------- */
-	$('body').append('<audio loop autoplay volume="0" id="audio-player"><source src="music.mp3" type="audio/mpeg"></audio>');
-    	var audio = document.getElementById("audio-player");
-    	audio.volume = 0.2;
-	
-	if($(window).length) {
-		$('.music-bg').css({'visibility':'visible'});
-		$('body').addClass("audio-on");
-		if ($('body').hasClass('audio-off')) {
-        	$('body').removeClass('audio-on');
-		} 
-		$(".music-bg").on('click', function() {
-			$('body').toggleClass("audio-on audio-off");         
-			if ($('body').hasClass('audio-off')) {
-				audio.pause();
-			} 
-			if ($('body').hasClass('audio-on')) {
-				audio.play();
-			}
+	// 2. Init Coutdown clock
+	try {
+		// check if clock is initialised
+		$('.clock-countdown').downCount({
+			date: $('.site-config').attr('data-date'),
+			offset: +10
 		});
 	}
-	
-	/* -----------------------------------
-			3. Isotope Portfolio Setup
-	----------------------------------- */
-    if( $('.portfolio-items').length ) {
-        var $elements = $(".portfolio-items"),
-            $filters = $('.portfolio-filter ul li');
-        $elements.isotope();
+	catch (error) {
+		// Clock error : clock is unavailable
+		console.log("clock disabled/unavailable");
+	}
 
-        $filters.on('click', function(){
-            $filters.removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).data('filter');
-            $(".portfolio-items").isotope({
-                filter: selector,
-                hiddenStyle: {
-                    transform: 'scale(.2) skew(30deg)',
-                    opacity: 0
-                },
-                visibleStyle: {
-                    transform: 'scale(1) skew(0deg)',
-                    opacity: 1,
-                },
-                transitionDuration: '.5s'
-            });
-        });
-    }
+	// 3. Show/hide menu when icon is clicked
+	var menuItems = $('.all-menu-wrapper .nav-link');
+	var menuToggler = $('.navbar-toggler');
+	var menuBlock = $('.all-menu-wrapper');
+	var reactToMenu = $ ('.page-main, .navbar-sidebar, .page-cover')
+	var menuLinks = $(".navbar-mainmenu a, .navbar-sidebar a");
+	// Menu icon clicked
+	menuToggler.on('click', function () {
+		menuToggler.toggleClass('menu-visible');
+		menuBlock.toggleClass('menu-visible');
+		menuItems.toggleClass('menu-visible');
+		reactToMenu.toggleClass('menu-visible');
+		return false;
+	});
+
+	// Hide menu after a menu item clicked
+	menuLinks.on('click', function () {
+		menuToggler.removeClass('menu-visible');
+		menuBlock.removeClass('menu-visible');
+		menuItems.removeClass('menu-visible');
+		reactToMenu.removeClass('menu-visible');
+		return true;
+	});
+
+	// 4 Carousel Slider
 	
-	/* -----------------------------------
-			4. Blogs Masonry Setup
-	----------------------------------- */
-    $('.blog-masonry').isotope({ layoutMode: 'moduloColumns' });
+	// 4.a carousel-alpha demo
+	$('.carousel-slick-alpha-demo').slick({
+		dots: true
+	});
+
+	// carousel-fullscreen : fullscreen projects slider
+	new Swiper('.carousel-swiper-fullscreen-demo .swiper-container', {
+		pagination: '.carousel-swiper-fullscreen-demo .items-pagination',
+		paginationClickable: '.carousel-fullscreen-demo .items-pagination',
+		nextButton: '.carousel-swiper-fullscreen-demo .items-button-next',
+		prevButton: '.carousel-swiper-fullscreen-demo .items-button-prev',
+		loop: true,
+		grabCursor: true,
+		centeredSlides: false,
+		autoplay: 5000,
+		autoplayDisableOnInteraction: false,
+		slidesPerView: 2,
+		spaceBetween: 16,
+		effect: 'slide',
+		breakpoints: {
+			440: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			}
+		}
+	});
+	// carousel-beta :projects list slider
+	new Swiper('.carousel-swiper-beta-demo .swiper-container', {
+		pagination: '.carousel-swiper-beta-demo .items-pagination',
+		paginationClickable: '.carousel-beta-demo .items-pagination',
+		nextButton: '.carousel-swiper-beta-demo .items-button-next',
+		prevButton: '.carousel-swiper-beta-demo .items-button-prev',
+		loop: true,
+		grabCursor: true,
+		centeredSlides: false,
+		autoplay: 5000,
+		autoplayDisableOnInteraction: false,
+		slidesPerView: 2,
+		spaceBetween: 0,
+		breakpoints: {
+			1024: {
+				slidesPerView: 2,
+			},
+			800: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			640: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			440: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			}
+		}
+	});
 	
+	// 4.1 Slideshow slider
+	var imageList = $('.slide-show .img');
+	var imageSlides = [];
+	for (var i = 0; i < imageList.length; i++) {
+		var src = imageList[i].getAttribute('data-src');
+		imageSlides.push({ src: src });
+	}
+	$('.slide-show').vegas({
+		delay: 5000,
+		shuffle: true,
+		slides: imageSlides,
+		animation: ['kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight']
+	});
+	
+	// 5. Init video background
+	var videoBg = $('.video-container video, .video-container object');
+
+	// 6. Prepare content for animation
+	$('.section .content .anim.anim-wrapped').wrap("<span class='anim-wrapper'></span>");
+
+	// 7. Init fullPage.js plugin
+	var pageSectionDivs = $('.page-fullpage .section');
+	var headerLogo = $('.header-top .logo');
+	var bodySelector = $('body');
+	var sectionSelector = $('.section');
+	var headerContainer = $('.hh-header');
+	var slideElem = $('.slide');
+	var arrowElem = $('.p-footer .arrow-d');
+	var siteFooter = $('.page-footer');
+	var siteHeader = $('.navbar-top-alpha');
+	var siteHeaderFooter = $('.navbar-top-alpha,.page-footer,.section-footer');
+	var pageElem = $('.section');
+	var pageSections = [];
+	var pageAnchors = [];
+	var nextSectionDOM;
+	var nextSection;
+	var fpnavItem;
+	var mainPage = $('#mainpage');
+	var galleryPage = $('#gallerypage');
+	var sendEmailForm = $('.send_email_form');
+	var sendMessageForm = $('.send_message_form');
+	var scrollOverflow = true;
+	var css3 = true;
+	// disable scroll overflow on small device
+	if (contextWindow.width() < 601) {
+		scrollOverflow = false;
+		css3 = false;
+	}
+	if (contextWindow.height() < 480) {
+		scrollOverflow = false;
+		css3 = false;
+	}
+	// Get sections name
+	for (var i = 0; i < pageSectionDivs.length; i++) {
+		pageSections.push(pageSectionDivs[i]);
+	}
+	window.asyncEach(pageSections, function (pageSection, cb) {
+		var anchor = pageSection.getAttribute('data-section');
+		pageAnchors.push(anchor + "");
+		cb();
+	}, function (err) {
+		// Init plugin
+		if (mainPage.width()) {
+			// config fullpage.js
+			mainPage.fullpage({
+				menu: '#qmenu',
+				anchors: pageAnchors,
+				verticalCentered: false,
+				css3: css3,
+				navigation: true,
+				responsiveWidth: 1024,
+				responsiveHeight: 480,
+				scrollOverflow: true,
+				// scrollOverflow: scrollOverflow,
+				scrollOverflowOptions: {
+					// scrollbars: false,
+					click: false,
+					submit: true,
+				},
+				normalScrollElements: '.section .scrollable',
+				afterRender: function () {
+					// init parallax 
+					var parallaxCover = document.getElementById('parallax-cover')
+					if (parallaxCover) {
+						if (contextWindow.width() > 1024) {
+							var parallaxInstance = new Parallax(parallaxCover);
+						}
+					}
+
+					// init sliders
+					
+					// carousel-alpha : team about us
+					new Swiper('.carousel-swiper-alpha-demo .swiper-container', {
+						pagination: '.carousel-swiper-alpha-demo .items-pagination',
+						paginationClickable: '.carousel-alpha-demo .items-pagination',
+						nextButton: '.carousel-swiper-alpha-demo .items-button-next',
+						prevButton: '.carousel-swiper-alpha-demo .items-button-prev',
+						loop: true,
+						grabCursor: true,
+						centeredSlides: false,
+						autoplay: 5000,
+						autoplayDisableOnInteraction: false,
+						slidesPerView: 2,
+						spaceBetween: 16,
+						effect: 'slide',
+						breakpoints: {
+							440: {
+								slidesPerView: 1,
+								spaceBetween: 0
+							}
+						}
+					});
+
+					
+					// Fix video background
+					videoBg.maximage('maxcover');
+
+					// Fix for internet explorer : adjust content height
+					// Detect IE 6-11
+					var isIE = /*@cc_on!@*/false || !!document.documentMode;
+					if (isIE) {
+						var contentColumns = $('.section .content .c-columns');
+						contentColumns.height(contextWindow.height())
+						for (var i = 0; i < contentColumns.length; i++) {
+							if (contentColumns[i].height <= contextWindow.height()) {
+								contentColumns[i].style.height = "100vh";
+							}
+						}
+					}
+
+					// init contact form
+					// Default server url
+					var newsletterServerUrl = './ajaxserver/serverfile.php';
+					var messageServerUrl = './ajaxserver/serverfile.php';
+
+					// Use form define action attribute
+					if (sendEmailForm.attr('action') && (sendEmailForm.attr('action')) != '') {
+						newsletterServerUrl = sendEmailForm.attr('action');
+					}
+					if (sendMessageForm.attr('action') && (sendMessageForm.attr('action') != '')) {
+						messageServerUrl = sendMessageForm.attr('action');
+					}
+
+					sendEmailForm.initForm({
+						serverUrl: newsletterServerUrl,
+					});
+					sendMessageForm.initForm({
+						serverUrl: messageServerUrl,
+					});
+
+				},
+				afterResize: function () {
+					var pluginContainer = $(this);
+					$.fn.fullpage.reBuild();
+					// uncomment below to force reload windows on screen resize
+					if (contextWindow.width() > 1023) {
+						location.reload();
+					}
+				},
+				onLeave: function (index, nextIndex, direction) {
+					// Behavior when a full page is leaved
+					arrowElem.addClass('gone');
+					pageElem.addClass('transition');
+					slideElem.removeClass('transition');
+					pageElem.removeClass('transition');
+				},
+				afterLoad: function (anchorLink, index) {
+					// Behavior after a full page is loaded
+					var pageCover = $('.page-cover');
+					if (index > 1 ){
+						if (!pageCover.hasClass('scrolled')) {
+							pageCover.addClass('scrolled');
+						}
+						if (!siteHeader.hasClass('fp-scrolled')) {
+							siteHeader.addClass('fp-scrolled');
+						}
+						if (!siteFooter.hasClass('fp-scrolled')) {
+							siteFooter.addClass('fp-scrolled');
+						}
+					}  else {
+						pageCover.removeClass('scrolled');
+						siteHeader.removeClass('fp-scrolled');
+						siteFooter.removeClass('fp-scrolled');
+					}
+					var activeSection = $('.section.active');
+					var fpNav = $('#fp-nav');
+					if (!activeSection.hasClass('section-anim')) {
+						// uncomment below for onetime animation
+						activeSection.addClass('section-anim');
+					} 
+					if (activeSection.hasClass('section-text-bright')) {
+						// uncomment below for onetime animation
+						siteHeaderFooter.addClass('text-bright');
+						fpNav.addClass('text-bright');
+					} else {
+						siteHeaderFooter.removeClass('text-bright');
+						fpNav.removeClass('text-bright');
+					}
+					if (activeSection.hasClass('section-text-dark')) {
+						// uncomment below for onetime animation
+						siteHeaderFooter.addClass('text-dark');
+						fpNav.addClass('text-dark');
+					} else {
+						siteHeaderFooter.removeClass('text-dark');
+						fpNav.removeClass('text-dark');
+					}
+					// hide or show clock
+					if (activeSection.hasClass('hide-clock')) {
+						headerContainer.addClass('gone');
+					} else {
+						headerContainer.removeClass('gone');
+					}
+				}
+			});
+		}
+	});
+	// Scroll to fullPage.js next/previous section
+	$('.scrolldown .down, .scroll.down').on('click', function () {
+		try {
+			// fullpage scroll
+			$.fn.fullpage.moveSectionDown();
+		} catch (error) {
+			// normal scroll
+			$root.animate({
+				scrollTop: window.innerHeight
+			}, 400, function () {
+			});
+		}
+
+	});
+	// Scroll to fullPage.js next/previous section
+	$('.scrolldown .up, .scroll.up').on('click', function () {
+		try {
+			// fullpage scroll
+			$.fn.fullpage.moveSectionUp();
+		} catch (error) {
+			// normal scroll
+			$root.animate({
+				scrollTop: window.innerHeight
+			}, 400, function () {
+			});
+		}
+
+	});
+
+	// 8. Hide some ui on scroll
+	var scrollHeight = $(document).height() - contextWindow.height();
+	contextWindow.on('scroll', function () {
+		var scrollpos = $(this).scrollTop();
+		var siteHeaderFooter = $('.page-footer, .page-header');
+
+		// if (scrollpos > 10 && scrollpos < scrollHeight - 100) {
+		if (scrollpos > 100) {
+			siteHeaderFooter.addClass("scrolled");
+		}
+		else {
+			siteHeaderFooter.removeClass("scrolled");
+		}
+	});
+
+
+	// 9. Page Loader : hide loader when all are loaded
+	contextWindow.on('load', function () {
+		$('#page-loader').addClass('p-hidden');
+		$('.section').addClass('anim');
+	});
+
+	// 10. cursor position
+	var shadowBall = $(".cursor-ball");
+	$(".body-page").mousemove(function(e) {
+		shadowBall.css("transform", "translateX(" + e.pageX + "px)");
+		// shadowBall.css("transform", "translate(" + e.pageX + "px," + e.pageY +"px)");
+		// shadowBall.posx.value = e.pageX;
+		// shadowBall.posy.value = e.pageY;
+	});
+
 });
 
-$(document).ready(function() {
-    "use strict";
-	
-	/* -----------------------------------
-			5. Active Current Link
-	----------------------------------- */
-    $('.header-main ul li a').on('click',function() {
-        if($('.header-main.on').length) {
-            $('.header-main').removeClass('on');
-        }
-    });
-	
-	/* -----------------------------------
-		6. Mobile Toggle Click Setup
-	----------------------------------- */
-    $('.header-toggle').on('click', function() {
-        $('.header-main').toggleClass('on');
-    });
-	
-	/* -----------------------------------
-	      7. Testimonials OwlCarousel
-	----------------------------------- */
-	$(".testimonial .owl-carousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        autoplay: true,
-        smartSpeed: 500,
-        responsiveClass: true,
-        dots: false,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            800: {
-                items: 1,
-            },
-            1000: {
-                items: 2,
-            },
-        },
-    });
-	
-	/* -----------------------------------
-	      	8. Chart Setup
-	----------------------------------- */
-	if ($('.chart').length > 0) {
-	    $('.chart').easyPieChart({
-          trackColor:'#0e0f10',
-	      scaleColor:false,
-	      easing: 'easeOutBounce',
-	      scaleLength: 4,
-	      lineCap: 'square',
-	      lineWidth:5,
-	      size:130,
-	      animate: {
-	                duration: 2500,
-	                enabled: true
-	    	}
-	 	});
-	 }
-	
-	/* -----------------------------------
-	      	9. Portfolio Tilt Setup
-	----------------------------------- */
-    $('.pt-portfolio .portfolio-items .item figure').tilt({
-        maxTilt: 3,
-        glare: true,
-        maxGlare: .6,
-        reverse: true
-    });
-	
-	/* -----------------------------------
-	      10. Portfolio Image Link
-	----------------------------------- */
-	$(".portfolio-items .image-link").magnificPopup({
-		type: "image"
-	});
-	
-	/* -----------------------------------
-	      11. Portfolio Video Link
-	----------------------------------- */
-	$(".portfolio-items .video-link").magnificPopup({
-		type: "iframe"
-	});
-	
-	/* -----------------------------------
-	      12. Blog Video Link
-	----------------------------------- */
-	$(".pt-blog .blog-item .thumbnail .btn-play").magnificPopup({
-		type: "iframe"
-	});
-	
-	/* -----------------------------------
-	    13. Validate Contact Form
-	----------------------------------- */
-	if ($("#contact-form").length) {
-        $("#contact-form").validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-
-                email: "required",
-				
-            },
-
-            messages: {
-                name: "Please enter your name",
-                email: "Please enter your email address"
-            },
-
-            submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 3000);
-                    }
-                });
-                return false;
-            }
-
-        });
-    }
-	
-	/* Google Map Setup */
-    if($('#map').length) {
-        initMap();
-     };
-
-});
-
-/* -----------------------------------
-  		14. Google Map
------------------------------------ */
-function initMap() {
-    var latitude = $("#map").data('latitude'),
-        longitude = $("#map").data('longitude'),
-        zoom = $("#map").data('zoom'),
-        cordinates = new google.maps.LatLng(latitude, longitude);
-
-    var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-	
-        var mapOptions = {
-        zoom: zoom,
-        center: cordinates,
-        mapTypeControl: false,
-        disableDefaultUI: true,
-        zoomControl: true,
-        scrollwheel: false,
-        styles: styles
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    var marker = new google.maps.Marker({
-        position: cordinates,
-        map: map,
-        title: "We are here!"
-    });
-}

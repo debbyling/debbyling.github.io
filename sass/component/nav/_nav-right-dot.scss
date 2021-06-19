@@ -1,0 +1,81 @@
+#fp-nav{
+	@media screen and (max-width: 1024px) {
+		visibility: hidden;
+	}
+}
+// Dot navigation at right
+#fp-nav.right{
+    right: 14px;
+    margin-right: 0px;
+	position: absolute;
+}
+#fp-nav span, .fp-slidesNav span{
+    border-color: #fff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	width: 10px;
+	height: 10px;
+}
+#fp-nav ul li a span{
+	background: #fff;
+}
+#fp-nav li, .fp-slidesNav li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 16px;
+    position: relative;
+}
+	#fp-nav span:after, .fp-slidesNav span:after{	
+		display: none;
+	}
+#fp-nav li .active span, .fp-slidesNav .active span{
+    background: #fff;
+	position: absolute;
+}
+	$border-margin: -4px;
+	
+#fp-nav ul li a.active span,
+ #fp-nav ul li:hover a.active span, 
+ .fp-slidesNav ul li a.active span, 
+ .fp-slidesNav ul li:hover a.active span {
+    height: 16px;
+    width: 2px;
+	margin-top: -8px;
+	margin-left: -1px;
+    border-radius: 0%;
+}
+#fp-nav ul li a{
+	opacity: 0.2;
+	&:hover{
+		opacity: 0.6;
+	}
+	&.active,
+	&.active:hover{
+		opacity: 1;
+	}
+}
+body.left-light{
+
+}
+
+// text-dark-setion color
+#fp-nav.text-dark ul li a span{
+    background: rgba($black, 1);
+}
+#fp-nav.text-dark li .active span, .fp-slidesNav .active span{
+    background: rgba($black, 1);
+}
+#fp-nav.text-dark span:after, .fp-slidesNav span:after{
+    background: rgba($black, 0.2);
+}
+// text-bright-setion
+#fp-nav.text-bright ul li a span{
+    background: rgba($white, 1);
+}
+#fp-nav.text-bright li .active span, .fp-slidesNav .active span{
+    background: rgba($white, 1);
+}
+#fp-nav.text-bright span:after, .fp-slidesNav span:after{
+    background: rgba($white, 0.5);
+}
