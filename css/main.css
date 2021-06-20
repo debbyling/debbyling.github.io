@@ -41,6 +41,13 @@ http://miradontsoa.com
 	font-family :
 	-  sans-serif Segoe UI / Roboto / Open sans / Helvetica with fallback to system-ui fonts
 */
+
+
+.item.media.media-project {
+  margin:auto;
+}
+
+
 .text-black {
   color: #1d1d1d !important; }
 
