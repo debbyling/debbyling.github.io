@@ -1,0 +1,121 @@
+// scroll down
+.scrolldown{
+	position: absolute;
+    bottom: 0;
+	top: auto;
+	right: auto;
+	margin-bottom: 32px;
+	margin-left: -8px;
+	left: 40px;
+	font-family: $sans;
+	z-index: 2;
+	background: transparent;
+	@media (max-width:$medium-up){
+		display: none;
+    	// margin-bottom: 40px;
+	}
+	@media (min-width: $large-up) {
+		left: $margin-lr-xl;
+		margin-bottom: $margin-tb-xl;
+	}
+	@media (max-height: 408px) {
+		display: none;
+    }
+	@media (max-width: 1023px) {
+		display: none;
+	}
+	a.up,
+	a.down{
+		margin-left: 0;
+		position: relative;
+		display: block;
+		float: left;
+		height: 32px;
+		width: 32px;
+		// background: #f4f;
+		font-size: $text-small;
+        font-family: $sans;
+		line-height: 1.5;
+		padding: 0 0;
+		transition: 0.3s;
+		border: none;
+		&:before,
+		&:after{
+			position: absolute;
+			content: "";
+			left: 25%;
+			top: 16px;
+			height: 12px;
+			width: 12px;
+			transform:  rotate(-45deg);
+			border: 2px solid rgba($white, 1);
+			border-top: none;
+			border-right: none;
+			background: transparent;
+			transition: 0.3s;
+		}
+		&:before{
+			transform: translateY(-8px) rotate(-45deg);
+		}
+		&:hover{
+			color: $white;
+			.txt{
+				color: rgba($white,1);
+			}
+			&:after{
+				// bottom: 30px + 8px;
+				// border-color: $primary;
+			}
+			&:before{
+				// bottom: 30px + 8px;
+				border-color: $white;
+				transform: translateY(0px) rotate(-45deg);
+			}
+			&:after{
+			}
+		}
+	}
+	a.up{
+		margin-left: 20px;
+		&:after{
+			transform: translateY(8px) rotate(135deg);
+		}
+		&:before{
+			transform: rotate(135deg);
+		}
+		&:hover{
+			&:after{
+				transform: translateY(0px) rotate(135deg);
+			}
+			&:before{
+			transform: rotate(135deg);
+			}
+		}
+	}
+	.separator{
+		position: absolute;
+		display: block;
+		height: 24px;
+		width: 2px;
+		background: rgba(255,255,255,0.5);
+		top: 10px;
+		left: 40px;
+		transform: rotate(45deg);
+	}
+	
+}
+
+// animation
+.section{
+	.scrolldown{
+		transition: 0.6s;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.section.active{
+	.scrolldown{
+		opacity: 1;
+		visibility: visible;
+	}
+}

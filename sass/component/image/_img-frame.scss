@@ -1,0 +1,49 @@
+.img-frame{
+    position: relative;
+    @media (min-width: $medium-up) {
+        padding: 0;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &.portrait{
+        .img-1{
+            max-width: 320px;
+        }
+    }
+    .img-1{
+        width: 100%;
+        // max-width: 420px;
+        position: relative;
+        z-index: 0;
+        img{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.img-frame-a{
+    $frameMargin : 32px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: $frameMargin;
+    padding-bottom: $frameMargin;
+    z-index: 0;
+    &:before{
+        position: absolute;
+        content: "";
+        border: 8px solid rgba($white, 0.2);
+        top: $frameMargin;
+        left: $frameMargin;
+        right: 0;
+        bottom: 0;
+        transition: 0.3s;
+        z-index: -1;
+    }
+    img{
+        width: 100%;
+    }
+}

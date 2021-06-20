@@ -1,0 +1,123 @@
+// sidebar menu
+.navbar-sidebar{
+    font-weight: normal;
+    text-align: right;
+    display: none;
+    // @media (min-width: $medium-up) {
+    //     display: block;
+    //     position: fixed;
+    //     top: 72px;
+    //     left: auto;
+    //     right:40px;
+    // }
+    @media (min-width: $large-up) {
+        display: block;
+        position: fixed;
+        top: 104px;
+        left: auto;
+        right:40px;
+    }
+    
+    @media (min-width: $xlarge-up) {
+        right: $margin-lr-xl;
+    }
+    &.left{
+        @media (min-width: $medium-up) {
+            right: auto;
+            left: 48px;
+            &.center{
+                left: 8px;
+            }
+        }
+        @media (min-width: $xlarge-up) {
+            right: auto;
+            left: $margin-lr-xl;
+            &.center{
+                left: 40px;
+            }
+        }
+    }
+    &.center{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .nav-item{
+        opacity: 0.8;
+        transition: 0.6s;
+        // margin-bottom: 4px;
+        a{
+            text-decoration: none;
+            color: currentColor;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background: rgba($white, 0.2);
+            border: 2px solid rgba(white, 0.1);
+            color: $white;
+            // border-radius: 4px;
+            transition: 0.6s;
+            font-size: 1.25rem;
+            @media (min-width: $medium-up) {
+                width: 48px;
+                height: 48px;
+                // border-bottom: none;
+            }
+        }
+        &:not(:last-child){
+            .icon{
+                border-bottom:  none;
+            }
+        }
+        .txt{
+            display: inline-block;
+            margin-left: 0.5rem;
+            line-height: 1;
+            font-size: 1rem;
+            font-family: $sans;
+            @media (min-width: $medium-up) {
+                margin-left: 0.5rem;
+            }
+        }
+        &.active{
+            opacity: 1;
+            .icon{
+                // background: $white;
+                // color: rgba(black, 0.8);
+                border: 2px solid $white;
+            }
+            .txt{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            opacity: 1;
+            .icon{
+                background: $white;
+                color: rgba(black, 0.8);
+            }
+            .txt{
+                opacity: 1;
+            }
+        }
+    }
+    &.icon-only{
+        .txt{
+            @media (min-width: $medium-up) {
+                display: none;
+            }
+        }
+    }
+    &.text-only{
+        .icon{
+            display: none;
+        }
+        .txt{
+            margin-left: 0rem;
+        }
+    }
+}

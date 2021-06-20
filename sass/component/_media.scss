@@ -1,0 +1,193 @@
+.media{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $large-up) {
+        flex-direction: column;
+    }
+    &.img-left{
+        flex-direction: row;
+    }
+    .img > .icon{
+        font-size: 48px;
+        display: block;
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+    }
+    .img{
+        .title-icon{
+            font-size: 2.25rem;
+            font-weight: bold;
+            display: block;
+        }
+        img{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+    }
+    h4{
+        font-size: 1rem;
+    }
+}
+
+.media-article-title{
+    flex-direction: row;
+    @media (min-width: $large-up) {
+        flex-direction: row;
+    }
+    .media-image{
+        // flex: 0 0 auto;
+    }
+    .media-body{
+        // flex: 1 1 auto;
+        overflow: hidden;
+        .media-title{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.media-project{
+    position: relative;
+    // &:before{
+    //     content: "";
+    //     position: absolute;
+    //     height: 35%;
+    //     background-image : linear-gradient(#{"to top"}, rgba(black,0), rgba(black,0.65));
+    //     top: 8px;
+    //     left: 8px;
+    //     right: 8px;
+    //     z-index: 0;
+    // }
+    transition: 0.3s;
+    .media-img{
+        padding-right: 32px;
+        padding-bottom: 32px;
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 0;
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            transition: 0.2s;
+            top: 32px;
+            left: 32px;
+            right: 0;
+            bottom: 0;
+            border: 8px solid rgba($white,0.2);
+        }
+        
+        &:after{
+            content: "";
+            position: absolute;
+            background-image : linear-gradient(#{"to bottom"}, rgba(black,0.5) ,rgba(black,0), rgba(black,0.5));
+            top: 0;
+            left: 0;
+            bottom: 32px;
+            right: 32px;
+            z-index: 0;
+        }
+    }
+    .media-body{
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        z-index: 1;
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+        h4{
+            margin: 0;
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .price{
+            font-weight: bold;
+            font-size: 1rem;
+            color: $white;
+        }
+    }
+    .media-footer{
+        position: absolute;
+        bottom: 32px + 32px;
+        right: 32px+32px;
+        z-index: 1;
+    }
+    &:hover{
+        .media-img{
+            &:before{
+                top: 0;
+                left: 0;
+                right: 32px;
+                bottom: 32px;
+            }
+        }
+    }
+}
+
+
+.media-product{
+    position: relative;
+    transition: 0.3s;
+    .media-header{
+        h5,
+        .category{
+            font-size: 2.25rem;
+            font-weight: bold;
+            color: rgba(white,0.25)
+        }
+    }
+    .media-img{
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 0;
+        }
+    }
+    .media-body{ 
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        margin-top: 1rem;
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+        h4{
+            margin: 0;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        h3, .price{
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .price{
+            font-weight: 500;
+        }
+    }
+    .media-footer{
+        position: relative;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    &:hover{
+
+    }
+}
