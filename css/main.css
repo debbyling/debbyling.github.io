@@ -42,10 +42,23 @@ http://miradontsoa.com
 	-  sans-serif Segoe UI / Roboto / Open sans / Helvetica with fallback to system-ui fonts
 */
 
-
+/* 
 .item.media.media-project {
   margin:auto;
 }
+
+h3 {
+  font-size: 1.8vw !important;
+}
+
+
+@media (max-width: 768px) {
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+} */
 
 
 .text-black {

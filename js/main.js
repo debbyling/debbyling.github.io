@@ -27,6 +27,18 @@ $(document).on('ready', function () {
 		}
 	}
 
+	
+	window.onload = function(event) {
+		flexFont();
+	};
+	window.onresize = function(event) {
+		flexFont();
+	};
+
+
+
+
+
 	// 1. Background image as data attribut 
 	var list = $('.bg-img');
 	for (var i = 0; i < list.length; i++) {
@@ -481,4 +493,20 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+  
 }
+
+flexFont = function () {
+    var divs = document.getElementsByClassName("flexFont");
+    for(var i = 0; i < divs.length; i++) {
+        var relFontsize = divs[i].offsetWidth*0.05;
+        divs[i].style.fontSize = relFontsize+'px';
+    }
+};
+
+window.onload = function(event) {
+    flexFont();
+};
+window.onresize = function(event) {
+    flexFont();
+};
