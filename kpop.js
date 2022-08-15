@@ -144,7 +144,7 @@ d3.json(dataPath, function(error, graph) {
     .attr('class', 'node')
       
     node.append("title")
-      .text(d => d.name + '\nGroup: ' + d.aGroup + '\nCompany: ' + d.Company).style('font-size', '120%')
+      .text(d => d.name + '\nGroup: ' + d.aGroup + '\nCompany: ' + d.company).style('font-size', '120%')
       .style('font-size', '120%')
             
   function ticked() {
