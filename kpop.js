@@ -1,4 +1,8 @@
 // start svg
+
+
+
+
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -34,6 +38,7 @@ function dragged(d) {
   d.fx = d3.event.x;
   d.fy = d3.event.y;
 }
+
 
 function dragended(d) {
   if (!d3.event.active) simulation.alphaTarget(0);
@@ -79,12 +84,6 @@ function searchNodes() {
     .style('stroke-opacity', '0.6');
 }
 
-// add slider for edge thresholds
-var slider = d3.select('body')
-  .append('p')
-  .append('center')
-  .text('Minimum Twitter interactions for connection: ')
-  .style('font-size', '75%');
 
 // master Function
 d3.json(dataPath, function(error, graph) {
@@ -95,6 +94,7 @@ d3.json(dataPath, function(error, graph) {
     graph.links.forEach(function(d) {
     linkedByIndex[d.source + ',' + d.target] = 1;
     linkedByIndex[d.target + ',' + d.source] = 1;
+    console.log("linked",linkedByIndex[d.source] = 1);
   }  
   );
   
@@ -192,15 +192,17 @@ d3.json(dataPath, function(error, graph) {
   // On click, toggle ego networks for the selected node 
   .on('click', function(d) {
     if (toggle == 0) {
-      // Ternary operator restyles links and nodes if they are adjacent. 
+      // Ternary operator restyles links and nodes if they are adjacent.
       d3.selectAll('.link').style('stroke-opacity', function (l) {
         return l.target == d || l.source == d ? 1 : 0.1;
       });
       d3.selectAll('.node').style('opacity', function (n) {
         return neighboring(d, n) ? 1 : 0.1;
       });
-      // d3.select(this).style('opacity', 0.1);
-      // d3.select(this).style('stroke', 10);
+      d3.select(node.nodes()[d.index])
+        .style('opacity', '1')
+        .attr("fill", d => d.colour)
+
       toggle = 1;
     }
     else {
@@ -211,8 +213,6 @@ d3.json(dataPath, function(error, graph) {
     }
   })
   
-
-
 
   // call functions to drag nodes
   .call(d3.drag()

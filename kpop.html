@@ -2,17 +2,17 @@
   body {
     font-family: 'Cinzel', serif;
     color: #4A7729;
-    background-color: #ffffff;
+    background-color: #000;
   }
   
   .links line {
-    stroke: #999;
+    stroke: rgb(227, 17, 17);
     stroke-opacity: 0.6;
   }
   
   .nodes circle {
-    stroke: #fff;
-    stroke-width: 1.5px;
+    stroke: rgb(12, 11, 11);
+    stroke-width: 1500px;
   }
 
 
@@ -21,21 +21,28 @@
   }
 
   </style>
-  <body>
-    <div class="row">
-      <center>
-        <h1>
-          Kpop
-        </h1>
-      </center>
-    </div>
-    <div class="row">
-      <center>
-        <svg width="2000" height="800"></svg>
-      </center>
-      <script src="https://d3js.org/d3.v4.min.js"></script>
-      <script src="kpop.js"></script>
+  <!-- CSS only -->
+  <body class="bg-dark ">
+
+    <div class="p-3 mb-2 bg-dark text-white">
+        <div class="row">
+          <center>
+            <h1>
+              Network Analysis on Kpop Celebrities
+            </h1>
+          </center>
+        </div>
+        <div class="row">
+          <center>
+            <svg width="2000" height="800"></svg>
+          </center>
+
+        </div>
     </div>
 
   </body>
   <!-- CSS only -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="kpop.js"></script>
+<script src="pleaserotate.js"></script>
+
