@@ -1,11 +1,10 @@
 // start svg
 
 
-
-
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
-    height = +svg.attr("height");
+    height = +svg.attr("height")
+    
     
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink())
@@ -24,8 +23,21 @@ function zoomed() {
   );
 }
 
+
+
 // Call zoom for svg container.
-svg.call(d3.zoom().on('zoom', zoomed));
+// svg.call(d3.zoom().on('zoom', zoomed));
+
+// define a zoom behavior:
+var zoom = d3.zoom()
+  .on("zoom", zoomed);
+  
+
+svg.call(zoom)
+
+
+svg.call(zoom.transform,d3.zoomIdentity.scale(0.8).translate(0,10));
+
 
 // functions for dragging nodes on D3 drag events
 function dragstarted(d) {
@@ -58,7 +70,7 @@ var search = d3.select("body")
 var box = search.append('input')
   .attr('type', 'text')
   .attr('id', 'searchTerm')
-  .attr('placeholder', 'Type artist name to search...');
+  .attr('placeholder', 'Type artist\'s twitter handle to search...');
 
 var button = search.append('input')
   .attr('type', 'button')

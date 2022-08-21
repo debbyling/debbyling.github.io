@@ -16,6 +16,14 @@
   }
 
 
+  p {
+    font-size: 12px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
   .nodes title {
     font-weight:bold;
   }
@@ -27,7 +35,9 @@
       width: 400px;
   }
 
-
+  img {
+    width: 300px;
+  }
 
   #pleaserotate-container {
     font-size: 60px;
@@ -74,28 +84,34 @@
         <div class="col">
           <center>
             <h2 style="color:white">
-              Network Analysis on Kpop Celebrities
+              Network Analysis on K-pop Celebrities
             </h1>
-            <p style="color:white">A non-exhaustive list of Kpop Idols and their interactions on Twitter</p>
+            <p style="color:white">A non-exhaustive list of K-pop celebrities and their interactions on Twitter</p>
           </center>
             <div class="row">
               <center>
-                <svg width="700" height="500"></svg>
+                <svg width="800" height="550"></svg>
               </center> 
             </div>
         </div> 
         
       </div>
       <div class="col-4" style="background-color:lightgrey">
-        <h3>Features:</h3>
+        <br>
+        <h5>Summary:</h5>
+        <p>Understanding the network of a selected list of K-pop celebrities by examing how they interact on Twitter. Each node represents a K-pop celebrity, with the node color corresponding to the talent management company that they are signed under.</p>
+        <img src="explain-network.png">
+        <hr>
+        <h5>Features:</h5>
         <li>Hover over each node to see the Artist's name, group (if applicable), and company</li>
-        <li>Drag each node around to see the </li>
+        <li>Drag and drop each node around to better navigate around </li>
         <li>Zoom in and out of the network graph</li>
         <li>Search for a K-pop Artist by entering the artist's <i>Twitter Handle</i> in the search bar below </li>
         <hr>
-        <h3>References:</h3>
+        <h5>References:</h5>
         <li>Network Analysis: Handbook of Graphs and Networks in People Analytics by <a href="https://www.linkedin.com/in/keith-mcnulty/">Keith McNulty</a>. An online version of the book is available <a href="https://ona-book.org/index.html">here.</a></li>
         <li>List of Twitter Accounts of Kpop Artist: Scrapped from <a href="https://kpoplists.com/">Kpop(Lists) Website</a></li>
+        <li>pleaserotate.js: <a href="https://github.com/arscan/pleaserotate.js">Arscan</a></li>
       </div>
     </div>
   </div>

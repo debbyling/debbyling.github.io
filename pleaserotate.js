@@ -10,8 +10,8 @@
         onShow: function(){},
         forcePortrait: false,
         message: "Please Rotate Your Device",
-        subMessage: "(or click to continue)",
-        allowClickBypass: true,
+        subMessage: "The network graph is best viewed on landscape mode",
+        allowClickBypass: false,
         onlyMobile: true,
         zIndex: 1000,
         iconNode: null
