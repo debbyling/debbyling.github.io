@@ -17,11 +17,11 @@
 
 
   p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   li {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .nodes title {
@@ -36,7 +36,7 @@
   }
 
   img {
-    width: 300px;
+    width: 700px;
   }
 
   #pleaserotate-container {
@@ -69,6 +69,17 @@
         background-color: #000;
     }
 
+    .resp {
+  max-width: 100%;
+  height: auto;
+}
+
+.resp1 {
+  width: 100%;
+  height: auto;
+}
+
+
 
   </style>
   <!-- CSS only -->
@@ -76,11 +87,9 @@
 
 
 
-  <div class="container bg-dark" >
-
+  <div class="container bg-dark resp1" >
     <div class="row">
       <div class="col-8">
-      
         <div class="col">
           <center>
             <h2 style="color:white">
@@ -99,13 +108,15 @@
       <div class="col-4" style="background-color:lightgrey">
         <br>
         <h5>Summary:</h5>
-        <p>Understanding the network of a selected list of K-pop celebrities by examing how they interact on Twitter. Each node represents a K-pop celebrity, with the node color corresponding to the talent management company that they are signed under.</p>
-        <img src="explain-network.png">
+        <p>Understanding the network of a selected list of K-pop celebrities by examing how they interact on Twitter. 
+          Each node represents a K-pop celebrity, with the node color corresponding to the talent management company that they are signed under.</p>
+        <div><img src="explain-network.png" class="resp"></div>
+        
         <hr>
         <h5>Features:</h5>
         <li>Hover over each node to see the Artist's name, group (if applicable), and company</li>
-        <li>Drag and drop each node around to better navigate around </li>
-        <li>Zoom in and out of the network graph</li>
+        <li>Drag and drop / zoom in and zoom out of each node around to better navigate around </li>
+        <li>Click on each celebrity to see their immediate connections</li>
         <li>Search for a K-pop Artist by entering the artist's <i>Twitter Handle</i> in the search bar below </li>
         <hr>
         <h5>References:</h5>
