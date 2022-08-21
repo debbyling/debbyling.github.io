@@ -40,29 +40,111 @@
   }
 
 
+  .container {
+    padding-top: 20px
+  }
+
+
+  input#searchTerm {
+    width:300px
+  }
+
   </style>
   <!-- CSS only -->
-  <body class="bg-dark ">
+  <body class="bg-dark">
 
-    <div class="p-3 mb-2 bg-dark text-white">
-        <div class="row">
+
+    <!-- <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    
+<!-- 
+    <div class="container-fluid text-white">
+
+        <div class="col">
+          <div class="container">
+            <p>How to read:</p>
+            <p>How to read:</p>
+          </div>  
+        </div>
+
+
+
+        <div class="col">
           <center>
             <h1>
               Network Analysis on Kpop Celebrities
             </h1>
           </center>
+            <div class="row">
+              <center>
+                <svg width="1000" height="700"></svg>
+              </center> 
+            </div>
         </div>
-        <div class="row">
-          <center>
-            <svg width="2000" height="800"></svg>
-          </center>
+  </div> -->
 
-        </div>
+  <div class="container bg-dark" >
+
+    <div class="row">
+      <div class="col-8">
+      
+        <div class="col">
+          <center>
+            <h2 style="color:white">
+              Network Analysis on Kpop Celebrities
+            </h1>
+            <p style="color:white">A non-exhaustive list of Kpop Idols and their interactions on Twitter</p>
+          </center>
+            <div class="row">
+              <center>
+                <svg width="700" height="500"></svg>
+              </center> 
+            </div>
+        </div> 
+        
+      </div>
+      <div class="col-4" style="background-color:lightgrey">
+        <h3>Features:</h3>
+        <li>Hover over each node to see the Artist's name, group (if applicable), and company</li>
+        <li>Drag each node around to see the </li>
+        <li>Zoom in and out of the network graph</li>
+        <li>Search for a K-pop Artist by entering the artist's <i>Twitter Handle</i> in the search bar below </li>
+        <hr>
+        <h3>References:</h3>
+        <li>Network Analysis: Handbook of Graphs and Networks in People Analytics by <a href="https://www.linkedin.com/in/keith-mcnulty/">Keith McNulty</a>. An online version of the book is available <a href="https://ona-book.org/index.html">here.</a></li>
+        <li>List of Twitter Accounts of Kpop Artist: Scrapped from <a href="https://kpoplists.com/">Kpop(Lists) Website</a></li>
+      </div>
     </div>
+  </div>
+  
+
 
   </body>
   <!-- CSS only -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="kpop.js"></script>
-<script src="pleaserotate.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+<!-- <script src="pleaserotate.js"></script> -->
 
