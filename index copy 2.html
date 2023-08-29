@@ -1,0 +1,323 @@
+﻿<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>  
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG8MJ70B8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SG8MJ70B8B');
+  </script>
+    
+  <!-- Page Title Here -->
+  <title>Debby's Portfolio</title>
+
+  <!-- Meta -->
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
+
+  <meta name="description" content="Debby's Portfolio" />
+  <meta name="title" property="og:title" content="Debby's Portfolio" />
+  <meta property="og:type" content="Website" />
+  <meta name="image" property="og:image" content="https://raw.githubusercontent.com/debbyling/debbyling.github.io/master/img/portfoliopage.PNG" />
+  <meta name="description" property="og:description" content="Debby's Portfolio" /><meta name="author" content="Debby Ling" />
+  
+
+
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+  <!-- Web fonts and Web Icons -->
+  <link rel="stylesheet" href="./fonts/inter/stylesheet.css">
+  <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+  <link rel="stylesheet" href="./fonts/ionicons.min.css">
+  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link rel='icon' href='logo.png' type='image/x-icon'/ >
+
+
+  <!-- Vendor CSS style -->
+  <link rel="stylesheet" href="./css/pageloader.css">
+
+  <!-- Uncomment below to load individualy vendor CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./js/vendor/swiper.min.css">
+  <link rel="stylesheet" href="./js/vendor/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="./js/vegas/vegas.min.css">
+
+  <!-- Main CSS files -->
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/74b7de59c1.js" crossorigin="anonymous"></script>
+
+
+  <!-- add alt layout here -->
+  <link rel="stylesheet" href="./css/style-default.css">
+
+  <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+</head>
+
+<body id="menu" class="body-page">
+  <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <!-- Page Loader : just comment these lines to remove it -->
+  <div class="page-loader" id="page-loader">
+    <div>
+      <div class="icon ion-spin"></div>
+      <p>Loading</p>
+    </div>
+  </div>
+
+  <!-- BEGIN OF site header Menu -->
+  <header class="navbar navbar-top-alpha scrolled-white menu-right topmenu-right " role="navigation">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon btn btn-menu" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="text">Menu</span>
+      <span class="icon icon-menu icon-menu-a">
+        <span class="bars align-right">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="./#">
+      <span class="logo">
+        <img class="light-logo" src="img/logo.png" alt="Logo">
+      </span>
+    </a>
+    <!-- End of logo/brand -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+      <!-- Begin of top menu -->
+      <nav class="navbar-topmenu">
+        <!-- Begin of CTA Actions, & Icons menu -->
+        <!-- <ul class="navbar-nav navbar-nav-actions">
+				<li class="nav-item">
+					<a class="btn btn-outline-white btn-round" target="_blank" href="https://themeforest.net/user/mivfx/portfolio">
+						Buy Now
+					</a>
+				</li>
+			</ul> -->
+        <!-- End of CTA & Icons menu -->
+      </nav>
+      <!-- End of top menu -->
+
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu text-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+
+      <!-- Begin of sidebar nav menu params class: text-only / icon-only-->
+      <nav class="navbar-sidebar left center icon-only font-primary nav">
+        <ul class="navbar-nav" id="qmenu">
+          <li class="nav-item" data-menuanchor="home" data-tooltip="About" data-position="top">
+            <a href="#home">
+              <i class="icon ion-home"></i>
+              <span class="txt">About</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="work" data-tooltip="Experience" data-position="top">
+            <a href="#work">
+              <i class="icon ion-briefcase"></i>
+              <span class="txt">Experience</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="projects" data-tooltip="Projects" data-position="top">
+            <a href="#projects">
+              <i class="icon ion-aperture"></i>
+              <span class="txt">Projects</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="contact" data-tooltip="Contact" data-position="top">
+            <a href="#contact">
+              <i class="icon ion-android-call"></i>
+              <span class="txt">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of sidebar nav menu -->
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu-->
+  <!-- BEGIN OF page cover -->
+  <div class="page-cover" id="parallax-cover">
+    <!-- Cover Background -->
+    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="img/delegate.jpg"></div>
+
+    <!-- Transluscent mask as filter -->
+    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(0, 0, 0, 0.6)"></div>
+  </div>
+  <!--END OF page cover -->
+
+    <!-- KEEEP -->
+  
+
+    <!-- Begin of list feature section -->
+    <div class="section section-list-feature fp-auto-height-responsive img bg-img" data-section="services" data-image-src="img/items/road.jpg">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin margin-topbottom">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-lg-5 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title mb-4 anim-1">T-Shaped Individual</h2>
+                <p class="anim-2">I'm aspiring to be a generalist-specialist ("T-shaped") across 3 domains which are of great interest to me - Analytics, Consulting and Technology
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-12 col-lg-12">
+              <!-- service list -->
+              <div class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5">
+                <!-- an item -->
+                <div class="col item media">
+                  <div class="img">
+                    <h3 class="title-icon opacity-6">01 - The Base</h3>
+                  </div>
+                  <div class="media-body">
+                    <h4>Analytics</h4>
+                    <p>6+ years of experience extracting, transforming, cleaning and analysing data. I use a wide range of tools from Excel to Python, mostly self-taught.</p>
+                    
+                    <a class="btn btn-underline btn-primary" href="">
+                      <span class="text">Skills</span>
+                    </a>
+
+                    <p>Python, SPSS, SQL</p>
+
+                  </div>
+                </div>
+                <!-- an item -->
+                <div class="col item media">
+                  <div class="img">
+                    <h3 class="title-icon opacity-6">02 - The Vertical</h3>
+                  </div>
+                  <div class="media-body">
+                    <h4>Consulting</h4>
+                    <p>I believe a data narrative is only as good as how well you're able to <i>communicate</i> it. I've spent 2+ years in client relationship builing roles.</p>
+                    
+                    <a class="btn btn-underline btn-primary" href="">
+                      <span class="text">Techniques</span>
+                    </a>
+
+                    <p>Workshopping, Focus Group Moderation, Figma</p>
+
+                  </div>
+                </div>
+                <!-- an item -->
+                <div class="col item media">
+                  <div class="img">
+                    <h3 class="title-icon opacity-6">03 - The Vertical</h3>
+                  </div>
+                  <div class="media-body">
+                    <h4>Tech</h4>
+                    <p>Constantly looking for ways that we can do things more <i>efficiently</i> and <i>effectively</i> through tech (e.g. an automated chart builder)</p>
+                    
+                    <a class="btn btn-underline btn-primary" href="">
+                      <span class="text">Tech Stack</span>
+                    </a>
+
+                    <p>Vue.js, Node.js, Express, PostgreSQL</p>
+
+                  </div>
+                </div>
+              </div>
+              <!-- end of service list -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon down"></span>
+          </a>
+          <span class="separator"></span>
+          <a class="up">
+            <span class="icon up"></span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of list feature section -->
+    <!-- KEEEP -->
+  
+
+  </main>
+  <!-- END OF page main content -->
+
+  <!-- BEGIN OF page footer -->
+  <footer id="site-footer" class="page-footer">
+    
+
+    <!-- Right content -->
+    <div class="footer-right">
+      <ul class="social-text">
+        <li><a href="https://www.linkedin.com/in/debby-ling-74944226/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/dzldebby/projects"><i class="fab fa-github"></i></a></li>
+        <li><a href="mailto:debby.lingzl@gmail.com"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- END OF site footer -->
+
+  <!-- scripts -->
+  <!-- All Javascript plugins goes here -->
+  <script src="./js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick/slick.min.js"></script>
+
+  <!-- All vendor scripts -->
+  <script src="./js/vendor/parallax.min.js"></script>
+  <script src="./js/vendor/scrolloverflow.min.js"></script>
+  <script src="./js/vendor/all.js"></script>
+  <script src="./js/particlejs/particles.min.js"></script>
+
+  <!-- Countdown script -->
+  <script src="./js/jquery.downCount.js"></script>
+
+  <!-- Form script -->
+  <script src="./js/form_script.js"></script>
+
+  <!-- Javascript main files -->
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
