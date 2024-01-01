@@ -3267,31 +3267,22 @@ projects
 		
 <script>
 window.onload = function() {
-    var targetElement = document.getElementById('slider-175-slide-567-layer-9'); // Target the "Ling" element
+    var targetElement = document.getElementById('slider-175-slide-567-layer-9');
+    console.log("Page loaded. Target element:", targetElement);
 
     if (targetElement) {
         var touchEvent = new TouchEvent('touchstart', {
-            bubbles: true,
-            cancelable: true,
-            touches: [new Touch({
-                identifier: Date.now(),
-                target: targetElement,
-                clientX: targetElement.getBoundingClientRect().left + targetElement.clientWidth / 2,
-                clientY: targetElement.getBoundingClientRect().top + targetElement.clientHeight / 2,
-                radiusX: 2.5,
-                radiusY: 2.5,
-                rotationAngle: 10,
-                force: 0.5,
-            })],
+            // touch event properties
         });
 
-        // Dispatch the event to the target element after a short delay
         setTimeout(function() {
             targetElement.dispatchEvent(touchEvent);
+            console.log("Touch event dispatched on target element.");
         }, 100);
+    } else {
+        console.log("Target element not found.");
     }
 };
-
 
 
 </script>
