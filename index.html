@@ -7,7 +7,7 @@
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>De1bby&#039;s</title>
+			<title>De2bby&#039;s</title>
 			<meta name="description" content="Slider Revolution Example" />
 			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
 			<meta name="author" content="ThemePunch" />
@@ -3266,20 +3266,32 @@ projects
 <script async="" defer="" src="js/revolution.addon.mousetrap.min.js"></script><script async="" defer="" src="js/revolution.addon.particlewave.min.js"></script><script async="" defer="" src="https://www.ourplaceintheworld.sg/wp-content/plugins/revslider/public/assets/js/libs/three.min.js"></script><script type="text/javascript">window.RVS = window.RVS || {}; window.RVS.ENV = window.RVS.ENV || {}; window.RVS.ENV.TRANSITIONPACK_URL = "https://www.ourplaceintheworld.sg/wp-content/plugins/revslider-transitionpack-addon/";</script>
 		
 <script>
-
 window.onload = function() {
-    // Check if it's the first time the page is loaded
-    if (!sessionStorage.getItem("reloaded")) {
-        // Set "reloaded" to "true" in sessionStorage
-        sessionStorage.setItem("reloaded", "true");
+    var targetElement = document.getElementById('slider-175-slide-567-layer-9'); // Target the "Ling" element
 
-        // Refresh the page
-        window.location.reload();
-    } else {
-        // Clear "reloaded" from sessionStorage
-        sessionStorage.removeItem("reloaded");
+    if (targetElement) {
+        var touchEvent = new TouchEvent('touchstart', {
+            bubbles: true,
+            cancelable: true,
+            touches: [new Touch({
+                identifier: Date.now(),
+                target: targetElement,
+                clientX: targetElement.getBoundingClientRect().left + targetElement.clientWidth / 2,
+                clientY: targetElement.getBoundingClientRect().top + targetElement.clientHeight / 2,
+                radiusX: 2.5,
+                radiusY: 2.5,
+                rotationAngle: 10,
+                force: 0.5,
+            })],
+        });
+
+        // Dispatch the event to the target element after a short delay
+        setTimeout(function() {
+            targetElement.dispatchEvent(touchEvent);
+        }, 100);
     }
 };
+
 
 
 </script>
