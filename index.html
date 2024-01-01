@@ -1,1102 +1,3267 @@
-﻿<!doctype html>
-
-<html class="no-js" lang="en">
-
-<head>  
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG8MJ70B8B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SG8MJ70B8B');
-  </script>
-    
-  <!-- Page Title Here -->
-  <title>Debby's Portfolio</title>
-
-  <!-- Meta -->
-  <!-- Meta -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-
-
-  <meta name="description" content="Debby's Portfolio" />
-  <meta name="title" property="og:title" content="Debby's Portfolio" />
-  <meta property="og:type" content="Website" />
-  <meta name="image" property="og:image" content="https://raw.githubusercontent.com/debbyling/debbyling.github.io/master/img/portfoliopage.PNG" />
-  <meta name="description" property="og:description" content="Debby's Portfolio" /><meta name="author" content="Debby Ling" />
-  
-
-
-  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-
-  <!-- Web fonts and Web Icons -->
-  <link rel="stylesheet" href="./fonts/inter/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/ionicons.min.css">
-  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
-  <link rel='icon' href='logo.png' type='image/x-icon'/ >
-
-
-  <!-- Vendor CSS style -->
-  <link rel="stylesheet" href="./css/pageloader.css">
-
-  <!-- Uncomment below to load individualy vendor CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./js/vendor/swiper.min.css">
-  <link rel="stylesheet" href="./js/vendor/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="./js/vegas/vegas.min.css">
-
-  <!-- Main CSS files -->
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="https://kit.fontawesome.com/74b7de59c1.js" crossorigin="anonymous"></script>
-
-
-  <!-- add alt layout here -->
-  <link rel="stylesheet" href="./css/style-default.css">
-
-  <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
-</head>
-
-<body id="menu" class="body-page">
-  <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-  <!-- Page Loader : just comment these lines to remove it -->
-  <div class="page-loader" id="page-loader">
-    <div>
-      <div class="icon ion-spin"></div>
-      <p>Loading</p>
-    </div>
-  </div>
-
-  <!-- BEGIN OF site header Menu -->
-  <header class="navbar navbar-top-alpha scrolled-white menu-right topmenu-right " role="navigation">
-
-    <!-- Begin of menu icon toggler -->
-    <button class="navbar-toggler site-menu-icon btn btn-menu" id="navMenuIcon">
-      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
-      <span class="text">Menu</span>
-      <span class="icon icon-menu icon-menu-a">
-        <span class="bars align-right">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </span>
-      </span>
-    </button>
-    <!-- End of menu icon toggler -->
-
-    <!-- Begin of logo/brand -->
-    <a class="navbar-brand" href="./#">
-      <span class="logo">
-        <img class="light-logo" src="img/logo.png" alt="Logo">
-      </span>
-    </a>
-    <!-- End of logo/brand -->
-
-    <!-- begin of menu wrapper -->
-    <div class="all-menu-wrapper" id="navbarMenu">
-      <!-- Begin of top menu -->
-      <nav class="navbar-topmenu">
-        <!-- Begin of CTA Actions, & Icons menu -->
-        <!-- <ul class="navbar-nav navbar-nav-actions">
-				<li class="nav-item">
-					<a class="btn btn-outline-white btn-round" target="_blank" href="https://themeforest.net/user/mivfx/portfolio">
-						Buy Now
-					</a>
-				</li>
-			</ul> -->
-        <!-- End of CTA & Icons menu -->
-      </nav>
-      <!-- End of top menu -->
-
-      <!-- Begin of hamburger mainmenu menu -->
-      <nav class="navbar-mainmenu text-center">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- End of hamburger mainmenu menu -->
-
-      <!-- Begin of sidebar nav menu params class: text-only / icon-only-->
-      <nav class="navbar-sidebar left center icon-only font-primary nav">
-        <ul class="navbar-nav" id="qmenu">
-          <li class="nav-item" data-menuanchor="home" data-tooltip="About" data-position="top">
-            <a href="#home">
-              <i class="icon ion-home"></i>
-              <span class="txt">About</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="work" data-tooltip="Experience" data-position="top">
-            <a href="#work">
-              <i class="icon ion-briefcase"></i>
-              <span class="txt">Experience</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="projects" data-tooltip="Projects" data-position="top">
-            <a href="#projects">
-              <i class="icon ion-aperture"></i>
-              <span class="txt">Projects</span>
-            </a>
-          </li>
-          <li class="nav-item" data-menuanchor="contact" data-tooltip="Contact" data-position="top">
-            <a href="#contact">
-              <i class="icon ion-android-call"></i>
-              <span class="txt">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- End of sidebar nav menu -->
-    </div>
-    <!-- end of menu wrapper -->
-
-  </header>
-  <!-- END OF site header Menu-->
-  <!-- BEGIN OF page cover -->
-  <div class="page-cover" id="parallax-cover">
-    <!-- Cover Background -->
-    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="img/delegate.jpg"></div>
-
-    <!-- Transluscent mask as filter -->
-    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(0, 0, 0, 0.6)"></div>
-  </div>
-  <!--END OF page cover -->
-
-  <!-- BEGIN OF page main content -->
-  <main class="page-main page-fullpage main-anim" id="mainpage">
-
-    <!-- Begin of home section -->
-    <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
-      data-section="home">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin v-center">
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h1 class="display-4 display-title home-title anim-1">Hello! <br> <span class="text-lighter">I'm
-                    </span>Debby</h1>
-                <p class="anim-2 home-desc"> Analytics | Consulting | Tech</p>
-              </div>
-
-              <!-- Action button -->
-              <div class="btns-action anim-3">
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <!--<span class="separator"></span>-->
-          <!--<a class="up">
-				<span class="icon up"></span>
-			</a>-->
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of home section -->
-
-    <!-- Begin of description section -->
-    <div class="section section-description fp-auto-height-responsive " data-section="about">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
-
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row  justify-content-between">
-            <div class="col-12 col-md-5 text-left center-v">
-              <div class="wrapper">
-                <!-- title and description -->
-                <div class="title-desc">
-                  <h2 class="display-4 display-title mb-4 anim-1">About <br>
-                    <span class="text-lighter">Debby</span>
-                  </h2>
-                  <p class="anim-2">With over 8 years of both agency and client-side experience, I specialize in translating business problems to research solutions, and generating actionable insights from trends and data. My background in communications and statistics equips me with the skills to consult clients across the region on a wide variety of research topics, including choice modelling and concept testing. <br><br> I graduated from Nanyang Technological University with a Bachelor's in Communication Studies (Dean's List) in 2010.
-                  </p>
-                </div>
-
-                <!-- Action button -->
-                <div class="btns-action anim-3">
-                    <span class="text"><a href="https://www.linkedin.com/in/debby-ling-74944226/" class="linkedin btn btn-underline btn-primary"><i class="fab fa-linkedin"></i></a></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <!-- content -->
-              <div class="section-content center-vh anim">
-                <!-- illustartion -->
-                <div class="images text-center">
-                  <div class="img-frame-a">
-                    <img class="img" src="img/20221226_132737_notflattened31313131.png" alt="Image">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <span class="separator"></span>
-          <a class="up">
-            <span class="icon up"></span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of description section -->
-
-    <!-- Begin of description with team slider section -->
-    <div class="section section-description fp-auto-height-responsive " data-section="team">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom">
-
-        <!-- content -->
-        <div class="section-content fullwidth anim">
-          <div class="row">
-            <div class="col-12 col-md-5 text-left center-v">
-              <div class="wrapper">
-                <!-- title and description -->
-                <div class="title-desc">
-                  <h1 class="display-4 display-title anim-1  mb-4">Highlights <br><span class="text-lighter">Fun
-                      Times</span></h1>
-                  <p class="anim-2">Featuring a few significant moments that have been absolutely pivotal in shaping the perspective around career and personal life
-                  </p>
-                </div>
-
-                <!-- Action button -->
-                <div class="btns-action anim-3">
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- aside -->
-        <div class="section-aside aside-tier aside-bottom anim small-relative">
-          <div class="a-wrapper anim-4">
-            <!-- begin of slider carousel-swiper-alpha -->
-            <div class="slider-wrapper carousel-swiper-alpha carousel-swiper-alpha-demo">
-
-              <!-- pagination -->
-              <div class="items-pagination bar text-right"></div>
-
-              <!-- slider -->
-              <div class="slider-container swiper-container">
-                <ul class="item-list swiper-wrapper">
-                  <!-- item -->
-                  <li class="slide-item swiper-slide">
-                    <div class="item-wrapper">
-                      <div class="illustr">
-                        <a href="https://debby-ling.medium.com/young-esomar-society-award-2019-winner-377b9ff845fd">
-                          <img src="img/young_esomar.jpg" alt="Image" class="img">
-                        </a>
-                      </div>
-                      <div class="legend">
-                        <h3 class="title">Young ESOMAR Society Award 2019 Winner</h3>
-                        <h4>By calculating utility values of new reactions through conjoint analysis, a new metric that assigns proper weights to reactions will better define social media success
-                        </h4>
-                        <div class="icons">
-                          <a class="icon-btn" href="https://debby-ling.medium.com/young-esomar-society-award-2019-winner-377b9ff845fd">
-                            <i class="icon fa fa-file"></i> Find out more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <!-- item -->
-                  <li class="slide-item swiper-slide">
-                    <div class="item-wrapper">
-                      <div class="illustr">
-                        <a href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85">
-                          <img src="img/techladies.PNG" alt="Image" class="img">
-                        </a>
-                      </div>
-                      <div class="legend">
-                        <h3 class="title">Volunteer Developer</h3>
-                        <h4>Developing a Volunteer Management System with Vue.js + Node.js for It's Raining Raincoats, a charity organisation that aims to better the lives of migrant workers in Singapore
-                        </h4>
-                        <div class="icons">
-                          <a class="icon-btn" href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85">
-                            <i class="icon fa fa-file"></i> Find out more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <!-- item -->
-                  <li class="slide-item swiper-slide">
-                    <div class="item-wrapper">
-                      <div class="illustr">
-                        <a href="http://mindthe-gap.github.io/">
-                          <img src="img/mindthegap.PNG" alt="Image" class="img">
-                        </a>
-                      </div>
-                      <div class="legend">
-                        <h3 class="title">Mind The Gap</h3>
-                        <h4>Taking a stab at starting a pro-bono analytics services for non-profits</h4>
-                        <div class="icons">
-                          <a class="icon-btn" href="http://mindthe-gap.github.io/">
-                            <i class="icon fa fa-file"></i> Find out more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            <!-- end of slider carousel-swiper-alpha -->
-
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <span class="separator"></span>
-          <a class="up">
-            <span class="icon up"></span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of description with team slider section -->
-
-    <!-- Begin of description section -->
-    <!-- <div class="section section-description fp-auto-height-responsive " data-section="about-feature-1">
-      <div class="section-cover-full">
-        <div class="cover-container">
-          <div class="row gx-0">
-            <div class="col-auto col-lg-8 bg-part"></div>
-            <div class="col-12 col-lg-4 bg-part bg-img" data-image-src="img/items/img-portrait-2.jpg"></div>
-          </div>
-        </div>
-      </div> -->
-      <!-- Begin of section wrapper -->
-      <!-- <div class="section-wrapper fullwidth fullheight with-margin center-lg-v"> -->
-
-        <!-- content -->
-        <!-- <div class="section-content anim">
-          <div class="row  justify-content-between">
-            <div class="col-12 col-md-6 col-lg-4 text-left center-v pr-md-5 pr-lg-0">
-              <div class="wrapper"> -->
-                <!-- title and description -->
-                <!-- <div class="title-desc">
-                  <h2 class="display-4 display-title mb-4 anim-1">Increase <br><span
-                      class="text-lighter">Productivity</span></h2>
-                  <p class="anim-2">This describes what we do and what is our mission.
-                    Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque
-                    vehicula fermentum a sit amet nulla.
-                  </p>
-                </div> -->
-
-                <!-- Action button -->
-                <!-- <div class="btns-action anim-3">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-5">
-            </div>
-
-          </div>
-        </div> -->
-
-        <!-- Arrows scroll down/up -->
-        <!-- <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <span class="separator"></span>
-          <a class="up">
-            <span class="icon up"></span>
-          </a>
-        </footer>
-      </div> -->
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of description section -->
-    <!-- Begin of description section -->
-    <div class="section section-description fp-auto-height-responsive " data-section="work">
-      <div class="section-cover-full">
-        <div class="cover-container">
-          <div class="row gx-0">
-            <div class="col-auto col-lg-8 bg-part"></div>
-            <div class="col-12 col-lg-4 bg-part bg-img" data-image-src="img/items/img-portrait-2.jpg"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
-
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row  justify-content-between">
-            <div class="col-12 col-md-6 col-lg-8 text-left center-v pr-md-5 pr-lg-0">
-
-              <!-- Work experience  -->
-              <div class="wrapper">
-                <!-- title and description -->
-                <div class="title-desc">
-                  <h2 class="display-4 display-title mb-4 anim-1">Work <br><span
-                      class="text-lighter">Experience</span></h2>
-                  <p class="anim-2">
-                  </p>
-                </div>
-
-                <!-- Experience Column Start -->
-                <div class="col-lg-24">
-                  
-                  <!-- Header Block -->
-                  <!-- <div class="header-box mb-50">
-                    <h3>Experience</h3>
-                  </div> -->
-                
-                  <div class="experience box-1">
-                    
-                    <!-- Experience Item -->
-
-                    <div class="item work">
-                      <div class="main">
-                        <h4><b>Senior Consultant @ Kantar Public</b></h4>
-                        <i class="far fa-calendar-alt"></i> 2022 - Present | Senior Consulant<br>
-                        <i class="far fa-calendar-alt"></i> 2020 - 2022 | Consultant <br>
-                      </div>
-                      <p>Lead a team of 4 associates to deliver top notch insights to government clients through qualitative and quantitative methods government clients through qualitative and quantitative methods</p>
-                      <hr class="work-line">
-                    </div>
-
-                    <div class="item work">
-                      <div class="main">
-                        <h4><b>Senior Analyst @ SKIM</b></h4>
-                        <p><i class="far fa-calendar-alt"></i> 2018 - 2020 </p>
-                      </div>
-                      <p>Develop predictive models through conjoint study outputs, for strategic decision-making in a range of industries including FMCG, Technology, and Food & Beverage</p>
-                      <hr class="work-line">
-                    </div> 
-
-                    <div class="item work">
-                      <div class="main">
-                        <h4><b>Manager, Management Information & Analytics @ Skillsfuture Singapore</b></h4>
-                        </span>
-                        <p><i class="far fa-calendar-alt"></i> 2016 - 2018</p>
-                      </div>
-                      <p>Conduct outcome evaluation for all continuing education and training courses via surveys, and integrate survey findings with adminstrative data to distill relevant findings.</p>
-                      <hr class="work-line">                    
-                    </div>
-
-                    <div class="item work">
-                      <div class="main">
-                        <h4><b>Senior Analyst @ Blackbox Research</b></h4>
-                        <i class="far fa-calendar-alt"></i> 2015 - 2016 | Senior Analyst<br>
-                        <i class="far fa-calendar-alt"></i> 2014 - 2015 | Analyst <br>
-                      </div>
-                      <p>Independently managed both qualitative and quantitative research projects from end-to-end. Promoted within the first year in recognition of potential.</p>
-                      <hr class="work-line">
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-5">
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <span class="separator"></span>
-          <a class="up">
-            <span class="icon up"></span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of description section -->
-
-    <!-- Begin of list feature section -->
-    <div class="section section-list-feature fp-auto-height-responsive img bg-img" data-section="services" data-image-src="img/items/road.jpg">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin margin-topbottom">
-
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row">
-            <div class="col-12 col-lg-5 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title mb-4 anim-1">T-Shaped Individual</h2>
-                <p class="anim-2">I'm aspiring to be a generalist-specialist ("T-shaped") across 3 domains which are of great interest to me - Analytics, Consulting and Technology
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col col-12 col-lg-12">
-              <!-- service list -->
-              <div class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5">
-                <!-- an item -->
-                <div class="col item media">
-                  <div class="img">
-                    <h3 class="title-icon opacity-6">01 - The Base</h3>
-                  </div>
-                  <div class="media-body">
-                    <h4>Analytics</h4>
-                    <p>6+ years of experience extracting, transforming, cleaning and analysing data. I use a wide range of tools from Excel to Python, mostly self-taught.</p>
-                    
-                    <a class="btn btn-underline btn-primary" href="">
-                      <span class="text">Skills</span>
-                    </a>
-
-                    <p>Python, SPSS, SQL</p>
-
-                  </div>
-                </div>
-                <!-- an item -->
-                <div class="col item media">
-                  <div class="img">
-                    <h3 class="title-icon opacity-6">02 - The Vertical</h3>
-                  </div>
-                  <div class="media-body">
-                    <h4>Consulting</h4>
-                    <p>I believe a data narrative is only as good as how well you're able to <i>communicate</i> it. I've spent 2+ years in client relationship builing roles.</p>
-                    
-                    <a class="btn btn-underline btn-primary" href="">
-                      <span class="text">Techniques</span>
-                    </a>
-
-                    <p>Workshopping, Focus Group Moderation, Figma</p>
-
-                  </div>
-                </div>
-                <!-- an item -->
-                <div class="col item media">
-                  <div class="img">
-                    <h3 class="title-icon opacity-6">03 - The Vertical</h3>
-                  </div>
-                  <div class="media-body">
-                    <h4>Tech</h4>
-                    <p>Constantly looking for ways that we can do things more <i>efficiently</i> and <i>effectively</i> through tech (e.g. an automated chart builder)</p>
-                    
-                    <a class="btn btn-underline btn-primary" href="">
-                      <span class="text">Tech Stack</span>
-                    </a>
-
-                    <p>Vue.js, Node.js, Express, PostgreSQL</p>
-
-                  </div>
-                </div>
-              </div>
-              <!-- end of service list -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <span class="separator"></span>
-          <a class="up">
-            <span class="icon up"></span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list feature section -->
-  
-
-    <!-- Begin of list projects section -->
-    <div class="section section-list-feature fp-auto-height-responsive " data-section="projects">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin margin-topbottom">
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row">
-            <div class="col-12 col-lg-5 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title mb-4 anim-1">Projects</h2>
-                <p class="anim-2">Here are some of the side-projects that I've been working on: 
-                </p>
-              </div>
-
-              <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> All projects</button>
-                <button class="btn" onclick="filterSelection('data')"> Data</button>
-                <button class="btn" onclick="filterSelection('dev')"> Dev</button>
-              </div>
-              
-
-            </div>
-          </div>
-
-          <!-- project list -->
-          <div class="project-list mt-5">
-            <div class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3 ">
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/ndr2023_2.png" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="item.html#project_url">
-                      <h4>Data</h4>
-                      <h3>National Day Rally Text Analysis (Commentary on TODAY)</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/spotify.jpg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="item.html#project_url">
-                      <h4>Data</h4>
-                      <h3>Clustering by <br>Spotify Audio Features</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://debby-ling.medium.com/clustering-by-spotify-audio-features-236a12052278">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- an item -->
-              <div class="col filterDiv dev">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/sgsl.png" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="item.html#project_url">
-                      <h4>Dev</h4>
-                      <h3>Building a Singapore Sign Language recognition model with OpenCV & MediaPipe</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://debby-ling.medium.com/building-a-singapore-sign-language-sgsl-recognition-model-with-opencv-and-mediapipe-7d8a36f35cbd">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>              
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/finance-tracker.jpeg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://github.com/dzldebby/finance-tracker">
-                      <h4>Data</h4>
-                      <h3>Predicting stock prices and <br>send email alerts</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://github.com/dzldebby/finance-tracker">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- an item -->
-              <div class="col filterDiv dev">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/python-chart.png" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://github.com/dzldebby/python-charter">
-                      <h4>Data</h4>
-                      <h3>Customised powerpoint charting (Python)</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://github.com/dzldebby/python-charter">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- an item -->
-              <div class="col filterDiv dev">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/reactjs.jpg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://github.com/dzldebby/python-charter">
-                      <h4>Dev</h4>
-                      <h3></h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://drive.google.com/file/d/1dy8Ms4J3bSGocrDUWsDSSzwqFRnBZlsA/view">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <!-- an item -->
-              <div class="col filterDiv dev">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/irrc.png" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85">
-                      <h4>Dev</h4>
-                      <h3>Volunteer Management System</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/esomar.jpeg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://debby-ling.medium.com/young-esomar-society-award-2019-winner-377b9ff845fd">
-                      <h4>Data</h4>
-                      <h3>Young ESOMAR Society Award <br>2019</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://debby-ling.medium.com/young-esomar-society-award-2019-winner-377b9ff845fd">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- an item -->
-              <div class="col filterDiv dev">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/machine.jpg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://debby-ling.medium.com/deploying-a-machine-learning-model-using-flask-vue-js-fd5d5f0bb107">
-                      <h4>Dev</h4>
-                      <h3>Deploying an Image Classifier (Flask+Vue.js)</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://debby-ling.medium.com/deploying-a-machine-learning-model-using-flask-vue-js-fd5d5f0bb107">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/ads.jpg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://public.tableau.com/profile/debby2612#!/vizhome/ImproveAdsViaCongruence/Dashboard6">
-                      <h4>Data</h4>
-                      <h3>Effect of congruence on advertisement</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://public.tableau.com/profile/debby2612#!/vizhome/ImproveAdsViaCongruence/Dashboard6">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/covid19.jpg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="/covid19.html">
-                      <h4>Data</h4>
-                      <h3>COVID-19 Situation in Singapore</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="/covid19.html">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- an item -->
-              <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/streamlit.JPG" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="/covid19.html">
-                      <h4>Data</h4>
-                      <h3>Survey Dashboard made with Streamlit</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://share.streamlit.io/dzldebby/environment/app.py">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- an item -->
-              <!-- <div class="col filterDiv data">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img class="" src="img/portfolio/dashboard.jpg" alt="An image">
-                  </div>
-                  <div class="media-body">
-                    <a href="https://public.tableau.com/profile/debby2612#!/vizhome/BusinessPerformanceDashboardFoodDelivery/Dashboard1">
-                      <h4>Data</h4>
-                      <h3>Business Performance Dashboard</h3>
-                    </a>
-                  </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="https://public.tableau.com/profile/debby2612#!/vizhome/BusinessPerformanceDashboardFoodDelivery/Dashboard1">
-                      <span class="text">Details ...</span>
-                    </a>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon down"></span>
-          </a>
-          <span class="separator"></span>
-          <a class="up">
-            <span class="icon up"></span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list projects section -->
-
-
-
-    <!-- Begin of contact section -->
-    <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
-      <div class="section-cover-full fit bg-color" data-bgcolor="rgba(40,40,40,0.5)"></div>
-
-      <!-- begin of information slide -->
-      <div class="slide" id="information" data-anchor="information">
-        <!-- Begin of slide section wrapper -->
-        <div class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom">
-          <!-- main content -->
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-6">
-              <!-- content -->
-              <div class="section-content fullwidth anim text-left">
-                <!-- title and description -->
-                <div class="title-desc">
-                  <div class="anim-2">
-                    <h2 class="display-4 display-title">Contact</h2>
-                    <p>Always interested in conversations around tech or analytics</p>
-                  </div>
-                  <div class="address-container anim-3">
-
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-6">
-                        <h4>Reach me here:</h4>
-                        <!-- <p>Email: debby.lingzl@gmail.com</p> -->
-
-<!-- 
-
-
-                        <li><a href="https://www.linkedin.com/in/debby-ling-74944226/"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/dzldebby/projects"><i class="fab fa-github"></i></a></li>
-                        <li><a href="mailto:debby.lingzl@gmail.com"><i class="fas fa-envelope"></i></a></li> -->
-
-
-                        <div class="icons icons-margin">
-                          <a class="icon-btn" href="mailto:debby.lingzl@gmail.com">
-                            <i class="icon fas fa-envelope"></i>
-                          </a>
-                          <a class="icon-btn" href="https://www.linkedin.com/in/debby-ling-74944226/">
-                            <i class="icon fab fa-linkedin"></i>
-                          </a>
-                          <a class="icon-btn" href="https://twitter.com/dzldebby">
-                            <i class="icon fa fa-twitter"></i>
-                          </a>
-                          <a class="icon-btn" href="https://github.com/dzldebby/projects">
-                            <i class="icon fab fa-github"></i>
-                          </a>                            
-                        </div>
-                      </div>
-                      <!-- <div class="col-12 col-md-6 col-lg-6">
-                        <h4>Address</h4>
-                        <p>
-                          Company address
-                          <br>12 Street Turning Place
-                          <br>South Est, Antartica
-                        </p>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Action button -->
-                <!-- <div class="btns-action anim-4">
-                  <a class="btn btn-underline" href="#contact/message">
-                    <span class="txt">Send Message</span>
-                  </a>
-                </div> -->
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-
-            </div>
-          </div>
-
-        </div>
-        <!-- End of slide section wrapper -->
-      </div>
-
-
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="up ml-0">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-
-    </div>
-    <!-- End of contact section -->
-  </main>
-  <!-- END OF page main content -->
-
-  <!-- BEGIN OF page footer -->
-  <footer id="site-footer" class="page-footer">
-    
-
-    <!-- Right content -->
-    <div class="footer-right">
-      <ul class="social-text">
-        <li><a href="https://www.linkedin.com/in/debby-ling-74944226/"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/dzldebby/projects"><i class="fab fa-github"></i></a></li>
-        <li><a href="mailto:debby.lingzl@gmail.com"><i class="fas fa-envelope"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-  <!-- END OF site footer -->
-
-  <!-- scripts -->
-  <!-- All Javascript plugins goes here -->
-  <script src="./js/vendor/jquery-1.12.4.min.js"></script>
-  <script src="./js/slick/slick.min.js"></script>
-
-  <!-- All vendor scripts -->
-  <script src="./js/vendor/parallax.min.js"></script>
-  <script src="./js/vendor/scrolloverflow.min.js"></script>
-  <script src="./js/vendor/all.js"></script>
-  <script src="./js/particlejs/particles.min.js"></script>
-
-  <!-- Countdown script -->
-  <script src="./js/jquery.downCount.js"></script>
-
-  <!-- Form script -->
-  <script src="./js/form_script.js"></script>
-
-  <!-- Javascript main files -->
-  <script src="./js/main.js"></script>
-
-</body>
-
-</html>
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Debby&#039;s - Slider Revolution</title>
+			<meta name="description" content="Slider Revolution Example" />
+			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+			<meta name="author" content="ThemePunch" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CManrope:400%2C700%2C500%2C800%2C600&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			 			
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting.concat([ "mousetrap","particlewave","threejs"]);
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="js/rbtools.min.js"></script>
+							<script src="js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body>
+		
+
+			<!-- START Debby&#039;s REVOLUTION SLIDER 6.6.20 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_175_1_wrapper" data-alias="creative-portfolio-main-slider3" data-source="gallery" style="visibility:hidden;background:#0a020c;padding:0;">
+				<rs-module id="rev_slider_175_1" style="" data-version="6.6.20">
+					<rs-slides style="overflow: hidden; position: absolute;">
+						<rs-slide style="position: absolute;" data-key="rs-567" data-title="hero" data-thumb="assets/hero-thumb1.jpg" data-anim="ms:1000ms;" data-in="e:sine.inOut;" data-out="y:100%;e:sine.inOut;">
+							<img src="assets/dummy.png" alt="hero" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="9" data-no-retina>
+<!--						--><rs-zone id="rrzm_567" class="rev_row_zone_middle" style="z-index: 10;"><!--
+
+								--><rs-row
+									id="slider-175-slide-567-layer-3" 
+									data-type="row"
+									data-xy="xo:50px,41px,31px,19px;yo:50px,41px,31px,19px;"
+									data-text="s:20,16,12,7;l:0,20,15,9;"
+									data-padding="r:100,83,0,0;l:0,0,90,45;"
+									data-frame_0="o:1;"
+									data-frame_999="o:1;st:w;sp:800;sR:8700;sA:9000;"
+									style="z-index:6;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-567-layer-4" 
+										data-type="column"
+										data-xy="x:c;y:b;"
+										data-rsp_bd="off"
+										data-column="w:25%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sR:8700;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-567-layer-6" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:50%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sp:800;sR:8700;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-567-layer-7" 
+											data-type="text"
+											data-color="#0c0c0c"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:28,24,24,18;l:50,40,40,30;"
+											data-margin="b:50,41,31,19;"
+											data-frame_0="y:100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1100;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:100%;o:0;e:sine.inOut;st:w;sp:800;sR:7900;"
+											data-frame_999_mask="u:t;"
+											style="z-index:8;font-family:'Manrope';"
+										>Analytics | Tech | Impact 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-567-layer-8" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:160,100,100,60;l:150,100,100,60;ls:-5px,-4px,-3px,-1px;fw:700;"
+											data-frame_0="y:100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1100;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:100%;o:0;e:sine.inOut;st:w;sp:800;sR:7900;"
+											data-frame_999_mask="u:t;"
+											style="z-index:7;font-family:'Manrope';"
+										>Debby 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-567-layer-9" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:155,100,100,60;l:110,100,100,60;ls:-5px,-4px,-3px,-1px;fw:700;"
+											data-dim="h:159px,131px,115px,70px;"
+											data-margin="t:-2,-2,-2,-1;"
+											data-frame_0="y:100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1100;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:100%;o:0;e:sine.inOut;st:w;sp:800;sR:7900;"
+											data-frame_999_mask="u:t;"
+											style="z-index:6;font-family:'Manrope';"
+										>Ling 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-567-layer-13" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:25%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sR:8700;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--									--></rs-column><!--
+								--></rs-row><!--
+							--></rs-zone><!--
+						--><rs-zone id="rrzb_567" class="rev_row_zone_bottom" style="z-index: 9;"><!--
+
+								--><rs-row
+									id="slider-175-slide-567-layer-10" 
+									data-type="row"
+									data-xy="xo:50px;yo:50px;"
+									data-cbreak="nobreak"
+									data-basealign="slide"
+									data-rsp_bd="off"
+									data-padding="r:100,100,0,0;"
+									data-frame_0="y:bottom;o:1;"
+									data-frame_1="e:sine.inOut;sp:1000;"
+									data-frame_999="y:bottom;o:1;e:sine.inOut;st:w;sp:800;sR:8000;sA:9000;"
+									style="z-index:6;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-567-layer-11" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:25%;a:middle;"
+										data-padding="b:50,50,0,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sR:8700;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-567-layer-15" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:25%;a:middle;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sp:800;sR:8700;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><a
+											id="slider-175-slide-567-layer-12" 
+											class="rs-layer"
+											href="#" target="_blank" rel="noopener"
+											data-type="text"
+											data-color="#0c0c0c"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:16,16,16,13;l:50,40,40,30;ls:2px,1px,1px,1px;fw:700;"
+											data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-567-layer-16;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-567-layer-16;f:frame_1;ch:true;'
+											data-margin="l:0,0,-100,-75;"
+											data-clip="u:true;"
+											data-frame_0="o:1;"
+											data-frame_999="o:1;st:w;sp:800;sR:8700;"
+											style="z-index:7;font-family:'Manrope';text-transform:uppercase;cursor:pointer;"
+										>find out more 
+										</a><!--
+
+										--><rs-layer
+											id="slider-175-slide-567-layer-16" 
+											data-type="shape"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+											data-dim="w:186px,170px,170px,145px;h:2px;"
+											data-margin="l:0,0,-100,-75;"
+											data-ford="frame_0;frame_1;frame_2;frame_999;"
+											data-clip="u:true;"
+											data-frame_1="cp:50%;"
+											data-frame_999="o:1;st:w;sp:800;sR:7640;"
+											data-frame_2="st:a;sp:800;sR:260;cp:100%;"
+											style="z-index:6;background-color:rgba(0,0,0,0.5);"
+										> 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-567-layer-5" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:50%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sp:800;sR:8700;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-567-layer-17" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,16,15;l:35,28,30,24;"
+											data-padding="t:50,41,31,19;r:80,66,50,31;b:50,41,31,19;l:80,66,50,31;"
+											data-frame_999="o:1;st:w;sp:800;sR:8700;"
+											style="z-index:6;background-color:#0f0f0f;font-family:'Manrope';"
+										>Data strategist based in Singapore, empowering organisations with insightful analytics for smarter, more impactful decision-making. 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+							--></rs-zone><!--
+
+							--><rs-group
+								id="slider-175-slide-567-layer-1" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:100%;h:100%;"
+								data-vbility="t,t,f,f"
+								data-basealign="slide"
+								data-clip="u:true;o:b;"
+								data-frame_0="o:1;"
+								data-frame_1="e:sine.inOut;sp:1100;cp:77%;"
+								data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;sA:9000;"
+								style="z-index:5;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-567-layer-103" 
+									class="tp-shape tp-shapewrapper tp-particlewave"
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:90%;"
+									data-clip="u:true;o:cv;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:70%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+								 data-wpsdata='ddw:plainx;s:29;c:22;a:28;g:30;rv:25;an:-4deg;t:20deg;sz:10;dpr:1;ddfd:all;po:;bf:1;ddl:boxes;co:linear-gradient(160deg, rgba(222,243,248,1) 0%, rgba(135,167,217,1) 50%, rgba(222,243,248,1) 100%);b0:custom;'
+									style="z-index:7;background-color:rgba(0,0,0,0);"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-567-layer-0" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-basealign="slide"
+									data-clip="u:true;o:cv;"
+									data-frame_0="o:1;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:70%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+									style="z-index:6;background-color:#0018f9;"
+								> 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-group
+								id="slider-175-slide-567-layer-14" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy=""
+								data-pos="a"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:100%;h:100%;"
+								data-vbility="f,f,t,t"
+								data-basealign="slide"
+								data-clip="u:true;o:b;"
+								data-frame_0="o:1;"
+								data-frame_1="e:sine.inOut;sp:1100;cp:77%;"
+								data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;sA:9000;"
+								style="z-index:6;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-567-layer-61" 
+									class="tp-shape tp-shapewrapper tp-particlewave"
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-clip="u:true;o:cv;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:100%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+								 data-wpsdata='ddw:plainx;s:29;c:22;a:28;g:30;rv:25;an:-4deg;t:20deg;sz:10;dpr:1;ddfd:all;po:;bf:1;ddl:boxes;co:linear-gradient(160deg, rgba(222,243,248,1) 0%, rgba(135,167,217,1) 50%, rgba(222,243,248,1) 100%);b0:custom;'
+									style="z-index:7;background-color:rgba(0,0,0,0);"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-567-layer-18" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-basealign="slide"
+									data-clip="u:true;o:cv;"
+									data-frame_0="o:1;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:100%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+									style="z-index:6;background-color:#0026ff;"
+								> 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-layer
+								id="slider-175-slide-567-layer-2" 
+								class="rs-pxl-11"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c,c,c,r;xo:200px,200px,151px,-100px;y:b;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:635px,456px,521px,391px;h:975px,700px,800px,600px;"
+								data-basealign="slide"
+								data-margin="t:0,0,0,-20;l:200,165,125,0;"
+								data-frame_0="y:bottom;o:1;"
+								data-frame_1="e:sine.inOut;sp:1000;"
+								data-frame_999="y:bottom;o:1;e:sine.inOut;st:w;sp:800;sR:8000;"
+								style="z-index:7;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="635" height="975" data-lazyload="assets/profilepic.png" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-175-slide-567-layer-27" 
+								class="rs-pxl-2"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c,c,c,r;xo:300px,200px,151px,-100px;y:b;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:765px,456px,521px,391px;h:986px,700px,800px,600px;maxh:none,none,none,10px;"
+								data-basealign="slide"
+								data-margin="t:0,0,0,200;l:50,41,31,30;"
+								data-padding="t:0,0,0,50;"
+								data-frame_0="x:-200px,-165px,-125px,-77px;y:bottom;sX:0;sY:0;"
+								data-frame_1="o:0.6;e:sine.inOut;sp:1000;"
+								data-frame_999="y:bottom;sX:0;sY:0;o:0;e:sine.inOut;st:w;sp:800;sR:8000;"
+								style="z-index:8;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="233" height="300" data-lazyload="assets/shadow-2-233x300.png" data-no-retina> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-572" data-title="about me" data-thumb="assets/services-thumb.jpg" data-anim="ms:1100ms;" data-in="o:1;y:(100%);e:sine.inOut;" data-out="y:0%;e:sine.inOut;">
+							<img src="assets/dummy.png" alt="about me" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="off" data-no-retina>
+<!--						--><rs-zone id="rrzm_572" class="rev_row_zone_middle" style="z-index: 5;"><!--
+
+								--><rs-row
+									id="slider-175-slide-572-layer-0" 
+									data-type="row"
+									data-xy="xo:50px;yo:50px;"
+									data-rsp_bd="off"
+									data-padding="r:50,140,50,30;l:50,140,50,30;"
+									data-frame_0="y:bottom;o:1;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1000;"
+									data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sR:8000;sA:9000;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:6;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-572-layer-1" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-text="l:0,0,0,25;"
+										data-vbility="t,t,t,f"
+										data-rsp_bd="off"
+										data-border="bos:none,none,solid,solid;boc:#ffffff;bow:0,0,3px,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sR:8700;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-572-layer-92" 
+											data-type="text"
+											data-color="#0008ff"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:16,16,16,14;l:70,57,43,50;ls:2px,1px,2px,1px;fw:800;"
+											data-margin="t:0,0,0,50;b:50,41,31,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:12;font-family:'Manrope';text-transform:uppercase;"
+										>About Me 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-10" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:30,25,30,20;l:140,90,90,70;fw:500,500,800,800;"
+											data-vbility="t,t,t,f"
+											data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-572-layer-50;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-572-layer-50;f:frame_1;ch:true;'
+											data-disp="inline-block"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:11;font-family:'Manrope';display:inline-block;"
+										>Analytics 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-50" 
+											class="rs-nolc rs-layer-video intrinsic-ignore"
+											data-type="video"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;f:right;l:0,20,15,9;"
+											data-flcr="f:right;"
+											data-dim="w:50%;h:140px,90px,70px,40px;"
+											data-vbility="t,t,t,f"
+											data-disp="inline-block"
+											data-video="vfc:true;ap:1sttime;vd:100;noint:t;l:true;ptimer:true;nse:f;sav:f;afs:f;"
+											data-poster="assets/branding-video_1238_layer1-300x169.jpeg"
+											data-mp4="assets/branding-video.mp4"
+											data-margin="t:0,0,10,20;"
+											data-ford="frame_0;frame_1;frame_2;frame_999;"
+											data-frame_0="x:-100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:1;st:w;sp:800;sR:6900;"
+											data-frame_2="st:a;sp:600;sR:300;gra:100%;bri:100%;"
+											style="z-index:10;background:url('https://www.ourplaceintheworld.sg/wp-content/uploads/revslider/objects/Surfer-in-wave-50.jpg') no-repeat center center;background-size:cover;background-color:#4cd964;display:inline-block;"
+										>
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-62" 
+											class="rs-nolc rs-layer-video intrinsic-ignore"
+											data-type="video"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+											data-dim="w:188px,155px,452px,278px;h:140px,90px,70px,40px;"
+											data-vbility="t,t,t,f"
+											data-disp="inline-block"
+											data-video="vfc:true;ap:1sttime;vd:100;noint:t;l:true;ptimer:true;nse:f;sav:f;afs:f;"
+											data-poster="assets/ux_1238_layer-300x169.jpeg"
+											data-mp4="assets/ux.mp4"
+											data-margin="t:30,25,20,10;b:30,25,20,20;"
+											data-ford="frame_0;frame_1;frame_2;frame_999;"
+											data-frame_0="x:-100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:1;st:w;sp:800;sR:6900;"
+											data-frame_2="st:a;sp:600;sR:300;gra:100%;bri:100%;"
+											style="z-index:9;background:url('https://www.ourplaceintheworld.sg/wp-content/uploads/revslider/objects/Brown-cliff-50.jpg') no-repeat center center;background-size:cover;background-color:#c45344;display:inline-block;"
+										>
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-83" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:30,30,30,20;f:right;l:140,90,90,70;fw:500,500,800,800;"
+											data-flcr="f:right;"
+											data-vbility="t,t,t,f"
+											data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-572-layer-62;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-572-layer-62;f:frame_1;ch:true;'
+											data-disp="inline-block"
+											data-margin="t:30,25,20,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Technology 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-63" 
+											class="rs-nolc rs-layer-video intrinsic-ignore"
+											data-type="video"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;f:right;c:none,none,none,right;l:0,20,15,9;"
+											data-flcr="f:right;c:none,none,none,right;"
+											data-dim="w:40%,40%,237px,265px;h:140px,90px,70px,40px;"
+											data-vbility="t,t,t,f"
+											data-disp="inline-block"
+											data-video="vfc:true;ap:1sttime;vd:100;noint:t;l:true;ptimer:true;nse:f;sav:f;afs:f;"
+											data-poster="assets/service-video_1238_layer-300x169.jpeg"
+											data-mp4="assets/service-video.mp4"
+											data-ford="frame_0;frame_1;frame_2;frame_999;"
+											data-frame_0="x:-100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1200;gra:0%;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:1;st:w;sp:800;sR:6910;"
+											data-frame_2="st:a;sp:600;sR:290;gra:100%;bri:100%;"
+											style="z-index:7;background:url('https://www.ourplaceintheworld.sg/wp-content/uploads/revslider/objects/Boat-on-body-of-water-50.jpg') no-repeat center center;background-size:cover;background-color:#4cd964;display:inline-block;"
+										>
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-84" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:30,30,30,20;l:140,90,90,70;fw:500,500,800,800;"
+											data-vbility="t,t,t,f"
+											data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-572-layer-63;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-572-layer-63;f:frame_1;ch:true;'
+											data-disp="inline-block"
+											data-margin="t:0,0,0,-10;b:0,80,10,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										>Evaluation 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-572-layer-161" 
+										data-type="column"
+										data-xy="xo:50px;yo:108.75px;"
+										data-rsp_bd="off"
+										data-column="w:66.67%;"
+										data-padding="t:10;r:10;b:10;l:10;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-572-layer-72" 
+											data-type="image"
+											data-rsp_ch="on"
+											data-xy="xo:50px,41px,31px,0;yo:50px,41px,31px,0;"
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+											data-dim="w:300px,247px,187px,417px;h:180px,148px,112px,68px;"
+											data-vbility="f,f,f,t"
+											data-margin="t:0,0,0,45;b:0,0,0,25;"
+											data-frame_1="e:power4.inOut;sp:1500;"
+											data-frame_999="o:0;st:w;"
+											style="z-index:9;"
+										><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="499" height="81" data-lazyload="assets/ezgif.com-crop.gif" data-no-retina> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-162" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;s:22,20,22,20;l:30,20,30,20;fw:500;"
+											data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-572-layer-63;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-572-layer-63;f:frame_1;ch:true;'
+											data-disp="inline-block"
+											data-margin="t:0,0,-25,-20;r:0,0,0,-10;b:150,80,100,10;l:15,0,0,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										><br />
+Hello! I'm Debby Ling, an ardent data storyteller.<br />
+<br />
+ My academic journey at Nanyang Technological University culminated with a Bachelor's in Communication Studies (Communication Research), earning me a spot on the Dean's List. Currently, I'm expanding my expertise at Georgia Institute of Technology, pursuing a Masters in Analytics (Computational Data Analytics). My dedication to data analytics was recognized with the prestigious Young ESOMAR Award, highlighting my innovative approach in the field. <br />
+<br />
+Alongside conducting insightful analytics, I have contributed commentary to national newspapers, blending complex data analysis with public narratives. <br />
+<br />
+Proficient in Python, AWS, and SQL, I'm committed to empowering decision-makers with impactful, data-driven strategies. 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-79" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:40,25,35,20;f:right;l:95,40,45,45;fw:500;"
+											data-flcr="f:right;"
+											data-actions='o:click;a:jumptoslide;slide:next;'
+											data-disp="inline-block"
+											data-margin="b:20,17,0,20;"
+											data-padding="b:0,0,0,20;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											data-frame_hover="c:#0018f9;"
+											style="z-index:7;font-family:'Manrope';cursor:pointer;display:inline-block;"
+										>Highlighted Projects 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-572-layer-80" 
+											data-type="text"
+											data-color="#0c00f9"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:60,30,40,35;f:right;l:100,30,45,50;fw:500;"
+											data-flcr="f:right;"
+											data-actions='o:click;a:jumptoslide;slide:next;'
+											data-btrans="rZ:-45;"
+											data-disp="inline-block"
+											data-margin="b:20,0,0,20;l:70,0,58,25;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											data-frame_hover="rZ:45deg;c:#fff;"
+											style="z-index:6;font-family:'Manrope';cursor:pointer;display:inline-block;"
+										><i class="material-icons">arrow_downward</i> 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+							--></rs-zone><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-489" data-title="highlights" data-thumb="assets/projects1-thumb.jpg" data-anim="ms:1100ms;" data-in="o:1;y:(100%);e:sine.inOut;" data-out="y:0%;e:sine.inOut;">
+							<img src="assets/dummy.png" alt="highlights" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="off" data-no-retina>
+<!--
+							--><rs-group
+								id="slider-175-slide-489-layer-20" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:r,r,c,c;y:b;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:50%,50%,100%,100%;h:100%,100%,50%,50%;"
+								data-basealign="slide"
+								data-clip="u:true;o:ch;"
+								data-frame_0="y:bottom;o:1;cp:0%;"
+								data-frame_0_reverse="y:true;"
+								data-frame_1="e:sine.inOut;sp:1000;cp:99%;"
+								data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sR:8000;cp:0%;sA:9000;"
+								data-frame_999_reverse="y:true;"
+								style="z-index:7;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-489-layer-104" 
+									data-type="shape"
+									data-xy="x:c;y:b;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,14px,10px;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:13;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-90" 
+									data-type="shape"
+									data-xy="x:c;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,7px,5px;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:12;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-89" 
+									data-type="shape"
+									data-xy="x:r;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:11;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-74" 
+									data-type="shape"
+									data-xy="xo:-1px;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:8px,8px,14px,10px;h:100%;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:10;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-21" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;yo:100px,50px,37px,22px;"
+									data-pos="a"
+									data-text="w:normal;s:20,18,18,16;l:25,25,26,24;a:center;"
+									data-dim="w:50%,#2/3#,#2/3#,#2/3#;"
+									data-ford="frame_0;frame_1;frame_2;frame_999;"
+									data-frame_1="y:bottom;e:sine.inOut;sp:600;"
+									data-frame_999="y:bottom;o:0;st:w;sR:6970;"
+									data-frame_2="y:0px;e:sine.inOut;st:a;sp:600;sR:830;"
+									style="z-index:9;font-family:'Manrope';"
+								>National Day Rally Commentary 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-25" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;yo:80px,80px,60px,50px;"
+									data-pos="a"
+									data-text="w:normal;s:60,35,35,30;l:70,60,45,36;ls:-3px,-1px,0px,0px;fw:800;"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="y:-200px,-160px,-140px,-120px;e:sine.inOut;st:a;sp:600;sR:250;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:300;"
+									style="z-index:8;font-family:'Manrope';"
+								>NDR Commentary 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-28" 
+									class="rs-noevents"
+									data-type="text"
+									data-color="rgba(255, 255, 255, 0.5)"
+									data-xy="x:c;y:b;yo:40px,40px,30px,20px;"
+									data-pos="a"
+									data-text="w:normal;s:14,13,13,13;l:40,30,30,20;ls:6px,4px,4px,4px;fw:500;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="y:-200px,-160px,-130px,-120px;e:sine.inOut;st:a;sp:600;sR:240;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:310;"
+									style="z-index:7;font-family:'Manrope';text-transform:uppercase;"
+								>data 
+								</rs-layer><!--
+
+								--><a
+									id="slider-175-slide-489-layer-23" 
+									class="rs-layer"
+									href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136" target="_self"
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-49;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-49;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-53;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-53;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-25;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-25;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-28;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-28;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-21;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-21;f:frame_1;ch:true;'
+									data-clip="u:true;o:cv;"
+									data-frame_0="o:1;bri:70%;cp:0%;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:99%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+									data-frame_hover="bgc:#0f0f0f;gra:100%;bri:40%;blu:0px;"
+									style="z-index:6;"
+								><rs-bg-elem style="background: url('assets/Screenshot-2023-12-28-154136-1024x674.png') no-repeat center center; background-size: cover;"></rs-bg-elem>
+ 
+								</a><!--
+							--></rs-group><!--
+
+							--><rs-group
+								id="slider-175-slide-489-layer-54" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:l,l,c,c;y:b,b,t,t;"
+								data-pos="a"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:50%,50%,100%,100%;h:100%,100%,50%,50%;"
+								data-basealign="slide"
+								data-clip="u:true;o:ch;"
+								data-frame_0="y:bottom;o:1;cp:0%;"
+								data-frame_0_reverse="y:true;"
+								data-frame_1="e:sine.inOut;sp:1000;cp:99%;"
+								data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sR:8000;cp:0%;sA:9000;"
+								data-frame_999_reverse="y:true;"
+								style="z-index:6;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-489-layer-65" 
+									data-type="shape"
+									data-xy="x:r;xo:-1px;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:8px,8px,14px,10px;h:100%;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:13;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-66" 
+									data-type="shape"
+									data-xy="y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:12;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-70" 
+									data-type="shape"
+									data-xy="x:c;y:b;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,7px,5px;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:11;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-69" 
+									data-type="shape"
+									data-xy="x:c;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,14px,10px;"
+									data-basealign="slide"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:10;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-19" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;yo:100px,50px,37px,22px;"
+									data-pos="a"
+									data-text="w:normal;s:20,18,18,16;l:25,25,26,24;a:center;"
+									data-dim="w:50%,#2/3#,#2/3#,#2/3#;"
+									data-ford="frame_0;frame_1;frame_2;frame_999;"
+									data-frame_1="y:bottom;e:sine.inOut;sp:600;"
+									data-frame_999="y:bottom;o:0;st:w;sR:6970;"
+									data-frame_2="y:0px;e:sine.inOut;st:a;sp:600;sR:830;"
+									style="z-index:9;font-family:'Manrope';"
+								>Won the Young ESOMAR Award with the innovative use of conjoint to evaluate the utility of social media reactions 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-56" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;yo:80px,80px,60px,50px;"
+									data-pos="a"
+									data-text="w:normal;s:60,35,35,30;l:70,60,45,36;ls:-3px,-1px,0px,0px;fw:800;"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="y:-200px,-160px,-140px,-120px;e:sine.inOut;st:a;sp:600;sR:250;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:300;"
+									style="z-index:8;font-family:'Manrope';"
+								>Young ESOMAR Award 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-489-layer-57" 
+									class="rs-noevents"
+									data-type="text"
+									data-color="rgba(255, 255, 255, 0.5)"
+									data-xy="x:c;y:b;yo:40px,40px,30px,20px;"
+									data-pos="a"
+									data-text="w:normal;s:14,13,13,13;l:40,30,30,20;ls:6px,4px,4px,4px;fw:500;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="y:-200px,-160px,-130px,-120px;e:sine.inOut;st:a;sp:600;sR:240;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:310;"
+									style="z-index:7;font-family:'Manrope';text-transform:uppercase;"
+								>data 
+								</rs-layer><!--
+
+								--><a
+									id="slider-175-slide-489-layer-51" 
+									class="rs-layer"
+									href="https://debby-ling.medium.com/young-esomar-society-award-2019-winner-377b9ff845fd" target="_self"
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c,l,c,c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-49;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-49;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-53;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-53;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-56;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-56;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-57;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-57;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-489-layer-19;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-489-layer-19;f:frame_1;ch:true;'
+									data-clip="u:true;o:cv;"
+									data-frame_0="o:1;bri:70%;cp:0%;"
+									data-frame_1="e:sine.inOut;sp:1100;bG:0%;bR:50%;cp:99%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+									data-frame_hover="bgc:#0f0f0f;gra:100%;bri:40%;blu:0px;"
+									style="z-index:6;"
+								><rs-bg-elem style="background: url('assets/young_esomar-1-1024x683.jpg') no-repeat center center; background-size: cover;"></rs-bg-elem>
+ 
+								</a><!--
+							--></rs-group><!--
+
+							--><rs-layer
+								id="slider-175-slide-489-layer-49" 
+								class="rs-noevents rs-mtrap"
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;"
+								data-text="w:normal;s:25,13,9,5;l:25,20,15,9;ls:2px,1px,0px,0px;fw:600;a:center;"
+								data-vbility="t,t,f,f"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="sX:0;sY:0;o:1;"
+								data-frame_1="sp:700;st:a;"
+								data-frame_999="sX:0;sY:0;o:0;st:w;sR:7370;"
+								data-frame_2="sX:0;sY:0;st:a;sp:600;sR:330;"
+								data-mousetrap='ola1:slider-175-slide-489-layer-51;ola2:slider-175-slide-489-layer-23;f:olayer;d:20ms;mr:;ox:60px,49px,37px,22px;oy:13px,10px,7px,4px;' 
+								style="z-index:9;font-family:'Manrope';text-transform:uppercase;"
+							>HIGHLIGHT <br />
+PROJECT 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-175-slide-489-layer-53" 
+								class="rs-noevents rs-mtrap"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:180px,148px,112px,69px;h:180px,148px,112px,69px;"
+								data-vbility="t,t,f,f"
+								data-border="bor:50%,50%,50%,50%;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="sX:0;sY:0;o:1;"
+								data-frame_1="sp:600;st:a;"
+								data-frame_999="sX:0;sY:0;o:0;st:w;sR:7380;"
+								data-frame_2="sX:0;sY:0;st:a;sp:600;sR:420;"
+								data-mousetrap='ola1:slider-175-slide-489-layer-51;ola2:slider-175-slide-489-layer-23;f:olayer;d:50ms;mr:;ox:90px,74px,56px,34px;oy:90px,74px,56px,34px;' 
+								style="z-index:8;background-color:#0018f7;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-565" data-title="work" data-thumb="assets/about-thumb-1.jpg" data-ssop="true" data-anim="ms:1100ms;" data-in="o:1;y:(100%);e:sine.inOut;" data-out="y:0%;e:sine.inOut;">
+							<img src="assets/dummy.png" alt="work" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="off" data-no-retina>
+<!--						--><rs-zone id="rrzm_565" class="rev_row_zone_middle" style="z-index: 9;"><!--
+
+								--><rs-row
+									id="slider-175-slide-565-layer-139" 
+									data-type="row"
+									data-xy="xo:50px;yo:231.81817626953125px;"
+									data-rsp_bd="off"
+									data-padding="t:10;r:10;b:10;l:10;"
+									data-frame_0="o:1;"
+									data-frame_999="o:0;st:w;sA:9000;"
+									style="z-index:10;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-565-layer-140" 
+										data-type="column"
+										data-xy="xo:50px;yo:231.81817626953125px;"
+										data-rsp_bd="off"
+										data-column="w:16.67%;"
+										data-margin="t:0,0,50,30;"
+										data-padding="t:10;r:10;b:10,10,10,0;l:10;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-24" 
+											data-type="text"
+											data-color="#0008ff"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,30,14;l:70,57,43,26;ls:2px,1px,2px,1px;fw:800;"
+											data-dim="w:101px,#1/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="b:30,25,19,12;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';text-transform:uppercase;display:inline-block;"
+										><i class="material-icons">work</i> WORK 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-141" 
+										data-type="column"
+										data-xy="xo:50px,41px,31px,19px;yo:231px,190px,144px,88px;"
+										data-text="s:20,16,12,7;l:0,20,15,9;"
+										data-column="a:middle;"
+										data-padding="t:10,8,6,4;r:10,8,6,4;b:10,8,6,4;l:10,8,6,4;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-10" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,30,20;f:none,none,left,left;c:none,none,left,none;l:30,40,30,22;fw:800;"
+											data-flcr="f:none,none,left,left;c:none,none,left,none;"
+											data-dim="w:360px,#2/3#,auto,380px;h:auto,auto,auto,46px;"
+											data-disp="inline-block"
+											data-margin="r:0,0,0,5;b:0,60,0,5;"
+											data-frame_0="o:1;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Senior Consultant, <br />
+Policy Data Analytics 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-170" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,25,20;f:left,none,left,left;c:none,none,left,left;l:30,40,45,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,144px,172px;h:auto,auto,auto,36px;"
+											data-disp="inline-block"
+											data-margin="b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										><i class="fa-suitcase"></i> Verian 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-159" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,25,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,-10;b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2020 - Present<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-150" 
+										data-type="column"
+										data-xy="xo:50px;yo:140.90908813476562px;"
+										data-rsp_bd="off"
+										data-column="w:50%;"
+										data-padding="t:10,10,0,0;r:10,10,0,0;b:10,10,10,0;l:10,10,10,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-2" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,25,16;f:right,right,none,none;l:30,40,30,20;fw:500;"
+											data-flcr="f:right,right,none,none;"
+											data-dim="w:576px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										>Lead a team of 4 associates to deliver top notch insights to government clients through qualitative and quantitative methods 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+
+								--><rs-row
+									id="slider-175-slide-565-layer-172" 
+									data-type="row"
+									data-xy="xo:50px;yo:231.81817626953125px;"
+									data-rsp_bd="off"
+									data-padding="t:10;r:10;b:10;l:10;"
+									data-frame_0="o:1;"
+									data-frame_999="o:0;st:w;sA:9000;"
+									style="z-index:9;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-565-layer-173" 
+										data-type="column"
+										data-xy="xo:50px;yo:231.81817626953125px;"
+										data-rsp_bd="off"
+										data-column="w:16.67%;"
+										data-padding="t:10,10,10,0;r:10,10,10,0;b:10,10,10,0;l:10,10,10,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-175" 
+										data-type="column"
+										data-xy="xo:50px,41px,31px,19px;yo:231px,190px,144px,88px;"
+										data-text="s:20,16,12,7;l:0,20,15,9;"
+										data-column="a:middle;"
+										data-padding="t:10,8,6,0;r:10,8,6,4;b:10,8,6,4;l:10,8,6,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-176" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,30,20;f:none,none,left,left;c:none,none,left,none;l:30,40,45,20;fw:800;"
+											data-flcr="f:none,none,left,left;c:none,none,left,none;"
+											data-dim="w:360px,#2/3#,auto,204px;h:auto,auto,auto,25px;"
+											data-disp="inline-block"
+											data-margin="r:0,0,0,5;b:0,60,0,0;"
+											data-frame_0="o:1;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Senior Analyst 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-178" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,25,20;f:left,none,left,left;c:none,none,left,left;l:30,40,45,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,122px,118px;h:auto,auto,auto,36px;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,3;b:0,60,0,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										><i class="fa-suitcase"></i> SKIM 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-177" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,25,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,3;b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2018 - 2020<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-179" 
+										data-type="column"
+										data-xy="xo:50px;yo:140.90908813476562px;"
+										data-rsp_bd="off"
+										data-column="w:50%;"
+										data-padding="t:10,10,10,0;r:10;b:10,10,10,0;l:10;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-180" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,25,16;f:right,right,none,none;l:30,40,30,20;fw:500;"
+											data-flcr="f:right,right,none,none;"
+											data-dim="w:576px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,10;r:0,0,0,-4;l:0,0,0,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										>Develop predictive models through conjoint study outputs, for strategic decision-making in a range of industries including FMCG, Technology, and Food & Beverage 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+
+								--><rs-row
+									id="slider-175-slide-565-layer-182" 
+									data-type="row"
+									data-xy="xo:50px;yo:231.81817626953125px;"
+									data-rsp_bd="off"
+									data-padding="t:10;r:10;b:10;l:10;"
+									data-frame_0="o:1;"
+									data-frame_999="o:0;st:w;sA:9000;"
+									style="z-index:8;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-565-layer-183" 
+										data-type="column"
+										data-xy="xo:50px;yo:231.81817626953125px;"
+										data-rsp_bd="off"
+										data-column="w:16.67%;"
+										data-padding="t:10,10,10,0;r:10,10,10,0;b:10,10,10,0;l:10,10,10,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-184" 
+										data-type="column"
+										data-xy="xo:50px,41px,31px,19px;yo:231px,190px,144px,88px;"
+										data-text="s:20,16,12,7;l:0,20,15,9;"
+										data-column="a:middle;"
+										data-padding="t:10,8,6,4;r:10,8,6,4;b:10,8,6,4;l:10,8,6,4;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-185" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,30,20;f:none,none,none,left;l:30,40,45,20;fw:800;"
+											data-flcr="f:none,none,none,left;"
+											data-dim="w:360px,#2/3#,auto,447px;h:auto,auto,auto,46px;"
+											data-disp="inline-block"
+											data-margin="r:0,0,0,5;b:0,60,0,5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Manager, Management Information & Analytics 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-187" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,30,20;f:left,none,left,left;c:none,none,left,left;l:30,40,45,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,276px,305px;h:auto,auto,auto,37px;"
+											data-disp="inline-block"
+											data-margin="b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										><i class="fa-suitcase"></i> Skillsfuture SG 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-186" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,30,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,-10;b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2016 - 2018<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-188" 
+										data-type="column"
+										data-xy="xo:50px;yo:140.90908813476562px;"
+										data-rsp_bd="off"
+										data-column="w:50%;"
+										data-padding="t:10;r:10;b:10;l:10;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-189" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,25,16;f:right,right,none,none;l:30,40,30,20;fw:500;"
+											data-flcr="f:right,right,none,none;"
+											data-dim="w:576px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,10;r:0,0,0,-10;l:0,0,0,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										>Conduct outcome evaluation for all continuing education and training courses via surveys, and integrate survey findings with adminstrative data to distill relevant findings. 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+
+								--><rs-row
+									id="slider-175-slide-565-layer-58" 
+									data-type="row"
+									data-xy="xo:50px;yo:231.81817626953125px;"
+									data-rsp_bd="off"
+									data-padding="t:10;r:10;b:10;l:10;"
+									data-border="bor:0,0,0,10px;"
+									data-frame_0="o:1;"
+									data-frame_999="o:0;st:w;sA:9000;"
+									style="z-index:7;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-565-layer-59" 
+										data-type="column"
+										data-xy="xo:50px;yo:231.81817626953125px;"
+										data-rsp_bd="off"
+										data-column="w:16.67%;"
+										data-padding="t:10,10,10,0;r:10,10,10,0;b:10,10,10,0;l:10,10,10,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-60" 
+										data-type="column"
+										data-xy="xo:50px,41px,31px,19px;yo:231px,190px,144px,88px;"
+										data-text="s:20,16,12,7;l:0,20,15,9;"
+										data-column="a:middle;"
+										data-padding="t:10,10,10,0;r:10,10,10,0;b:10,10,10,0;l:10,10,10,0;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-86" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,30,20;f:none,none,left,left;c:none,none,left,none;l:30,40,45,20;fw:800;"
+											data-flcr="f:none,none,left,left;c:none,none,left,none;"
+											data-dim="w:360px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="r:0,0,0,5;b:0,60,0,5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Senior Analyst 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-133" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:25,25,28,20;f:left,none,left,left;c:none,none,left,left;l:30,40,45,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,305px;h:auto,auto,auto,37px;"
+											data-disp="inline-block"
+											data-margin="b:0,60,0,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										><i class="fa-suitcase"></i> Blackbox Research 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-88" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,30,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2014 - 2016<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-142" 
+										data-type="column"
+										data-xy="xo:50px;yo:140.90908813476562px;"
+										data-rsp_bd="off"
+										data-column="w:50%;"
+										data-padding="t:10;r:10;b:10;l:10;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-143" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,25,16;f:right,right,none,none;l:30,40,30,20;fw:500;"
+											data-flcr="f:right,right,none,none;"
+											data-dim="w:576px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,10;r:0,0,0,-10;b:0,0,0,30;l:0,0,0,-10;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										>Independently managed both qualitative and quantitative research projects from end-to-end. Promoted within the first year in recognition of potential. 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+
+								--><rs-row
+									id="slider-175-slide-565-layer-85" 
+									data-type="row"
+									data-xy="xo:50px;yo:231.81817626953125px;"
+									data-cbreak="3"
+									data-rsp_bd="off"
+									data-padding="t:20,20,40,40;r:10;b:10;l:10;"
+									data-border="bos:solid;boc:#ffffff;bow:0px,0,0,0;"
+									data-frame_0="o:1;"
+									data-frame_999="o:0;st:w;sA:9000;"
+									style="z-index:6;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-565-layer-87" 
+										data-type="column"
+										data-xy="xo:50px;yo:231.81817626953125px;"
+										data-rsp_bd="off"
+										data-column="w:16.67%;"
+										data-padding="t:10,10,6,6;r:10,10,6,6;b:10,10,6,6;l:10,10,6,6;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:9;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-114" 
+											data-type="text"
+											data-color="#0008ff"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,30,14;l:70,57,43,26;ls:2px,1px,2px,1px;fw:800;"
+											data-dim="w:147px,#1/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="b:30,25,19,12;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';text-transform:uppercase;display:inline-block;"
+										><i class="fa-trophy"></i> CERTS 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-119" 
+										data-type="column"
+										data-xy="xo:50px;yo:140.90908813476562px;"
+										data-actions='o:click;a:simplelink;target:_self;url:https://learn.microsoft.com/api/credentials/share/en-gb/DebbyLing-4188/C287442BEC0A5FA?sharingId=DA32398928DBAB6D;'
+										data-rsp_bd="off"
+										data-column="w:27.78%;"
+										data-padding="t:10,10,6,6;r:10,10,6,6;b:10,10,6,6;l:10,10,6,6;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:8;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-565-layer-121" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:22,25,25,20;f:left,none,left,left;c:left,none,left,left;l:25,40,24,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:left,none,left,left;"
+											data-dim="w:297px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,20;b:0,60,0,0;l:0,0,0,-5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Microsoft Certified: Power BI Data Analyst Associate  
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-122" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;s:20,25,20,20;f:left,none,left,left;c:none,none,left,left;l:35,40,35,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:274px,#2/3#,154px,118px;h:auto,auto,auto,36px;"
+											data-disp="inline-block"
+											data-margin="t:0,0,15,5;b:0,60,0,0;l:0,0,0,-5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										>Microsoft 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-41" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;s:20,25,20,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,192px;h:auto,auto,auto,24px;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,-10;b:0,60,120,0;l:0,0,0,-5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2023 - Present<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-115" 
+										data-type="column"
+										data-xy="xo:50px,41px,31px,19px;yo:231px,190px,144px,88px;"
+										data-text="s:20,16,12,7;l:0,20,15,9;"
+										data-actions='o:click;a:simplelink;target:_blank;url:https://www.credly.com/badges/2fe3793c-87da-4c24-9458-b000fbf65731/public_url;'
+										data-column="w:27.78%;a:middle;"
+										data-padding="t:10,8,6,4;r:10,8,6,4;b:10,8,6,4;l:10,8,6,4;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:7;width:100%;"
+									><!--
+										--><a
+											id="slider-175-slide-565-layer-116" 
+											class="rs-layer"
+											href="" target="_self"
+											data-type="text"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:22,25,25,19;f:none,none,none,left;l:25,40,24,20;fw:800;"
+											data-flcr="f:none,none,none,left;"
+											data-dim="w:289px,#2/3#,auto,auto;"
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-disp="inline-block"
+											data-margin="t:0,0,-120,25;b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>AWS Certified Solutions Architect Associate 
+										</a><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-118" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,20,20;f:left,none,left,left;c:none,none,left,left;l:35,40,35,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:240px,#2/3#,98px,118px;h:auto,auto,auto,22px;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,5;b:0,60,0,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										>Amazon 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-117" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,25,20,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,5;b:0,60,30,0;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2023 - Present<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+
+									--><rs-column
+										id="slider-175-slide-565-layer-40" 
+										data-type="column"
+										data-xy="xo:50px;yo:108.75px;"
+										data-actions='o:click;a:simplelink;target:_blank;url:https://learn.microsoft.com/en-gb/users/debbyling-4188/credentials/9ff636d747f2ceb4;'
+										data-rsp_bd="off"
+										data-column="w:27.78%;"
+										data-padding="t:10,10,6,6;r:10,10,6,6;b:10,10,6,6;l:10,10,6,6;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><a
+											id="slider-175-slide-565-layer-174" 
+											class="rs-layer"
+											href="https://learn.microsoft.com/en-gb/users/debbyling-4188/credentials/9ff636d747f2ceb4" target="_self"
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;s:22,25,25,20;f:left,none,left,left;c:left,none,left,left;l:25,40,24,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:left,none,left,left;"
+											data-dim="w:297px,#2/3#,auto,auto;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,25;b:0,60,0,0;l:0,0,0,-5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:8;font-family:'Manrope';display:inline-block;"
+										>Microsoft Certified: Azure Data Engineer Associate 
+										</a><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-181" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;s:20,25,20,20;f:left,none,left,left;c:none,none,left,left;l:35,40,35,20;fw:800;"
+											data-flcr="f:left,none,left,left;c:none,none,left,left;"
+											data-dim="w:274px,#2/3#,154px,118px;h:auto,auto,auto,36px;"
+											data-disp="inline-block"
+											data-margin="t:0,0,15,5;b:0,60,0,0;l:0,0,0,-5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:7;font-family:'Manrope';font-style:italic;display:inline-block;"
+										>Microsoft 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-565-layer-191" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;s:20,25,20,20;f:none,none,left,left;c:none,none,left,left;l:35,40,45,20;fw:500;"
+											data-flcr="f:none,none,left,left;c:none,none,left,left;"
+											data-dim="w:360px,#2/3#,auto,192px;h:auto,auto,auto,57px;"
+											data-disp="inline-block"
+											data-margin="t:0,0,0,-10;b:0,60,120,0;l:0,0,0,-5;"
+											data-frame_0="y:100%;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_0_reverse="y:true;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+											data-frame_999_mask="u:t;"
+											data-frame_999_reverse="y:true;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										><i class="fa-calendar"></i> 2023 - Present<br />
+ 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+							--></rs-zone><!--
+
+							--><rs-layer
+								id="slider-175-slide-565-layer-190" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:50px,41px,357px,211px;yo:175px,144px,1223px,772px;"
+								data-text="w:normal;s:20,16,53,50;l:25,20,66,50;"
+								data-vbility="f,f,t,t"
+								data-actions='o:click;a:scrollbelow;sp:1000ms;e:power1.inOut;'
+								data-margin="t:0,0,0,45;"
+								data-frame_0="x:0,0,0px,0px;y:0,0,0px,0px;"
+								data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;"
+								data-frame_999="o:0;st:w;"
+								data-loop_999="sX:1.2;sY:1.2;sp:2000;st:500;e:power4.inOut;yys:t;yyf:t;"
+								style="z-index:12;font-family:'Roboto';"
+							><i class="material-icons">keyboard_arrow_down</i> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-175-slide-565-layer-192" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:34px,28px,21px,12px;yo:664px,548px,416px,256px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:1140,941,714,440;h:3px,2px,1px,1px;"
+								data-vbility="t,t,f,f"
+								data-frame_999="o:0;st:w;"
+								style="z-index:11;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-490" data-title="projects 2" data-thumb="assets/projects2-thumb.jpg" data-anim="ms:1100ms;" data-in="o:1;y:(100%);e:sine.inOut;" data-out="y:0%;e:sine.inOut;">
+							<img src="assets/dummy.png" alt="projects 2" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="off" data-no-retina>
+<!--
+							--><rs-group
+								id="slider-175-slide-490-layer-20" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;y:b;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:50%,50%,50%,100%;h:50%,50%,50%,#1/3#;"
+								data-basealign="slide"
+								data-clip="u:true;o:ch;"
+								data-frame_0="y:bottom;o:1;cp:0%;"
+								data-frame_0_reverse="y:true;"
+								data-frame_1="e:sine.inOut;sp:1000;cp:99%;"
+								data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sR:8000;cp:0%;sA:9000;"
+								data-frame_999_reverse="y:true;"
+								style="z-index:8;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-490-layer-104" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:c;y:b;yo:-1px;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:15px,15px,14px,10px;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:13;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-90" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:c;yo:-7px,-7px,-7px,-5px;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,14px,10px;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:12;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-89" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:r;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:11;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-74" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="xo:-7px,-7px,-7px,0;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:10;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-21" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:8px,6px,4px,0;y:b;yo:183px,50px,37px,22px;"
+									data-pos="a"
+									data-text="w:normal;s:20,18,18,16;l:25,25,26,24;a:center;"
+									data-dim="w:50%,#2/3#,#2/3#,90%;"
+									data-ford="frame_0;frame_1;frame_2;frame_999;"
+									data-frame_1="y:bottom;e:sine.inOut;sp:600;"
+									data-frame_999="y:bottom;o:0;st:w;sR:6970;"
+									data-frame_2="y:0px;e:sine.inOut;st:a;sp:600;sR:830;"
+									style="z-index:9;font-family:'Manrope';"
+								>Projects that make use of technology 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-25" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;yo:80px,80px,60px,110px;"
+									data-pos="a"
+									data-text="w:normal;s:60,35,35,30;l:70,60,45,36;ls:-3px,-1px,0px,0px;fw:800;"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="y:-200px,-160px,-140px,-63px;e:sine.inOut;st:a;sp:600;sR:250;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:300;"
+									style="z-index:8;font-family:'Manrope';"
+								>Development 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-28" 
+									class="rs-noevents"
+									data-type="text"
+									data-color="rgba(255, 255, 255, 0.5)"
+									data-xy="x:c;y:b;yo:40px,40px,30px,71px;"
+									data-pos="a"
+									data-text="w:normal;s:14,13,13,13;l:40,30,30,20;ls:6px,4px,4px,4px;fw:500;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="x:inherit,inherit,inherit,1px;y:-200px,-160px,-130px,-71px;e:sine.inOut;st:a;sp:600;sR:240;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:310;"
+									style="z-index:7;font-family:'Manrope';text-transform:uppercase;"
+								>Tech projects 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-23" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-49;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-49;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-53;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-53;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-25;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-25;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-28;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-28;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-21;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-21;f:frame_1;ch:true;||o:click;a:openmodal;modal:woo-carousel-one-static-1;ms:rs-539;sp:1000;bg:rgba(0,0,0,0.5);spin:5;spinc:#ffffff;'
+									data-clip="u:true;o:cv;"
+									data-frame_0="o:1;bri:70%;cp:0%;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:99%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+									data-frame_hover="bgc:#0f0f0f;gra:100%;bri:40%;blu:0px;"
+									style="z-index:6;"
+								><rs-bg-elem style="background: url('assets/dev-scaled.jpg') no-repeat center center; background-size: cover;"></rs-bg-elem>
+ 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-group
+								id="slider-175-slide-490-layer-54" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:c;"
+								data-pos="a"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:100%;h:50%,50%,50%,#1/3#;"
+								data-basealign="slide"
+								data-clip="u:true;o:ch;"
+								data-frame_0="y:bottom;o:1;cp:0%;"
+								data-frame_0_reverse="y:true;"
+								data-frame_1="e:sine.inOut;sp:1000;cp:99%;"
+								data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sR:8000;cp:0%;sA:9000;"
+								data-frame_999_reverse="y:true;"
+								style="z-index:6;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-490-layer-45" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:9px,7px,5px,3px;y:b;yo:213px,80px,60px,50px;"
+									data-pos="a"
+									data-text="w:normal;s:30,35,35,20;l:25,60,45,25;ls:0px,-1px,0px,0px;a:left,left,center,center;"
+									data-dim="w:776px,640px,486px,413px;"
+									data-frame_0="o:1;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:11;font-family:'Manrope';"
+								>Here are some of the side-projects I've been working on: 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-65" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:r;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:10;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-66" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:9;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-70" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:c;y:b;yo:-7px,-7px,-7px,-5px;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,14px,10px;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:8;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-69" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:c;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,14px,10px;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:7;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-56" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:27px,22px,-7px,5px;y:b;yo:210px,80px,167px,95px;"
+									data-pos="a"
+									data-text="w:normal;s:60,35,55,30;l:70,60,45,36;ls:-3px,-1px,0px,0px;fw:800;"
+									data-dim="w:390px,322px,401px,238px;h:113px,93px,58px,72px;"
+									data-frame_0="o:1;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:6;font-family:'Manrope';"
+								>Other projects  
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-group
+								id="slider-175-slide-490-layer-105" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:l,l,l,c;y:b,b,b,m;"
+								data-pos="a"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:50%,50%,50%,100%;h:50%,50%,50%,#1/3#;"
+								data-basealign="slide"
+								data-clip="u:true;o:ch;"
+								data-frame_0="y:bottom;o:1;cp:0%;"
+								data-frame_0_reverse="y:true;"
+								data-frame_1="e:sine.inOut;sp:1000;cp:99%;"
+								data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sR:8000;cp:0%;sA:9000;"
+								data-frame_999_reverse="y:true;"
+								style="z-index:7;"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-490-layer-110" 
+									data-type="shape"
+									data-xy="x:r;xo:-7px,-7px,-7px,0;y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:13;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-111" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="y:m;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:14px,14px,14px,10px;h:100%;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1100;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:7800;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:12;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-113" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:c;y:b;yo:-1px,-1px,-1px,-5px;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:15px,15px,14px,10px;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:11;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-112" 
+									class="rs-noevents"
+									data-type="shape"
+									data-xy="x:c;yo:-7px,-7px,-7px,-5px;"
+									data-pos="a"
+									data-text="w:normal;"
+									data-dim="w:100%;h:14px,14px,14px,10px;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-frame_999="o:0;st:w;sR:8700;"
+									style="z-index:10;background-color:#0f0f0f;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-71" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:8px,6px,4px,0;y:b;yo:183px,50px,37px,22px;"
+									data-pos="a"
+									data-text="w:normal;s:20,18,18,16;l:25,25,26,24;a:center;"
+									data-dim="w:50%,#2/3#,#2/3#,90%;"
+									data-ford="frame_0;frame_1;frame_2;frame_999;"
+									data-frame_1="y:bottom;e:sine.inOut;sp:600;"
+									data-frame_999="y:bottom;o:0;st:w;sR:6970;"
+									data-frame_2="y:0px;e:sine.inOut;st:a;sp:600;sR:830;"
+									style="z-index:9;font-family:'Manrope';"
+								>Projects that utilize analytics to derive insights  
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-108" 
+									class="rs-noevents"
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;y:b;yo:80px,80px,60px,67px;"
+									data-pos="a"
+									data-text="w:normal;s:60,35,35,30;l:70,60,45,36;ls:-3px,-1px,0px,0px;fw:800;"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="y:-200px,-160px,-140px,-78px;e:sine.inOut;st:a;sp:600;sR:250;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:300;"
+									style="z-index:8;font-family:'Manrope';"
+								>Data 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-109" 
+									class="rs-noevents"
+									data-type="text"
+									data-color="rgba(255, 255, 255, 0.5)"
+									data-xy="x:c;y:b;yo:40px,40px,30px,39px;"
+									data-pos="a"
+									data-text="w:normal;s:14,13,13,13;l:40,30,30,20;ls:6px,4px,4px,4px;fw:500;"
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+									data-frame_0="y:100%;o:1;"
+									data-frame_0_mask="u:t;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1200;"
+									data-frame_999="y:0px;o:1;st:w;sp:800;sR:6050;"
+									data-frame_999_mask="u:t;"
+									data-frame_999_reverse="y:true;"
+									data-frame_2="x:inherit,inherit,inherit,-1px;y:-200px,-160px,-130px,-79px;e:sine.inOut;st:a;sp:600;sR:240;"
+									data-frame_3="y:0px;e:sine.inOut;st:a;sp:600;sR:310;"
+									style="z-index:7;font-family:'Manrope';text-transform:uppercase;"
+								>Data and Analytics Projects 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-490-layer-107" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c,l,c,c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:100%;h:100%;"
+									data-actions='o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-49;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-49;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-53;f:frame_1;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-53;f:frame_2;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-108;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-108;f:frame_3;ch:true;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-109;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-109;f:frame_3;ch:true;||o:click;a:openmodal;modal:woo-carousel-one-static;ms:rs-529;sp:1000;bg:rgba(0,0,0,0.5);spin:5;spinc:#ffffff;||o:mouseenter;a:gotoframe;layer:slider-175-slide-490-layer-71;f:frame_2;ch:true;||o:mouseleave;a:gotoframe;layer:slider-175-slide-490-layer-71;f:frame_1;ch:true;'
+									data-clip="u:true;o:cv;"
+									data-frame_0="o:1;bri:70%;cp:0%;"
+									data-frame_1="e:sine.inOut;sp:1100;cp:99%;"
+									data-frame_999="o:1;e:sine.inOut;st:w;sp:1100;sR:7900;cp:100%;"
+									data-frame_hover="bgc:#0f0f0f;gra:100%;bri:40%;blu:0px;"
+									style="z-index:6;"
+								><rs-bg-elem style="background: url('assets/data-1.jpg') no-repeat center center; background-size: cover;"></rs-bg-elem>
+ 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-layer
+								id="slider-175-slide-490-layer-49" 
+								class="rs-noevents rs-mtrap"
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;"
+								data-text="w:normal;s:28,13,9,5;l:25,20,15,9;ls:2px,1px,0px,0px;fw:600;a:center;"
+								data-vbility="t,t,f,f"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="sX:0;sY:0;o:1;"
+								data-frame_1="sp:700;st:a;"
+								data-frame_999="sX:0;sY:0;o:0;st:w;sR:7370;"
+								data-frame_2="sX:0;sY:0;st:a;sp:600;sR:330;"
+								data-mousetrap='ola1:slider-175-slide-490-layer-23;ola2:slider-175-slide-490-layer-107;f:olayer;d:20ms;mr:;ox:60px,49px,37px,22px;oy:13px,10px,7px,4px;' 
+								style="z-index:10;font-family:'Manrope';text-transform:uppercase;"
+							>view<br />
+projects 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-175-slide-490-layer-53" 
+								class="rs-noevents rs-mtrap"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:180px,148px,112px,69px;h:180px,148px,112px,69px;"
+								data-vbility="t,t,f,f"
+								data-border="bor:50%,50%,50%,50%;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="sX:0;sY:0;o:1;"
+								data-frame_1="sp:600;st:a;"
+								data-frame_999="sX:0;sY:0;o:0;st:w;sR:7380;"
+								data-frame_2="sX:0;sY:0;st:a;sp:600;sR:420;"
+								data-mousetrap='ola1:slider-175-slide-490-layer-23;ola2:slider-175-slide-490-layer-107;f:olayer;d:50ms;mr:;ox:90px,74px,56px,34px;oy:90px,74px,56px,34px;' 
+								style="z-index:9;background-color:#0008ff;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-493" data-title="contact" data-thumb="assets/contact-thumb.jpg" data-anim="ms:1100ms;" data-in="o:1;y:(100%);e:sine.inOut;" data-out="y:0%;e:sine.inOut;">
+							<img src="assets/dummy.png" alt="contact" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="off" data-no-retina>
+<!--						--><rs-zone id="rrzm_493" class="rev_row_zone_middle" style="z-index: 7;"><!--
+
+								--><rs-row
+									id="slider-175-slide-493-layer-46" 
+									data-type="row"
+									data-xy="xo:50px;yo:50px;"
+									data-rsp_bd="off"
+									data-margin="t:50,100,100,100;b:100,50,100,100;"
+									data-padding="r:50,140,50,30;l:50,140,50,30;"
+									data-frame_0="y:bottom;o:1;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1000;"
+									data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sA:9000;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:8;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-493-layer-47" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:100%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sp:800;sR:8700;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-493-layer-48" 
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:80,50,50,35;l:100,60,60,45;ls:-1px,0px,0px,0px;fw:700;"
+											data-basealign="slide"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_999="o:1;st:w;sp:800;sR:7800;"
+											style="z-index:6;font-family:'Manrope';"
+										>Let's Chat 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+
+								--><rs-row
+									id="slider-175-slide-493-layer-29" 
+									data-type="row"
+									data-xy="xo:50px;yo:50px;"
+									data-rsp_bd="off"
+									data-padding="r:50,140,50,30;l:50,140,50,30;"
+									data-frame_0="y:bottom;o:1;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1000;"
+									data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sA:9000;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:7;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-493-layer-34" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:100%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:1;st:w;sR:8700;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-493-layer-31" 
+											data-type="image"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;f:right,right,right,none;l:0,20,15,9;"
+											data-flcr="f:right,right,right,none;"
+											data-dim="w:200px,165px,125px,77px;h:200px,165px,125px,77px;"
+											data-disp="inline-block"
+											data-margin="t:-200,-165,-125,-77;r:30,25,19,12;"
+											data-border="bor:50%,50%,50%,50%;"
+											data-frame_0="y:0%;sX:0;sY:0;o:1;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:1;st:w;sp:800;sR:7800;"
+											style="z-index:12;display:inline-block;"
+										><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="150" height="150" data-lazyload="assets/1685858360752-150x150.jpg" data-no-retina> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-493-layer-35" 
+											data-type="text"
+											data-color="rgba(255, 255, 255, 0.7)"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,18,17,16;l:30,28,27,26;fw:500;"
+											data-dim="w:40%,50%,55%,auto;"
+											data-frame_0="y:0%;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_999="o:1;st:w;sp:800;sR:7800;"
+											style="z-index:11;font-family:'Manrope';"
+										>Always interested in conversations around analytics or tech 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-493-layer-36" 
+											data-type="shape"
+											data-rsp_ch="on"
+											data-xy="xo:50px,41px,31px,19px;yo:50px,41px,31px,19px;"
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;c:both;l:0,20,15,9;"
+											data-flcr="c:both;"
+											data-dim="w:100%;h:1px;"
+											data-margin="t:60,50,38,35;b:60,50,38,35;"
+											data-border="bos:solid;boc:rgba(255, 255, 255, 0.1);bow:1px,0,0,0;"
+											data-frame_0="x:-100%;"
+											data-frame_0_mask="u:t;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:1;st:w;sp:800;sR:8700;"
+											style="z-index:10;"
+										> 
+										</rs-layer><!--
+
+										--><a
+											id="slider-175-slide-493-layer-37" 
+											class="rs-layer rev-btn"
+											href="mailto:debby.lingzl@gmail.com" target="_blank" rel="noopener"
+											data-type="button"
+											data-color="#000000"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:18,18,18,16;l:70,60,60,55;fw:500;"
+											data-dim="minh:0px,none,none,none;"
+											data-disp="inline-block"
+											data-margin="r:90,74,56,80;"
+											data-padding="r:50,41,31,19;l:50,41,31,19;"
+											data-border="bos:solid;boc:rgba(0, 214, 214, 0);bow:1px,1px,1px,1px;bor:50px,50px,50px,50px;"
+											data-frame_0="y:0%;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_999="o:1;st:w;sp:800;sR:7800;"
+											data-frame_hover="c:#fff;bgc:rgba(0,0,0,0);boc:#2100ff;bor:50px,50px,50px,50px;bos:solid;bow:1px,1px,1px,1px;"
+											style="z-index:9;background-color:#0008ff;font-family:'Manrope';cursor:pointer;display:inline-block;"
+										>Contact me 
+										</a><!--
+
+										--><a
+											id="slider-175-slide-493-layer-38" 
+											class="rs-layer"
+											href="https://www.linkedin.com/in/debby-ling-74944226/" target="_blank" rel="noopener"
+											data-type="text"
+											data-color="rgba(255, 255, 255, 0.7)"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:30,18,18,16;l:70,60,45,55;fw:500;"
+											data-disp="inline-block"
+											data-padding="r:25,21,16,10;l:25,21,16,10;"
+											data-frame_0="y:0%;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_999="o:1;st:w;sp:800;sR:7800;"
+											data-frame_hover="c:#fff;"
+											style="z-index:8;font-family:'Manrope';cursor:pointer;display:inline-block;"
+										><i class="fa-linkedin-square"></i> 
+										</a><!--
+
+										--><a
+											id="slider-175-slide-493-layer-39" 
+											class="rs-layer"
+											href="https://github.com/dzldebby" target="_blank" rel="noopener"
+											data-type="text"
+											data-color="rgba(255, 255, 255, 0.7)"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:30,18,18,16;l:70,60,45,55;fw:500;"
+											data-disp="inline-block"
+											data-padding="r:25,21,16,10;l:25,21,16,10;"
+											data-frame_0="y:0%;"
+											data-frame_1="e:sine.inOut;sp:1200;"
+											data-frame_999="o:1;st:w;sp:800;sR:7800;"
+											data-frame_hover="c:#fff;"
+											style="z-index:7;font-family:'Manrope';cursor:pointer;display:inline-block;"
+										><i class="fa-github"></i> 
+										</a><!--
+									--></rs-column><!--
+								--></rs-row><!--
+
+								--><rs-row
+									id="slider-175-slide-493-layer-42" 
+									data-type="row"
+									data-xy="xo:50px;yo:50px;"
+									data-rsp_bd="off"
+									data-padding="t:140,120,250,100;r:50,140,50,30;b:50;l:50,140,50,30;"
+									data-frame_0="y:bottom;o:1;"
+									data-frame_0_reverse="y:true;"
+									data-frame_1="e:sine.inOut;sp:1000;"
+									data-frame_999="y:top;o:1;e:sine.inOut;st:w;sp:1000;sA:9000;"
+									data-frame_999_reverse="y:true;"
+									style="z-index:6;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-493-layer-43" 
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-column="w:100%;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sR:8700;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-493-layer-44" 
+											data-type="text"
+											data-color="rgba(255, 255, 255, 0.7)"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,17,17,16;l:30,24,25,26;fw:500;"
+											data-vbility="t,t,t,f"
+											data-disp="inline-block"
+											data-frame_999="o:0;st:w;sR:8700;"
+											style="z-index:6;font-family:'Manrope';display:inline-block;"
+										>© Debby Ling 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+							--></rs-zone><!--
+-->						</rs-slide>
+					</rs-slides>
+					<rs-static-layers><!--
+						--><rs-zone id="rrzt_167" class="rev_row_zone_top" style="z-index: 10;"><!--
+
+								--><rs-row
+									id="slider-175-slide-167-layer-26" 
+									class="rs-layer-static"
+									data-type="row"
+									data-xy="xo:50px;yo:50px;"
+									data-basealign="slide"
+									data-rsp_bd="off"
+									data-onslides="s:1;"
+									data-margin="t:30,30,30,20;r:60,50,50,30;l:60,50,50,30;"
+									data-frame_0="y:top;o:1;"
+									data-frame_1="e:sine.inOut;sp:1000;"
+									data-frame_999="o:0;st:w;sR:8000;sA:9000;"
+									style="z-index:6;"
+								><!--
+									--><rs-column
+										id="slider-175-slide-167-layer-30" 
+										class="rs-layer-static"
+										data-type="column"
+										data-xy="xo:50px;yo:50px;"
+										data-rsp_bd="off"
+										data-onslides="s:1;"
+										data-column="w:100%;a:middle;"
+										data-frame_0="o:1;"
+										data-frame_999="o:0;st:w;sR:8700;sA:9000;"
+										style="z-index:6;width:100%;"
+									><!--
+										--><rs-layer
+											id="slider-175-slide-167-layer-64" 
+											class="rs-layer-static"
+											data-type="image"
+											data-rsp_ch="on"
+											data-xy=""
+											data-pos="r"
+											data-text="w:normal;s:20,16,12,7;f:left,none,none,none;c:left,none,none,none;l:0,20,15,9;"
+											data-flcr="f:left,none,none,none;c:left,none,none,none;"
+											data-dim="w:51px,42px,31px,19px;h:71px,58px,44px,27px;"
+											data-onslides="s:1;"
+											data-frame_0="o:1;"
+											data-frame_1="x:13px,10px,7px,4px;"
+											data-frame_999="o:0;st:w;sR:8700;"
+											style="z-index:12;"
+										><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="35" height="49" data-lazyload="assets/logo-1-1.png" data-no-retina> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-167-layer-68" 
+											class="rs-noevents rs-layer-static"
+											data-type="shape"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;f:left,left,right,right;"
+											data-flcr="f:left,left,right,right;"
+											data-dim="w:40px;h:2px;"
+											data-vbility="f,f,f,t"
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-onslides="s:1;"
+											data-disp="inline-block"
+											data-margin="t:20,-40,-40,-20;r:0,0,0,-1;l:22,-300,-300,-300;"
+											data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+											data-frame_0="x:0,0,0px,0px;y:0,0,0px,0px;"
+											data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;sp:290;sR:10;"
+											data-frame_999="o:0;st:w;sR:7700;"
+											data-frame_2="x:2px,3px,1px,1px;y:11px,5px,12px,12px;rZ:45deg;st:a;sp:400;sR:100;"
+											data-frame_3="y:0px;rZ:0deg;st:a;sp:400;sR:100;"
+											style="z-index:11;background-color:#ffffff;display:inline-block;"
+										> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-167-layer-76" 
+											class="rs-noevents rs-layer-static"
+											data-type="shape"
+											data-xy="x:c;y:m;"
+											data-pos="r"
+											data-text="w:normal;f:left,left,right,right;"
+											data-flcr="f:left,left,right,right;"
+											data-dim="w:40px;h:2px;"
+											data-vbility="f,f,f,t"
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-onslides="s:1;"
+											data-disp="inline-block"
+											data-margin="t:35,-30,30,-10;r:0,0,0,-1;l:-40,-280,-3,130;"
+											data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+											data-frame_999="o:0;st:w;sR:7700;"
+											data-frame_2="x:inherit,inherit,inherit,0px;y:-4px,-4px,-4px,1px;rZ:-45deg;st:a;sp:400;sR:100;"
+											data-frame_3="x:3px,3px,3px,0px;y:0px;rZ:0deg;st:a;sp:400;sR:100;"
+											style="z-index:10;background-color:#ffffff;display:inline-block;"
+										> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-167-layer-75" 
+											class="rs-layer-static"
+											data-type="shape"
+											data-xy="x:c,l,c,l;xo:0,0,0,336px;y:m,t,m,t;yo:0,0,0,15px;"
+											data-pos="a"
+											data-text="w:normal;f:none,left,right,right;"
+											data-flcr="f:none,left,right,right;"
+											data-dim="w:158px,158px,158px,122px;h:63px,63px,63px,43px;"
+											data-vbility="f,f,f,t"
+											data-actions='o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-76;ch:true;||o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-68;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-131;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-135;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-136;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-137;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-138;ch:true;||o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-68;ch:true;||o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-76;ch:true;'
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-onslides="s:1;"
+											data-margin="r:-5,-5,-45,-45;"
+											data-frame_0="o:1;"
+											data-frame_999="o:0;st:w;sR:8700;"
+											style="z-index:9;cursor:pointer;"
+										> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-167-layer-33" 
+											class="rs-noevents rs-layer-static"
+											data-type="shape"
+											data-xy="xo:0,100px,729px,407px;yo:0,25px,16px,2px;"
+											data-pos="r"
+											data-text="w:normal;f:left,left,right,right;"
+											data-flcr="f:left,left,right,right;"
+											data-dim="w:40px;h:2px;"
+											data-vbility="t,f,f,f"
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-onslides="s:1;"
+											data-disp="inline-block"
+											data-margin="t:20;l:22;"
+											data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+											data-frame_0="x:0,0,0px,0px;y:0,0,0px,0px;"
+											data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;"
+											data-frame_999="o:0;st:w;sR:7700;"
+											data-frame_2="x:2px,3px,1px,1px;y:11px,5px,12px,12px;rZ:45deg;st:a;sp:400;sR:100;"
+											data-frame_3="y:0px;rZ:0deg;st:a;sp:400;sR:100;"
+											style="z-index:8;background-color:#ffffff;display:inline-block;"
+										> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-167-layer-32" 
+											class="rs-noevents rs-layer-static"
+											data-type="shape"
+											data-xy="xo:0,155px,731px,410.0474548339844px;yo:0,33px,18px,11.428571428571429px;"
+											data-pos="r"
+											data-text="w:normal;f:left,left,right,right;"
+											data-flcr="f:left,left,right,right;"
+											data-dim="w:40px;h:2px;"
+											data-vbility="t,f,f,f"
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-onslides="s:1;"
+											data-disp="inline-block"
+											data-margin="t:35,35,30,30;l:-40,-40,-3,-3;"
+											data-ford="frame_0;frame_1;frame_2;frame_3;frame_999;"
+											data-frame_999="o:0;st:w;sR:7700;"
+											data-frame_2="y:-4px;rZ:-45deg;st:a;sp:400;sR:100;"
+											data-frame_3="x:3px;y:0px;rZ:0deg;st:a;sp:400;sR:100;"
+											style="z-index:7;background-color:#ffffff;display:inline-block;"
+										> 
+										</rs-layer><!--
+
+										--><rs-layer
+											id="slider-175-slide-167-layer-130" 
+											class="rs-layer-static"
+											data-type="shape"
+											data-xy="xo:0,135.25390625,724px,402.19031197684154px;yo:0,27.75390625,28px,9.285714285714286px;"
+											data-pos="r"
+											data-text="w:normal;f:none,left,right,right;"
+											data-flcr="f:none,left,right,right;"
+											data-dim="w:158px;h:63px;"
+											data-vbility="t,f,f,f"
+											data-actions='o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-32;ch:true;||o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-33;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-131;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-135;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-136;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-137;ch:true;||o:click;a:togglelayer;ls:hidden;layer:slider-175-slide-167-layer-138;ch:true;||o:click;a:toggleframes;m:frame_3;n:frame_2;layer:slider-175-slide-167-layer-68;ch:true;'
+											data-rsp_o="off"
+											data-rsp_bd="off"
+											data-onslides="s:1;"
+											data-margin="r:-5,-5,-45,-45;"
+											data-frame_0="o:1;"
+											data-frame_999="o:0;st:w;sR:8700;"
+											style="z-index:6;cursor:pointer;"
+										> 
+										</rs-layer><!--
+									--></rs-column><!--
+								--></rs-row><!--
+							--></rs-zone><!--
+
+							--><rs-group
+								id="slider-175-slide-167-layer-131" 
+								class="rs-layer-static"
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-1px,0,0,0;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:100%;h:100%;"
+								data-basealign="slide"
+								data-onslides="s:1;"
+								data-frame_1="e:sine.inOut;sp:700;bB:10px;st:a;"
+								data-frame_999="o:0;e:sine.inOut;st:a;sp:600;sR:8300;sA:9000;"
+								style="z-index:9;background-color:rgba(0,0,0,0.6);"
+							><!--
+								--><rs-layer
+									id="slider-175-slide-167-layer-138" 
+									class="rs-layer-static"
+									data-type="text"
+									data-xy="x:c;y:m;yo:200px,200px,200px,140px;"
+									data-pos="a"
+									data-text="w:normal;s:110,90,90,45;l:110,110,110,80;ls:-1px;fw:700;"
+									data-actions='o:click;a:jumptoslide;slide:rs-493;||o:click;a:simulateclick;layer:slider-175-slide-167-layer-130;'
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-onslides="s:1;"
+									data-frame_0="y:100%;"
+									data-frame_0_mask="u:t;"
+									data-frame_1="e:sine.inOut;sp:700;st:a;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:100%;o:0;e:sine.inOut;st:a;sp:500;sR:8300;"
+									data-frame_999_mask="u:t;"
+									data-frame_hover="c:#00d6d6;"
+									style="z-index:9;font-family:'Manrope';cursor:pointer;"
+								>Contact 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-167-layer-137" 
+									class="rs-layer-static"
+									data-type="text"
+									data-xy="x:c;y:m;yo:100px,100px,100px,70px;"
+									data-pos="a"
+									data-text="w:normal;s:110,90,90,45;l:110,110,110,80;ls:-1px;fw:700;"
+									data-actions='o:click;a:jumptoslide;slide:rs-492;||o:click;a:simulateclick;layer:slider-175-slide-167-layer-130;'
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-onslides="s:1;"
+									data-frame_0="y:100%;"
+									data-frame_0_mask="u:t;"
+									data-frame_1="e:sine.inOut;sp:700;st:a;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:100%;o:0;e:sine.inOut;st:a;sp:500;sR:8300;"
+									data-frame_999_mask="u:t;"
+									data-frame_hover="c:#00d6d6;"
+									style="z-index:8;font-family:'Manrope';cursor:pointer;"
+								>Projects 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-167-layer-136" 
+									class="rs-layer-static"
+									data-type="text"
+									data-xy="x:c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:110,90,90,45;l:110,110,110,80;ls:-1px;fw:700;"
+									data-actions='o:click;a:jumptoslide;slide:rs-489;||o:click;a:simulateclick;layer:slider-175-slide-167-layer-130;'
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-onslides="s:1;"
+									data-frame_0="y:100%;"
+									data-frame_0_mask="u:t;"
+									data-frame_1="e:sine.inOut;sp:700;st:a;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:100%;o:0;e:sine.inOut;st:a;sp:500;sR:8300;"
+									data-frame_999_mask="u:t;"
+									data-frame_hover="c:#00d6d6;"
+									style="z-index:7;font-family:'Manrope';cursor:pointer;"
+								>Work 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-175-slide-167-layer-135" 
+									class="rs-layer-static"
+									data-type="text"
+									data-xy="x:c;y:m;yo:-100px,-100px,-100px,-70px;"
+									data-pos="a"
+									data-text="w:normal;s:110,90,90,45;l:110,110,110,80;ls:-1px;fw:700;"
+									data-actions='o:click;a:jumptoslide;slide:rs-488;||o:click;a:simulateclick;layer:slider-175-slide-167-layer-130;'
+									data-rsp_o="off"
+									data-rsp_bd="off"
+									data-onslides="s:1;"
+									data-frame_0="y:100%;"
+									data-frame_0_mask="u:t;"
+									data-frame_1="e:sine.inOut;sp:700;st:a;"
+									data-frame_1_mask="u:t;"
+									data-frame_999="y:100%;o:0;e:sine.inOut;st:a;sp:500;sR:8300;"
+									data-frame_999_mask="u:t;"
+									data-frame_hover="c:#00d6d6;"
+									style="z-index:6;font-family:'Manrope';cursor:pointer;"
+								>About 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-layer
+								id="slider-175-slide-167-layer-22" 
+								class="rs-layer-static"
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0.5)"
+								data-xy="x:r;xo:-65px,-75px,-75px,-75px;y:m;yo:-100px,-70px,-70px,-70px;"
+								data-text="w:normal;s:16;ls:3px;"
+								data-vbility="t,t,f,f"
+								data-basealign="slide"
+								data-rsp_o="off"
+								data-rsp_bd="off"
+								data-btrans="rZ:-90;"
+								data-onslides="s:1;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="e:sine.inOut;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:8000;"
+								style="z-index:6;font-family:'Roboto';text-transform:uppercase;"
+							>debby's portfolio 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-175-slide-167-layer-52" 
+								class="rs-layer-static"
+								data-type="shape"
+								data-xy="x:r;xo:80px,70px,70px,70px;y:b;yo:100px,70px,70px,70px;"
+								data-text="w:normal;"
+								data-dim="w:1px;h:200px,150px,150px,150px;"
+								data-vbility="t,t,f,f"
+								data-basealign="slide"
+								data-rsp_o="off"
+								data-rsp_bd="off"
+								data-onslides="s:1;"
+								data-clip="u:true;o:t;"
+								data-frame_0="cp:0%;"
+								data-frame_1="e:sine.inOut;st:200;sp:1000;sR:200;"
+								data-frame_999="o:0;st:w;sR:7800;"
+								style="z-index:5;background-color:rgba(255,255,255,0.5);"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-175-slide-167-layer-55" 
+								class="rs-layer-static"
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0.5)"
+								data-xy="xo:30px;y:b;yo:120px;"
+								data-text="w:normal;s:16;ls:3px;"
+								data-vbility="t,t,f,f"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-basealign="slide"
+								data-rsp_o="off"
+								data-rsp_bd="off"
+								data-btrans="rZ:-90;"
+								data-onslides="s:1;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="e:sine.inOut;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:8000;"
+								data-frame_hover="rZ:0;c:#fff;"
+								style="z-index:4;font-family:'Roboto';text-transform:uppercase;cursor:pointer;"
+							>scroll 
+							</rs-layer><!--
+					--></rs-static-layers>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider1751"] = {once: RS_MODULES.modules["revslider1751"]!==undefined ? RS_MODULES.modules["revslider1751"].once : undefined, init:function() {
+						window.revapi175 = window.revapi175===undefined || window.revapi175===null || window.revapi175.length===0  ? document.getElementById("rev_slider_175_1") : window.revapi175;
+						if(window.revapi175 === null || window.revapi175 === undefined || window.revapi175.length==0) { window.revapi175initTry = window.revapi175initTry ===undefined ? 0 : window.revapi175initTry+1; if (window.revapi175initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider1751"].init()}); return;}
+						window.revapi175 = jQuery(window.revapi175);
+						if(window.revapi175.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_175_1"); return;}
+						revapi175.revolutionInit({
+								revapi:"revapi175",
+								DPR:"dpr",
+								sliderLayout:"fullscreen",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:"1240,1024,778,480",
+								gridheight:"900,768,960,720",
+								lazyType:"single",
+								spinner:"spinner8",
+								perspective:600,
+								perspectiveType:"global",
+								keepBPHeight:true,
+								spinnerclr:"#0008ff",
+								imgCrossOrigin:"anonymous",
+								editorheight:"900,767.988,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								ignoreHeightChange:false,
+								stopAtSlide:1,
+								stopAfterLoops:0,
+								stopLoop:true,
+								ajaxUrl:"https://www.ourplaceintheworld.sg/wp-admin/admin-ajax.php",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									mouseScrollNavigation:"on",
+									wheelViewPort:100,
+									wheelCallDelay:1000,
+									onHoverStop:false,
+									touch: {
+										touchenabled:true,
+										swipe_direction:"vertical"
+									},
+									bullets: {
+										enable:true,
+										tmp:"",
+										style:"hesperiden",
+										hide_onmobile:true,
+										hide_under:778,
+										anim:"left",
+										animDelay:"1ms",
+										h_align:"left",
+										v_align:"center",
+										h_offset:65,
+										v_offset:-51,
+										direction:"vertical",
+										space:10
+									}
+								},
+								parallax: {
+									levels:[2,3,15,20,25,30,35,40,45,46,-2,7,49,50,51,30],
+									type:"mouse",
+									origo:"slidercenter",
+									speed:0
+								},
+								sbtimeline: {
+									set:true
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+							window.addEventListener('load', function() {
+   document.body.style.display = 'none';
+   document.body.offsetHeight; // Trigger reflow
+   document.body.style.display = '';
+});
+
+						
+                		if(typeof RSMousetrap !== "undefined") RSMousetrap(revapi175);
+
+						if (revapi175 !== undefined) jQuery.fn.revolution.particleWaveInit(revapi175[0].id,  {url:"https://www.ourplaceintheworld.sg/wp-content/plugins/revslider-particlewave-addon/"});
+
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+<style>body{margin:auto}#rev_slider_175_1_wrapper .hesperiden.tp-bullets{}#rev_slider_175_1_wrapper .hesperiden.tp-bullets:before{content:' ';position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box; border-radius:8px}#rev_slider_175_1_wrapper .hesperiden .tp-bullet{width:10px;height:10px;position:absolute;background:transparent;  background:-moz-linear-gradient(top,transparent 0%,transparent 100%);  background:-webkit-linear-gradient(top,transparent 0%,transparent 100%);  background:-o-linear-gradient(top,transparent 0%,transparent 100%);  background:-ms-linear-gradient(top,transparent 0%,transparent 100%);  background:linear-gradient(to bottom,transparent 0%,transparent 100%);  filter:progid:dximagetransform.microsoft.gradient(  startcolorstr='transparent',endcolorstr='transparent',gradienttype=0 ); border:2px solid rgba(255,255,255,0.2);border-radius:50%;cursor:pointer;box-sizing:content-box}#rev_slider_175_1_wrapper .hesperiden .tp-bullet.rs-touchhover,#rev_slider_175_1_wrapper .hesperiden .tp-bullet.selected{background:#ffffff}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-image{}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-title{}@font-face{font-family:'Material Icons'; font-style:normal; font-weight:400; src:url(//fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2')}rs-module .material-icons{font-family:'Material Icons'; font-weight:normal; font-style:normal;font-size:inherit; display:inline-block; text-transform:none; letter-spacing:normal; word-wrap:normal; white-space:nowrap; direction:ltr; vertical-align:top; line-height:inherit; font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -moz-osx-font-smoothing:grayscale}</style>
+<script async="" defer="" src="js/revolution.addon.mousetrap.min.js"></script><script async="" defer="" src="js/revolution.addon.particlewave.min.js"></script><script async="" defer="" src="https://www.ourplaceintheworld.sg/wp-content/plugins/revslider/public/assets/js/libs/three.min.js"></script><script type="text/javascript">window.RVS = window.RVS || {}; window.RVS.ENV = window.RVS.ENV || {}; window.RVS.ENV.TRANSITIONPACK_URL = "https://www.ourplaceintheworld.sg/wp-content/plugins/revslider-transitionpack-addon/";</script>
+		</body>
+				</html>
+		
