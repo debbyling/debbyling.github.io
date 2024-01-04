@@ -154,7 +154,12 @@
 											data-frame_999="y:100%;o:0;e:sine.inOut;st:w;sp:800;sR:7900;"
 											data-frame_999_mask="u:t;"
 											style="z-index:8;font-family:'Manrope';"
-										>Analytics | Tech | Impact 
+										>Analytics | Tech | Impact 	
+																			
+										<!-- TO DELETE -->
+										<div id="screen-height-display"></div>
+										
+									
 										</rs-layer><!--
 
 										--><rs-layer
@@ -279,8 +284,11 @@
 											style="z-index:6;background-color:rgba(0,0,0,0.5);"
 										> 
 										</rs-layer><!--
-									--></rs-column><!--
+									--></rs-column>
 
+
+									<!--
+									
 									--><rs-column
 										id="slider-175-slide-567-layer-5" 
 										data-type="column"
@@ -301,7 +309,8 @@
 											data-padding="t:50,41,31,19;r:80,66,50,31;b:50,41,31,19;l:80,66,50,31;"
 											data-frame_999="o:1;st:w;sp:800;sR:8700;"
 											style="z-index:6;background-color:#0f0f0f;font-family:'Manrope';"
-										>Data strategist based in Singapore, empowering organisations with insightful analytics for smarter, more impactful decision-making. 
+										>									
+										Data strategist based in Singapore, empowering organisations with insightful analytics for smarter, more impactful decision-making. 
 										</rs-layer><!--
 									--></rs-column><!--
 								--></rs-row><!--
@@ -3267,18 +3276,8 @@ projects
 		
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to check if the device is mobile
-    function isMobileDevice() {
-        return /Mobi/i.test(navigator.userAgent);
-    }
-
-    if (isMobileDevice()) {
-        var targetElement = document.querySelector('.rs-module-wrap #rev_slider_175_1_wrapper');
-        if (targetElement) {
-            var calculatedHeight = window.screen.height - 26;
-            targetElement.style.height = calculatedHeight + 'px';
-        }
-    }
+    var screenHeight = window.screen.height;
+    document.getElementById('screen-height-display').textContent = 'Screen Height: ' + screenHeight + 'px';
 });
 
 	</script>
