@@ -3267,7 +3267,12 @@ projects
 		
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    if (/Android/i.test(navigator.userAgent) && /Chrome/i.test(navigator.userAgent)) {
+    // Function to check if the device is mobile
+    function isMobileDevice() {
+        return /Mobi/i.test(navigator.userAgent);
+    }
+
+    if (isMobileDevice()) {
         var targetElement = document.querySelector('.rs-module-wrap #rev_slider_175_1_wrapper');
         if (targetElement) {
             var calculatedHeight = window.screen.height - 26;
@@ -3275,6 +3280,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
 	</script>
 
 </body>
