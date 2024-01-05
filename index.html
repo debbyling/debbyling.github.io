@@ -214,10 +214,12 @@
 											data-frame_999="y:100%;o:0;e:sine.inOut;st:w;sp:800;sR:7900;"
 											data-frame_999_mask="u:t;"
 											style="z-index:8;font-family:'Manrope';"
-										>Analytics | Tech | Impact 	
+										>Analytics | Tech | Impact1 	
 																			
 										<!-- TO DELETE -->
 										<div id="screen-height-display"></div>
+										<div id="screen-innerHeight"></div>
+
 										
 									
 										</rs-layer><!--
@@ -3338,6 +3340,11 @@ projects
 document.addEventListener('DOMContentLoaded', function() {
     var screenHeight = window.screen.height;
     document.getElementById('screen-height-display').textContent = 'Screen Height: ' + screenHeight + 'px';
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var innerHeight = window.innerHeight;
+    document.getElementById('screen-innerHeight').textContent = 'Inner Height: ' + innerHeight + 'px';
 });
 
 	</script>
