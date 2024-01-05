@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -7,11 +7,11 @@
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>Debby&#039;s - Slider Revolution</title>
+			<title>Debby&#039;s</title>
 			<meta name="description" content="Slider Revolution Example" />
 			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
 			<meta name="author" content="ThemePunch" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content" />
 
 			<!-- LOAD JQUERY LIBRARY -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
@@ -25,6 +25,8 @@
 			
 			<!-- REVOLUTION STYLE SHEETS -->
 			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
 			<!-- REVOLUTION LAYERS STYLES -->
 						<!-- REVOLUTION JS FILES -->
 			
@@ -41,7 +43,7 @@
 					<script src="js/rbtools.min.js"></script>
 							<script src="js/rs6.min.js"></script>
 							
-			<script>function setREVStartSize(e){
+			<!-- <script>function setREVStartSize(e){
 			//window.requestAnimationFrame(function() {
 				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
 				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
@@ -89,7 +91,67 @@
 					console.log("Failure at Presize of Slider:" + e)
 				}
 			//});
-		  };</script>
+		  };</script> -->
+
+		  <script>
+			function setREVStartSize(e) {
+				window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+			
+					// Check if the device is a mobile device based on screen width
+					var isMobile = window.innerWidth <= 768; // typically mobile devices are considered to have a screen width of 768px or less
+			
+					if (isMobile) {
+						newh = screen.height; // Set the height to the screen height for mobile devices
+					} else {
+						if (e.layout === "fullscreen" || e.l === "fullscreen")
+							newh = Math.max(e.mh, window.RSIH);
+						else {
+							e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+							for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+							e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+							e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+							for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+			
+							var nl = new Array(e.rl.length),
+								ix = 0,
+								sl;
+							e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+							e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+							e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+							e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+							for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+							sl = nl[0];
+							for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+							var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+							newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+						}
+					}
+			
+					var el = document.getElementById(e.c);
+					if (el !== null && el) el.style.height = newh + "px";
+					el = document.getElementById(e.c + "_wrapper");
+					if (el !== null && el) {
+						el.style.height = newh + "px";
+						el.style.display = "block";
+					}
+				} catch (e) {
+					console.log("Failure at Presize of Slider:" + e);
+				}
+			}
+			</script>
+			
 
 			
 		</head>
@@ -152,7 +214,11 @@
 											data-frame_999="y:100%;o:0;e:sine.inOut;st:w;sp:800;sR:7900;"
 											data-frame_999_mask="u:t;"
 											style="z-index:8;font-family:'Manrope';"
-										>Analytics | Tech | Impact 
+										>Analytics | Tech | Impact
+																			
+	
+										
+									
 										</rs-layer><!--
 
 										--><rs-layer
@@ -277,8 +343,11 @@
 											style="z-index:6;background-color:rgba(0,0,0,0.5);"
 										> 
 										</rs-layer><!--
-									--></rs-column><!--
+									--></rs-column>
 
+
+									<!--
+									
 									--><rs-column
 										id="slider-175-slide-567-layer-5" 
 										data-type="column"
@@ -299,7 +368,8 @@
 											data-padding="t:50,41,31,19;r:80,66,50,31;b:50,41,31,19;l:80,66,50,31;"
 											data-frame_999="o:1;st:w;sp:800;sR:8700;"
 											style="z-index:6;background-color:#0f0f0f;font-family:'Manrope';"
-										>Data strategist based in Singapore, empowering organisations with insightful analytics for smarter, more impactful decision-making. 
+										>									
+										Data strategist based in Singapore, empowering organisations with insightful analytics for smarter, more impactful decision-making. 
 										</rs-layer><!--
 									--></rs-column><!--
 								--></rs-row><!--
@@ -440,7 +510,7 @@
 							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="233" height="300" data-lazyload="assets/shadow-2-233x300.png" data-no-retina> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide style="position: absolute;" data-key="rs-572" data-title="about me" data-thumb="assets/services-thumb.jpg" data-anim="ms:10;" data-in="o:1;" data-out="a:false;">
+						<rs-slide style="position: absolute;" data-key="rs-572" data-title="about me" data-thumb="assets/services-thumb.jpg" data-anim="ms:1100ms;" data-in="o:1;y:(100%);e:sine.inOut;" data-out="y:0%;e:sine.inOut;">
 							<img src="assets/dummy.png" alt="about me" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-bg="c:#0f0f0f;" data-parallax="off" data-no-retina>
 <!--						--><rs-zone id="rrzm_572" class="rev_row_zone_middle" style="z-index: 5;"><!--
 
@@ -3184,9 +3254,9 @@ projects
 								sliderLayout:"fullscreen",
 								visibilityLevels:"1240,1024,778,480",
 								gridwidth:"1240,1024,778,480",
-								gridheight:"900,768,960,800",
+								gridheight:"900,768,960,720",
 								lazyType:"single",
-								spinner:"spinner7",
+								spinner:"spinner8",
 								perspective:600,
 								perspectiveType:"global",
 								keepBPHeight:true,
@@ -3262,6 +3332,9 @@ projects
 
 <style>body{margin:auto}#rev_slider_175_1_wrapper .hesperiden.tp-bullets{}#rev_slider_175_1_wrapper .hesperiden.tp-bullets:before{content:' ';position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box; border-radius:8px}#rev_slider_175_1_wrapper .hesperiden .tp-bullet{width:10px;height:10px;position:absolute;background:transparent;  background:-moz-linear-gradient(top,transparent 0%,transparent 100%);  background:-webkit-linear-gradient(top,transparent 0%,transparent 100%);  background:-o-linear-gradient(top,transparent 0%,transparent 100%);  background:-ms-linear-gradient(top,transparent 0%,transparent 100%);  background:linear-gradient(to bottom,transparent 0%,transparent 100%);  filter:progid:dximagetransform.microsoft.gradient(  startcolorstr='transparent',endcolorstr='transparent',gradienttype=0 ); border:2px solid rgba(255,255,255,0.2);border-radius:50%;cursor:pointer;box-sizing:content-box}#rev_slider_175_1_wrapper .hesperiden .tp-bullet.rs-touchhover,#rev_slider_175_1_wrapper .hesperiden .tp-bullet.selected{background:#ffffff}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-image{}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-title{}@font-face{font-family:'Material Icons'; font-style:normal; font-weight:400; src:url(//fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2')}rs-module .material-icons{font-family:'Material Icons'; font-weight:normal; font-style:normal;font-size:inherit; display:inline-block; text-transform:none; letter-spacing:normal; word-wrap:normal; white-space:nowrap; direction:ltr; vertical-align:top; line-height:inherit; font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -moz-osx-font-smoothing:grayscale}</style>
 <script async="" defer="" src="js/revolution.addon.mousetrap.min.js"></script><script async="" defer="" src="js/revolution.addon.particlewave.min.js"></script><script async="" defer="" src="https://www.ourplaceintheworld.sg/wp-content/plugins/revslider/public/assets/js/libs/three.min.js"></script><script type="text/javascript">window.RVS = window.RVS || {}; window.RVS.ENV = window.RVS.ENV || {}; window.RVS.ENV.TRANSITIONPACK_URL = "https://www.ourplaceintheworld.sg/wp-content/plugins/revslider-transitionpack-addon/";</script>
-		</body>
+		
+
+
+</body>
 				</html>
 		
