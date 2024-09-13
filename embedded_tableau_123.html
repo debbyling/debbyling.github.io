@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Online Embedding</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        .tableau-container {
+            width: 1366px;
+            height: 808px;
+            position: relative;
+        }
+        #login-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #login-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #login-form input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        #login-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #login-form button:hover {
+            background-color: #0056b3;
+        }
+        #error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        #mobile-message {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #333;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+    </style>
+    <script type='module' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+</head>
+<body>
+    <div class="tableau-container" id="tableauViz">
+        <div id="login-overlay">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <div id="error-message"></div>
+            </form>
+        </div>
+        <tableau-viz id='tableau-viz' src='https://prod-apnortheast-a.online.tableau.com/t/wefev48524-57ae331d24/views/BFG/Main' width='1366' height='808' hide-tabs toolbar='bottom'></tableau-viz>
+    </div>
+
+    <script>
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                || window.innerWidth <= 768;
+        }
+
+        if (isMobile()) {
+            document.addEventListener('DOMContentLoaded', function() {
+                document.body.innerHTML = '<div id="mobile-message">This dashboard is not optimized for viewing on mobile phones. Please access on desktop.</div>';
+            });
+        } else {
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById('login-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+                    
+                    if (username === 'admin' && password === 'HeartHackers') {
+                        document.getElementById('login-overlay').style.display = 'none';
+                    } else {
+                        document.getElementById('error-message').textContent = 'Invalid credentials. Please try again.';
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
