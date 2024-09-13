@@ -18,56 +18,35 @@
             height: 768px;
         }
     </style>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 </head>
 <body>
-    <div class="tableau-container">
-        <div class='tableauPlaceholder' id='viz1726153014642' style='position: relative'>
-            <noscript><a href='#'><img alt='Main ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BF&#47;BFG_17257187276320&#47;Main&#47;1_rss.png' style='border: none' /></a></noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='BFG_17257187276320&#47;Main' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='no' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BF&#47;BFG_17257187276320&#47;Main&#47;1.png' /> 
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-GB' />
-            </object>
-        </div>
-    </div>
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1726153014642');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width='1366px';
-        vizElement.style.height='808px';
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    <div class="tableau-container" id="tableauViz"></div>
 
-        // Function to hide the toolbar
-        function hideToolbar() {
-            var style = document.createElement('style');
-            style.textContent = 'div#viz-viewer-toolbar { display: none !important; }';
-            document.head.appendChild(style);
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("tableauViz");
+            var url = "https://public.tableau.com/views/BFG_17257187276320/Main";
+            var options = {
+                width: "1366px",
+                height: "808px",
+                hideTabs: true,
+                hideToolbar: true,
+                onFirstInteractive: function () {
+                    // This function will be called once the viz is interactive
+                    console.log("Viz is now interactive");
+                    
+                    // Apply CSS to hide the toolbar
+                    var style = document.createElement('style');
+                    style.textContent = 'div#viz-viewer-toolbar { display: none !important; }';
+                    document.head.appendChild(style);
+                }
+            };
+            var viz = new tableau.Viz(containerDiv, url, options);
         }
 
-        // Wait for the Tableau visualization to load, then hide the toolbar
-        var observer = new MutationObserver(function(mutations) {
-            if (document.querySelector('div#viz-viewer-toolbar')) {
-                hideToolbar();
-                observer.disconnect();
-            }
-        });
-
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
+        // Initialize the viz when the page has finished loading
+        document.addEventListener("DOMContentLoaded", initViz);
     </script>
 </body>
 </html>
