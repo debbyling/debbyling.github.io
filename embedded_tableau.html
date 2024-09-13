@@ -80,6 +80,21 @@
         }
     </style>
     <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        // Immediately invoke this function to check for mobile devices
+        (function() {
+            function isMobile() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                    || window.innerWidth <= 768;
+            }
+
+            if (isMobile()) {
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.innerHTML = '<div id="mobile-message">Please view the dashboard on a desktop screen</div>';
+                });
+            }
+        })();
+    </script>
 </head>
 <body>
     <div class="tableau-container" id="tableauViz">
@@ -93,9 +108,6 @@
                 <div id="error-message"></div>
             </form>
         </div>
-    </div>
-    <div id="mobile-message">
-        Please view the dashboard on a desktop screen
     </div>
 
     <script type="text/javascript">
@@ -128,23 +140,7 @@
             console.log("Attempted to hide toolbar");
         }
 
-        function isMobile() {
-            return window.innerWidth <= 768;
-        }
-
-        function checkDevice() {
-            if (isMobile()) {
-                document.getElementById('tableauViz').style.display = 'none';
-                document.getElementById('mobile-message').style.display = 'block';
-            } else {
-                document.getElementById('tableauViz').style.display = 'block';
-                document.getElementById('mobile-message').style.display = 'none';
-            }
-        }
-
         document.addEventListener("DOMContentLoaded", function() {
-            checkDevice();
-
             if (!isMobile()) {
                 initViz(); // Start loading the dashboard immediately if not on mobile
 
@@ -165,7 +161,10 @@
             }
         });
 
-        window.addEventListener('resize', checkDevice);
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                || window.innerWidth <= 768;
+        }
     </script>
 </body>
 </html>
