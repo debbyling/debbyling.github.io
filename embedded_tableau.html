@@ -72,6 +72,12 @@
             color: red;
             margin-top: 10px;
         }
+        #mobile-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
     </style>
     <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 </head>
@@ -87,6 +93,9 @@
                 <div id="error-message"></div>
             </form>
         </div>
+    </div>
+    <div id="mobile-message">
+        Please view the dashboard on a desktop screen
     </div>
 
     <script type="text/javascript">
@@ -119,24 +128,44 @@
             console.log("Attempted to hide toolbar");
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            initViz(); // Start loading the dashboard immediately
+        function isMobile() {
+            return window.innerWidth <= 768;
+        }
 
-            document.getElementById('login-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                var username = document.getElementById('username').value;
-                var password = document.getElementById('password').value;
-                
-                if (username === 'admin' && password === 'HeartHackers') {
-                    document.getElementById('login-overlay').style.display = 'none';
-                    document.getElementById('white-overlay').style.display = 'none';
-                } else {
-                    document.getElementById('error-message').textContent = 'Invalid credentials. Please try again.';
-                }
-            });
+        function checkDevice() {
+            if (isMobile()) {
+                document.getElementById('tableauViz').style.display = 'none';
+                document.getElementById('mobile-message').style.display = 'block';
+            } else {
+                document.getElementById('tableauViz').style.display = 'block';
+                document.getElementById('mobile-message').style.display = 'none';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            checkDevice();
+
+            if (!isMobile()) {
+                initViz(); // Start loading the dashboard immediately if not on mobile
+
+                document.getElementById('login-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+                    
+                    if (username === 'admin' && password === 'HeartHackers') {
+                        document.getElementById('login-overlay').style.display = 'none';
+                        document.getElementById('white-overlay').style.display = 'none';
+                    } else {
+                        document.getElementById('error-message').textContent = 'Invalid credentials. Please try again.';
+                    }
+                });
+
+                setTimeout(hideToolbar, 2000);
+            }
         });
 
-        setTimeout(hideToolbar, 2000);
+        window.addEventListener('resize', checkDevice);
     </script>
 </body>
 </html>
