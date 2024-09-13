@@ -11,8 +11,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
         .tableau-container {
             width: 1366px;
@@ -73,27 +73,26 @@
             margin-top: 10px;
         }
         #mobile-message {
-            display: none;
             text-align: center;
             padding: 20px;
             font-size: 18px;
+            color: #333;
+            max-width: 80%;
+            line-height: 1.5;
         }
     </style>
     <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script type="text/javascript">
-        // Immediately invoke this function to check for mobile devices
-        (function() {
-            function isMobile() {
-                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
-                    || window.innerWidth <= 768;
-            }
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                || window.innerWidth <= 768;
+        }
 
-            if (isMobile()) {
-                document.addEventListener('DOMContentLoaded', function() {
-                    document.body.innerHTML = '<div id="mobile-message">Please view the dashboard on a desktop screen</div>';
-                });
-            }
-        })();
+        if (isMobile()) {
+            document.addEventListener('DOMContentLoaded', function() {
+                document.body.innerHTML = '<div id="mobile-message">This dashboard is not optimized for viewing on mobile phones. Please access on desktop.</div>';
+            });
+        }
     </script>
 </head>
 <body>
@@ -140,8 +139,8 @@
             console.log("Attempted to hide toolbar");
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            if (!isMobile()) {
+        if (!isMobile()) {
+            document.addEventListener("DOMContentLoaded", function() {
                 initViz(); // Start loading the dashboard immediately if not on mobile
 
                 document.getElementById('login-form').addEventListener('submit', function(e) {
@@ -158,12 +157,7 @@
                 });
 
                 setTimeout(hideToolbar, 2000);
-            }
-        });
-
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
-                || window.innerWidth <= 768;
+            });
         }
     </script>
 </body>
