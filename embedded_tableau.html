@@ -17,9 +17,6 @@
             width: 1366px;
             height: 768px;
         }
-        div#viz-viewer-toolbar {
-            display: none !important;
-        }
     </style>
 </head>
 <body>
@@ -51,6 +48,26 @@
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+        // Function to hide the toolbar
+        function hideToolbar() {
+            var style = document.createElement('style');
+            style.textContent = 'div#viz-viewer-toolbar { display: none !important; }';
+            document.head.appendChild(style);
+        }
+
+        // Wait for the Tableau visualization to load, then hide the toolbar
+        var observer = new MutationObserver(function(mutations) {
+            if (document.querySelector('div#viz-viewer-toolbar')) {
+                hideToolbar();
+                observer.disconnect();
+            }
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
     </script>
 </body>
 </html>
