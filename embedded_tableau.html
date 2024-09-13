@@ -13,21 +13,28 @@
             align-items: center;
             overflow: hidden;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
         }
         .tableau-container {
             width: 1366px;
             height: 768px;
             position: relative;
-            display: none; /* Hide the dashboard container initially */
         }
-        #login-overlay {
-            position: fixed;
+        #white-overlay {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: white;
+            z-index: 999;
+        }
+        #login-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -69,20 +76,20 @@
     <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 </head>
 <body>
-    <div class="tableau-container" id="tableauViz"></div>
-    <div id="login-overlay">
-        <form id="login-form">
-            <h2>Login</h2>
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-            <div id="error-message"></div>
-        </form>
+    <div class="tableau-container" id="tableauViz">
+        <div id="white-overlay"></div>
+        <div id="login-overlay">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <div id="error-message"></div>
+            </form>
+        </div>
     </div>
 
     <script type="text/javascript">
-        let viz;
-
         function initViz() {
             var containerDiv = document.getElementById("tableauViz");
             var url = "https://public.tableau.com/views/BFG_17257187276320/Main";
@@ -96,7 +103,7 @@
                     hideToolbar();
                 }
             };
-            viz = new tableau.Viz(containerDiv, url, options);
+            var viz = new tableau.Viz(containerDiv, url, options);
         }
 
         function hideToolbar() {
@@ -113,6 +120,8 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
+            initViz(); // Start loading the dashboard immediately
+
             document.getElementById('login-form').addEventListener('submit', function(e) {
                 e.preventDefault();
                 var username = document.getElementById('username').value;
@@ -120,13 +129,14 @@
                 
                 if (username === 'admin' && password === 'HeartHackers') {
                     document.getElementById('login-overlay').style.display = 'none';
-                    document.querySelector('.tableau-container').style.display = 'block';
-                    initViz(); // Initialize the dashboard only after successful login
+                    document.getElementById('white-overlay').style.display = 'none';
                 } else {
                     document.getElementById('error-message').textContent = 'Invalid credentials. Please try again.';
                 }
             });
         });
+
+        setTimeout(hideToolbar, 2000);
     </script>
 </body>
 </html>
