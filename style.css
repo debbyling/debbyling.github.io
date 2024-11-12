@@ -488,7 +488,7 @@ img#resume-icon {
 @media (max-width: 767px) {
   /* Adjust main paragraph text */
   .writer-award__content p {
-      font-size: 14px !important;
+      font-size: 18px !important;
       line-height: 1.6 !important;
       margin-bottom: 12px !important;
   }
@@ -508,5 +508,17 @@ img#resume-icon {
   /* Make the content wrapper more compact */
   .writer-award__content {
       padding: 15px !important;
+  }
+
+
+  div#about-section {
+    padding-bottom: 0px !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .shape {
+    display: none !important;
   }
 }
