@@ -515,6 +515,40 @@ img#resume-icon {
     padding-bottom: 0px !important;
   }
 
+
+  /* Make experience items match award items styling */
+  .experience__item {
+    padding: 15px !important;
+  }
+
+  /* Match font sizes with award items */
+  .exp-time {
+    font-size: 18px !important;
+  }
+
+  .exp-title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-top: 10px !important;
+  }
+
+  .company {
+    font-size: 14px !important;
+  }
+
+  /* Adjust spacing */
+  .experience__grid {
+    grid-gap: 20px !important;
+  }
+
+  /* Make the content wrapper more compact */
+  .developer-experience__area {
+    padding: 15px !important;
+  }
+
+
+
+
 }
 
 @media (max-width: 767px) {
