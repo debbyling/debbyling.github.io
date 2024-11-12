@@ -483,3 +483,30 @@ img#resume-icon {
       font-size: 14px !important;
   }
 }
+
+
+@media (max-width: 767px) {
+  /* Adjust main paragraph text */
+  .writer-award__content p {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+      margin-bottom: 12px !important;
+  }
+
+  /* Adjust the big letter size */
+  .big-letter {
+      font-size: 24px !important;
+      line-height: 1 !important;
+      margin-right: 2px !important;
+  }
+
+  /* Adjust spacing between paragraphs */
+  .mt-20 {
+      margin-top: 12px !important;
+  }
+
+  /* Make the content wrapper more compact */
+  .writer-award__content {
+      padding: 15px !important;
+  }
+}
