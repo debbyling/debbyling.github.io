@@ -448,3 +448,38 @@ img#resume-icon {
 .light .wc-btn-underline {
   color: var(--blue-1) !important;
 }
+
+@media (max-width: 767px) {
+  /* Make award images smaller on mobile */
+  .award__item img {
+      max-width: 80px !important;  /* Adjust this value as needed */
+      height: auto !important;
+  }
+
+  /* Adjust the award grid layout */
+  .developer-award__grid {
+      grid-gap: 20px !important;
+  }
+
+  /* Make award items more compact */
+  .award__item {
+      padding: 15px !important;
+  }
+
+  /* Adjust award title size */
+  .award__title {
+      font-size: 16px !important;
+      line-height: 1.4 !important;
+      margin-top: 10px !important;
+  }
+
+  /* Adjust award date size */
+  .award__date {
+      font-size: 18px !important;
+  }
+
+  /* Adjust award status size */
+  .award__status {
+      font-size: 14px !important;
+  }
+}
