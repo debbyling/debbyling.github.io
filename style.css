@@ -546,8 +546,26 @@ img#resume-icon {
     padding: 15px !important;
   }
 
+  /* Make tab menu text smaller on mobile */
+  .developer-resume__tab-menu ul li a {
+    font-size: 14px !important;
+    padding: 12px 15px !important;  /* Reduce padding to make tabs more compact */
+  }
+
+  /* Adjust the tab menu container */
+  .developer-resume__tab-menu {
+    margin-bottom: 20px !important;
+  }
+
+  /* Make the tab menu more compact */
+  .developer-resume-ul {
+    gap: 10px !important;  /* Reduce space between tabs */
+  }
 
 
+  .sec-title-wrapper {
+    padding-bottom: 20px !important;
+  }
 
 }
 
