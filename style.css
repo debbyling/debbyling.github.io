@@ -445,49 +445,6 @@ img#resume-icon {
   background-color: var(--white);
 }
 
-/* Add these media queries for mobile responsiveness */
-@media (max-width: 767px) {
-  /* Adjust main titles */
-  .tg-intro__area-title {
-      font-size: 40px !important;
-      line-height: 1.2 !important;
-  }
-
-  /* Adjust section titles */
-  .tg-sec-title {
-      font-size: 32px !important;
-      line-height: 1.3 !important;
-  }
-
-  /* Adjust project titles */
-  .tg-place__area-title {
-      font-size: 24px !important;
-      line-height: 1.4 !important;
-  }
-
-  /* Adjust regular paragraph text */
-  p, .tg-intro__area-disc-wrap p {
-      font-size: 16px !important;
-      line-height: 1.6 !important;
-  }
-
-  /* Adjust menu text */
-  .main-menu ul li a {
-      font-size: 14px !important;
-  }
-
-  /* Adjust button text */
-  .wc-btn-default {
-      font-size: 14px !important;
-      padding: 15px 25px !important;
-  }
-
-  /* Adjust resume section text */
-  .exp-title {
-      font-size: 18px !important;
-  }
-  
-  .company {
-      font-size: 14px !important;
-  }
+.light .wc-btn-underline {
+  color: var(--blue-1) !important;
 }
