@@ -448,6 +448,20 @@ img#resume-icon {
 .light .wc-btn-underline {
   color: var(--blue-1) !important;
 }
+.tg-place__area-disc p {
+  font-family: 'euclid_Circular_B' !important;
+  color: var(--blue-1) !important;
+  text-transform: none !important;
+
+}
+
+
+.wc-btn-default.btn-hover-divide {
+  font-family: 'euclid_Circular_B' !important;
+  text-transform: none !important;
+  color: var(--blue-1) !important;
+
+}
 
 @media (max-width: 767px) {
   /* Make award images smaller on mobile */
