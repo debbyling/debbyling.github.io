@@ -207,7 +207,7 @@ body.header-hidden {
 }
 
 .light .footer-sfluence__logo img {
-  filter: brightness(0.1) !important;
+  filter: brightness(0.03) !important;
 }
 
 
