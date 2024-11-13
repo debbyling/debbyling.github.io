@@ -224,6 +224,12 @@ h2#black-tg-place {
   color:black !important;
 }
 
+a#white-link {
+  color: white !important;
+  border: 1.5px solid white !important;
+}
+
+
 
 a#black-tg-link {
   color: black !important;
@@ -462,6 +468,9 @@ img#resume-icon {
   color: var(--blue-1) !important;
 
 }
+
+
+
 
 @media (max-width: 767px) {
   /* Make award images smaller on mobile */
