@@ -588,3 +588,20 @@ img#resume-icon {
     display: none !important;
   }
 }
+
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 85vw !important; /* Set slide width to 85% of viewport width */
+    margin-right: 0 !important; /* Remove right margin on mobile */
+  }
+  
+  .tg-place-active {
+    padding: 0 7.5vw; /* Add padding to center the first and last slides */
+  }
+
+  /* Ensure the content inside slides is properly sized */
+  .tg-place__area-item {
+    width: 100%;
+    height: 100%;
+  }
+}
