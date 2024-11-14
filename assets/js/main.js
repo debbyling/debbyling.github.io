@@ -1783,34 +1783,34 @@
   });
 
 
-  // TRAVEL PLACE SLIDER ACTIVE
-  var travelplace = new Swiper(".tg-place-active", {
-    loop: true,
-    speed: 2500,
-    slidesPerView: 4,
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 30
-      },
-      // when window width is >= 640px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 5
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 40
-      },
-    }
-  });
-
+// TRAVEL PLACE SLIDER ACTIVE
+var travelplace = new Swiper(".tg-place-active", {
+  loop: true,
+  speed: 1000,  // Reduced speed for smoother transitions
+  slidesPerView: 4,
+  navigation: {  // Add this navigation configuration
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 5
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+  }
+});
   // TRAVEL GALLARY SLIDER ACTIVE
   var gallary = new Swiper(".wc-gallary-active", {
     loop: true,
