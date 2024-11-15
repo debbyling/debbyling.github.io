@@ -1786,12 +1786,17 @@
 // TRAVEL PLACE SLIDER ACTIVE
 var travelplace = new Swiper(".tg-place-active", {
   loop: true,
-  speed: 1000,  // Reduced speed for smoother transitions
+  loopedSlides: 6, // Number of your slides
+  speed: 2000,
   slidesPerView: 4,
-  navigation: {  // Add this navigation configuration
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  effect: 'slide',
+  watchSlidesProgress: true,
+  preventInteractionOnTransition: true,
+  allowTouchMove: false,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -1809,9 +1814,19 @@ var travelplace = new Swiper(".tg-place-active", {
       slidesPerView: 4,
       spaceBetween: 40
     },
+  },
+  on: {
+    beforeInit: function() {
+      // Clone slides for smooth looping
+      const slides = this.el.querySelectorAll('.swiper-slide');
+      slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        this.el.querySelector('.swiper-wrapper').appendChild(clone);
+      });
+    }
   }
 });
-  // TRAVEL GALLARY SLIDER ACTIVE
+// TRAVEL GALLARY SLIDER ACTIVE
   var gallary = new Swiper(".wc-gallary-active", {
     loop: true,
     speed: 2500,
