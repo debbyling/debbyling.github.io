@@ -600,13 +600,18 @@ img#resume-icon {
 
 @media (max-width: 767px) {
   .swiper-slide {
-    width: 85vw !important; /* Set slide width to 85% of viewport width */
-    margin-right: 0 !important; /* Remove right margin on mobile */
+    width: 85vw !important; /* Remove this */
+    margin-right: 0 !important; /* Remove this */
+  }
+
+  .tg-place__area-item {
+    width: 300px !important;
+    height: 400px !important;
+    overflow: hidden;
+    position: relative;
   }
   
-  .tg-place-active {
-    padding: 0 7.5vw; /* Add padding to center the first and last slides */
-  }
+
 
   /* Ensure the content inside slides is properly sized */
   .tg-place__area-item {
@@ -638,125 +643,3 @@ img#resume-icon {
   }
 }
 
-
-/* Mobile-only navigation arrows */
-.mobile-only-nav {
-  display: none;  /* Hidden by default */
-}
-
-@media (max-width: 767px) {
-  .mobile-only-nav {
-      display: flex;  /* Show only on mobile */
-      color: var(--blue-1);
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-  }
-
-  .swiper-button-next.mobile-only-nav:after,
-  .swiper-button-prev.mobile-only-nav:after {
-      font-size: 20px;
-  }
-}
-
-
-@media (max-width: 767px) {
-  /* Lock all slide states with very slow transition */
-  .swiper-slide,
-  .swiper-slide-active,
-  .swiper-slide-prev,
-  .swiper-slide-next,
-  .swiper-slide-duplicate,
-  .swiper-slide-duplicate-active {
-    width: 85vw !important;
-    height: auto !important;
-    transform: translateY(0) !important;
-    transition: all 2000ms linear !important; /* Slowed down to 2 seconds */
-    position: relative !important;
-    top: 0 !important;
-  }
-
-  /* Slow down all other transitions */
-  .tg-place__area-thumb,
-  .tg-place__area-item,
-  .tg-place__area-thumb img,
-  .swiper-wrapper {
-    transition: all 2000ms linear !important;
-  }
-}
-
-@media (max-width: 767px) {
-  /* Completely disable all animations and transforms */
-  .swiper-slide *,
-  .swiper-slide-active *,
-  .swiper-slide-prev *,
-  .swiper-slide-next *,
-  .swiper-slide-duplicate *,
-  .swiper-slide-duplicate-active * {
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
-  }
-
-  /* Force consistent dimensions */
-  .tg-place__area-thumb {
-    width: 100% !important;
-    height: auto !important;
-    overflow: hidden !important;
-    transform: none !important;
-  }
-
-  .tg-place__area-thumb img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    transform: none !important;
-  }
-
-  /* Only allow Swiper's own transition */
-  .swiper-wrapper {
-    transition-property: transform !important;
-    transition-duration: 1000ms !important; /* Slowed down for testing */
-  }
-}
-@media (max-width: 767px) {
-  /* Lock all dimensions and disable all transitions */
-  .swiper-slide,
-  .swiper-slide-active,
-  .swiper-slide-prev,
-  .swiper-slide-next,
-  .swiper-slide-duplicate,
-  .swiper-slide-duplicate-active {
-    width: 85vw !important;
-    transform: translate3d(0, 0, 0) !important;
-    backface-visibility: hidden !important;
-    -webkit-backface-visibility: hidden !important;
-  }
-
-  /* Force hardware acceleration and disable transitions */
-  .tg-place__area-thumb,
-  .tg-place__area-item,
-  .tg-place__area-thumb img {
-    transform: translate3d(0, 0, 0) !important;
-    backface-visibility: hidden !important;
-    -webkit-backface-visibility: hidden !important;
-    transition: none !important;
-    animation: none !important;
-    will-change: transform !important;
-  }
-
-  /* Only allow Swiper's horizontal movement */
-  .swiper-wrapper {
-    transition-property: transform !important;
-    transition-timing-function: linear !important;
-    transform-style: preserve-3d !important;
-    will-change: transform !important;
-  }
-
-  /* Prevent any hover effects */
-  .swiper-slide *:hover {
-    transform: none !important;
-    transition: none !important;
-  }
-}

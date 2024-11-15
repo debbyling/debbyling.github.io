@@ -1786,46 +1786,72 @@
 // TRAVEL PLACE SLIDER ACTIVE
 var travelplace = new Swiper(".tg-place-active", {
   loop: true,
-  loopedSlides: 6, // Number of your slides
-  speed: 2000,
-  slidesPerView: 4,
+  loopedSlides: 6,
+  speed: 1000,
+  slidesPerView: 1,
+  centeredSlides: true,
+  watchSlidesProgress: true,
+  allowTouchMove: true,
+  normalizeSlideIndex: false,
+  slidesPerGroup: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  effect: 'slide',
-  watchSlidesProgress: true,
-  preventInteractionOnTransition: true,
-  allowTouchMove: false,
+  on: {
+    beforeInit: function() {
+      this.slideWidth = 306;
+    },
+    slideChange: function () {
+      // Calculate the base translation
+      let baseTranslation = -306; // Single slide width
+      let currentTranslation = baseTranslation * (this.realIndex + 1);
+      
+      console.log('Single Slide Translation:', baseTranslation);
+      console.log('Current Translation:', currentTranslation);
+      console.log('Current Index:', this.activeIndex);
+      console.log('Real Index:', this.realIndex);
+      console.log('-----------------');
+
+      // Force the translation if needed
+      if (this.realIndex === 0) {
+        this.setTranslate(baseTranslation);
+      }
+    },
+    reachEnd: function() {
+      console.log('Reached end - Resetting');
+      this.slideTo(0, 0);
+    }
+  },
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 30
-    },
     768: {
       slidesPerView: 2,
-      spaceBetween: 5
+      centeredSlides: false,
+      spaceBetween: 5,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 40
-    },
-  },
-  on: {
-    beforeInit: function() {
-      // Clone slides for smooth looping
-      const slides = this.el.querySelectorAll('.swiper-slide');
-      slides.forEach(slide => {
-        const clone = slide.cloneNode(true);
-        this.el.querySelector('.swiper-wrapper').appendChild(clone);
-      });
+      centeredSlides: false,
+      spaceBetween: 40,
     }
   }
 });
+
+// Force consistent translation on navigation click
+document.querySelector('.swiper-button-next').addEventListener('click', function() {
+  const baseTranslation = -306;
+  const nextIndex = (travelplace.realIndex + 1) % 6; // 6 is total real slides
+  travelplace.setTranslate(baseTranslation * (nextIndex + 1));
+});
+
+document.querySelector('.swiper-button-prev').addEventListener('click', function() {
+  const baseTranslation = -306;
+  const prevIndex = (travelplace.realIndex - 1 + 6) % 6; // 6 is total real slides
+  travelplace.setTranslate(baseTranslation * (prevIndex + 1));
+});
+
+
+
 // TRAVEL GALLARY SLIDER ACTIVE
   var gallary = new Swiper(".wc-gallary-active", {
     loop: true,
