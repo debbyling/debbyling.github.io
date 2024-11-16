@@ -621,6 +621,69 @@ img#resume-icon {
   right: 10px;
 }
 
+.tg-place__area-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .tg-place__area-item {
-  margin-left:20px !important;
+  margin: 0 auto !important; /* Override any existing margins */
+  max-width: 300px; /* Adjust this value based on your desired width */
+}
+
+/* Adjust the swiper container to respect the centering */
+.swiper.tg-place-active {
+  width: 100%;
+  max-width: 1200px; /* Adjust this value based on your layout needs */
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Default (mobile) styles */
+.swiper.tg-place-active {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .swiper.tg-place-active {
+    max-width: 900px; /* Reduce max-width for desktop */
+  }
+
+  .tg-place__area-item {
+    max-width: 300px; /* Adjust item width for desktop */
+  }
+
+  /* Adjust space between slides for desktop */
+  .swiper-slide {
+    padding: 0; /* Reduce padding between slides */
+    margin: 0;
+  }
+}
+
+/* Larger desktop styles */
+@media (min-width: 1440px) {
+  .swiper.tg-place-active {
+    max-width: 900px; /* Slightly larger for bigger screens */
+  }
+}
+
+/* Mobile styles for footer */
+@media (max-width: 767px) {
+  .footer-sfluence__area {
+    padding-bottom: 50px; /* Adjust this value as needed */
+  }
+  
+  .footer-sfluence__btm {
+    padding-bottom: 5px; /* Additional padding for the bottom section */
+  }
 }
