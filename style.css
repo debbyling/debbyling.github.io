@@ -600,7 +600,7 @@ img#resume-icon {
 
 @media (max-width: 767px) {
   .swiper-slide {
-    width: 85vw !important; /* Remove this */
+    width: 95vw !important; /* Remove this */
     margin-right: 0 !important; /* Remove this */
   }
 
