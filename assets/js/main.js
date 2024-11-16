@@ -1783,12 +1783,12 @@
   });
 
 
-
 // TRAVEL PLACE SLIDER ACTIVE
 var travelplace = new Swiper(".tg-place-active", {
   loop: true,
   speed: 1000,
   slidesPerView: 1,
+  spaceBetween: 0,
   centeredSlides: true,
   watchSlidesProgress: true,
   allowTouchMove: true,
@@ -1796,44 +1796,38 @@ var travelplace = new Swiper(".tg-place-active", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  loopedSlides: null, // Remove this to prevent extra duplicates
-  loopFillGroupWithBlank: false, // Disable filling with blank slides
-  loopPreventsSlide: true, // Prevents sliding when reaching the end/beginning
+  // Add navigation buttons to HTML if they don't exist
   on: {
+    init: function() {
+      if (!document.querySelector('.swiper-button-next')) {
+        const nextButton = document.createElement('div');
+        nextButton.className = 'swiper-button-next';
+        this.el.appendChild(nextButton);
+      }
+      if (!document.querySelector('.swiper-button-prev')) {
+        const prevButton = document.createElement('div');
+        prevButton.className = 'swiper-button-prev';
+        this.el.appendChild(prevButton);
+      }
+    },
     beforeInit: function() {
-      // Get the actual number of slides
       const slides = this.el.querySelectorAll('.swiper-slide').length;
       this.params.loopedSlides = slides;
-    },
-    slideChange: function () {
-      console.log('=== Slide Change Event ===');
-      console.log('Active Index:', this.activeIndex);
-      console.log('Previous Index:', this.previousIndex);
-      console.log('Real Index:', this.realIndex);
-      console.log('Translation:', this.translate);
-      console.log('Translation Distance:', 342);
-      console.log('Slide Width:', this.slides[0].offsetWidth);
-      console.log('------------------------');
-      
-      this.previousTranslate = this.translate;
     }
   },
   breakpoints: {
     768: {
       slidesPerView: 2,
       centeredSlides: false,
-      spaceBetween: 342,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 4,
       centeredSlides: false,
-      spaceBetween: 342,
+      spaceBetween: 20,
     }
   }
 });
-
-
-
 
 
 

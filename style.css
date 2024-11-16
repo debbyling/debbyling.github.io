@@ -649,3 +649,14 @@ img#resume-icon {
   max-width: 294px !important;
 }
 
+/* Force consistent slide width */
+.swiper-slide,
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-duplicate {
+  width: 336px !important;
+  max-width: 336px !important;
+  flex: 0 0 336px !important;
+  margin-right: 5px !important;
+}
