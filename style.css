@@ -643,3 +643,9 @@ img#resume-icon {
   }
 }
 
+/* Ensure the slide content doesn't overflow */
+.tg-place__area-item {
+  width: 100% !important;
+  max-width: 294px !important;
+}
+
