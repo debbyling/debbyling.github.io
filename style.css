@@ -50,10 +50,6 @@ h3.exp-title, h4.company, h2.exp-time {
   font-family:'euclid_Circular_B'
 }
 
-.swiper-slide.swiper-slide-active, .swiper-slide.swiper-slide-duplicate.swiper-slide-active, .swiper-slide.swiper-slide-next, .swiper-slide{
-  margin-right: 20px !important;
-  width: 294px !important;
-}
 
 .writer-award__area {
 
@@ -361,11 +357,6 @@ img#resume-icon {
 }
 
 
-/* Test Purpose */
-.offcanvas-area {
-  opacity: 0;
-  visibility: hidden;
-}
 
 @media only screen and (max-width: 767px) {
   .portfolio-details-light .header__nav {
@@ -598,65 +589,34 @@ img#resume-icon {
   }
 }
 
-@media (max-width: 767px) {
-  .swiper-slide {
-    width: 95vw !important; /* Remove this */
-    margin-right: 0 !important; /* Remove this */
-  }
-
-  .tg-place__area-item {
-    width: 300px !important;
-    height: 400px !important;
-    overflow: hidden;
-    position: relative;
-  }
-  
-
-
-  /* Ensure the content inside slides is properly sized */
-  .tg-place__area-item {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Style the navigation arrows */
+/* Style Swiper navigation buttons */
 .tg-place-active .swiper-button-next,
 .tg-place-active .swiper-button-prev {
-  color: var(--blue-1);  /* Use your theme color */
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 30px;
+  height: 30px;
+  background-color: var(--blue-1);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  color: white;
 }
 
+/* Style the arrow icons */
 .tg-place-active .swiper-button-next:after,
 .tg-place-active .swiper-button-prev:after {
   font-size: 20px;
+  font-weight: bold;
 }
 
-/* Hide arrows on desktop */
-@media (min-width: 768px) {
-  .tg-place-active .swiper-button-next,
-  .tg-place-active .swiper-button-prev {
-    display: none;
-  }
+/* Add hover effect */
+.tg-place-active .swiper-button-next:hover,
+.tg-place-active .swiper-button-prev:hover {
+  background-color: var(--blue-1);
 }
 
-/* Ensure the slide content doesn't overflow */
-.tg-place__area-item {
-  width: 100% !important;
-  max-width: 294px !important;
+/* Position the buttons */
+.tg-place-active .swiper-button-prev {
+  left: 10px;
 }
 
-/* Force consistent slide width */
-.swiper-slide,
-.swiper-slide.swiper-slide-active,
-.swiper-slide.swiper-slide-prev,
-.swiper-slide.swiper-slide-next,
-.swiper-slide.swiper-slide-duplicate {
-  width: 336px !important;
-  max-width: 336px !important;
-  flex: 0 0 336px !important;
-  margin-right: 5px !important;
+.tg-place-active .swiper-button-next {
+  right: 10px;
 }

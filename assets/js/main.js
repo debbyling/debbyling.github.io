@@ -1782,53 +1782,37 @@
     },
   });
 
-
-// TRAVEL PLACE SLIDER ACTIVE
-var travelplace = new Swiper(".tg-place-active", {
+// Place this with your other Swiper initializations
+var tgPlaceSwiper = new Swiper(".tg-place-active", {
   loop: true,
   speed: 1000,
-  slidesPerView: 1,
-  spaceBetween: 0,
+  slidesPerView: 2.5,
+  spaceBetween: 20,
   centeredSlides: true,
-  watchSlidesProgress: true,
-  allowTouchMove: true,
+  grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // Add navigation buttons to HTML if they don't exist
-  on: {
-    init: function() {
-      if (!document.querySelector('.swiper-button-next')) {
-        const nextButton = document.createElement('div');
-        nextButton.className = 'swiper-button-next';
-        this.el.appendChild(nextButton);
-      }
-      if (!document.querySelector('.swiper-button-prev')) {
-        const prevButton = document.createElement('div');
-        prevButton.className = 'swiper-button-prev';
-        this.el.appendChild(prevButton);
-      }
-    },
-    beforeInit: function() {
-      const slides = this.el.querySelectorAll('.swiper-slide').length;
-      this.params.loopedSlides = slides;
-    }
-  },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
     768: {
-      slidesPerView: 2,
-      centeredSlides: false,
-      spaceBetween: 20,
+      slidesPerView: 1.5,
+      spaceBetween: 20
     },
     1024: {
-      slidesPerView: 4,
-      centeredSlides: false,
-      spaceBetween: 20,
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 2.5,
+      spaceBetween: 20
     }
   }
 });
-
 
 
 // TRAVEL GALLARY SLIDER ACTIVE
