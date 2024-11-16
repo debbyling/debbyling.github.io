@@ -620,3 +620,7 @@ img#resume-icon {
 .tg-place-active .swiper-button-next {
   right: 10px;
 }
+
+.tg-place__area-item {
+  margin-left:20px !important;
+}
