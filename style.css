@@ -687,3 +687,21 @@ img#resume-icon {
     padding-bottom: 5px; /* Additional padding for the bottom section */
   }
 }
+
+
+
+/* Initial state - white text */
+a#white-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Change link color to black when the thumbnail area is hovered */
+.tg-place__area-thumb:hover ~ .tg-place__area-content a#white-link {
+  color: black !important;
+}
+
+/* Also change the arrow icon color */
+.tg-place__area-thumb:hover ~ .tg-place__area-content a#white-link i {
+  color: black !important;
+}
