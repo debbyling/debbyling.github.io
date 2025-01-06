@@ -30,16 +30,32 @@
 
 <body class="font-heading-estedad light">
 
+  <div class="next-project-wrapper">
+    <a href="esplanade.html" class="next-project">
+      <div class="next-project-content">
+        <p class="next-label">Next Project</p>
+        <h3 class="next-title">Digital Kiosk for Esplanade</h3>
+      </div>
+      <div class="next-project-arrows">
+        <span class="arrow-left">←</span>
+        <span class="arrow-right">→</span>
+      </div>
+      <div class="next-project-preview">
+        <img src="../assets/imgs/ndr2023_2.png" alt="Esplanade Project Preview">
+      </div>
+    </a>
+  </div>
   <!-- Preloader -->
   <div id="preloader">
     <div id="container" class="container-preloader">
       <div class="animation-preloader">
         <div class="spinner"></div>
         <div class="txt-loading">
-          <span data-text="I" class="characters">I</span>
-          <span data-text="N" class="characters">N</span>
-          <span data-text="F" class="characters">F</span>
-          <span data-text="O" class="characters">O</span>
+          <span data-text="D" class="characters">D</span>
+          <span data-text="E" class="characters">E</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="Y" class="characters">Y</span>
         </div>
       </div>
       <div class="loader-section section-left"></div>
@@ -59,58 +75,6 @@
   </div>
 
 
-  <!-- Switcher Area Start -->
-  <div class="switcher__area">
-    <div class="switcher__icon">
-      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
-      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-
-    <div class="switcher__items">
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">mode</p>
-        </div>
-        <div class="switcher__btn mode-type wc-col-2">
-          <button class="active" data-mode="dark">dark</button>
-          <button data-mode="light">light</button>
-        </div>
-      </div>
-
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Language Support</p>
-        </div>
-        <div class="switcher__btn lang_dir wc-col-2">
-          <button class="active" data-mode="ltr">LTR</button>
-          <button data-mode="rtl">RTL</button>
-        </div>
-      </div>
-
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Layout</p>
-        </div>
-        <div class="switcher__btn layout-type wc-col-2">
-          <button class="active" data-mode="full-width">Full Width</button>
-          <button data-mode="box-layout">Box Layout</button>
-        </div>
-      </div>
-
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <p class="switcher__title">Cursor</p>
-        </div>
-        <div class="switcher__btn">
-          <select name="cursor-style" id="cursor_style">
-            <option value="1">default</option>
-            <option selected value="2">animated</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Switcher Area End -->
 
   <!-- Offcanves start -->
   <div class="offcanvas__area">
@@ -264,7 +228,7 @@
                 </div>
               </div>
               <div class="elc__blogdetails-metainfo mt-10 mb-20">
-                <p>Write by Alex Jonsion <span class="date">January 18, 2023</span></p>
+                <p><span class="date">September, 2024</span></p>
               </div>
               <div class="elc-inbd-hero__thumb cf_parallax_image">
                 <img src="../assets/imgs/portfolio-page/birdhouse-page/birdhouse.png" alt="BirdHouse Project" data-speed="0.9">
@@ -356,8 +320,8 @@
                     <div class="col-md-6">
                       <ul class="elc-inbd-tags">
                         <li>Tags</li>
-                        <li><a href="blog-light.html">Electrician</a></li>
-                        <li><a href="blog-light.html">Technician</a></li>
+                        <li><a href="blog-light.html">Data</a></li>
+                        <li><a href="blog-light.html">Product Management</a></li>
                       </ul>
                     </div>
                   </div>
@@ -366,6 +330,21 @@
               <div class="container">
                 <div class="row">
                   <div class="col-lg-8">
+                    <div class="next-project-wrapper">
+                      <a href="esplanade.html" class="next-project">
+                        <div class="next-project-content">
+                          <p class="next-label">Next Project</p>
+                          <h3 class="next-title">Digital Kiosk for Esplanade</h3>
+                        </div>
+                        <div class="next-project-arrows">
+                          <span class="arrow-left">←</span>
+                          <span class="arrow-right">→</span>
+                        </div>
+                        <div class="next-project-preview">
+                          <img src="../assets/imgs/portfolio-page/esplanade-page/esplanade.png" alt="Esplanade Project Preview">
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -473,6 +452,103 @@
 
 .body-wrapper.body-elc {
   border: 0px;
+}
+
+.next-project-wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.next-project-preview {
+  position: absolute;
+  right: 0;
+  bottom: 100%; /* Positions it above the wrapper */
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* Adds some space between preview and content */
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.next-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-project-wrapper:hover .next-project-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    display: none;
+  }
+}
+
+.next-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.next-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.next-title {
+  font-size: 20px;
+  margin: 0;
+  color: #212529;
+}
+
+.next-project-arrows {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.arrow-left, .arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover .arrow-left {
+  transform: translateX(-5px);
+}
+
+.next-project:hover .arrow-right {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    width: 250px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .next-title {
+    font-size: 16px;
+  }
 }
 
 </style>
