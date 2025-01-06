@@ -7,14 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="INFO HTML5 Template">
 
-  <title>Birdhouse</title>
+  <title>Blog details</title>
 
   <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.png">
 
 
   <!-- All CSS files -->
@@ -28,12 +24,11 @@
   <link rel="stylesheet" href="../assets/css/master.css">
   <link rel="stylesheet" href="../style.css">
 
-
-
 </head>
 
 
-<body class="font-heading-romanstory light">
+
+<body class="font-heading-estedad light">
 
   <!-- Preloader -->
   <div id="preloader">
@@ -41,11 +36,10 @@
       <div class="animation-preloader">
         <div class="spinner"></div>
         <div class="txt-loading">
-          <span data-text="D" class="characters">D</span>
-          <span data-text="E" class="characters">E</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="B" class="characters">B</span>
-          <span data-text="Y" class="characters">Y</span>
+          <span data-text="I" class="characters">I</span>
+          <span data-text="N" class="characters">N</span>
+          <span data-text="F" class="characters">F</span>
+          <span data-text="O" class="characters">O</span>
         </div>
       </div>
       <div class="loader-section section-left"></div>
@@ -65,6 +59,58 @@
   </div>
 
 
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="dark">dark</button>
+          <button data-mode="light">light</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width">Full Width</button>
+          <button data-mode="box-layout">Box Layout</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
 
   <!-- Offcanves start -->
   <div class="offcanvas__area">
@@ -72,30 +118,15 @@
       <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
       <div class="offcanvas__body">
         <div class="offcanvas__logo">
-          <a href="index-light.html">
-            <img src="../assets/imgs/logo/site-logo-light.png" alt="Offcanvas Logo" class="show-dark">
-            <img src="../assets/imgs/logo/site-logo-dark.png" alt="Offcanvas Logo" class="show-light">
-          </a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
           <p>Create live segments and target the right people for messages based on their behaviors.</p>
         </div>
 
         <div class="offcanvas__menu-area">
-          <div class="offcanvas__menu-wrapper">
-            <nav class="offcanvas__menu">
-              <ul>
-                <li><a href="index-light.html">home</a></li>
-                <li><a href="portfolio-light.html">Portfolio</a></li>
-                <li><a href="#">Pages</a>
-                  <ul>
-                    <li> <a href="index.html">home <span class="new">Dark</span></a></li>
-                    <li> <a href="portfolio.html">Portfolio <span class="new">Dark</span></a></li>
-                    <li><a href="blog.html">blog <span class="new">Dark</span></a></li>
-                  </ul>
-                </li>
-                <li><a href="blog-light.html">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+          <div class="offcanvas__menu-wrapper"></div>
         </div>
         <div class="offcanvas__gallery">
           <p class="offcanvas__title">gallery</p>
@@ -145,8 +176,7 @@
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="body-wrapper body-tg">
-
+      <div class="body-wrapper body-elc">
 
         <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
@@ -200,16 +230,16 @@
 
         <main>
 
-          <!-- Portfolio section start -->
-          <section class="portfolio__area-2 pt-130 pb-130">
-            <div class="container line ptf-70">
-              <div class="project_detail_cover cf_parallax_image">
-                <img src="../assets/imgs/portfolio-page/birdhouse-page/birdhouse.png" alt="BirdHouse Project" data-speed="0.9">
-              </div>
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="project__details">
-                    <h1 class="project_details_title">BIRDHOUSE: DATA-DRIVEN SENIOR CARE MONITORING</h1>
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>Birdhouse: Data-driven Senior <br> Care Monitoring</h1></b>
+                    <p class="mt-20">Led the data architecture and analytics for Birdhouse, a winning solution at Build For Good Hackathon that addresses unnoticed senior deaths in Singapore through IoT-based monitoring.</p>
+                  </div>
+                  <div class="col-lg-6">
                     <ul class="project_info">
                       <li>
                         <span class="title">Role</span>
@@ -228,91 +258,235 @@
                         <p class="info">PostgreSQL, Tableau, Python</p>
                       </li>
                     </ul>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">PROJECT OVERVIEW</h2>
-                      <p>Led the data architecture and analytics for Birdhouse, a winning solution at Build For Good Hackathon that addresses unnoticed senior deaths in Singapore through IoT-based monitoring.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p>Write by Alex Jonsion <span class="date">January 18, 2023</span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/birdhouse-page/birdhouse.png" alt="BirdHouse Project" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">CHALLENGE</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">The Growing Crisis</h2>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">MY CONTRIBUTION</h2>
-                      <ul class="list-plus">
-                        <li>Designed and implemented PostgreSQL database architecture to handle real-time IoT sensor data</li>
-                        <li>Created interactive Tableau dashboards for monitoring senior activity patterns</li>
-                        <li>Developed data pipeline connecting IoT sensors to visualization platform</li>
-                        <li>Conducted user research to create data-driven personas</li>
-                        <li>Led user testing sessions for dashboard optimization</li>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Singapore faces a critical challenge with its aging population. By 2030, 1 in 4 citizens will be aged 65+, with a projected 83,000 seniors living alone - a nearly 6x increase from 2000. In 2023 alone, 37 cases of unnoticed senior deaths were reported, highlighting an urgent need for better monitoring solutions.</p>
+                        <p class="mb-25">The current ecosystem, including Active Aging Centres (AACs) and volunteer programs, struggles with limited resources and fragmented communication systems.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">SOLUTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Technical Implementation</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Birdhouse is an innovative IoT-based monitoring system that uses motion sensors to track senior activity patterns and alert caregivers of potential emergencies. As the Data Scientist on the team, I led the development of a comprehensive data infrastructure that processes real-time sensor data and transforms it into actionable insights for caregivers.</p>
+                        <p class="mb-25">The heart of our solution lies in its data architecture. I designed a PostgreSQL database optimized for time-series IoT data, implementing efficient data partitioning for historical pattern analysis. Using Python, I developed robust ETL pipelines that handle sensor data ingestion, cleaning, and validation.</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Designed and implemented PostgreSQL database architecture</li>
+                          <li>Created interactive Tableau dashboards</li>
+                          <li>Developed data pipeline connecting IoT sensors</li>
+                          <li>Conducted user research for data-driven personas</li>
+                          <li>Led user testing sessions for optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-insd-thumbs__items">
+                <div class="cf_image">
+                  <img src="../assets/imgs/portfolio-page/birdhouse-page/tableau_dashboard.png" alt="Tableau Dashboard">
+                </div>
+                <div class="cf_image">
+                  <img src="../assets/imgs/portfolio-page/birdhouse-page/schema.jpg" alt="Database Schema">
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">IMPACT</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Results & User Feedback</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Understanding our users was crucial for success. I conducted extensive interviews with 8 Active Aging Centre staff members to understand their workflow challenges. These insights informed the creation of data-driven personas and guided our dashboard design.</p>
+                        <p class="mb-25">Through three rounds of usability testing, we iteratively refined the interface to ensure it seamlessly integrated with staff operations while providing critical monitoring capabilities. The system successfully monitored 4 seniors during pilot phase, collecting over 1,500 check-ins across 11 days. Active Aging Centre staff reported significant workflow improvements and are planning to expand to 50 more seniors.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">Electrician</a></li>
+                        <li><a href="blog-light.html">Technician</a></li>
                       </ul>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">THE CHALLENGE</h2>
-                      <p>Singapore faces a critical challenge with its aging population. By 2030, 1 in 4 citizens will be aged 65+, with a projected 83,000 seniors living alone - a nearly 6x increase from 2000. In 2023 alone, 37 cases of unnoticed senior deaths were reported, highlighting an urgent need for better monitoring solutions. The current ecosystem, including Active Aging Centres (AACs) and volunteer programs, struggles with limited resources and fragmented communication systems.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">OUR SOLUTION</h2>
-                      <p>Birdhouse is an innovative IoT-based monitoring system that uses motion sensors to track senior activity patterns and alert caregivers of potential emergencies. As the Data Scientist on the team, I led the development of a comprehensive data infrastructure that processes real-time sensor data and transforms it into actionable insights for caregivers.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">TECHNICAL DEEP DIVE</h2>
-                      <p>The heart of our solution lies in its data architecture. I designed a PostgreSQL database optimized for time-series IoT data, implementing efficient data partitioning for historical pattern analysis. Using Python, I developed robust ETL pipelines that handle sensor data ingestion, cleaning, and validation. The system's centerpiece is an interactive Tableau dashboard that visualizes daily activity patterns and triggers automated alerts based on anomaly detection.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">USER-CENTERED APPROACH</h2>
-                      <p>Understanding our users was crucial for success. I conducted extensive interviews with 8 Active Aging Centre staff members to understand their workflow challenges. These insights informed the creation of data-driven personas and guided our dashboard design. Through three rounds of usability testing, we iteratively refined the interface to ensure it seamlessly integrated with staff operations while providing critical monitoring capabilities.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">IMPACT</h2>
-                      <p>The system successfully monitored 4 seniors during pilot phase, collecting over 1,500 check-ins across 11 days. Active Aging Centre staff reported significant workflow improvements and are planning to expand to 50 more seniors.</p>
-                    </div>
-
-                    <div class="project-sm-thumb">
-                      <a href="../assets/imgs/portfolio-page/birdhouse-page/tableau_dashboard.png" class="popup-image">
-                        <img src="../assets/imgs/portfolio-page/birdhouse-page/tableau_dashboard.png" alt="Tableau Dashboard">
-                      </a>
-                      <a href="../assets/imgs/portfolio-page/birdhouse-page/schema.jpg" class="popup-image">
-                        <img src="../assets/imgs/portfolio-page/birdhouse-page/schema.jpg" alt="Database Schema">
-                      </a>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="elc-inbd-comment-form">
+                      <h3 class="elc-inbd-comment__title mb-10">Leave a Comment</h3>
+                      <p>Your email address will not be published. Required fields are marked</p>
+                      <form action="#">
+                        <div class="elc-inbd-comment__form">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="elc-inbd-comment__field mb-30">
+                                <label for="name">Name*</label>
+                                <input type="text" name="name" id="name" placeholder="Your name">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="elc-inbd-comment__field mb-30">
+                                <label for="name">Email*</label>
+                                <input type="text" name="Email" id="Email" placeholder="Your email">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elc-inbd-comment__field">
+                            <label for="name">Comment*</label>
+                            <textarea name="comment" placeholder="Write your comments......"></textarea>
+                          </div>
+                          <div class="cf_btn elc-inbd-comment__btn-wrapper mt-45">
+                            <button type="submit" class="wc-btn-default">Submit Now <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <!-- Portfolio section end -->
-
-
+          <!-- blog details area end  -->
 
 
         </main>
 
-
         <!-- Footer section start -->
-        <footer class="footer-sfluence__area">
-          <div class="container">
-            <div class="row">
-              <div class="col-xxl-12">
-                <div class="footer-sfluence__social">
-                  <ul>
-                    <li><a id="black-text" href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
-                    <li><a id="black-text" href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope"></i></span></a></li>
-                    <li><a id="black-text" href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+        <footer>
+          <div class="elc-footer__area pt-130 pb-130 mbm-1">
+            <div class="elc-container">
+              <div class="elc-footer__widgets-wrapper">
+                <div class="footer__widget">
+                  <div class="elc-footer__logo">
+                    <a href="">
+                      <img src="../assets/imgs/electrician/logo-dark.png" alt="image">
+                    </a>
+                  </div>
+                  <div class="elc-footer__text">
+                    <p>My experience electricians are highly trained in all aspects of electrical service, from office
+                      lighting & security repair system.</p>
+                  </div>
+                  <ul class="elc-social-media">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
                   </ul>
                 </div>
-                <div class="footer-sfluence__btm">
-                  <p id="black-text">© All rights reserved by <a id="black-text" href="http://debbyling.github.io">Debby Ling</a></p>
-                  <a id="black-text" href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a>
+                <div class="footer__widget">
+                  <div class="elc-footer__go-up">
+                    <a href="#top">
+                      <div class="cf_image circle-box"><img src="../assets/imgs/electrician/go-up.png" alt="image">
+                      </div>
+                    </a>
+                  </div>
                 </div>
+                <div class="footer__widget">
+                  <h2 class="elc-footer__widget-title">Company</h2>
+                  <div class="elc-footer__menu hover-border-move">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Journals</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Join Slack</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__widget">
+                  <h2 class="elc-footer__widget-title">Information</h2>
+                  <div class="elc-footer__menu hover-border-move">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Journals</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Join Slack</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__widget">
+                  <h2 class="elc-footer__widget-title">Get in Touch</h2>
+                  <div class="elc-footer__meta-info">
+                    <ul>
+                      <li>
+                        <p class="elc-footer__meta-title">Address</p>
+                        <p class="elc-footer__meta-text">13 Division st, New York, 16004</p>
+                      </li>
+                      <li>
+                        <p class="elc-footer__meta-title">Phone</p>
+                        <p class="elc-footer__meta-text"><a href="tel:+(8)320781312">+(8) 320 781 312</a></p>
+                      </li>
+                      <li>
+                        <p class="elc-footer__meta-title">Email</p>
+                        <p class="elc-footer__meta-text"><a href="mailto:info@example.com">info@example.com</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elc-copyright__area">
+            <div class="elc-container">
+              <div class="cf_text elc-copyright__text">
+                <p>© Alrights reserved by <a href="https://crowdyflow.com/">CrowdyFlow</a></p>
               </div>
             </div>
           </div>
         </footer>
         <!-- Footer section end -->
-
 
       </div>
     </div>
@@ -320,39 +494,10 @@
 
 
 
-<!-- Make sure these scripts are in this order -->
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/jquery.magnific-popup.min.js"></script>
-
-<script>
-jQuery(document).ready(function($) {
-  console.log('Document ready');
-  $('.popup-image').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile mfp-with-zoom',
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300
-    },
-    callbacks: {
-      open: function() {
-        $('body').css('overflow', 'hidden');
-      },
-      close: function() {
-        $('body').css('overflow', '');
-      }
-    }
-  });
-});
-</script>
-
-<!-- Then continue with your other scripts -->
-
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/typed.js"></script>
@@ -366,16 +511,31 @@ jQuery(document).ready(function($) {
   <script src="../assets/js/TweenMax.min.js"></script>
   <script src="../assets/js/jquery.meanmenu.min.js"></script>
   <script src="../assets/js/tilt.jquery.min.js"></script>
-  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/backToTop.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/error-handling.js"></script>
-  <script src="../assets/js/wc-cursor.js"></script>
   <script src="../assets/js/offcanvas.js"></script>
-
+  <script src="../assets/js/wc-cursor.js"></script>
 
 
 </body>
+
+
+
+<style> 
+
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+}
+
+.light .body-elc {
+  background-color: var(--blue-2);
+}
+
+</style>
 
 </html>
