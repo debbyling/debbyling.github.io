@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>PREDICTING BILLBOARD SUCCESS: A TOPIC MODELING APPROACH</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/progressbar.css">
+  <link rel="stylesheet" href="../assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/basictable.min.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+
+</head>
+
+
+<body class="font-heading-romanstory light">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="D" class="characters">D</span>
+          <span data-text="E" class="characters">E</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="Y" class="characters">Y</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+
+  <!-- Offcanves start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOne">
+      <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      <div class="offcanvas__body">
+        <div class="offcanvas__logo">
+          <a href="index-light.html">
+            <img src="../assets/imgs/logo/site-logo-light.png" alt="Offcanvas Logo" class="show-dark">
+            <img src="../assets/imgs/logo/site-logo-dark.png" alt="Offcanvas Logo" class="show-light">
+          </a>
+          <p>Create live segments and target the right people for messages based on their behaviors.</p>
+        </div>
+
+        <div class="offcanvas__menu-area">
+          <div class="offcanvas__menu-wrapper">
+            <nav class="offcanvas__menu">
+              <ul>
+                <li><a href="index-light.html">home</a></li>
+                <li><a href="portfolio-light.html">Portfolio</a></li>
+                <li><a href="#">Pages</a>
+                  <ul>
+                    <li> <a href="index.html">home <span class="new">Dark</span></a></li>
+                    <li> <a href="portfolio.html">Portfolio <span class="new">Dark</span></a></li>
+                    <li><a href="blog.html">blog <span class="new">Dark</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="blog-light.html">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="offcanvas__gallery">
+          <p class="offcanvas__title">gallery</p>
+          <div class="gallery__items">
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-2.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-3.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-4.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-5.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-6.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas__media">
+          <p class="offcanvas__title">Follow</p>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanves end -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-tg">
+
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header id="main-header" class="header__area bg-transparent plr-100 fixed-header">
+          <div class="header__inner menu-right">
+            <div class="header__logo">
+              <a href="../index.html">
+                <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
+              </a>
+            </div>
+            <div class="header__nav tg-header__nav">
+              <!-- <nav class="main-menu menu-dark">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../portfolio.html">Projects</a></li>
+                </ul>
+              </nav> -->
+            </div>
+            <div class="tg-header__navicon">
+              <button onclick="showCanvas3()" class="open-offcanvas">
+                <span class="menu-icon-2"><span></span></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+        <!-- Also add the offcanvas-3 section -->
+        <div class="offcanvas-3__area">
+          <div class="offcanvas-3__inner">
+            <div class="offcanvas-3__meta-wrapper">
+              <div class="">
+                <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="offcanvas-3__menu-wrapper">
+              <nav class="nav-menu offcanvas-3__menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../portfolio.html">Projects</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <main>
+
+          <!-- Portfolio section start -->
+          <section class="portfolio__area-2 pt-130 pb-130">
+            <div class="container line ptf-70">
+              <div class="project_detail_cover cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/topic-modelling/lda.png" alt="Topic Modelling Research" data-speed="0.9">
+              </div>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="project__details">
+                    <h1 class="project_details_title">PREDICTING BILLBOARD SUCCESS: A TOPIC MODELING APPROACH</h1>
+                    <ul class="project_info">
+                      <li>
+                        <span class="title">Role</span>
+                        <p class="info">Lead Data Scientist</p>
+                      </li>
+                      <li>
+                        <span class="title">Organization</span>
+                        <p class="info">Self-initiated</p>
+                      </li>
+                      <li>
+                        <span class="title">Tools</span>
+                        <p class="info">Python, LDA Topic Modeling, Machine Learning</p>
+                      </li>
+                    </ul>
+
+                    <div class="project_overview">
+                      <h2>PROBLEM STATEMENT</h2>
+                      <br>
+                      <p>Music is not merely an art-form but a medium for societies to capture emotions and cultural nuances. Within the music industry, the Billboard charts serve as a testament to the popularity and longevity of musical tracks. Songs that remain on the Billboard chart for extended periods are those that are not only appealing to current trends, but also become part of the public's daily life, influencing trends and often becoming part of the cultural zeitgeist.</p>
+                      <p>Previous studies have found that the longevity of a recording on charts has implications for immediate revenue generation, revenue for future release, concert attendance, and product endorsements (Giles, 2007). While multiple studies have investigated the importance of audio features such as duration, time signature and danceability in predicting a song's longevity (Saragih, 2021), few studies have investigated the role that lyrics might play in a song's popularity.</p>
+                    </div>
+
+                    <div class="project_overview">
+                      <h2>DATA SOURCE</h2>
+                      <br>
+                      <p>Songs that have charted on the Billboard Hot 100 chart will be the scope of this study. This dataset was retrieved from Kaggle, a community website for data science. The dataset contains lyrics of popular songs, with accompanying metadata like the song title, track artist, number of weeks on Billboard as well as peak / bottom position on the chart.</p>
+                      <p>A separate Kaggle dataset that contained the metadata of songs such as duration and time signature, as well as audio features as extracted from the Spotify API was also retrieved. Finally the lyrics of these songs were retrieved by extracting the lyrics from the API created by Genius using each of the song's title and artist.</p>
+                      <p>Finally, these three datasets were joined together to form the final dataset which contained 3,602 unique songs.</p>
+                      
+                      <h2>KEY VARIABLES</h2>
+                      <br>
+
+                      <ul class="list-plus">
+                        <li><strong>Song Title:</strong> This contains the title of the song</li>
+                        <li><strong>Artist:</strong> This contains the name of the singer</li>
+                        <li><strong>Song Features:</strong> This is a collection of variables extracted from the Spotify API that include metadata on the song including song duration and time signature, as well as the audio features of the song like danceability, acousticness.</li>
+                        <li><strong>Song Lyrics:</strong> This is a variable that stores the pre-processed lyrics of the song. Please refer to the section on data preprocessing below for the data cleaning that will be conducted.</li>
+                        <li><strong>Time_on_chart:</strong> This refers to the number of weeks that the song has been listed on the Billboard Hot 100 chart and is the dependent variable for this study.</li>
+                      </ul>
+                    </div>
+                    <br>
+
+                    <div class="project_overview">
+                      <h2>DATA PREPROCESSING</h2>
+                      <br>
+                      <p>Song lyrics can be varied and complex with special characters, annotations, and possibly even multiple languages. It was therefore essential to preprocess the data to ensure consistent analysis. The preprocessing of the lyrics data involved several key steps to ensure its suitability for analysis. Commas and new line characters were removed to maintain data structure integrity and ensure a continuous text flow. Textual annotations, such as [VERSE] or [CHORUS], were removed to focus on the core lyric content. Additionally, any special characters arising from varied languages or encoding discrepancies were also removed to maintain a clean dataset.</p>
+                      
+                      <div class="preprocessing-steps">
+                        <h2 class="project_subtag">PREPROCESSING PIPELINE</h2>
+                            <p><strong>Tokenization:</strong> Raw lyrics are broken down into individual words, known as tokens. This step transforms continuous text into discrete elements</p>
+                            <p><strong>Filtering of Short and Numeric Tokens:</strong> Next, I employ a filtering step to remove tokens that are either purely numeric or shorter than three characters in length. This refinement is essential as it helps to focus the analysis on meaningful and substantial words, excluding brief interjections and numbers that might skew the thematic interpretation.</p>
+                            <p><strong>Lemmatization:</strong> Another critical phase involves lemmatization, in which tokens are normalized to their root forms. By reducing words to their base or dictionary form, it is possible to more accurately assess the frequency and relevance of terms within the lyrics.</p>
+                            <p><strong>Removal of Stop Words and Profanities:</strong> To ensure that our analysis concentrates on the most pertinent and expressive content, I remove common stop words and profanities from the lyrics. Stop words are words that are highly frequent yet informationally sparse. Including such words can detract from the thematic richness of the text. Similarly, profanities are filtered out to allow the focus to be on the actual thematic language elements.</p>
+                            <p><strong>Occurrence-based Filtering:</strong> In this step, I eliminate tokens that appear in more than 80% of the songs. This filtering is crucial as it helps to discard overly common words that could dilute the distinctiveness of thematic patterns across the corpus.</p>
+                            <p><strong>Conversion to Bag-of-Words:</strong> Finally, the processed lyrics are converted into a bag-of-words format. This transformation emphasizes the occurrence and frequency of words within the lyrics, disregarding their sequential order. The bag-of-words model simplifies the text data, rendering it more amenable to topic modeling.                      </div>
+                    </div>
+
+                    <div class="project_overview">
+                      <h2 class="project_subtag">TOPIC MODELING METHODOlOGY</h2>
+                      <p>Post-preprocessing, Latent Dirichlet Allocation (LDA) was conducted to extract the underlying topics in the lyrics as per Figure 1 below.</p>
+                      
+                      <div class="research-figure">
+                        <h2 class="project_subtag">Figure 1: TOpic MOdelling via Latent Dirichlet AllOcatiOn</h2>
+
+                        <div class="figure-container">
+                          <img src="../assets/imgs/portfolio-page/topic-modelling/lda.png" alt="LDA Illustration">
+                        </div>
+                      </div>
+
+                      <p>For each song lyric d in our corpus of song lyrics m:</p>
+                      <ol>
+                        <li>1. Select a distribution over topics 𝜃𝑑 from a Dirichlet distribution with parameter ∝</li>
+                        <li>2. For each word w in the song lyric:
+                          <ol type="a">
+                            <li> a. Choose a topic Z𝑑 from the distribution</li>
+                            <li> b. The model estimates the probability of a word w being generated by topic Z𝑑</li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <br>
+                      <p>The hyperparameters of ∝ and 𝛽 are being optimized automatically by the LDA algorithm based on the corpus. The number of topics k is a pivotal hyperparameter that is determined through the coherence score, and is explained in Section 4.1 Topic Modelling via LDA section below.</p>
+                      <p>The model assigns one topic (of the highest probability) to each song based on the patterns and frequencies of words.</p>
+                    </div>
+
+                    <div class="project_overview">
+                      <h2 class="project_subtag">MODEl PREPARATION</h2>
+                      <p>The final model was selected based on the model with the best performance (as defined in the Section 4.2 Prediction of number of weeks a song remains on the Billboard Hot 100 below). To ensure that the model's performance is not a result of a particular random train-test split, k-fold cross-validation will be used. All of the features were also standardized prior to modelling as the dataset included features with different units. Categorical variables like the topic of the song was encoded. For example, since the "topic" column contains categorical data in string format, it was transformed using one-hot encoding to separate binary columns for each unique topic.</p>
+                    </div>
+
+                    <div class="project_overview">
+                      <h2>TOPIC MODELING RESULTS</h2><br>
+
+                      <div class="findings-visualization">
+                        <div class="row">
+                          <div class="col-xxl-12">
+                            <div class="finding-item">
+                              <p class="finding-caption">One of the crucial decisions in LDA modeling is choosing the optimal number of topics. To determine the best number of topics, I trained models with different numbers of topics (ranging from 5 to 15). The choice of 5–15 topics was to allow for a balance to prevent the topics from being overly broad or too specific. Coherence score, a metric that quantifies the semantic similarity between high scoring words in each topic, was used to assess the quality of the topics generated by each model. The coherence scores for the models are shown in Figure 2 below.</p>
+                              <h2 class="project_subtag">Figure 2: COherence ScOres fOr Different Numbers Of TOpics</h2>
+
+                              <a href="../assets/imgs/portfolio-page/topic-modelling/coherence_score.webp" class="popup-image">
+                                <img src="../assets/imgs/portfolio-page/topic-modelling/coherence_score.webp" alt="Topic Coherence Scores">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="research-table">
+                        <h2 class="project_subtag">Table 1: TOp 10 MOst Frequent WOrds by TOpic</h2>
+
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Topic</th>
+                                <th>W1</th>
+                                <th>W2</th>
+                                <th>W3</th>
+                                <th>W4</th>
+                                <th>W5</th>
+                                <th>W6</th>
+                                <th>W7</th>
+                                <th>W8</th>
+                                <th>W9</th>
+                                <th>W10</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0</td>
+                                <td>love</td>
+                                <td>heart</td>
+                                <td>give</td>
+                                <td>hold</td>
+                                <td>forever</td>
+                                <td>together</td>
+                                <td>kiss</td>
+                                <td>TRUE</td>
+                                <td>lover</td>
+                                <td>sweet</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>baby</td>
+                                <td>wanna</td>
+                                <td>girl</td>
+                                <td>tonight</td>
+                                <td>body</td>
+                                <td>boy</td>
+                                <td>crazy</td>
+                                <td>feel</td>
+                                <td>good</td>
+                                <td>need</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>get</td>
+                                <td>come</td>
+                                <td>back</td>
+                                <td>dance</td>
+                                <td>stop</td>
+                                <td>around</td>
+                                <td>turn</td>
+                                <td>run</td>
+                                <td>move</td>
+                                <td>show</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>eye</td>
+                                <td>heart</td>
+                                <td>world</td>
+                                <td>inside</td>
+                                <td>see</td>
+                                <td>fire</td>
+                                <td>fall</td>
+                                <td>pain</td>
+                                <td>life</td>
+                                <td>soul</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>money</td>
+                                <td>gon'</td>
+                                <td>hit</td>
+                                <td>hoe</td>
+                                <td>tryna</td>
+                                <td>game</td>
+                                <td>'lil</td>
+                                <td>real</td>
+                                <td>'bout</td>
+                                <td>hustle</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>man</td>
+                                <td>big</td>
+                                <td>old</td>
+                                <td>rock</td>
+                                <td>town</td>
+                                <td>roll</td>
+                                <td>house</td>
+                                <td>street</td>
+                                <td>new</td>
+                                <td>car</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>time</td>
+                                <td>day</td>
+                                <td>home</td>
+                                <td>long</td>
+                                <td>night</td>
+                                <td>gone</td>
+                                <td>alone</td>
+                                <td>stay</td>
+                                <td>life</td>
+                                <td>leave</td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>know</td>
+                                <td>never</td>
+                                <td>like</td>
+                                <td>see</td>
+                                <td>think</td>
+                                <td>want</td>
+                                <td>nothing</td>
+                                <td>ever</td>
+                                <td>make</td>
+                                <td>feel</td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>god</td>
+                                <td>lord</td>
+                                <td>life</td>
+                                <td>heaven</td>
+                                <td>jesus</td>
+                                <td>child</td>
+                                <td>king</td>
+                                <td>pray</td>
+                                <td>power</td>
+                                <td>angel</td>
+                              </tr>
+                              <tr>
+                                <td>9</td>
+                                <td>light</td>
+                                <td>sun</td>
+                                <td>sky</td>
+                                <td>star</td>
+                                <td>blue</td>
+                                <td>fly</td>
+                                <td>sing</td>
+                                <td>wind</td>
+                                <td>dream</td>
+                                <td>moon</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+
+
+                      <!-- Insert your topic cards table here -->
+                      <div class="research-table">
+                        <h2 class="project_subtag">Table 2: Details Of the 10 tOpics derived frOm LDA tOpic mOdelling</h2>
+                        
+
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>S/N</th>
+                                <th>Topic Label</th>
+                                <th>Description</th>
+                                <th>Example Song</th>
+                                <th>Representative Lyrics</th>
+                                <th>Average Weeks on Billboard</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>0</td>
+                                <td>Romantic Love</td>
+                                <td>Focuses on deep emotional connections and enduring affection, with words like "love" and "heart"</td>
+                                <td>I Will Always Love You by Whitney Houston</td>
+                                <td>"And I.. will always love you, will always love you"</td>
+                                <td>15.762</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Flirtation & Desire</td>
+                                <td>Centers around flirtation and physical attraction, featuring words such as "baby" and "wanna"</td>
+                                <td>Shape of You by Ed Sheeran</td>
+                                <td>"Girl, you know I want your love, your love was handmade for somebody like me"</td>
+                                <td>20.518</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Movement & Action</td>
+                                <td>Emphasizes dynamic, energetic aspects of music, with action-oriented words like "dance" and "move"</td>
+                                <td>Raise Your Glass by P!nk</td>
+                                <td>"So raise your glass if you are wrong, in all the right ways"</td>
+                                <td>20.183</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Inner Feelings & Metaphysical</td>
+                                <td>Explores deep emotions and existential themes, with words like "soul" and "fire"</td>
+                                <td>Welcome to The Black Parade by My Chemical Romance</td>
+                                <td>"Sometimes I get the feeling, she's watching over me, and other times I feel like I should go"</td>
+                                <td>21.335</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>Street Life & Aggression</td>
+                                <td>Deals with the harsh realities of street life and aggression, marked by words like "gang" and "money"</td>
+                                <td>HUMBLE by Kendrick</td>
+                                <td>"If I quit your BM I still ride Mercedes, funk, If I quit this season I still be the greatest, funk"</td>
+                                <td>15.530</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>Masculinity & Everyday Life</td>
+                                <td>Narrates everyday life experiences, often from a masculine perspective, using words like "man" and "car"</td>
+                                <td>Castle on the Hill by Ed Sheeran</td>
+                                <td>"I watched the sunset over the castle on the hill"</td>
+                                <td>16.653</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>Time & Nostalgia</td>
+                                <td>Reflects on the passage of time and nostalgia, with words such as "time" and "day"</td>
+                                <td>Since U Been Gone by Kelly Clarkson</td>
+                                <td>"Since you've been gone, I can breathe for the first time"</td>
+                                <td>17.247</td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>Life Reflections & Decisions</td>
+                                <td>Focuses on introspection and life choices, with reflective words like "think" and "know"</td>
+                                <td>Viva La Vida by Coldplay</td>
+                                <td>"I used to rule the world, seas would rise when I gave the word"</td>
+                                <td>21.519</td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>Spirituality & Conflict</td>
+                                <td>Revolves around spirituality and moral conflicts, with words like "god" and "pray"</td>
+                                <td>Livin on a Prayer by Bon Jovi</td>
+                                <td>"Whoa oh, livin' on a prayer, take my hand and I'll make it I swear"</td>
+                                <td>13.455</td>
+                              </tr>
+                              <tr>
+                                <td>9</td>
+                                <td>Nature & Escape</td>
+                                <td>Touches on themes of nature and escapism, using words like "sun" and "sky"</td>
+                                <td>A Sky Full of Stars by Coldplay</td>
+                                <td>"Cause you're a sky, cause you're a sky full of stars"</td>
+                                <td>17.783</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="project_overview">
+
+                      <h2>MODEL PREPARATION</h2>
+                      <br>
+
+
+
+                      <p>Five models were employed for this analysis. The models built were Linear Regression, Random Forest, Gradient Boosting, Support Vector Machine, and Neural Network. The performance of each model was evaluated using Root Mean Square Error (RMSE), Mean Absolute Error (MAE), and the R-squared (R²) value, both with and without the ‘Topic of Song’ variable. As regression will be the primary model used, metrics like the Mean Absolute Error (MAE) or Root Meant Squared Error (RMSE), as well as the R-square value will be used to evaluate the accuracy of the prediction.
+
+                        The results from the 5 models, with and without “Topic of Song” included as a feature are summarized as follows in Table 3.</p>
+                      
+                      <!-- Insert Table 3 here -->
+                      <div class="research-table">
+                        <h2 class="project_subtag">Table 3: PerfOrmance fOr the 5 mOdels, including and excluding TOpic Of SOng as a feature</h2>
+
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Algorithm</th>
+                                <th>Topic of Song included as a feature</th>
+                                <th>RMSE</th>
+                                <th>MAE</th>
+                                <th>Adjusted R²</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td rowspan="2">Linear Regression</td>
+                                <td class="feature-column">Included</td>
+                                <td>4.9448</td>
+                                <td>2.3227</td>
+                                <td>0.8506</td>
+                              </tr>
+                              <tr>
+                                <td class="feature-column">Excluded</td>
+                                <td>4.9911</td>
+                                <td>2.3213</td>
+                                <td>0.8478</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">Random Forest</td>
+                                <td class="feature-column">Included</td>
+                                <td>2.3688</td>
+                                <td>0.5096</td>
+                                <td>0.9657</td>
+                              </tr>
+                              <tr>
+                                <td class="feature-column">Excluded</td>
+                                <td>2.3912</td>
+                                <td>0.5114</td>
+                                <td>0.9651</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">Gradient Boosting</td>
+                                <td class="feature-column">Included</td>
+                                <td>2.6445</td>
+                                <td>1.0829</td>
+                                <td>0.9573</td>
+                              </tr>
+                              <tr>
+                                <td class="feature-column">Excluded</td>
+                                <td>2.5560</td>
+                                <td>1.0762</td>
+                                <td>0.9601</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">Support Vector Machine</td>
+                                <td class="feature-column">Included</td>
+                                <td>4.8846</td>
+                                <td>2.5854</td>
+                                <td>0.8542</td>
+                              </tr>
+                              <tr>
+                                <td class="feature-column">Excluded</td>
+                                <td>4.9452</td>
+                                <td>2.5617</td>
+                                <td>0.8506</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">Neural Network</td>
+                                <td class="feature-column">Included</td>
+                                <td>2.8736</td>
+                                <td>1.3088</td>
+                                <td>0.9495</td>
+                              </tr>
+                              <tr>
+                                <td class="feature-column">Excluded</td>
+                                <td>2.9418</td>
+                                <td>1.3358</td>
+                                <td>0.9471</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <p>The Random Forest model exhibited the highest predictive accuracy and precision, as evidenced by its lowest RMSE and MAE values, and highest R² value. This suggests that it is the most suitable model for this type of data and prediction task. The performance slightly declines without “Topic of Song” included as a variable. This observation suggests that while the lyrical theme of a song, as captured by LDA-derived topics, may have some influence on its chart performance, it does not appear to be a dominant factor in these models.
+
+                        Apart from the Random Forest model, the Gradient Boosting model also exhibited relatively high R² value but interestingly was slightly better without the inclusion of the topic feature as compared to when the variable was included. In the case of Linear Regression, the low R² values in both scenarios imply a weak fit, suggesting that the relationship between the features and the target variable is not well-captured by a linear model.
+                        
+                        </p>
+                    </div>
+
+                    <div class="project_overview">
+                      <h2>FEATURE IMPORTANCE</h2>
+                      <br>
+                      <p style="margin-bottom: 15px;">To investigate this further, feature importance of each topic was extracted from the top performing model — Random Forest — to further examine how importance each topic is in determining song popularity. The feature importance scores of each topic are listed in Table 4 below.</p>
+
+                      <div class="research-table" style="margin-top: 0;">
+                        <h2 class="project_subtag">Table 4: Feature ImpOrtance Of the 10 tOpics based On RandOm FOrest</h2>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Feature</th>
+                                <th>Topic Label</th>
+                                <th>Feature Importance from Random Forest</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>top_topic_7</td>
+                                <td>Life Reflections & Decisions</td>
+                                <td>2.70E-04</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_1</td>
+                                <td>Flirtation & Desire</td>
+                                <td>2.53E-04</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_6</td>
+                                <td>Time & Nostalgia</td>
+                                <td>1.62E-04</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_3</td>
+                                <td>Inner Feelings & Metaphysical</td>
+                                <td>1.10E-04</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_8</td>
+                                <td>Spirituality & Conflict</td>
+                                <td>8.88E-05</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_5</td>
+                                <td>Masculinity & Everyday Life</td>
+                                <td>4.57E-05</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_2</td>
+                                <td>Movement & Action</td>
+                                <td>3.87E-05</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_4</td>
+                                <td>Street Life & Aggression</td>
+                                <td>3.62E-05</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_0</td>
+                                <td>Romantic Love</td>
+                                <td>3.20E-05</td>
+                              </tr>
+                              <tr>
+                                <td>top_topic_9</td>
+                                <td>Nature & Escape</td>
+                                <td>8.66E-07</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <p>The low feature importance values across all 10 topics reveal minimal influence on predicting a song's duration on the Billboard charts. This observation implies that while the thematic content of lyrics plays a role in a song's success, it is not the sole determinant of the popularity of the song on Billboard 100.</p>
+                    </div>
+
+                    <div class="project_overview">
+                      <h2>CONClUSIONS & FUTURE RESEARCH</h2><br>
+                      <p>This study has demonstrated that while song lyrics can be effectively categorized into distinct topics using LDA, these topics have limited predictive power for a song's Billboard chart performance. The Random Forest model achieved the best performance in predicting a song's duration on the Billboard Hot 100, with an R² value of 0.9657 and an RMSE of 2.3688 weeks.</p>
+                      
+                      <p>The analysis revealed ten distinct lyrical topics in popular music, ranging from romantic themes to social commentary. However, the feature importance analysis showed that these topics had relatively low importance in predicting chart success, suggesting that lyrical content alone is not a strong determinant of a song's commercial performance.</p>
+                      
+                      <p>Future research could explore additional features such as:</p>
+                      <ul class="list-plus">
+                        <li>Sentiment analysis of lyrics</li>
+                        <li>Musical features like tempo and key</li>
+                        <li>Marketing and promotional efforts</li>
+                        <li>Artist popularity and social media presence</li>
+                      </ul>
+                      <br>
+                      <p>These factors might provide additional insights into what drives a song's success on the Billboard charts.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Portfolio section end -->
+
+
+
+
+        </main>
+
+
+        <!-- Footer section start -->
+        <footer class="footer-sfluence__area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="footer-sfluence__social">
+                  <ul>
+                    <li><a id="black-text" href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+                    <li><a id="black-text" href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope"></i></span></a></li>
+                    <li><a id="black-text" href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                  </ul>
+                </div>
+                <div class="footer-sfluence__btm">
+                  <p id="black-text">© All rights reserved by <a id="black-text" href="http://debbyling.github.io">Debby Ling</a></p>
+                  <a id="black-text" href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer section end -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Make sure these scripts are in this order -->
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+  console.log('Document ready');
+  $('.popup-image').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile mfp-with-zoom',
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300
+    },
+    callbacks: {
+      open: function() {
+        $('body').css('overflow', 'hidden');
+      },
+      close: function() {
+        $('body').css('overflow', '');
+      }
+    }
+  });
+});
+</script>
+
+<!-- Then continue with your other scripts -->
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/typed.js"></script>
+  <script src="../assets/js/mixitup.min.js"></script>
+  <script src="../assets/js/progressbar.js"></script>
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollSmoother.min.js"></script>
+  <script src="../assets/js/ScrollToPlugin.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/SplitText.min.js"></script>
+  <script src="../assets/js/TweenMax.min.js"></script>
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
+  <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/error-handling.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
+  <script src="../assets/js/offcanvas.js"></script>
+
+
+
+<style> 
+
+
+.topic-cards-container {
+    margin: 30px 0;
+}
+
+.topic-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+}
+
+.topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.topic-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.weeks-badge {
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.topic-card h4 {
+    color: #222;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.topic-description {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.example-song {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.example-song .label {
+    display: block;
+    color: #999;
+    font-size: 0.85em;
+    margin-bottom: 5px;
+}
+
+.song-title {
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+.artist {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.representative-lyrics {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.research-table {
+    margin: 20px 0;
+}
+
+.research-table h3 {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: #f1f1f1;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.preprocessing-list {
+    padding-left: 20px;
+}
+
+.preprocessing-list li {
+    margin-bottom: 15px;
+}
+
+.preprocessing-list strong {
+    color: #333;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.research-figure {
+    margin: 30px 0;
+}
+
+.figure-container {
+    margin: 20px 0;
+}
+
+.table td {
+    padding: 8px;
+    font-size: 0.9em;
+}
+
+.table th {
+    padding: 10px 8px;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.table td[rowspan] {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    text-align: left;
+}
+
+.table td:nth-child(2) {
+    text-align: center;
+}
+
+.table th {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* First column alignment */
+.table td[rowspan],
+.table td:first-child {
+    text-align: left;
+}
+
+/* Highlight best performance */
+.table td.best-performance {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Center align all cells by default */
+.table td {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.9em;
+}
+
+/* Left align only the algorithm names (first column with rowspan) */
+.table td[rowspan] {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Ensure consistent center alignment for Included/Excluded column */
+.table td:nth-child(2),
+.table td:nth-child(3),
+.table td:nth-child(4),
+.table td:nth-child(5) {
+    text-align: center !important;
+}
+
+.table th {
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    background-color: #f1f1f1;
+}
+
+.feature-column {
+    text-align: center !important;
+    width: 200px;  /* Fixed width for this column */
+}
+
+/* Scientific notation alignment */
+.table td:last-child {
+    font-family: monospace;
+    text-align: right;
+}
+
+/* Topic label column */
+.table td:nth-child(2) {
+    text-align: left;
+}
+
+.project_overview p + .research-table {
+    margin-top: 15px;
+}
+
+</style>
+
+
+</body>
+
+</html>
