@@ -7,14 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="INFO HTML5 Template">
 
-  <title>Virtual Veteran</title>
+  <title>Blog details</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-
 
 
   <!-- All CSS files -->
@@ -28,13 +24,26 @@
   <link rel="stylesheet" href="../assets/css/master.css">
   <link rel="stylesheet" href="../style.css">
 
-
-
 </head>
 
 
-<body class="font-heading-romanstory light">
 
+<body class="font-heading-estedad light">
+
+  <div class="next-project-wrapper">
+    <a href="esplanade.html" class="next-project">
+      <div class="next-project-content">
+        <p class="next-label">Next Project</p>
+        <h3 class="next-title">Digital Kiosk for Esplanade</h3>
+      </div>
+      <div class="next-project-arrows" style="margin-left: 20px;">
+        <span class="arrow-right">→</span>
+      </div>
+      <div class="next-project-preview">
+        <img src="../assets/imgs/ndr2023_2.png" alt="Esplanade Project Preview">
+      </div>
+    </a>
+  </div>
   <!-- Preloader -->
   <div id="preloader">
     <div id="container" class="container-preloader">
@@ -72,30 +81,15 @@
       <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
       <div class="offcanvas__body">
         <div class="offcanvas__logo">
-          <a href="index-light.html">
-            <img src="../assets/imgs/logo/site-logo-light.png" alt="Offcanvas Logo" class="show-dark">
-            <img src="../assets/imgs/logo/site-logo-dark.png" alt="Offcanvas Logo" class="show-light">
-          </a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
           <p>Create live segments and target the right people for messages based on their behaviors.</p>
         </div>
 
         <div class="offcanvas__menu-area">
-          <div class="offcanvas__menu-wrapper">
-            <nav class="offcanvas__menu">
-              <ul>
-                <li><a href="index-light.html">home</a></li>
-                <li><a href="portfolio-light.html">Portfolio</a></li>
-                <li><a href="#">Pages</a>
-                  <ul>
-                    <li> <a href="index.html">home <span class="new">Dark</span></a></li>
-                    <li> <a href="portfolio.html">Portfolio <span class="new">Dark</span></a></li>
-                    <li><a href="blog.html">blog <span class="new">Dark</span></a></li>
-                  </ul>
-                </li>
-                <li><a href="blog-light.html">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+          <div class="offcanvas__menu-wrapper"></div>
         </div>
         <div class="offcanvas__gallery">
           <p class="offcanvas__title">gallery</p>
@@ -145,8 +139,7 @@
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="body-wrapper body-tg">
-
+      <div class="body-wrapper body-elc">
 
         <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
@@ -160,12 +153,6 @@
               </a>
             </div>
             <div class="header__nav tg-header__nav">
-              <!-- <nav class="main-menu menu-dark">
-                <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../portfolio.html">Projects</a></li>
-                </ul>
-              </nav> -->
             </div>
             <div class="tg-header__navicon">
               <button onclick="showCanvas3()" class="open-offcanvas">
@@ -200,16 +187,18 @@
 
         <main>
 
-          <!-- Portfolio section start -->
-          <section class="portfolio__area-2 pt-130 pb-130">
-            <div class="container line ptf-70">
-              <div class="project_detail_cover cf_parallax_image">
-                <img src="../assets/imgs/portfolio-page/young-esomar-page/main.png" alt="ESOMAR Congress Presentation" data-speed="0.9">
-              </div>
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="project__details">
-                    <h1 class="project_details_title">QUANTIFYING SOCIAL MEDIA REACTIONS: YOUNG ESOMAR SOCIETY AWARD WINNER</h1>
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>Quantifying Social Media Reactions<br></h1></b>
+                    <p class="mt-20 me-4">This groundbreaking research used discrete choice modeling to quantify the relative value of different social media reactions, winning the Young ESOMAR Society Award 2019 at the ESOMAR Congress.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="mt-20"><b>Task</b> <br>
+                    <p class="mt-20">Led research to understand and quantify the psychological impact of social media reactions using discrete choice modeling and conjoint analysis.</p>
                     <ul class="project_info">
                       <li>
                         <span class="title">Role</span>
@@ -217,7 +206,7 @@
                       </li>
                       <li>
                         <span class="title">Organization</span>
-                        <p class="info">ESOMAR Congress 2019</p>
+                        <p class="info">ESOMAR Congress & SKIM</p>
                       </li>
                       <li>
                         <span class="title">Date</span>
@@ -228,98 +217,138 @@
                         <p class="info">Discrete Choice Modeling, Conjoint Analysis</p>
                       </li>
                     </ul>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">PROJECT OVERVIEW</h2>
-                      <p>This groundbreaking research used discrete choice modeling to quantify the relative value of different social media reactions. The study revealed that not all reactions are created equal, with some carrying significantly more emotional weight than others. This work was recognized with the Young ESOMAR Society Award 2019, voted for by nearly 1,000 delegates at the ESOMAR Congress.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">KEY FINDINGS</h2>
-                      <ul class="list-plus">
-                        <li>One "Love" reaction equals approximately 3.5 "Like" reactions in terms of emotional value</li>
-                        <li>A single "Thumbs Down" reaction requires 9.7 "Like" reactions to offset its negative impact</li>
-                        <li>The impact of negative reactions diminishes over time, similar to emotional desensitization</li>
-                        <li>Context matters: the same reaction can have different emotional impacts based on post content</li>
-                      </ul>
-                    </div>
-
-                    <!-- New Deep Dive Section -->
-                    <div class="project_overview">
-                      <h2 class="project_subtag">DEEP DIVE: THE PSYCHOLOGY OF REACTIONS</h2>
-                      <div class="findings-visualization">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="finding-item">
-                              <a href="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down1.png" class="popup-image">
-                                <img src="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down1.png" alt="Utility Comparison">
-                              </a>
-                              <p class="finding-caption">Comparison of emotional impact: The negative utility of one thumbs down (-9.7) far outweighs the positive utility of one thumbs up (+1)</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="finding-item">
-                              <a href="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down2.png" class="popup-image">
-                                <img src="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down2.png" alt="Diminishing Effect">
-                              </a>
-                              <p class="finding-caption">Diminishing negative impact: The emotional hurt from thumbs down reactions reaches a saturation point</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="finding-explanation">
-                          <p>Our research revealed two fascinating psychological phenomena:</p>
-                          <ol>
-                            <li><strong>Asymmetric Impact:</strong> The negative emotional impact of a thumbs down is dramatically stronger than the positive impact of a thumbs up. It takes nearly 10 positive reactions to compensate for a single negative one, demonstrating the profound psychological weight of negative feedback.</li>
-                            <li><strong>Emotional Desensitization:</strong> As the number of negative reactions increases, their marginal negative impact decreases. The first thumbs down delivers the strongest emotional blow, but subsequent negative reactions have progressively less impact - similar to how we process repeated emotional stimuli in other aspects of life.</li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">METHODOLOGY</h2>
-                      <p>The study employed a conjoint experiment (discrete choice modeling) with 200 US respondents. Participants were presented with varying combinations of thumbs up, thumbs down, and love reactions, and asked to evaluate which combination would make them feel best if received on their social media post.</p>
-                    </div>
-
-                    <!-- New Video Section -->
-                    <div class="project_overview">
-                      <h2 class="project_subtag">AWARD PRESENTATION</h2>
-                      <div class="project-video">
-                        <div class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/u3rhW_zLf-c?si=EtZN_USBmnWMby3t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <p class="video-caption">Watch the winning presentation at ESOMAR Congress 2019</p>
-                      </div>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">IMPLICATIONS FOR BRANDS</h2>
-                      <p>This research challenges the conventional method of measuring social media engagement by simply summing up reactions. Key implications include:</p>
-                      <ul class="list-plus">
-                        <li>Need for weighted engagement metrics that account for reaction types</li>
-                        <li>Importance of considering post context when interpreting negative reactions</li>
-                        <li>Value of segmenting reactions by demographics and audience type</li>
-                        <li>Potential for creating more nuanced social media success metrics</li>
-                      </ul>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">IMPACT & RECOGNITION</h2>
-                      <p>The research was presented at ESOMAR Congress 2019, where it won the Young ESOMAR Society Award through delegate voting. The findings contribute to our understanding of social media engagement and provide a framework for more sophisticated measurement of social media success.</p>
-                    </div>
-
                   </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p><span class="date">Status: Completed. 🏆 Won Young ESOMAR Society Award!</span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/young-esomar-page/main.png" alt="ESOMAR Congress Presentation" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">KEY FINDINGS</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Research Impact</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Our research revealed several groundbreaking insights about how users perceive and process social media reactions:</p>
+                        <ul class=" elc-inbd-hero__feature list-check mb-30 style="font-size: 16px;"">
+                          <li>One "Love" reaction equals approximately 3.5 "Like" reactions in emotional value, suggesting that more expressive reactions carry significantly more weight</li>
+                          <li>A single "Thumbs Down" reaction requires 9.7 "Like" reactions to offset its negative impact, demonstrating the disproportionate impact of negative feedback</li>
+                          <li>The impact of negative reactions follows a logarithmic curve, showing diminishing impact over time - similar to psychological habituation</li>
+                          <li>Context matters: reactions have different emotional impacts based on post content (e.g., personal achievements vs. casual updates)</li>
+                          <li>Demographic variations: younger users (18-24) showed more resilience to negative reactions compared to older users</li>
+                          <li>The findings challenge current social media metrics that treat all reactions equally</li>
+                        </ul>
+                        <p class="mb-25">These insights have significant implications for:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Social media platforms designing reaction systems</li>
+                          <li>Brands measuring social media engagement</li>
+                          <li>Content creators optimizing their strategies</li>
+                          <li>Mental health professionals understanding online interactions</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-insd-thumbs__items">
+                <div class="cf_image">
+                  <a href="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down1.png" class="popup-image">
+                    <img src="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down1.png" alt="Utility Comparison">
+                  </a>
+                </div>
+                <div class="cf_image">
+                  <a href="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down2.png" class="popup-image">
+                    <img src="../assets/imgs/portfolio-page/young-esomar-page/thumbs-down2.png" alt="Diminishing Effect">
+                  </a>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">METHODOLOGY</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Research Approach</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">The study employed a conjoint experiment (discrete choice modeling) with 200 US respondents. Participants were presented with varying combinations of thumbs up, thumbs down, and love reactions, and asked to evaluate which combination would make them feel best if received on their social media post.</p>
+                        <p class="mb-25">Our research revealed two fascinating psychological phenomena:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li><b>Asymmetric Impact:</b> The negative emotional impact of a thumbs down is dramatically stronger than the positive impact of a thumbs up</li>
+                          <li><b>Emotional Desensitization:</b> As the number of negative reactions increases, their marginal negative impact decreases</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">IMPACT</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Implications & Recognition</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">This research challenges the conventional method of measuring social media engagement by simply summing up reactions. Key implications include:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Need for weighted engagement metrics that account for reaction types</li>
+                          <li>Importance of considering post context when interpreting negative reactions</li>
+                          <li>Value of segmenting reactions by demographics and audience type</li>
+                          <li>Potential for creating more nuanced social media success metrics</li>
+                        </ul>
+                        <div class="video-wrapper">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/u3rhW_zLf-c?si=EtZN_USBmnWMby3t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">Data</a></li>
+                        <li><a href="blog-light.html">Product Management</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
                 </div>
               </div>
             </div>
           </section>
-          <!-- Portfolio section end -->
-
-
+          <!-- blog details area end  -->
 
 
         </main>
-
 
         <!-- Footer section start -->
         <footer class="footer-sfluence__area">
@@ -343,46 +372,16 @@
         </footer>
         <!-- Footer section end -->
 
-
       </div>
     </div>
   </div>
 
 
 
-<!-- Make sure these scripts are in this order -->
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/jquery.magnific-popup.min.js"></script>
-
-<script>
-jQuery(document).ready(function($) {
-  console.log('Document ready');
-  $('.popup-image').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile mfp-with-zoom',
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300
-    },
-    callbacks: {
-      open: function() {
-        $('body').css('overflow', 'hidden');
-      },
-      close: function() {
-        $('body').css('overflow', '');
-      }
-    }
-  });
-});
-</script>
-
-<!-- Then continue with your other scripts -->
-
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/typed.js"></script>
@@ -396,16 +395,163 @@ jQuery(document).ready(function($) {
   <script src="../assets/js/TweenMax.min.js"></script>
   <script src="../assets/js/jquery.meanmenu.min.js"></script>
   <script src="../assets/js/tilt.jquery.min.js"></script>
-  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/backToTop.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/error-handling.js"></script>
-  <script src="../assets/js/wc-cursor.js"></script>
   <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
 
-
+  <script>
+  jQuery(document).ready(function($) {
+    console.log('Document ready');
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile mfp-with-zoom',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300
+      },
+      callbacks: {
+        open: function() {
+          $('body').css('overflow', 'hidden');
+        },
+        close: function() {
+          $('body').css('overflow', '');
+        }
+      }
+    });
+  });
+  </script>
 
 </body>
 
+
+
+<style> 
+
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+}
+
+.light .body-elc {
+  background-color: var(--blue-2);
+}
+
+.body-wrapper.body-elc {
+  border: 0px;
+}
+
+.next-project-wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.next-project-preview {
+  position: absolute;
+  right: 0;
+  bottom: 100%; /* Positions it above the wrapper */
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* Adds some space between preview and content */
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.next-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-project-wrapper:hover .next-project-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    display: none;
+  }
+}
+
+.next-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.next-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.next-title {
+  font-size: 20px;
+  margin: 0;
+  color: #212529;
+}
+
+.next-project-arrows {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.arrow-left, .arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover .arrow-left {
+  transform: translateX(-5px);
+}
+
+.next-project:hover .arrow-right {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    width: 250px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .next-title {
+    font-size: 16px;
+  }
+}
+
+
+.elc-inbd-hero__feature li {
+    font-size: 16px;
+}
+
+</style>
+
+</html>
 </html>
