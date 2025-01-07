@@ -7,14 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="INFO HTML5 Template">
 
-  <title>Birdhouse</title>
+  <title>National Day Rally Analysis</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-
 
 
   <!-- All CSS files -->
@@ -28,13 +24,26 @@
   <link rel="stylesheet" href="../assets/css/master.css">
   <link rel="stylesheet" href="../style.css">
 
-
-
 </head>
 
 
-<body class="font-heading-romanstory light">
 
+<body class="font-heading-estedad light">
+
+  <div class="next-project-wrapper">
+    <a href="topic-modelling.html" class="next-project">
+      <div class="next-project-content">
+        <p class="next-label">Next Project</p>
+        <h3 class="next-title">Topic Modelling</h3>
+      </div>
+      <div class="next-project-arrows" style="margin-left: 20px;">
+        <span class="arrow-right">→</span>
+      </div>
+      <div class="next-project-preview">
+        <img src="../assets/imgs/portfolio-page/portfolio-lyrics.png" alt="Topic Modelling Project Preview">
+      </div>
+    </a>
+  </div>
   <!-- Preloader -->
   <div id="preloader">
     <div id="container" class="container-preloader">
@@ -72,30 +81,15 @@
       <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
       <div class="offcanvas__body">
         <div class="offcanvas__logo">
-          <a href="index-light.html">
-            <img src="../assets/imgs/logo/site-logo-light.png" alt="Offcanvas Logo" class="show-dark">
-            <img src="../assets/imgs/logo/site-logo-dark.png" alt="Offcanvas Logo" class="show-light">
-          </a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
           <p>Create live segments and target the right people for messages based on their behaviors.</p>
         </div>
 
         <div class="offcanvas__menu-area">
-          <div class="offcanvas__menu-wrapper">
-            <nav class="offcanvas__menu">
-              <ul>
-                <li><a href="index-light.html">home</a></li>
-                <li><a href="portfolio-light.html">Portfolio</a></li>
-                <li><a href="#">Pages</a>
-                  <ul>
-                    <li> <a href="index.html">home <span class="new">Dark</span></a></li>
-                    <li> <a href="portfolio.html">Portfolio <span class="new">Dark</span></a></li>
-                    <li><a href="blog.html">blog <span class="new">Dark</span></a></li>
-                  </ul>
-                </li>
-                <li><a href="blog-light.html">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+          <div class="offcanvas__menu-wrapper"></div>
         </div>
         <div class="offcanvas__gallery">
           <p class="offcanvas__title">gallery</p>
@@ -145,8 +139,7 @@
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="body-wrapper body-tg">
-
+      <div class="body-wrapper body-elc">
 
         <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
@@ -162,8 +155,16 @@
             <div class="header__nav tg-header__nav">
               <nav class="main-menu menu-dark">
                 <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../portfolio.html">Projects</a></li>
+                  <li><a href="../index.html" target="_blank">home</a></li>
+                  <li><a href="../index.html?section=about-section">about</a></li>
+                  <li><a href="../index.html?section=resume-section">resume</a></li>
+                  <li class="menu-item-has-children"><a href="#">Projects</a>
+                    <ul class="dp-menu">
+                      <li><a href="../index.html?section=highlight-section" target="_blank">Highlighted Projects</a></li>
+                      <li><a href="../portfolio.html" target="_blank">All Projects</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../index.html?section=contact" target="_blank">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -200,16 +201,19 @@
 
         <main>
 
-          <!-- Portfolio section start -->
-          <section class="portfolio__area-2 pt-130 pb-130">
-            <div class="container line ptf-70">
-              <div class="project_detail_cover cf_parallax_image">
-                <img src="../assets/imgs/portfolio-page/ndr-page/ndr.png" alt="NDR Project" data-speed="0.9">
-              </div>
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="project__details">
-                    <h1 class="project_details_title">NATIONAL DAY RALLY SPEECH ANALYSIS: 30 YEARS OF SINGAPORE'S EVOLUTION</h1>
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>National Day Rally Speech Analysis: 30 Years of Singapore's Evolution</b></h1>
+                    <p class="mt-20 me-4">Led a comprehensive analysis of 30 years of National Day Rally speeches (1991-2023) using advanced NLP techniques to uncover key themes and trends that shaped Singapore's policy landscape. Analysis <a href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136" target="_blank">published on <b><u>TODAY Online</u></b></a>.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="mt-20"><b>Task</b></p>
+                    <p class="mt-20">Analyze 30 years of National Day Rally speeches using NLP to uncover key themes and their evolution in Singapore's policy landscape</p>
+
                     <ul class="project_info">
                       <li>
                         <span class="title">Role</span>
@@ -228,103 +232,155 @@
                         <p class="info">Python, NLTK, BERTopic</p>
                       </li>
                     </ul>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">PROJECT OVERVIEW</h2>
-                      <p>Led a comprehensive analysis of 30 years of National Day Rally speeches (1991-2023) using advanced NLP techniques to uncover key themes and trends that shaped Singapore's policy landscape. Analysis <a href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136" target="_blank">published on <b><u>TODAY Online</u></b></a>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p><span class="date">Status: Published on TODAY Online 📰</span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/ndr-page/ndr.png" alt="National Day Rally Analysis" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">THE CHALLENGE</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Problem Statement</h2>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">MY CONTRIBUTION</h2>
-                      <ul class="list-plus">
-                        <li>Developed text preprocessing pipeline using NLTK for cleaning and standardizing speech transcripts</li>
-                        <li>Implemented topic modeling using BERTopic to identify and extract key themes</li>
-                        <li>Created temporal analysis framework to track theme evolution across decades</li>
-                        <li>Generated data visualizations to communicate findings effectively</li>
-                        <li>Co-authored commentary piece published on TODAY Online</li>
-                      </ul>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">THE CHALLENGE</h2>
-                      <p>The National Day Rally speeches serve as crucial historical documents reflecting Singapore's journey, challenges, and aspirations. However, manually analyzing 30 years of speeches to identify key themes and patterns would be an immense undertaking. We needed a data-driven approach to uncover meaningful insights about Singapore's policy evolution and national priorities.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">OUR SOLUTION</h2>
-                      <p>We developed a comprehensive text analysis system leveraging Natural Language Processing and topic modeling techniques. The solution combines NLTK for text preprocessing and BERTopic for advanced topic modeling, enabling us to analyze speeches from 1991 to 2023. Our approach revealed 10 distinct themes and their evolution across three decades, providing insights into Singapore's changing priorities and challenges.</p>
-                    </div>
-
-                    <div class="project-sm-thumb-single">
-                      <a href="../assets/imgs/portfolio-page/ndr-page/heatmap.avif" class="popup-image">
-                        <img src="../assets/imgs/portfolio-page/ndr-page/heatmap.avif" alt="Topic Heatmap">
-                      </a>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">TECHNICAL DEEP DIVE</h2>
-                      <p>The analysis pipeline consists of several key components:</p>
-                      <ul class="list-plus">
-                        <li><strong>Data Collection:</strong> Consolidated English transcripts of NDR speeches from 1991-2023</li>
-                        <li><strong>Text Preprocessing:</strong> Implemented custom cleaning using NLTK, including lemmatization, stop word removal, and tokenization</li>
-                        <li><strong>Topic Modeling:</strong> Applied BERTopic to identify and extract key themes</li>
-                        <li><strong>Temporal Analysis:</strong> Developed decade-wise analysis framework to track theme evolution</li>
-                        <li><strong>Visualization:</strong> Created heatmaps and charts to illustrate theme distribution and temporal patterns</li>
-                      </ul>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">KEY FINDINGS</h2>
-                      <p>Our analysis revealed several significant patterns:</p>
-                      <ul class="list-plus">
-                        <li>"Progress and Vision" emerged as a dominant theme in the 1990s during Singapore's first leadership transition</li>
-                        <li>"Healthcare and Aging Population" showed steady increase in importance across all decades</li>
-                        <li>Social cohesion remained a consistent priority throughout the 30-year period</li>
-                        <li>Economic themes clustered with social stability concerns during major crises (Asian Financial Crisis, Post-9/11, COVID-19)</li>
-                      </ul>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">IMPACT</h2>
-                      <p>Our analysis has made significant contributions to public discourse and policy understanding in Singapore. Through data-driven insights, we've illuminated the evolution of national policies over three decades, identifying crucial long-term trends in national priorities. The research has been particularly valuable in highlighting how economic, social, and security challenges are deeply interconnected in Singapore's policy landscape. The publication of our findings in TODAY Online has ensured these insights reach a broad audience of policymakers and citizens, fostering informed public discussion about Singapore's past and future direction.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">METHODOLOGY</h2>
-                      <p>Our analytical approach seamlessly integrated qualitative and quantitative methods to ensure comprehensive insights. We began by developing a specialized preprocessing pipeline that incorporated custom stop words specific to the Singapore context. Text standardization was achieved through careful lemmatization, preserving meaningful context while enabling consistent analysis. The core of our analysis leveraged BERTopic's advanced capabilities for temporal topic modeling. We structured our investigation across three distinct decades (1991-2000, 2001-2010, 2011-2023), generating detailed heatmaps to visualize how different themes evolved in prominence over time.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">CHALLENGES FACED</h2>
-                      <p>Throughout the project, we encountered and overcame several significant technical and analytical challenges. A primary hurdle was accurately processing Singapore-specific terms and contextual nuances within our NLP framework. We also faced the complex task of standardizing text quality across various speech transcription formats from different eras. Balancing computational efficiency with model accuracy proved crucial when handling our extensive text corpus. Additionally, we invested considerable effort in developing visualization techniques that could effectively communicate temporal patterns to both technical and non-technical audiences.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">FUTURE DEVELOPMENTS</h2>
-                      <p>This project has laid the groundwork for several exciting future developments. We envision expanding our analysis to encompass ministerial speeches and parliamentary debates, providing an even more comprehensive view of Singapore's policy discourse. Plans are underway to develop an interactive visualization dashboard that would allow public exploration of our findings. We're also exploring the integration of sentiment analysis to understand the emotional undertones of speeches, and developing predictive models that could offer insights into future policy focus areas.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">REFLECTIONS</h2>
-                      <p>This project has yielded valuable insights that bridge technical innovation and policy understanding. Our work has demonstrated the powerful role that NLP can play in understanding policy evolution, while emphasizing the critical importance of context-aware text preprocessing in achieving meaningful results. Through our analysis, we uncovered subtle patterns in Singapore's policy priorities that weren't immediately apparent through traditional analysis methods. Perhaps most importantly, this project has shown how data science can make meaningful contributions to public policy understanding, creating new pathways for evidence-based policymaking.</p>
-                    </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">ACKNOWLEDGMENTS</h2>
-                      <p>The success of this project was made possible through the support and contributions of several key individuals and organizations. Dr. Leong Chan-Hoong's policy expertise was instrumental in contextualizing our findings. Kantar Public provided crucial support for this research initiative, while TODAY Online helped bring our findings to a broader audience. We're also grateful to the National Archives of Singapore for providing access to their comprehensive collection of historical speech transcripts, without which this analysis would not have been possible.</p>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">The National Day Rally speeches serve as crucial historical documents reflecting Singapore's journey, challenges, and aspirations. However, manually analyzing 30 years of speeches to identify key themes and patterns would be an immense undertaking. We needed a data-driven approach to uncover meaningful insights about Singapore's policy evolution and national priorities.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">CONTRIBUTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">My Role</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Developed text preprocessing pipeline using NLTK for cleaning and standardizing speech transcripts</li>
+                          <li>Implemented topic modeling using BERTopic to identify and extract key themes</li>
+                          <li>Created temporal analysis framework to track theme evolution across decades</li>
+                          <li>Generated data visualizations to communicate findings effectively</li>
+                          <li>Co-authored commentary piece published on TODAY Online</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">SOLUTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Our Approach</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">We developed a comprehensive text analysis system leveraging Natural Language Processing and topic modeling techniques. The solution combines NLTK for text preprocessing and BERTopic for advanced topic modeling, enabling us to analyze speeches from 1991 to 2023. Our approach revealed 10 distinct themes and their evolution across three decades, providing insights into Singapore's changing priorities and challenges.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">METHODOLOGY</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Technical Details</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Our analytical approach seamlessly integrated qualitative and quantitative methods to ensure comprehensive insights. We began by developing a specialized preprocessing pipeline that incorporated custom stop words specific to the Singapore context. Text standardization was achieved through careful lemmatization, preserving meaningful context while enabling consistent analysis. The core of our analysis leveraged BERTopic's advanced capabilities for temporal topic modeling. We structured our investigation across three distinct decades (1991-2000, 2001-2010, 2011-2023), generating detailed heatmaps to visualize how different themes evolved in prominence over time.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">FINDINGS</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Key Results</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>"Progress and Vision" emerged as a dominant theme in the 1990s during Singapore's first leadership transition</li>
+                          <li>"Healthcare and Aging Population" showed steady increase in importance across all decades</li>
+                          <li>Social cohesion remained a consistent priority throughout the 30-year period</li>
+                          <li>Economic themes clustered with social stability concerns during major crises (Asian Financial Crisis, Post-9/11, COVID-19)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">REFLECTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Impact & Learning</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">This project has yielded valuable insights that bridge technical innovation and policy understanding. Our work has demonstrated the powerful role that NLP can play in understanding policy evolution, while emphasizing the critical importance of context-aware text preprocessing in achieving meaningful results. Through our analysis, we uncovered subtle patterns in Singapore's policy priorities that weren't immediately apparent through traditional analysis methods. Perhaps most importantly, this project has shown how data science can make meaningful contributions to public policy understanding, creating new pathways for evidence-based policymaking.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">Data</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                </div>
+              </div>
             </div>
           </section>
-          <!-- Portfolio section end -->
-
-
+          <!-- blog details area end  -->
 
 
         </main>
-
 
         <!-- Footer section start -->
         <footer class="footer-sfluence__area">
@@ -348,46 +404,16 @@
         </footer>
         <!-- Footer section end -->
 
-
       </div>
     </div>
   </div>
 
 
 
-<!-- Make sure these scripts are in this order -->
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/jquery.magnific-popup.min.js"></script>
-
-<script>
-jQuery(document).ready(function($) {
-  console.log('Document ready');
-  $('.popup-image').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile mfp-with-zoom',
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300
-    },
-    callbacks: {
-      open: function() {
-        $('body').css('overflow', 'hidden');
-      },
-      close: function() {
-        $('body').css('overflow', '');
-      }
-    }
-  });
-});
-</script>
-
-<!-- Then continue with your other scripts -->
-
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/typed.js"></script>
@@ -401,16 +427,170 @@ jQuery(document).ready(function($) {
   <script src="../assets/js/TweenMax.min.js"></script>
   <script src="../assets/js/jquery.meanmenu.min.js"></script>
   <script src="../assets/js/tilt.jquery.min.js"></script>
-  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/backToTop.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/error-handling.js"></script>
-  <script src="../assets/js/wc-cursor.js"></script>
   <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
 
-
+  <script>
+  jQuery(document).ready(function($) {
+    console.log('Document ready');
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile mfp-with-zoom',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300
+      },
+      callbacks: {
+        open: function() {
+          $('body').css('overflow', 'hidden');
+        },
+        close: function() {
+          $('body').css('overflow', '');
+        }
+      }
+    });
+  });
+  </script>
 
 </body>
+
+
+
+<style> 
+
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+}
+
+.light .body-elc {
+  background-color: var(--blue-2);
+}
+
+.body-wrapper.body-elc {
+  border: 0px;
+}
+
+.next-project-wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.next-project-preview {
+  position: absolute;
+  right: 0;
+  bottom: 100%; /* Positions it above the wrapper */
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* Adds some space between preview and content */
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.next-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-project-wrapper:hover .next-project-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    display: none;
+  }
+}
+
+.next-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.next-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.next-title {
+  font-size: 20px;
+  margin: 0;
+  color: #212529;
+}
+
+.next-project-arrows {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.arrow-left, .arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover .arrow-left {
+  transform: translateX(-5px);
+}
+
+.next-project:hover .arrow-right {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    width: 250px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .next-title {
+    font-size: 16px;
+  }
+}
+
+
+.elc-inbd-hero__feature li {
+    font-size: 16px;
+}
+
+.light p {
+  color: #000;
+}
+
+li {
+  color: #000;
+}
+
+</style>
 
 </html>

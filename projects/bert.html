@@ -7,14 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="INFO HTML5 Template">
 
-  <title>BERT meets GPT-4: A Hybrid Approach for Academic Field Classification</title>
+  <title>BERT meets GPT-4</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-
 
 
   <!-- All CSS files -->
@@ -28,13 +24,26 @@
   <link rel="stylesheet" href="../assets/css/master.css">
   <link rel="stylesheet" href="../style.css">
 
-
-
 </head>
 
 
-<body class="font-heading-romanstory light">
 
+<body class="font-heading-estedad light">
+
+  <div class="next-project-wrapper">
+    <a href="topic-modelling.html" class="next-project">
+      <div class="next-project-content">
+        <p class="next-label">Next Project</p>
+        <h3 class="next-title">Topic Modelling</h3>
+      </div>
+      <div class="next-project-arrows" style="margin-left: 20px;">
+        <span class="arrow-right">→</span>
+      </div>
+      <div class="next-project-preview">
+        <img src="../assets/imgs/portfolio-page/portfolio-lyrics.png" alt="Esplanade Project Preview">
+      </div>
+    </a>
+  </div>
   <!-- Preloader -->
   <div id="preloader">
     <div id="container" class="container-preloader">
@@ -72,30 +81,15 @@
       <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
       <div class="offcanvas__body">
         <div class="offcanvas__logo">
-          <a href="index-light.html">
-            <img src="../assets/imgs/logo/site-logo-light.png" alt="Offcanvas Logo" class="show-dark">
-            <img src="../assets/imgs/logo/site-logo-dark.png" alt="Offcanvas Logo" class="show-light">
-          </a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
           <p>Create live segments and target the right people for messages based on their behaviors.</p>
         </div>
 
         <div class="offcanvas__menu-area">
-          <div class="offcanvas__menu-wrapper">
-            <nav class="offcanvas__menu">
-              <ul>
-                <li><a href="index-light.html">home</a></li>
-                <li><a href="portfolio-light.html">Portfolio</a></li>
-                <li><a href="#">Pages</a>
-                  <ul>
-                    <li> <a href="index.html">home <span class="new">Dark</span></a></li>
-                    <li> <a href="portfolio.html">Portfolio <span class="new">Dark</span></a></li>
-                    <li><a href="blog.html">blog <span class="new">Dark</span></a></li>
-                  </ul>
-                </li>
-                <li><a href="blog-light.html">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+          <div class="offcanvas__menu-wrapper"></div>
         </div>
         <div class="offcanvas__gallery">
           <p class="offcanvas__title">gallery</p>
@@ -145,8 +139,7 @@
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="body-wrapper body-tg">
-
+      <div class="body-wrapper body-elc">
 
         <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
@@ -155,17 +148,25 @@
         <header id="main-header" class="header__area bg-transparent plr-100 fixed-header">
           <div class="header__inner menu-right">
             <div class="header__logo">
-              <a href="index.html">
+              <a href="../index.html">
                 <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
               </a>
             </div>
             <div class="header__nav tg-header__nav">
-              <!-- <nav class="main-menu menu-dark">
+              <nav class="main-menu menu-dark">
                 <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../portfolio.html">Projects</a></li>
+                  <li><a href="../index.html" target="_blank">home</a></li>
+                  <li><a href="../index.html?section=about-section">about</a></li>
+                  <li><a href="../index.html?section=resume-section">resume</a></li>
+                  <li class="menu-item-has-children"><a href="#">Projects</a>
+                    <ul class="dp-menu">
+                      <li><a href="../index.html?section=highlight-section" target="_blank">Highlighted Projects</a></li>
+                      <li><a href="../portfolio.html" target="_blank">All Projects</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../index.html?section=contact" target="_blank">Contact</a></li>
                 </ul>
-              </nav> -->
+              </nav>
             </div>
             <div class="tg-header__navicon">
               <button onclick="showCanvas3()" class="open-offcanvas">
@@ -200,16 +201,18 @@
 
         <main>
 
-          <!-- Portfolio section start -->
-          <section class="portfolio__area-2 pt-130 pb-130">
-            <div class="container line ptf-70">
-              <div class="project_detail_cover cf_parallax_image">
-                <img src="../assets/imgs/portfolio-page/topic-modelling/llm-bert.jpg" alt="Topic Modelling Research" data-speed="0.9">
-              </div>
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="project__details">
-                    <h1 class="project_details_title">BERT meets GPT-4: A Hybrid ApprOach fOr Academic Field ClassificatiOn</h1>
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>BERT meets GPT-4: A Hybrid Approach for Academic Field Classification</b></h1>
+                    <p class="mt-20 me-4">This study explores a hybrid approach combining BERT and GPT-4 for academic field classification, aiming to leverage BERT's efficient processing and GPT-4's contextual understanding while mitigating their respective limitations.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="mt-20"><b>Task</b></p>
+                    <p class="mt-20">Develop a hybrid classification system that combines the strengths of BERT and GPT-4 for academic field categorization.</p>
                     <ul class="project_info">
                       <li>
                         <span class="title">Role</span>
@@ -220,50 +223,82 @@
                         <p class="info">Self-initiated</p>
                       </li>
                       <li>
+                        <span class="title">Date</span>
+                        <p class="info">2024</p>
+                      </li>
+                      <li>
                         <span class="title">Tools</span>
-                        <p class="info">Python, LDA Topic Modeling, Machine Learning</p>
+                        <p class="info">Python, BERT, GPT-4, PyTorch</p>
                       </li>
                     </ul>
-
-                    <div class="project_overview">
-                      <h2>PROBLEM STATEMENT</h2>
-                      <br>
-                      <p>In the field of Natural Language Processing (NLP), the classification of academic fields presents unique challenges due to the complex, often interdisciplinary nature of modern academic disciplines. While traditional machine learning approaches like BERT have shown promise in text classification tasks, and Large Language Models (LLMs) like GPT-4 demonstrate impressive natural language understanding, each approach has its distinct advantages and limitations.</p>
-                      <p>This study explores a hybrid approach combining BERT and GPT-4 for academic field classification, aiming to leverage BERT's efficient processing and GPT-4's contextual understanding while mitigating their respective limitations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p><span class="date">Status: Research in Progress 🔬</span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/topic-modelling/llm-bert.jpg" alt="BERT GPT-4 Research" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">THE CHALLENGE</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Problem Statement</h2>
                     </div>
-
-                    <div class="project_overview">
-                      <h2>DATA SOURCE & METHODOLOGY</h2>
-                      <br>
-                      <p>The dataset comprises academic fields categorized into seven main categories: Technology, Arts, Literature, Social Science, Philosophy, Science, and Geography. Each field was manually labeled to ensure data quality.</p>
-                      
-                      <h2 class="project_subtag">PREPROCESSING PIPELINE</h2>
-                      <ul class="list-plus">
-                        <li>Text normalization and cleaning</li>
-                        <li>Tokenization using BERT's tokenizer</li>
-                        <li>Special token handling for domain-specific terms</li>
-                        <li>Cross-validation split (80/20) for robust evaluation</li>
-                      </ul>
-
-                      <h2 class="project_subtag">MODEL ARCHITECTURE</h2>
-                      <p>The hybrid architecture implements a confidence-based routing system with the following components:</p>
-                      
-                      <h2 class="project_subtag">BERT Component</h2>
-                      <p>Our implementation utilizes BERT-base-uncased as the foundation, featuring 12 layers and a hidden size of 768. We fine-tuned this model specifically for academic field classification tasks, modifying the output layer to accommodate our seven distinct classes. The model's decision-making process relies on confidence scores calculated through softmax probability distributions.</p>
-
-                      <h2 class="project_subtag">GPT-4 Component</h2>
-                      <p>The GPT-4 integration employs carefully crafted prompt engineering optimized for classification tasks. To ensure consistent and reliable outputs, we configured the temperature parameter to 0.3. The system operates with a comprehensive context window that incorporates detailed category definitions, while a robust response parsing mechanism maintains standardized output formatting.</p>
-
-                      <h2 class="project_subtag">Hybrid Integration</h2>
-                      <p>The hybrid system operates with an empirically determined confidence threshold of 0.85, implementing dynamic routing based on BERT's confidence scores. We've incorporated comprehensive error handling mechanisms for API failures, complemented by a detailed logging system that tracks and documents model selection decisions throughout the classification process.</p>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">In the field of Natural Language Processing (NLP), the classification of academic fields presents unique challenges due to the complex, often interdisciplinary nature of modern academic disciplines. While traditional machine learning approaches like BERT have shown promise in text classification tasks, and Large Language Models (LLMs) like GPT-4 demonstrate impressive natural language understanding, each approach has its distinct advantages and limitations.</p>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">METHODOLOGY</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Approach</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <h3 class="mb-25">Data & Preprocessing</h3>
+                        <p class="mb-25">The dataset comprises academic fields categorized into seven main categories: Technology, Arts, Literature, Social Science, Philosophy, Science, and Geography. Each field was manually labeled to ensure data quality.</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Text normalization and cleaning</li>
+                          <li>Tokenization using BERT's tokenizer</li>
+                          <li>Special token handling for domain-specific terms</li>
+                          <li>Cross-validation split (80/20) for robust evaluation</li>
+                        </ul>
 
-                    <div class="project_overview">
-                      <br><br>
-                      <h2>EXPERIMENTAL RESULTS</h2>
-                      <br>
-                      <div class="research-table">
-                        <h2 class="project_subtag">Model Performance Comparison</h2>
+                        <h3 class="mb-25">Model Architecture</h3>
+                        <p class="mb-25">BERT Component:</p>
+                        <p class="mb-25">Our implementation utilizes BERT-base-uncased as the foundation, featuring 12 layers and a hidden size of 768. We fine-tuned this model specifically for academic field classification tasks, modifying the output layer to accommodate our seven distinct classes.</p>
+                        
+                        <p class="mb-25">GPT-4 Component:</p>
+                        <p class="mb-25">The GPT-4 integration employs carefully crafted prompt engineering optimized for classification tasks. To ensure consistent and reliable outputs, we configured the temperature parameter to 0.3.</p>
+                        
+                        <p class="mb-25">Hybrid Integration:</p>
+                        <p class="mb-25">The hybrid system operates with an empirically determined confidence threshold of 0.85, implementing dynamic routing based on BERT's confidence scores.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">RESULTS</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Findings</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
                         <div class="table-responsive">
                           <table class="table">
                             <thead>
@@ -300,49 +335,74 @@
                             </tbody>
                           </table>
                         </div>
+                        
+                        <h3 class="mb-25 mt-4">Error Analysis</h3>
+                        <p class="mb-25">Common error patterns identified:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Interdisciplinary fields (e.g., "Digital Humanities")</li>
+                          <li>Emerging academic areas</li>
+                          <li>Fields with overlapping categories</li>
+                        </ul>
                       </div>
-
-                      <h2 class="project_subtag">Error Analysis</h2>
-                      <p>Common error patterns identified:</p>
-                      <ul class="list-plus">
-                        <li>Interdisciplinary fields (e.g., "Digital Humanities")</li>
-                        <li>Emerging academic areas</li>
-                        <li>Fields with overlapping categories</li>
-                      </ul>
                     </div>
-
-                    <div class="project_overview">
-                      <br><br>
-                      <h2>CONCLUSIONS & FUTURE WORK</h2>
-                      <br>
-                      <p>The hybrid approach demonstrates the potential for combining traditional ML models with LLMs in a cost-effective manner. Key advantages include:</p>
-                      <ul class="list-plus">
-                        <li>Optimized resource utilization</li>
-                        <li>Improved handling of edge cases</li>
-                        <li>Scalable architecture for similar classification tasks</li>
-                      </ul>
-
-                      <p>Future improvements could include:</p>
-                      <ul class="list-plus">
-                        <li>Dynamic confidence thresholds based on category</li>
-                        <li>Integration of domain-specific embeddings</li>
-                        <li>Exploration of other LLM alternatives</li>
-                        <li>Enhanced error recovery mechanisms</li>
-                      </ul>
-                    </div>
-
                   </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">CONCLUSION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Future Work</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">The hybrid approach demonstrates the potential for combining traditional ML models with LLMs in a cost-effective manner. Future improvements could include:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Dynamic confidence thresholds based on category</li>
+                          <li>Integration of domain-specific embeddings</li>
+                          <li>Exploration of other LLM alternatives</li>
+                          <li>Enhanced error recovery mechanisms</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">Data</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
                 </div>
               </div>
             </div>
           </section>
-          <!-- Portfolio section end -->
-
-
+          <!-- blog details area end  -->
 
 
         </main>
-
 
         <!-- Footer section start -->
         <footer class="footer-sfluence__area">
@@ -366,46 +426,16 @@
         </footer>
         <!-- Footer section end -->
 
-
       </div>
     </div>
   </div>
 
 
 
-<!-- Make sure these scripts are in this order -->
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/jquery.magnific-popup.min.js"></script>
-
-<script>
-jQuery(document).ready(function($) {
-  console.log('Document ready');
-  $('.popup-image').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile mfp-with-zoom',
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300
-    },
-    callbacks: {
-      open: function() {
-        $('body').css('overflow', 'hidden');
-      },
-      close: function() {
-        $('body').css('overflow', '');
-      }
-    }
-  });
-});
-</script>
-
-<!-- Then continue with your other scripts -->
-
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/typed.js"></script>
@@ -419,257 +449,170 @@ jQuery(document).ready(function($) {
   <script src="../assets/js/TweenMax.min.js"></script>
   <script src="../assets/js/jquery.meanmenu.min.js"></script>
   <script src="../assets/js/tilt.jquery.min.js"></script>
-  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/backToTop.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/error-handling.js"></script>
-  <script src="../assets/js/wc-cursor.js"></script>
   <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
+
+  <script>
+  jQuery(document).ready(function($) {
+    console.log('Document ready');
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile mfp-with-zoom',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300
+      },
+      callbacks: {
+        open: function() {
+          $('body').css('overflow', 'hidden');
+        },
+        close: function() {
+          $('body').css('overflow', '');
+        }
+      }
+    });
+  });
+  </script>
+
+</body>
 
 
 
 <style> 
 
-
-.topic-cards-container {
-    margin: 30px 0;
-}
-
-.topic-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 25px;
-    height: 100%;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.topic-card:hover {
-    transform: translateY(-5px);
-}
-
-.topic-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.topic-number {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-}
-
-.weeks-badge {
-    background: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-.topic-card h4 {
-    color: #222;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.topic-description {
-    color: #666;
-    font-size: 0.95em;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.example-song {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
-
-.example-song .label {
-    display: block;
-    color: #999;
-    font-size: 0.85em;
-    margin-bottom: 5px;
-}
-
-.song-title {
-    display: block;
-    font-weight: 600;
-    color: #333;
-}
-
-.artist {
-    display: block;
-    color: #666;
-    font-size: 0.9em;
-}
-
-.representative-lyrics {
-    font-style: italic;
-    color: #777;
-    font-size: 0.9em;
-    line-height: 1.6;
-}
-
-.research-table {
-    margin: 20px 0;
-}
-
-.research-table h3 {
-    margin-bottom: 20px;
-}
-
-.table {
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
 }
 
-.table th,
-.table td {
-    padding: 8px;
-    font-size: 0.9em;
-    vertical-align: middle;
+.light .body-elc {
+  background-color: var(--blue-2);
 }
 
-.table thead th {
-    background-color: #f1f1f1;
-    text-align: center;
-    white-space: nowrap;
-    font-weight: 600;
+.body-wrapper.body-elc {
+  border: 0px;
 }
 
-.table tbody tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.05);
+.next-project-wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
 }
 
-.table-responsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+.next-project-preview {
+  position: absolute;
+  right: 0;
+  bottom: 100%; /* Positions it above the wrapper */
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* Adds some space between preview and content */
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.preprocessing-list {
-    padding-left: 20px;
+.next-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.preprocessing-list li {
-    margin-bottom: 15px;
+.next-project-wrapper:hover .next-project-preview {
+  opacity: 1;
+  visibility: visible;
 }
 
-.preprocessing-list strong {
-    color: #333;
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    display: none;
+  }
 }
 
-.mt-4 {
-    margin-top: 2rem;
+.next-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
-.research-figure {
-    margin: 30px 0;
+.next-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #6c757d;
 }
 
-.figure-container {
-    margin: 20px 0;
+.next-title {
+  font-size: 20px;
+  margin: 0;
+  color: #212529;
 }
 
-.table td {
-    padding: 8px;
-    font-size: 0.9em;
+.next-project-arrows {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
 }
 
-.table th {
-    padding: 10px 8px;
-    font-size: 0.9em;
-    white-space: nowrap;
+.arrow-left, .arrow-right {
+  transition: transform 0.3s ease;
 }
 
-.table td[rowspan] {
-    background-color: #f8f9fa;
-    font-weight: 500;
-    text-align: left;
+.next-project:hover .arrow-left {
+  transform: translateX(-5px);
 }
 
-.table td:nth-child(2) {
-    text-align: center;
+.next-project:hover .arrow-right {
+  transform: translateX(5px);
 }
 
-.table th {
-    text-align: center;
-    background-color: #f1f1f1;
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    width: 250px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .next-title {
+    font-size: 16px;
+  }
 }
 
-/* First column alignment */
-.table td[rowspan],
-.table td:first-child {
-    text-align: left;
+
+.elc-inbd-hero__feature li {
+    font-size: 16px;
 }
 
-/* Highlight best performance */
-.table td.best-performance {
-    font-weight: bold;
-    color: #28a745;
+.light p {
+  color: #000;
 }
 
-/* Center align all cells by default */
-.table td {
-    text-align: center;
-    padding: 8px;
-    font-size: 0.9em;
-}
-
-/* Left align only the algorithm names (first column with rowspan) */
-.table td[rowspan] {
-    background-color: #f8f9fa;
-    font-weight: 500;
-    text-align: left;
-}
-
-/* Ensure consistent center alignment for Included/Excluded column */
-.table td:nth-child(2),
-.table td:nth-child(3),
-.table td:nth-child(4),
-.table td:nth-child(5) {
-    text-align: center !important;
-}
-
-.table th {
-    text-align: center;
-    padding: 10px 8px;
-    font-size: 0.9em;
-    white-space: nowrap;
-    background-color: #f1f1f1;
-}
-
-.feature-column {
-    text-align: center !important;
-    width: 200px;  /* Fixed width for this column */
-}
-
-/* Scientific notation alignment */
-.table td:last-child {
-    font-family: monospace;
-    text-align: right;
-}
-
-/* Topic label column */
-.table td:nth-child(2) {
-    text-align: left;
-}
-
-.project_overview p + .research-table {
-    margin-top: 15px;
+li {
+  color: #000;
 }
 
 </style>
-
-
-</body>
 
 </html>

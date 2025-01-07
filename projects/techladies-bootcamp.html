@@ -7,14 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="INFO HTML5 Template">
 
-  <title>Virtual Veteran</title>
+  <title>Building a Volunteer-Student Matching Platform</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-
 
 
   <!-- All CSS files -->
@@ -28,13 +24,26 @@
   <link rel="stylesheet" href="../assets/css/master.css">
   <link rel="stylesheet" href="../style.css">
 
-
-
 </head>
 
 
-<body class="font-heading-romanstory light">
 
+<body class="font-heading-estedad light">
+
+  <div class="next-project-wrapper">
+    <a href="topic-modelling.html" class="next-project">
+      <div class="next-project-content">
+        <p class="next-label">Next Project</p>
+        <h3 class="next-title">Topic Modelling</h3>
+      </div>
+      <div class="next-project-arrows" style="margin-left: 20px;">
+        <span class="arrow-right">→</span>
+      </div>
+      <div class="next-project-preview">
+        <img src="../assets/imgs/portfolio-page/portfolio-lyrics.png" alt="Esplanade Project Preview">
+      </div>
+    </a>
+  </div>
   <!-- Preloader -->
   <div id="preloader">
     <div id="container" class="container-preloader">
@@ -72,30 +81,15 @@
       <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
       <div class="offcanvas__body">
         <div class="offcanvas__logo">
-          <a href="index-light.html">
-            <img src="../assets/imgs/logo/site-logo-light.png" alt="Offcanvas Logo" class="show-dark">
-            <img src="../assets/imgs/logo/site-logo-dark.png" alt="Offcanvas Logo" class="show-light">
-          </a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
           <p>Create live segments and target the right people for messages based on their behaviors.</p>
         </div>
 
         <div class="offcanvas__menu-area">
-          <div class="offcanvas__menu-wrapper">
-            <nav class="offcanvas__menu">
-              <ul>
-                <li><a href="index-light.html">home</a></li>
-                <li><a href="portfolio-light.html">Portfolio</a></li>
-                <li><a href="#">Pages</a>
-                  <ul>
-                    <li> <a href="index.html">home <span class="new">Dark</span></a></li>
-                    <li> <a href="portfolio.html">Portfolio <span class="new">Dark</span></a></li>
-                    <li><a href="blog.html">blog <span class="new">Dark</span></a></li>
-                  </ul>
-                </li>
-                <li><a href="blog-light.html">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+          <div class="offcanvas__menu-wrapper"></div>
         </div>
         <div class="offcanvas__gallery">
           <p class="offcanvas__title">gallery</p>
@@ -145,8 +139,7 @@
   <div class="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="body-wrapper body-tg">
-
+      <div class="body-wrapper body-elc">
 
         <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
@@ -160,12 +153,20 @@
               </a>
             </div>
             <div class="header__nav tg-header__nav">
-              <!-- <nav class="main-menu menu-dark">
+              <nav class="main-menu menu-dark">
                 <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../portfolio.html">Projects</a></li>
+                  <li><a href="../index.html" target="_blank">home</a></li>
+                  <li><a href="../index.html?section=about-section">about</a></li>
+                  <li><a href="../index.html?section=resume-section">resume</a></li>
+                  <li class="menu-item-has-children"><a href="#">Projects</a>
+                    <ul class="dp-menu">
+                      <li><a href="../index.html?section=highlight-section" target="_blank">Highlighted Projects</a></li>
+                      <li><a href="../portfolio.html" target="_blank">All Projects</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../index.html?section=contact" target="_blank">Contact</a></li>
                 </ul>
-              </nav> -->
+              </nav>
             </div>
             <div class="tg-header__navicon">
               <button onclick="showCanvas3()" class="open-offcanvas">
@@ -200,16 +201,18 @@
 
         <main>
 
-          <!-- Portfolio section start -->
-          <section class="portfolio__area-2 pt-130 pb-130">
-            <div class="container line ptf-70">
-              <div class="project_detail_cover cf_parallax_image">
-                <img src="../assets/imgs/portfolio-page/techladies-bootcamp-page/portfolio-techladies.png" alt="TechLadies Bootcamp" data-speed="0.9">
-              </div>
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="project__details">
-                    <h1 class="project_details_title">BUILDING A VOLUNTEER-STUDENT MATCHING PLATFORM</h1>
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>Building a Volunteer-Student Matching Platform</b></h1>
+                    <p class="mt-20 me-4">Developed for MAD WISH initiative by It's Raining Raincoats, this platform streamlines the matching of migrant workers in Singapore with volunteer English-language mentors. The application automates the previously manual matching process, making it more efficient and scalable while ensuring optimal student-teacher pairings.</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="mt-20"><b>Task</b></p>
+                    <p class="mt-20">Build a web platform to automate the matching of migrant workers with volunteer English teachers.</p>
                     <ul class="project_info">
                       <li>
                         <span class="title">Role</span>
@@ -225,107 +228,154 @@
                       </li>
                       <li>
                         <span class="title">Tools</span>
-                        <p class="info">Vue.js, JavaScript, HTML</p>
-                      </li>
-                      <li>
-                        <span class="title">Source Code</span>
-                        <p class="info"><a href="https://github.com/TechLadies/irrc-madwish" target="_blank" style="color: var(--blue-1) !important">GitHub Repository <i class="fa-brands fa-github"></i></a></p>
+                        <p class="info">Vue.js, Node.js, PostgreSQL</p>
                       </li>
                     </ul>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">PROJECT OVERVIEW</h2>
-                      <p>Developed for MAD WISH initiative by It's Raining Raincoats, this platform streamlines the matching of migrant workers in Singapore with volunteer English-language mentors. The application automates the previously manual matching process, making it more efficient and scalable while ensuring optimal student-teacher pairings.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p><span class="date">Source Code: <a href="https://github.com/TechLadies/irrc-madwish" target="_blank">GitHub Repository <i class="fa-brands fa-github"></i></a></span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/techladies-bootcamp-page/portfolio-techladies.png" alt="TechLadies Project" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">THE CHALLENGE</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Problem Statement</h2>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">PROJECT WALKTHROUGH</h2>
-                      <div class="video-container">
-                        <div class="ratio ratio-16x9">
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">The manual process of matching migrant workers with volunteer English teachers was time-consuming and inefficient. There was a need for an automated system that could handle the growing number of participants while ensuring appropriate matches based on various criteria.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">SOLUTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Key Features</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Secure authentication system with role-based access control</li>
+                          <li>Intuitive interface for student and teacher profile management</li>
+                          <li>Automated matching system with status tracking</li>
+                          <li>Comprehensive screening process for volunteers</li>
+                          <li>Native language compatibility tracking</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">DEMO</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Project Demo</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <div class="video-wrapper">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/4O0Z2jq5MIg?si=v3nrKiJ4C__ZJHyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                       </div>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">KEY FEATURES</h2>
-                      <ul class="list-plus">
-                        <li>Secure authentication system with role-based access control</li>
-                        <li>Intuitive interface for student and teacher profile management</li>
-                        <li>Automated matching system with status tracking</li>
-                        <li>Comprehensive screening process for volunteers</li>
-                        <li>Native language compatibility tracking</li>
-                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">TECHNICAL DETAILS</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Architecture</h2>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">TECHNICAL ARCHITECTURE</h2>
-                      <div class="findings-visualization">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="finding-item">
-                              <h2 class="project_subtag">FrONTend (Vue.js)</h2>
-                              <ul class="list-plus">
-                                <li>Vuex for centralized state management</li>
-                                <li>Vue Router for seamless navigation</li>
-                                <li>Buefy UI framework for consistent design</li>
-                                <li>Modular architecture for scalability</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="finding-item">
-                              <h2 class="project_subtag">Backend (NOde.js)</h2>
-
-                              <ul class="list-plus">
-                                <li>RESTful API with Express.js</li>
-                                <li>PostgreSQL for reliable data storage</li>
-                                <li>JWT-based authentication</li>
-                                <li>Environment-based configuration</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Frontend (Vue.js):</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Vuex for centralized state management</li>
+                          <li>Vue Router for seamless navigation</li>
+                          <li>Buefy UI framework for consistent design</li>
+                          <li>Modular architecture for scalability</li>
+                        </ul>
+                        <p class="mb-25">Backend (Node.js):</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>RESTful API with Express.js</li>
+                          <li>PostgreSQL for reliable data storage</li>
+                          <li>JWT-based authentication</li>
+                          <li>Environment-based configuration</li>
+                        </ul>
                       </div>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">DEVELOPMENT PROCESS</h2>
-                      <p>As part of TechLadies Bootcamp #6, our team followed an agile development methodology. We worked closely with stakeholders from MAD WISH to understand their requirements and iteratively developed features. The project emphasized both technical excellence and social impact, aligning with TechLadies' mission of empowering women in technology while serving the community.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">REFLECTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Impact & Learning</h2>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">IMPACT</h2>
-                      <ul class="list-plus">
-                        <li>Streamlined volunteer-student matching process</li>
-                        <li>Reduced administrative overhead for coordinators</li>
-                        <li>Improved tracking and management of teaching relationships</li>
-                        <li>Enhanced volunteer screening and verification process</li>
-                      </ul>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">The project had significant impact on MAD WISH's operations, streamlining their volunteer-student matching process and substantially reducing administrative overhead for coordinators. The automated system improved the tracking and management of teaching relationships while enhancing the volunteer screening and verification process, leading to more effective and sustainable matches.</p>
+                        
+                        <p class="mb-25">Through this project, I gained invaluable experience in building full-stack applications with modern frameworks and implementing secure authentication systems. Working in an agile development environment and collaborating closely with stakeholders taught me how to effectively deliver technical solutions that create meaningful social impact. This experience at TechLadies Bootcamp demonstrated how technology can be leveraged to address community needs while fostering professional growth.</p>
+                      </div>
                     </div>
-
-                    <div class="project_overview">
-                      <h2 class="project_subtag">LEARNING OUTCOMES</h2>
-                      <p>This project provided valuable experience in:</p>
-                      <ul class="list-plus">
-                        <li>Building full-stack applications with modern frameworks</li>
-                        <li>Implementing secure authentication systems</li>
-                        <li>Working in an agile development environment</li>
-                        <li>Collaborating with stakeholders to deliver social impact</li>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">Data</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="container">
+                <div class="row">
+                </div>
+              </div>
             </div>
           </section>
-          <!-- Portfolio section end -->
-
-
+          <!-- blog details area end  -->
 
 
         </main>
-
 
         <!-- Footer section start -->
         <footer class="footer-sfluence__area">
@@ -349,46 +399,16 @@
         </footer>
         <!-- Footer section end -->
 
-
       </div>
     </div>
   </div>
 
 
 
-<!-- Make sure these scripts are in this order -->
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/jquery.magnific-popup.min.js"></script>
-
-<script>
-jQuery(document).ready(function($) {
-  console.log('Document ready');
-  $('.popup-image').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile mfp-with-zoom',
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300
-    },
-    callbacks: {
-      open: function() {
-        $('body').css('overflow', 'hidden');
-      },
-      close: function() {
-        $('body').css('overflow', '');
-      }
-    }
-  });
-});
-</script>
-
-<!-- Then continue with your other scripts -->
-
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/typed.js"></script>
@@ -402,16 +422,170 @@ jQuery(document).ready(function($) {
   <script src="../assets/js/TweenMax.min.js"></script>
   <script src="../assets/js/jquery.meanmenu.min.js"></script>
   <script src="../assets/js/tilt.jquery.min.js"></script>
-  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
   <script src="../assets/js/backToTop.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/error-handling.js"></script>
-  <script src="../assets/js/wc-cursor.js"></script>
   <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
 
-
+  <script>
+  jQuery(document).ready(function($) {
+    console.log('Document ready');
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile mfp-with-zoom',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300
+      },
+      callbacks: {
+        open: function() {
+          $('body').css('overflow', 'hidden');
+        },
+        close: function() {
+          $('body').css('overflow', '');
+        }
+      }
+    });
+  });
+  </script>
 
 </body>
+
+
+
+<style> 
+
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+}
+
+.light .body-elc {
+  background-color: var(--blue-2);
+}
+
+.body-wrapper.body-elc {
+  border: 0px;
+}
+
+.next-project-wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.next-project-preview {
+  position: absolute;
+  right: 0;
+  bottom: 100%; /* Positions it above the wrapper */
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* Adds some space between preview and content */
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.next-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-project-wrapper:hover .next-project-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    display: none;
+  }
+}
+
+.next-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.next-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.next-title {
+  font-size: 20px;
+  margin: 0;
+  color: #212529;
+}
+
+.next-project-arrows {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.arrow-left, .arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover .arrow-left {
+  transform: translateX(-5px);
+}
+
+.next-project:hover .arrow-right {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    width: 250px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .next-title {
+    font-size: 16px;
+  }
+}
+
+
+.elc-inbd-hero__feature li {
+    font-size: 16px;
+}
+
+.light p {
+  color: #000;
+}
+
+li {
+  color: #000;
+}
+
+</style>
 
 </html>
