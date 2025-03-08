@@ -54,8 +54,8 @@
       width: 4px;
       background: linear-gradient(to bottom, 
         var(--blue-1) 0%, 
-        var(--blue-1) 27%, 
-        #ddd 27%, 
+        var(--blue-1) 40%, 
+        #ddd 40%, 
         #ddd 100%);
       border-radius: 4px;
     }
@@ -223,11 +223,11 @@
     
     .roadmap-item.expanded .roadmap-features {
       display: block;
-      animation: fadeIn 0.3s ease-out;
+      animation: fadeIn 0.5s ease;
     }
     
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-5px); }
+      from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
     }
     
@@ -1138,34 +1138,23 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 // Experience roadmap expand/collapse functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Pre-load all content to avoid rendering delays
-    document.querySelectorAll('.roadmap-features').forEach(feature => {
-        // Force a render but keep hidden
-        feature.style.display = 'none';
-        feature.style.opacity = '0';
-    });
-    
     const roadmapItems = document.querySelectorAll('.roadmap-item');
     
     roadmapItems.forEach(item => {
         const content = item.querySelector('.roadmap-content');
         
-        content.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Use requestAnimationFrame for smoother toggling
-            requestAnimationFrame(() => {
-                // Toggle expanded class on the parent item
-                item.classList.toggle('expanded');
-                
-                // Close other items when one is opened
-                if (item.classList.contains('expanded')) {
-                    roadmapItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('expanded')) {
-                            otherItem.classList.remove('expanded');
-                        }
-                    });
-                }
-            });
+        content.addEventListener('click', function() {
+            // Toggle expanded class on the parent item
+            item.classList.toggle('expanded');
+            
+            // Optional: Close other items when one is opened
+            if (item.classList.contains('expanded')) {
+                roadmapItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('expanded')) {
+                        otherItem.classList.remove('expanded');
+                    }
+                });
+            }
         });
     });
 });
