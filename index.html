@@ -34,6 +34,215 @@
   <link rel="stylesheet" href="../assets/css/master.css">
   <link rel="stylesheet" href="../style.css">
 
+  <style>
+    /* Roadmap Styling for Resume */
+    .roadmap-container {
+      margin: 40px 0;
+      position: relative;
+    }
+    
+    .roadmap-timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+    
+    .roadmap-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 92px;
+      width: 4px;
+      background: linear-gradient(to bottom, 
+        var(--blue-1) 0%, 
+        var(--blue-1) 65%, 
+        #ddd 65%, 
+        #ddd 100%);
+      border-radius: 4px;
+    }
+    
+    .roadmap-item {
+      position: relative;
+      margin-bottom: 50px;
+      display: flex;
+    }
+    
+    .roadmap-version {
+      width: 60px;
+      padding-top: 5px;
+      font-weight: 600;
+      text-align: right;
+      font-size: 16px;
+      color: #555;
+    }
+    
+    .roadmap-dot {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--blue-1);
+      margin: 0 20px;
+      z-index: 1;
+      box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
+    }
+    
+    .roadmap-dot.current {
+      background-color: #2470c2;
+      box-shadow: 0 0 0 6px rgba(36, 112, 194, 0.3), 0 0 0 10px rgba(36, 112, 194, 0.1);
+      animation: pulse 2s infinite;
+    }
+    
+    .roadmap-dot.future {
+      background-color: #9E9E9E;
+      box-shadow: 0 0 0 4px rgba(158, 158, 158, 0.2);
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 6px rgba(36, 112, 194, 0.3), 0 0 0 10px rgba(36, 112, 194, 0.1);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(36, 112, 194, 0.3), 0 0 0 16px rgba(36, 112, 194, 0.1);
+      }
+      100% {
+        box-shadow: 0 0 0 6px rgba(36, 112, 194, 0.3), 0 0 0 10px rgba(36, 112, 194, 0.1);
+      }
+    }
+    
+    .roadmap-content {
+      flex: 1;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .roadmap-item.past .roadmap-content {
+      border-left: 4px solid var(--blue-1);
+    }
+    
+    .roadmap-item.current .roadmap-content {
+      border-left: 4px solid #2470c2;
+      background-color: rgba(36, 112, 194, 0.05);
+    }
+    
+    .roadmap-item.future .roadmap-content {
+      border-left: 4px solid #9E9E9E;
+      opacity: 0.85;
+    }
+    
+    .roadmap-content:hover {
+      transform: translateX(5px);
+    }
+    
+    .roadmap-content h4 {
+      margin: 0 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .roadmap-date {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .roadmap-details p {
+      margin-bottom: 10px;
+    }
+    
+    .roadmap-features {
+      list-style: none;
+      padding-left: 5px;
+      margin: 0;
+    }
+    
+    .roadmap-features li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #555;
+    }
+    
+    .roadmap-features li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--blue-1);
+    }
+    
+    .roadmap-item.future .roadmap-features li:before {
+      content: '○';
+      color: #9E9E9E;
+    }
+    
+    /* Expandable content styling */
+    .roadmap-features {
+      display: none;
+      padding-top: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .roadmap-content {
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .roadmap-content:after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--blue-1);
+      transition: transform 0.3s ease;
+    }
+    
+    .roadmap-item.expanded .roadmap-content:after {
+      content: '−';
+    }
+    
+    .roadmap-item.expanded .roadmap-features {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .roadmap-line {
+        left: 52px;
+      }
+      
+      .roadmap-version {
+        width: 30px;
+        font-size: 14px;
+      }
+      
+      .roadmap-dot {
+        margin: 0 10px 0 15px;
+        width: 20px;
+        height: 20px;
+      }
+      
+      .roadmap-content {
+        padding: 15px;
+      }
+      
+      .roadmap-content h4 {
+        font-size: 16px;
+      }
+    }
+  </style>
+
 </head>
 
 
@@ -348,33 +557,78 @@
 
                         <div class="developer-resume-tab-box" id="resume-tab-2" style="display:block;">
                           <div class="developer-experience__area">
-                            <div class="experience__grid">
-                              <div class="experience__item">
-                                <h2 class="exp-time"><span><i class="fa-regular fa-calendar-days"></i></span> 2024 - Present
-                                </h2>
-                                <h3 class="exp-title">Lead Analyst</h3>
-                                <h4 class="company">Public Service Division</h4>
-                              </div>
-                              <div class="experience__item">
-                                <h2 class="exp-time"><span><i class="fa-regular fa-calendar-days"></i></span> 2020 -
-                                  2024
-                                </h2>
-                                <h3 class="exp-title">Senior Consultant, Policy Data Analytics</h3>
-                                <h4 class="company">Kantar Public</h4>
-                              </div>
-                              <div class="experience__item">
-                                <h2 class="exp-time"><span><i class="fa-regular fa-calendar-days"></i></span> 2017 -
-                                  2019
-                                </h2>
-                                <h3 class="exp-title">Senior Analyst</h3>
-                                <h4 class="company">SKIM</h4>
-                              </div>
-                              <div class="experience__item">
-                                <h2 class="exp-time"><span><i class="fa-regular fa-calendar-days"></i></span> 2017 -
-                                  2019
-                                </h2>
-                                <h3 class="exp-title">Manager, Management Information & Analytics</h3>
-                                <h4 class="company">Skillsfuture Singapore</h4>
+                            <div class="roadmap-container">
+                              <div class="roadmap-timeline">
+                                <div class="roadmap-line"></div>
+                                
+                                <div class="roadmap-item current">
+                                  <div class="roadmap-version">2024</div>
+                                  <div class="roadmap-dot current"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>Lead Analyst</b></h4>
+                                    <p class="roadmap-date">2024 - Present</p>
+                                    <div class="roadmap-details">
+                                      <p>Public Service Division</p>
+                                      <ul class="roadmap-features">
+                                        <li>Leading data science projects and analytics initiatives</li>
+                                        <li>Developing data-driven solutions for public service needs</li>
+                                        <li>Building and maintaining analytical models and dashboards</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2020</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>SeniOr COnsultant, POlicy Data Analytics</h4></b>
+                                    <p class="roadmap-date">2020 - 2024</p>
+                                    <div class="roadmap-details">
+                                      <p>Kantar Public</p>
+                                      <ul class="roadmap-features">
+                                        <li>Conducted advanced data analysis for policy evaluation and development</li>
+                                        <li>Designed and implemented research methodologies for social impact projects</li>
+                                        <li>Provided data-driven insights and recommendations to government clients</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2019</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4>Senior Analyst</h4>
+                                    <p class="roadmap-date">2017 - 2019</p>
+                                    <div class="roadmap-details">
+                                      <p>SKIM</p>
+                                      <ul class="roadmap-features">
+                                        <li>Analyzed market research data to extract actionable insights</li>
+                                        <li>Developed statistical models for consumer behavior prediction</li>
+                                        <li>Presented findings and recommendations to international clients</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2017</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4>Manager, Management Information & Analytics</h4>
+                                    <p class="roadmap-date">2017 - 2019</p>
+                                    <div class="roadmap-details">
+                                      <p>Skillsfuture Singapore</p>
+                                      <ul class="roadmap-features">
+                                        <li>Led a team of analysts in monitoring workforce development programs</li>
+                                        <li>Designed and implemented analytics frameworks for program evaluation</li>
+                                        <li>Created data visualization dashboards for strategic decision-making</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
                               </div>
                             </div>
                           </div>
@@ -829,6 +1083,31 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+</script>
+
+<script>
+// Experience roadmap expand/collapse functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const roadmapItems = document.querySelectorAll('.roadmap-item');
+    
+    roadmapItems.forEach(item => {
+        const content = item.querySelector('.roadmap-content');
+        
+        content.addEventListener('click', function() {
+            // Toggle expanded class on the parent item
+            item.classList.toggle('expanded');
+            
+            // Optional: Close other items when one is opened
+            if (item.classList.contains('expanded')) {
+                roadmapItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('expanded')) {
+                        otherItem.classList.remove('expanded');
+                    }
+                });
+            }
+        });
+    });
+});
 </script>
 
 </body>
