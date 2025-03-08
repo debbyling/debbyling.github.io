@@ -54,8 +54,23 @@
       width: 4px;
       background: linear-gradient(to bottom, 
         var(--blue-1) 0%, 
-        var(--blue-1) 65%, 
-        #ddd 65%, 
+        var(--blue-1) 27%, 
+        #ddd 27%, 
+        #ddd 100%);
+      border-radius: 4px;
+    }
+    
+    /* Education timeline separate styling */
+    .education-roadmap-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 92px;
+      width: 4px;
+      background: linear-gradient(to bottom, 
+        var(--blue-1) 0%, 
+        var(--blue-1) 40%, 
+        #ddd 40%, 
         #ddd 100%);
       border-radius: 4px;
     }
@@ -208,11 +223,11 @@
     
     .roadmap-item.expanded .roadmap-features {
       display: block;
-      animation: fadeIn 0.5s ease;
+      animation: fadeIn 0.3s ease-out;
     }
     
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
+      from { opacity: 0; transform: translateY(-5px); }
       to { opacity: 1; transform: translateY(0); }
     }
     
@@ -565,14 +580,16 @@
                                   <div class="roadmap-version">2024</div>
                                   <div class="roadmap-dot current"></div>
                                   <div class="roadmap-content">
-                                    <h4><b>Lead Analyst</b></h4>
-                                    <p class="roadmap-date">2024 - Present</p>
+                                    <h4><b>Lead Analyst (Data PrOducts)</b></h4>
+                                    <p class="roadmap-date">Feb 2024 - Present</p>
                                     <div class="roadmap-details">
                                       <p>Public Service Division</p>
                                       <ul class="roadmap-features">
-                                        <li>Leading data science projects and analytics initiatives</li>
-                                        <li>Developing data-driven solutions for public service needs</li>
-                                        <li>Building and maintaining analytical models and dashboards</li>
+                                        <li>Owned end-to-end product strategy for a whole-of-government analytics platform, increasing user-friendliness by 12%</li>
+                                        <li>Led stakeholder workshops to develop product vision across multiple HR analytics product lines</li>
+                                        <li>Built and launched a pioneering Whole-of-Government staffing analytics product achieving 138% higher engagement</li>
+                                        <li>Established product development playbook adopted as the standard template for analytics products</li>
+                                        <li>Developed 'Virtual Veteran' AI chatbot using RAG techniques with $1.7M/month potential savings</li>
                                       </ul>
                                     </div>
                                   </div>
@@ -582,48 +599,50 @@
                                   <div class="roadmap-version">2020</div>
                                   <div class="roadmap-dot"></div>
                                   <div class="roadmap-content">
-                                    <h4><b>SeniOr COnsultant, POlicy Data Analytics</h4></b>
-                                    <p class="roadmap-date">2020 - 2024</p>
+                                    <h4><b>SeniOr COnsultant, Data Analytics</b></h4>
+                                    <p class="roadmap-date">Apr 2020 - Feb 2024</p>
                                     <div class="roadmap-details">
                                       <p>Kantar Public</p>
                                       <ul class="roadmap-features">
-                                        <li>Conducted advanced data analysis for policy evaluation and development</li>
-                                        <li>Designed and implemented research methodologies for social impact projects</li>
-                                        <li>Provided data-driven insights and recommendations to government clients</li>
+                                        <li>Built go-to-market strategy for new analytics practice from ground up, including value proposition and pricing model</li>
+                                        <li>Scaled offering to achieve 5% YoY revenue growth and grew team to 4 members</li>
+                                        <li>Pioneered use of Large Language Models for policy analysis, resulting in published commentary</li>
+                                        <li>Created predictive analytics for housing market analysis with industry-leading accuracy (1-2% MAPE)</li>
+                                        <li>Led impact evaluation of Singapore's largest social service fund (S$580m), boosting response rates by 94%</li>
                                       </ul>
                                     </div>
                                   </div>
                                 </div>
                                 
                                 <div class="roadmap-item past">
-                                  <div class="roadmap-version">2019</div>
+                                  <div class="roadmap-version">2018</div>
                                   <div class="roadmap-dot"></div>
                                   <div class="roadmap-content">
-                                    <h4>Senior Analyst</h4>
-                                    <p class="roadmap-date">2017 - 2019</p>
+                                    <h4><b>SeniOr Analyst</b></h4>
+                                    <p class="roadmap-date">Apr 2018 - Apr 2020</p>
                                     <div class="roadmap-details">
                                       <p>SKIM</p>
                                       <ul class="roadmap-features">
-                                        <li>Analyzed market research data to extract actionable insights</li>
-                                        <li>Developed statistical models for consumer behavior prediction</li>
-                                        <li>Presented findings and recommendations to international clients</li>
+                                        <li>Built predictive models through conjoint studies for optimal pricing across FMCG, Technology, and F&B industries</li>
+                                        <li>Won the Young ESOMAR Award 2019 for innovative use of conjoint to quantify social media reactions</li>
+                                        <li>Selected for exclusive 6-month secondment to Netherlands HQ as a high-potential employee</li>
                                       </ul>
                                     </div>
                                   </div>
                                 </div>
                                 
                                 <div class="roadmap-item past">
-                                  <div class="roadmap-version">2017</div>
+                                  <div class="roadmap-version">2016</div>
                                   <div class="roadmap-dot"></div>
                                   <div class="roadmap-content">
-                                    <h4>Manager, Management Information & Analytics</h4>
-                                    <p class="roadmap-date">2017 - 2019</p>
+                                    <h4><b>Manager, Management InfOrmatiOn & Analytics</b></h4>
+                                    <p class="roadmap-date">Jul 2016 - Apr 2018</p>
                                     <div class="roadmap-details">
                                       <p>Skillsfuture Singapore</p>
                                       <ul class="roadmap-features">
-                                        <li>Led a team of analysts in monitoring workforce development programs</li>
-                                        <li>Designed and implemented analytics frameworks for program evaluation</li>
-                                        <li>Created data visualization dashboards for strategic decision-making</li>
+                                        <li>Designed and implemented a comprehensive rolling survey system covering all 50 areas of training</li>
+                                        <li>Scaled the project to achieve over 10,000+ unique survey responses through strategic sampling</li>
+                                        <li>Conducted A/B testing using the EAST Framework which improved survey response rates by 21%</li>
                                       </ul>
                                     </div>
                                   </div>
@@ -636,15 +655,44 @@
 
                         <div class="developer-resume-tab-box" id="resume-tab-3">
                           <div class="developer-experience__area">
-                            <div class="experience__grid">
-                              <div class="experience__item">
-
-                                <h3 class="exp-title">Masters Of Science in Analytics (cGPA:4.0/4.0)</h3>
-                                <h4 class="company">Georgia Institute of Technology</h4>
-                              </div>
-                              <div class="experience__item">
-                                <h3 class="exp-title">Bachelor's in Communication Research (First Class Honours)</h3>
-                                <h4 class="company">Nanyang Technological University</h4>
+                            <div class="roadmap-container">
+                              <div class="roadmap-timeline">
+                                <div class="education-roadmap-line"></div>
+                                
+                                <div class="roadmap-item current">
+                                  <div class="roadmap-version">2024</div>
+                                  <div class="roadmap-dot current"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>Masters Of Science in Analytics</b></h4>
+                                    <p class="roadmap-date">2022 - 2024</p>
+                                    <div class="roadmap-details">
+                                      <p>Georgia Institute of Technology</p>
+                                      <ul class="roadmap-features">
+                                        <li>Graduated with perfect cGPA: 4.0/4.0</li>
+                                        <li>Specialized in computational data analytics and machine learning</li>
+                                        <li>Completed capstone project on predictive analytics for financial markets</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2016</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>BachelOr's in COmmunicatiOn Research</b></h4>
+                                    <p class="roadmap-date">2010 - 2014</p>
+                                    <div class="roadmap-details">
+                                      <p>Nanyang Technological University</p>
+                                      <ul class="roadmap-features">
+                                        <li>Graduated with First Class Honours</li>
+                                        <li>Focused on quantitative research methods and data analysis</li>
+                                        <li>Thesis on applying statistical methods to communication patterns</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
                               </div>
                             </div>
                           </div>
@@ -654,14 +702,14 @@
                           <div class="developer-award__area">
                             <div class="developer-award__grid">
                               <div class="award__item">
-                                <h2 class="award__date">01 <span>2019</span></h2>
+                                <h2 class="award__date">01 <span>2024</span></h2>
                                 <img src="../assets/imgs/award/1.png" alt="Award Image" class="show-dark">
                                 <img src="../assets/imgs/award/aws-data-engineer.png" alt="Award Image" class="show-light">
                                 <h3 class="award__title">AWS Certified Data Engineer Associate</h3>
                                 <h4 class="award__status"><a href="https://www.credly.com/badges/afc60370-93a0-4eac-b9d1-4777366aeca0/public_url">Link to certificate</a></h4>
                               </div>
                               <div class="award__item">
-                                <h2 class="award__date">02 <span>2019</span></h2>
+                                <h2 class="award__date">02 <span>2024</span></h2>
                                 <img src="../assets/imgs/award/2.png" alt="Award Image" class="show-dark">
                                 <img src="../assets/imgs/award/aws-solutions-architect.png" alt="Award Image" class="show-light">
                                 <h3 class="award__title">AWS Certified Solutions Architect</h3>
@@ -690,14 +738,7 @@
                           <div class="developer-award__area">
                             <div class="developer-award__grid">
                               <div class="award__item">
-                                <h2 class="award__date">01 <span>2019</span></h2>
-                                <img src="../assets/imgs/award/1.png" alt="Award Image" class="show-dark">
-                                <img src="../assets/imgs/award/esomar-logo.png" alt="Award Image" class="show-light">
-                                <h3 class="award__title">Young ESOMAR Society Award</h3>
-                                <h4 class="award__status">Winner</h4>
-                              </div>
-                              <div class="award__item">
-                                <h2 class="award__date">02 <span>2019</span></h2>
+                                <h2 class="award__date">02 <span>2024</span></h2>
                                 <img src="../assets/imgs/award/2.png" alt="Award Image" class="show-dark">
                                 <img src="../assets/imgs/award/psd-logo.png" alt="Award Image" class="show-light">
                                 <h3 class="award__title">Public Service Division</h3>
@@ -717,6 +758,15 @@
                                 <h3 class="award__title">Build for Good 2024</h3>
                                 <h4 class="award__status">Winning Team</h4>
                               </div>
+                              <div class="award__item">
+                                <h2 class="award__date">01 <span>2019</span></h2>
+                                <img src="../assets/imgs/award/1.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/esomar-logo.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Young ESOMAR Society Award</h3>
+                                <h4 class="award__status">Winner</h4>
+                              </div>
+
+
                             </div>
                           </div>
                         </div>
@@ -1088,23 +1138,34 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 // Experience roadmap expand/collapse functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Pre-load all content to avoid rendering delays
+    document.querySelectorAll('.roadmap-features').forEach(feature => {
+        // Force a render but keep hidden
+        feature.style.display = 'none';
+        feature.style.opacity = '0';
+    });
+    
     const roadmapItems = document.querySelectorAll('.roadmap-item');
     
     roadmapItems.forEach(item => {
         const content = item.querySelector('.roadmap-content');
         
-        content.addEventListener('click', function() {
-            // Toggle expanded class on the parent item
-            item.classList.toggle('expanded');
-            
-            // Optional: Close other items when one is opened
-            if (item.classList.contains('expanded')) {
-                roadmapItems.forEach(otherItem => {
-                    if (otherItem !== item && otherItem.classList.contains('expanded')) {
-                        otherItem.classList.remove('expanded');
-                    }
-                });
-            }
+        content.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Use requestAnimationFrame for smoother toggling
+            requestAnimationFrame(() => {
+                // Toggle expanded class on the parent item
+                item.classList.toggle('expanded');
+                
+                // Close other items when one is opened
+                if (item.classList.contains('expanded')) {
+                    roadmapItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('expanded')) {
+                            otherItem.classList.remove('expanded');
+                        }
+                    });
+                }
+            });
         });
     });
 });
