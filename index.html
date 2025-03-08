@@ -60,21 +60,6 @@
       border-radius: 4px;
     }
     
-    /* Education timeline separate styling */
-    .education-roadmap-line {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 92px;
-      width: 4px;
-      background: linear-gradient(to bottom, 
-        var(--blue-1) 0%, 
-        var(--blue-1) 40%, 
-        #ddd 40%, 
-        #ddd 100%);
-      border-radius: 4px;
-    }
-    
     .roadmap-item {
       position: relative;
       margin-bottom: 50px;
@@ -234,7 +219,7 @@
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .roadmap-line {
-        left: 52px;
+        left: 42px;
       }
       
       .roadmap-version {
@@ -243,7 +228,7 @@
       }
       
       .roadmap-dot {
-        margin: 0 10px 0 15px;
+        margin: 0 10px 0 5px;
         width: 20px;
         height: 20px;
       }
@@ -255,6 +240,11 @@
       .roadmap-content h4 {
         font-size: 16px;
       }
+    }
+    
+    /* Education section specific overrides */
+    #resume-tab-3 .developer-experience__area {
+      padding: 0px !important;
     }
   </style>
 
@@ -536,7 +526,7 @@
                 <p class="tg-place__area-short-text wc-btn-underline"> <img
                   src="../assets/imgs/travel-guide/location.png" class="show-dark" alt="location icon"> <img id="resume-icon"
                   src="../assets/imgs/travel-guide/icon-project.png" class="show-light" alt="location icon"> Resume
-              </p>
+                </p>
                 <div class="line-col-3">
                   <div></div>
                   <div></div>
@@ -635,7 +625,7 @@
                                   <div class="roadmap-version">2016</div>
                                   <div class="roadmap-dot"></div>
                                   <div class="roadmap-content">
-                                    <h4><b>Manager, Management InfOrmatiOn & Analytics</b></h4>
+                                    <h4><b>Manager, Management InfOrmation & Analytics</b></h4>
                                     <p class="roadmap-date">Jul 2016 - Apr 2018</p>
                                     <div class="roadmap-details">
                                       <p>Skillsfuture Singapore</p>
@@ -657,14 +647,14 @@
                           <div class="developer-experience__area">
                             <div class="roadmap-container">
                               <div class="roadmap-timeline">
-                                <div class="education-roadmap-line"></div>
+                                <div class="roadmap-line"></div>
                                 
                                 <div class="roadmap-item current">
-                                  <div class="roadmap-version">2024</div>
+                                  <div class="roadmap-version">2022</div>
                                   <div class="roadmap-dot current"></div>
                                   <div class="roadmap-content">
                                     <h4><b>Masters Of Science in Analytics</b></h4>
-                                    <p class="roadmap-date">2022 - 2024</p>
+                                    <p class="roadmap-date">2020 - 2022</p>
                                     <div class="roadmap-details">
                                       <p>Georgia Institute of Technology</p>
                                       <ul class="roadmap-features">
