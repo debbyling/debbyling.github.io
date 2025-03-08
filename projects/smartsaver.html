@@ -393,20 +393,20 @@
                                 <div class="feature-item mvp">
                                   <span class="feature-dot"></span>
                                   <span class="feature-text">Multi-bank interest calculator</span>
-                                </div>
+                      </div>
                                 <div class="feature-item mvp">
                                   <span class="feature-dot"></span>
                                   <span class="feature-text">Side-by-side comparison table</span>
-                                </div>
+                    </div>
                                 <div class="feature-item mvp">
                                   <span class="feature-dot"></span>
                                   <span class="feature-text">Mobile-responsive interface</span>
-                                </div>
+                  </div>
                                 <div class="feature-item mvp">
                                   <span class="feature-dot"></span>
                                   <span class="feature-text">Basic feedback collection</span>
-                                </div>
-                              </div>
+                </div>
+              </div>
                               
                               <!-- Quadrant 2: High Value, Higher Effort (Phase 2) -->
                               <div class="matrix-quadrant q2">
@@ -414,7 +414,7 @@
                                 <div class="feature-item phase2">
                                   <span class="feature-dot"></span>
                                   <span class="feature-text">Fund distribution optimization</span>
-                                </div>
+                </div>
                                 <div class="feature-item phase2">
                                   <span class="feature-dot"></span>
                                   <span class="feature-text">Tier-by-tier interest breakdown</span>
@@ -467,18 +467,6 @@
                   </div>
                 </div>
               </div>
-              <div class="elc-insd-thumbs__items">
-                <div class="cf_image">
-                  <a href="../assets/imgs/portfolio-page/smartsaver-page/smartsaver-dashboard.png" class="popup-image">
-                    <img src="../assets/imgs/portfolio-page/smartsaver-page/smartsaver-dashboard.png" alt="SmartSaver Dashboard">
-                  </a>
-                </div>
-                <div class="cf_image">
-                  <a href="../assets/imgs/portfolio-page/smartsaver-page/smartsaver-architecture.png" class="popup-image">
-                    <img src="../assets/imgs/portfolio-page/smartsaver-page/smartsaver-architecture.png" alt="Technical Architecture">
-                  </a>
-                </div>
-              </div>
               <div class="row pt-60">
                 <div class="col-12">
                   <div class="row">
@@ -497,6 +485,30 @@
                           <li><strong>Performance Optimization:</strong> Implemented calculation memoization to improve response time</li>
                           <li><strong>Analytics Implementation:</strong> Designed event tracking for feature usage patterns</li>
                         </ul>
+                        
+                        <div class="chatbot-feature-section">
+                          <h4 class="mb-3">Strategic Integration of AI Assistance</h4>
+                          <div class="chatbot-feature-content">
+                            <div class="chatbot-icon">
+                              <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="chatbot-explanation">
+                              <p>I made a deliberate architectural decision to integrate the AI chatbot <strong>after</strong> the calculation process rather than at the beginning of the user journey. This strategic placement was based on careful consideration of the user experience:</p>
+                              
+                              <ul class="chatbot-details">
+                                <li><strong>Input Complexity:</strong> The calculator requires numerous structured inputs (deposit amount, credit card ownership, GIRO payments, etc.) which are more efficiently collected through a form interface.</li>
+                                
+                                <li><strong>Conversation Efficiency:</strong> Having the chatbot collect these inputs would result in a lengthy sequential conversation, creating friction in the user experience.</li>
+                                
+                                <li><strong>Contextual Value:</strong> The chatbot provides maximum value when helping users interpret results and understand the nuances of their calculated interest rates.</li>
+                                
+                                <li><strong>Post-Calculation Support:</strong> After seeing their results, users typically have specific questions about optimization strategies, qualification criteria, and comparative analysis—precisely where AI assistance excels.</li>
+                              </ul>
+                              
+                              <p>This approach balances structured data collection with conversational assistance, allowing each interface method to serve its optimal purpose in the user journey.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1432,6 +1444,78 @@ li {
   
   .roadmap-content h4 {
     font-size: 16px;
+  }
+}
+
+/* AI Chatbot Feature Section Styling */
+.chatbot-feature-section {
+  margin: 30px 0;
+  padding: 25px;
+  background: rgba(236, 246, 255, 0.6);
+  border-radius: 12px;
+  border-left: 4px solid var(--blue-1);
+}
+
+.chatbot-feature-content {
+  display: flex;
+  gap: 20px;
+}
+
+.chatbot-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--blue-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-explanation {
+  flex: 1;
+}
+
+.chatbot-explanation p:first-child {
+  margin-top: 0;
+}
+
+.chatbot-details {
+  margin: 15px 0;
+  padding-left: 5px;
+}
+
+.chatbot-details li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.chatbot-details li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--blue-1);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .chatbot-feature-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .chatbot-icon {
+    margin-bottom: 15px;
+  }
+  
+  .chatbot-details li {
+    text-align: left;
   }
 }
 

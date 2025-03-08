@@ -705,3 +705,155 @@ a#white-link {
 .tg-place__area-thumb:hover ~ .tg-place__area-content a#white-link i {
   color: black !important;
 }
+
+/* SmartSaver Roadmap - completely isolated classes */
+/* SmartSaver Roadmap Experience Styles */
+#resume-tab-2 .developer-experience__area {
+  padding: 0 !important;
+}
+
+#resume-tab-2 .experience-timeline {
+  position: relative !important;
+  padding-left: 40px !important;
+  margin-top: 20px !important;
+}
+
+#resume-tab-2 .experience-timeline-line {
+  display: none !important;
+}
+
+#resume-tab-2 .experience-timeline::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 10px !important;
+  width: 2px !important;
+  background-color: #3498db !important;
+  z-index: 1 !important;
+}
+
+#resume-tab-2 .experience-item {
+  position: relative !important;
+  margin-bottom: 40px !important;
+  animation: fadeIn 0.6s ease-in-out forwards !important;
+  opacity: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(1) {
+  animation-delay: 0.2s !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(2) {
+  animation-delay: 0.4s !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(3) {
+  animation-delay: 0.6s !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(4) {
+  animation-delay: 0.8s !important;
+}
+
+#resume-tab-2 .experience-year {
+  display: none !important;
+}
+
+#resume-tab-2 .experience-dot {
+  position: absolute !important;
+  left: -30px !important;
+  top: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  background-color: #2980b9 !important;
+  border: 3px solid #fff !important;
+  box-shadow: 0 0 0 2px #3498db !important;
+  z-index: 2 !important;
+}
+
+#resume-tab-2 .experience-dot.current {
+  background-color: #2980b9 !important;
+}
+
+#resume-tab-2 .experience-content {
+  background-color: #f8f9fa !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+  border-left: 3px solid #3498db !important;
+  transition: transform 0.3s ease !important;
+  margin-left: 0 !important;
+}
+
+#resume-tab-2 .experience-content:hover {
+  transform: translateX(5px) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+}
+
+#resume-tab-2 .experience-content h4 {
+  margin: 0 0 8px 0 !important;
+  color: #2c3e50 !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+}
+
+#resume-tab-2 .experience-date {
+  font-style: italic !important;
+  color: #7f8c8d !important;
+  margin: 0 0 10px 0 !important;
+  font-size: 0.9rem !important;
+}
+
+#resume-tab-2 .experience-details p {
+  font-weight: bold !important;
+  margin: 5px 0 !important;
+  color: #34495e !important;
+}
+
+#resume-tab-2 .experience-highlights {
+  margin: 10px 0 0 !important;
+  padding-left: 20px !important;
+  list-style-type: disc !important;
+}
+
+#resume-tab-2 .experience-highlights li {
+  margin-bottom: 5px !important;
+  color: #333 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #resume-tab-2 .experience-timeline {
+    padding-left: 30px !important;
+  }
+  
+  #resume-tab-2 .experience-content {
+    padding: 15px !important;
+  }
+  
+  #resume-tab-2 .experience-timeline::before {
+    left: 8px !important;
+  }
+  
+  #resume-tab-2 .experience-dot {
+    width: 16px !important;
+    height: 16px !important;
+    left: -24px !important;
+  }
+}
