@@ -789,10 +789,8 @@
                       <div class="elc-inbd-share__wrapper">
                         <p>Share this post</p>
                         <ul class="elc-social-media">
-                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+
+                          <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
                         </ul>
                       </div>
                     </div>
@@ -892,6 +890,11 @@
           $('body').css('overflow', '');
         }
       }
+    });
+    
+    // Close offcanvas menu when any navigation link is clicked
+    $('.offcanvas-3__menu a').on('click', function() {
+      hideCanvas3(); // Call the existing hideCanvas3 function
     });
   });
   </script>

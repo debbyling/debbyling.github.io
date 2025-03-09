@@ -1182,6 +1182,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script>
+// Close offcanvas menu when any navigation link is clicked
+document.addEventListener('DOMContentLoaded', function() {
+    const offcanvasLinks = document.querySelectorAll('.offcanvas-3__menu a');
+    
+    offcanvasLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hideCanvas3(); // Call the existing hideCanvas3 function to close the menu
+        });
+    });
+});
+</script>
+
 </body>
 
 </html>
