@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>Blog details</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/progressbar.css">
+  <link rel="stylesheet" href="../assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/basictable.min.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+
+<body class="font-heading-estedad light">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="I" class="characters">I</span>
+          <span data-text="N" class="characters">N</span>
+          <span data-text="F" class="characters">F</span>
+          <span data-text="O" class="characters">O</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="dark">dark</button>
+          <button data-mode="light">light</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width">Full Width</button>
+          <button data-mode="box-layout">Box Layout</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- Offcanves start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOne">
+      <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      <div class="offcanvas__body">
+        <div class="offcanvas__logo">
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
+          <p>Create live segments and target the right people for messages based on their behaviors.</p>
+        </div>
+
+        <div class="offcanvas__menu-area">
+          <div class="offcanvas__menu-wrapper"></div>
+        </div>
+        <div class="offcanvas__gallery">
+          <p class="offcanvas__title">gallery</p>
+          <div class="gallery__items">
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-2.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-3.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-4.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-5.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-6.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas__media">
+          <p class="offcanvas__title">Follow</p>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanves end -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-elc">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header class="elc-header pos-abs">
+          <div class="elc-container">
+            <div class="elc-header__inner inner-pg-border">
+              <div class="elc-header__logo">
+                <a href="index-light.html">
+                  <img src="../assets/imgs/electrician/logo-dark.png" class="show-light" alt="Site Logo">
+                  <img src="../assets/imgs/electrician/logo-white.png" class="show-dark" alt="Site Logo">
+                </a>
+              </div>
+              <div class="elc-header__nav inner-pg-nav">
+                <nav class="main-menu">
+                  <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="service.html">service</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Pages</a>
+                      <ul class="dp-menu">
+                        <li><a href="index.html">home dark</a></li>
+                        <li><a href="index-light.html">home light</a></li>
+                        <li><a href="about.html">about dark</a></li>
+                        <li><a href="about-light.html">about light</a></li>
+                        <li><a href="service.html">service dark</a></li>
+                        <li><a href="service-light.html">service light</a></li>
+                        <li><a href="service-details.html">service details dark</a></li>
+                        <li><a href="service-details-light.html">service details light</a></li>
+                        <li><a href="faq.html">FAQ dark</a></li>
+                        <li><a href="faq-light.html">FAQ light</a></li>
+                        <li><a href="contact.html">contact dark</a></li>
+                        <li><a href="contact-light.html">contact light</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">blog</a>
+                      <ul class="dp-menu">
+                        <li><a href="blog.html">blog dark</a></li>
+                        <li><a href="blog-light.html">blog light</a></li>
+                        <li><a href="blog-details.html">blog details dark</a></li>
+                        <li><a href="blog-details-light.html">blog details light</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="elc-header__others inner-pg-border">
+                <ul class="elc-header__meta">
+                  <li class="call-us"><a href="tel:+(8)2572143921">
+                      <span><strong>Call Me </strong> +(8) 257 214 392</span>
+                      <i class="fa-solid fa-phone-volume"></i></a>
+                  </li>
+                </ul>
+                <div class="elc-header__navicon">
+                  <button id="open_offcanvas" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOne">
+                    <span class="menu-icon"><span></span></span> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+
+        <main>
+
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>Birdhouse: Data-driven Senior <br> Care Monitoring</h1></b>
+                    <p class="mt-20">Led the data architecture and analytics for Birdhouse, a winning solution at Build For Good Hackathon that addresses unnoticed senior deaths in Singapore through IoT-based monitoring.
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="mt-20"><b>Task</b> <br>
+                    <p class="mt-20">Electricity is the lifeblood of our modern world, powering everything from our homes to industries</h2>
+                    <ul class="project_info">
+                      <li>
+                        <span class="title">Author</span>
+                        <p class="info">Alex Jonsion</p>
+                      </li>
+                      <li>
+                        <span class="title">Category</span>
+                        <p class="info">Electrical</p>
+                      </li>
+                      <li>
+                        <span class="title">Date</span>
+                        <p class="info">January 18, 2023</p>
+                      </li>
+                      <li>
+                        <span class="title">Tags</span>
+                        <p class="info">Electrician, Technician</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p>Write by Alex Jonsion <span class="date">January 18, 2023</span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/electrician/blog-details-1.jpg" alt="blog details image" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">SOLUTION</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Importance of professional electrical services</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Residential Electrical Services: This category caters to homeowners and includes services such as electrical installations for new constructions, rewiring older homes, electrical panel upgrades, lighting fixture installations, and troubleshooting electrical issues. Commercial Electrical Services: Businesses and commercial establishments require specialized electrical services. This may include installing energy-efficient lighting, setting up electrical distribution systems, backup.</p>
+                        <p class="mb-25">Industrial Electrical Services: Industries have complex electrical needs, and their services range from installing heavy machinery and industrial automation systems to maintaining electrical infrastructure to ensure smooth operations. Elementum pulvinar etiam non quam lacus. Vulputate mi sit amet mauris commodo quis imperdiet. Purus faucibus ornare suspendisse sed nisi lacus.</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>Electrical troubleshooting and repair</li>
+                          <li>New electrical system installation</li>
+                          <li>Electrical code compliance</li>
+                          <li>Safety awareness</li>
+                          <li>Virtually any electrical needs</li>
+                          <li>Quality output</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <p class="category-text mb-10">SOLUTION</p>
+                  <hr class="category-line mb-30">
+                  <h2 class="elc-insd-challenge-title mb-10 mt-10">Hiring the right electrical service provider</h2>
+                </div>
+                <div class="col-lg-8">
+                  <div class="mt-50">
+                    <p class="mb-25">Residential Electrical Services: This category caters to homeowners and includes services such as electrical installations for new constructions, rewiring older homes, electrical panel upgrades, lighting fixture installations, and troubleshooting electrical issues. Acilisi nullam vehicula ipsum a.</p>
+                    <div class="elc-blog-details__quote">
+                      <div class="blog-details__quote">
+                        <div class="blog-details__quote-icon">
+                          <img src="../assets/imgs/inner/dancer/quote.png" alt="quote">
+                        </div>
+                        <div class="blog-details__quote-info">
+                          <div class="blog-details__quote-text">
+                            <p>Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides clean and sleek harmony.</p>
+                          </div>
+                          <div class="blog-details__quote-author">
+                            <p>Adamson Janny</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Residential Electrical Services: This category caters to homeowners and includes services such as electrical installations for new constructions, rewiring older homes, electrical panel upgrades, lighting fixture installations, and troubleshooting electrical issues.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-insd-thumbs__items">
+                <div class="cf_image">
+                  <img src="../assets/imgs/electrician/service-details-2.jpg" alt="service image">
+                </div>
+                <div class="cf_image">
+                  <img src="../assets/imgs/electrician/service-details-3.jpg" alt="service image">
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+                          <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">Electrician</a></li>
+                        <li><a href="blog-light.html">Technician</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="elc-inbd-comment-form">
+                      <h3 class="elc-inbd-comment__title mb-10">Leave a Comment</h3>
+                      <p>Your email address will not be published. Required fields are marked</p>
+                      <form action="#">
+                        <div class="elc-inbd-comment__form">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="elc-inbd-comment__field mb-30">
+                                <label for="name">Name*</label>
+                                <input type="text" name="name" id="name" placeholder="Your name">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="elc-inbd-comment__field mb-30">
+                                <label for="name">Email*</label>
+                                <input type="text" name="Email" id="Email" placeholder="Your email">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="elc-inbd-comment__field">
+                            <label for="name">Comment*</label>
+                            <textarea name="comment" placeholder="Write your comments......"></textarea>
+                          </div>
+                          <div class="cf_btn elc-inbd-comment__btn-wrapper mt-45">
+                            <button type="submit" class="wc-btn-default">Submit Now <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog details area end  -->
+
+
+        </main>
+
+        <!-- Footer section start -->
+        <footer>
+          <div class="elc-footer__area pt-130 pb-130 mbm-1">
+            <div class="elc-container">
+              <div class="elc-footer__widgets-wrapper">
+                <div class="footer__widget">
+                  <div class="elc-footer__logo">
+                    <a href="">
+                      <img src="../assets/imgs/electrician/logo-dark.png" alt="image">
+                    </a>
+                  </div>
+                  <div class="elc-footer__text">
+                    <p>My experience electricians are highly trained in all aspects of electrical service, from office
+                      lighting & security repair system.</p>
+                  </div>
+                  <ul class="elc-social-media">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+                <div class="footer__widget">
+                  <div class="elc-footer__go-up">
+                    <a href="#top">
+                      <div class="cf_image circle-box"><img src="../assets/imgs/electrician/go-up.png" alt="image">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer__widget">
+                  <h2 class="elc-footer__widget-title">Company</h2>
+                  <div class="elc-footer__menu hover-border-move">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Journals</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Join Slack</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__widget">
+                  <h2 class="elc-footer__widget-title">Information</h2>
+                  <div class="elc-footer__menu hover-border-move">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Journals</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Join Slack</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__widget">
+                  <h2 class="elc-footer__widget-title">Get in Touch</h2>
+                  <div class="elc-footer__meta-info">
+                    <ul>
+                      <li>
+                        <p class="elc-footer__meta-title">Address</p>
+                        <p class="elc-footer__meta-text">13 Division st, New York, 16004</p>
+                      </li>
+                      <li>
+                        <p class="elc-footer__meta-title">Phone</p>
+                        <p class="elc-footer__meta-text"><a href="tel:+(8)320781312">+(8) 320 781 312</a></p>
+                      </li>
+                      <li>
+                        <p class="elc-footer__meta-title">Email</p>
+                        <p class="elc-footer__meta-text"><a href="mailto:info@example.com">info@example.com</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elc-copyright__area">
+            <div class="elc-container">
+              <div class="cf_text elc-copyright__text">
+                <p>© Alrights reserved by <a href="https://crowdyflow.com/">CrowdyFlow</a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer section end -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/typed.js"></script>
+  <script src="../assets/js/mixitup.min.js"></script>
+  <script src="../assets/js/progressbar.js"></script>
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollSmoother.min.js"></script>
+  <script src="../assets/js/ScrollToPlugin.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/SplitText.min.js"></script>
+  <script src="../assets/js/TweenMax.min.js"></script>
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/error-handling.js"></script>
+  <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
+
+
+</body>
+
+
+
+<style> 
+
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+}
+
+</style>
+
+</html>

@@ -1,0 +1,1987 @@
+/*
+    COMMON STYLES IN CHEF TEMPLATE
+*/
+
+.chef-body {
+
+    background-color: var(--purple-4);
+
+    p {
+        color: var(--white);
+        font-size: 18px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--white-19);
+    }
+
+    @include light {
+        background-color: var(--white-19);
+        color: var(--purple-4);
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--purple-4);
+        }
+
+        p {
+            color: var(--purple-4);
+        }
+    }
+}
+
+.chef-subscribe {
+    background-color: var(--white-19);
+    width: 120px;
+    height: 120px;
+
+    @include light {
+        background-color: var(--purple-4);
+    }
+}
+
+.chef-subscribe-wrap {
+    position: unset;
+}
+
+/* Styling vertical lines within a container */
+.lines {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 6px;
+
+    .line {
+        height: 100%;
+        width: 1px;
+        background: linear-gradient(180deg, #313950 0%, rgba(56, 67, 100, 0.41) 100%);
+        top: 0;
+
+        @include light {
+            background: linear-gradient(180deg, #EBDFD5 0%, rgba(235, 223, 213, 0.20) 100%);
+        }
+
+        @media #{$sm} {
+            display: none;
+        }
+
+    }
+}
+
+/* Styling images within specific shapes */
+
+.image-shapes {
+    .shape-image {
+        position: absolute;
+
+        /* Positioning for each image shape */
+        &:nth-child(1) {
+            top: 370px;
+            right: 0;
+
+            @media #{$sm} {
+                top: 270px;
+            }
+        }
+
+        &:nth-child(2) {
+            bottom: 260px;
+            left: 160px;
+        }
+
+        &:nth-child(3) {
+            top: 90px;
+            left: 540px;
+        }
+    }
+}
+
+/* Styling brand images within specific shapes */
+
+.brand-image-shapes {
+    .shape-image {
+        position: absolute;
+        bottom: 90px;
+        left: 3.385vw;
+
+        @media #{$sm} {
+            display: none;
+        }
+
+        @media (min-width:1919px) {
+            left: 65px;
+        }
+
+        img {
+            width: 13.021vw;
+
+            @media (min-width:1919px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* section title  */
+.chef-sec-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.11;
+
+    @media #{$lg} {
+        font-size: 40px;
+    }
+
+    @media #{$sm} {
+        font-size: 28px;
+    }
+
+    span {
+        font-weight: 400;
+
+        @include light {
+            color: var(--purple-4);
+        }
+    }
+
+    strong {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        position: relative;
+        color: var(--white-19);
+    }
+}
+
+/* INTRO TEXT BACKGROUND IMAGE ANIMATION */
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -512px -512px;
+    }
+}
+
+/*
+    CHEF TEMPLATE MAIN STYLES
+*/
+.chef {
+
+    &-header {
+
+        /*
+            CHEF TEMPLATE HEADER STYLE
+        */
+        &__area {
+
+            /*
+                No padding is necessary in the header as it is already within the container.
+            */
+            .menu-icon-2{
+                @media #{$sm}{
+                    @include rtl{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            @media #{$sm} {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        &__navicon {
+            .search-icon {
+                color: var(--white);
+
+                @include light {
+                    color: var(--purple-4);
+                }
+            }
+        }
+
+        &__nav {
+            ul {
+                li {
+                    a {
+                        color: var(--white);
+                        font-family: var(--font_tropline);
+                        color: var(--white-19);
+                        font-size: 16px;
+                        padding: 38px 25px;
+                    }
+                }
+            }
+        }
+
+        &__navicon {
+            #lang-default {
+                color: var(--white);
+
+                @include light {
+                    color: var(--purple-4);
+                }
+            }
+
+            .menu-icon-2 {
+                &::before {
+                    background-color: var(--white);
+
+                    @include light {
+                        background-color: var(--purple-4);
+                    }
+                }
+
+                &::after {
+                    background-color: var(--white);
+
+                    @include light {
+                        background-color: var(--purple-4);
+                    }
+                }
+            }
+        }
+
+        &__search {
+            button {
+                i {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    &-intro {
+        &__area {
+
+            /*
+                CHEF TEMPLATE INTRO STYLE
+            */
+            padding-top: 160px;
+            padding-bottom: 160px;
+            background-color: var(--purple-5);
+            position: relative;
+
+            @include light {
+                background-color: #F5EEE8;
+            }
+
+            @media #{$md} {
+                padding-bottom: 10px;
+                padding-top: 110px;
+            }
+
+            &-main-thumb {
+                position: absolute;
+                left: 32vw;
+                bottom: 0;
+                z-index: 2;
+
+                @media (min-width:1919px) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                @media #{$md} {
+                    left: 0;
+                }
+
+                @media #{$sm} {
+                    display: none;
+                }
+
+                img {
+                    width: 33vw;
+
+                    @media (min-width:1919px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-content-wrap {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+
+                @media #{$sm} {
+                    flex-wrap: wrap;
+                    gap: 70px;
+                }
+            }
+
+            &-sub-title {
+                font-size: 3.646vw;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 30px;
+
+                @media (min-width:1919px) {
+                    font-size: 70px;
+                }
+
+                @media #{$md} {
+                    font-size: 40px;
+                }
+
+                @media #{$sm} {
+                    font-size: 30px;
+                }
+            }
+
+            /* Styling for the title element using background clip */
+            &-title {
+                font-family: var(--font_larken) !important;
+                font-size: 20.8vw;
+                text-transform: uppercase;
+                background-image: url("../imgs/chef/intro-title-bg.jpg");
+                background-position: bottom left;
+                background-repeat: repeat;
+                background-size: 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                letter-spacing: 4.5vw;
+                font-weight: 600;
+                position: relative;
+                animation: slide 30s linear infinite;
+                text-align: center;
+                line-height: 1.18;
+                @include rtl{
+                    letter-spacing: 60px;
+                }
+                @media (min-width:1800px) {
+                    font-size: 400px;
+                    letter-spacing: 105px;
+                }
+
+                @media #{$sm} {
+                    text-align: start;
+                }
+            }
+
+            &-btn {
+                background-color: var(--white-19);
+                padding: 22px 50px;
+                font-family: var(--font_tropline);
+                color: #384364;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.30;
+
+                @include light {
+                    background-color: var(--purple-4);
+                    color: var(--white-19);
+                }
+
+                @media #{$sm} {
+                    padding: 12px 20px;
+                    font-size: 16px;
+
+                }
+            }
+
+            &-item-right {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                position: relative;
+
+                @media #{$xxl} {
+                    padding-bottom: 30px;
+                }
+            }
+
+            &-subscribe-text {
+                display: flex;
+                align-items: center;
+                gap: 22px;
+                max-width: 275px;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 1.3;
+                }
+            }
+
+            &-disc {
+                max-width: 270px;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 300;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            &-thumb {
+                position: absolute;
+                top: 100%;
+                outline: 1px solid var(--white-19);
+                outline-offset: 10px;
+
+                @include light {
+                    outline: 1px solid var(--purple-4);
+
+                }
+
+                @media #{$md} {
+                    position: unset;
+                }
+                @media #{$sm} {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    &-buybutton {
+        &__area {
+
+            /*
+                CHEF TEMPLATE BUY BUTTON STYLE
+            */
+            padding-top: 90px;
+            padding-bottom: 150px;
+            position: relative;
+
+            @media #{$md} {
+                padding-bottom: 50px;
+            }
+
+            .shape-image {
+                position: absolute;
+                top: -160px;
+                inset-inline-start: 160px;
+            }
+
+            &-content {
+                max-width: 330px;
+                margin-left: 330px;
+
+                @media #{$lg} {
+                    margin-left: unset;
+                }
+            }
+
+            &-buybtn {
+                display: grid;
+                grid-template-columns: 1fr 20px;
+                align-items: center;
+                gap: 115px;
+                color: var(--white-19);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1;
+                position: relative;
+                padding-bottom: 25px;
+                font-family: var(--font_tropline);
+                overflow: hidden;
+                transition: .5s;
+
+                @include light {
+                    color: var(--purple-4);
+                }
+
+                &:hover {
+                    color: var(--primary);
+
+                    &::before {
+                        width: 0;
+                    }
+
+                    &::after {
+                        width: 100%;
+                    }
+
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 100%;
+                    background-color: var(--white);
+                    transition: .5s;
+
+                    @include light {
+                        background-color: var(--purple-4);
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 0;
+                    background-color: var(--primary);
+                    transition: 1s;
+                }
+
+                .arrow-up {
+                    filter: brightness(10);
+                    transition: 1s;
+
+                    @include light {
+                        filter: brightness(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &-brand {
+        &__area {
+
+            /*
+                CHEF TEMPLATE HEADER STYLE
+            */
+            position: relative;
+            // padding-top: 70px;
+            padding-bottom: 150px;
+
+            @media #{$md} {
+                padding-bottom: 50px;
+            }
+
+            &-title-wrap {
+                text-align: center;
+            }
+
+            &-title {
+                font-size: 16px;
+                font-weight: 700;
+                display: inline-block;
+                background-color: var(--purple-4);
+                padding: 0 10px;
+                margin-bottom: -10px;
+                transform: translateY(10px);
+
+                @include light {
+                    background-color: var(--white-19);
+                }
+            }
+
+            &-wrapper {
+                max-width: 1070px;
+                margin: auto;
+                gap: 80px;
+                border: 1px solid #475272;
+                padding: 40px 50px;
+
+                @include light {
+                    border: 1px solid #EAE6DA;
+                }
+
+                @media #{$sm} {
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+
+    &-skills {
+        &__area {
+
+            /*
+            CHEF TEMPLATE SKILLS STYLES
+        */
+            padding-bottom: 150px;
+            @media #{$lg} {
+                padding-bottom: 100px;
+            }
+            @media #{$md} {
+                padding-bottom: 50px;
+            }
+
+            &-sec-wrap {
+                margin-bottom: 45px;
+            }
+
+            &-content {
+                max-width: 300px;
+
+                .nav-link {
+                    padding: 30px 0 30px 70px;
+                    position: relative;
+                    cursor: pointer;
+                    @media #{$lg} {
+                        padding: 20px 0 20px 50px;
+                    }
+
+                    &:first-child {
+                        padding: 0 0 30px 70px;
+
+                        @include rtl {
+                            padding-inline-start: 70px;
+                        }
+
+                        @media #{$lg} {
+                            padding: 0 0 20px 50px;
+
+                            @include rtl {
+                                padding-inline-start: 50px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        padding: 30px 0 0 70px;
+
+                        @include rtl {
+                            padding-inline-start: 70px;
+                        }
+
+                        @media #{$lg} {
+                            padding: 20px 0 0 50px;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        inset-inline-start: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 1px;
+                        background-color: var(--white-19);
+                        transition: .3s;
+                        opacity: 0.2;
+
+                        @include light {
+                            background-color: #EAE6DA;
+                        }
+                    }
+
+                    &.active {
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                        .chef-skills__area-menu {
+                            .title {
+                                color: var(--white-19);
+                                font-weight: 700;
+                                @include light {
+                                    color: #9F9987;
+                                }
+                            }
+                        }
+
+                        .disc p {
+                            color: #ADB2C2;
+                            @include light {
+                                color: #9F9987;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-menu {
+                text-align: start;
+
+                .title {
+                    font-size: 26px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    color: #747D97;
+                    transition: .3s;
+                }
+
+                .disc {
+                    p {
+                        color: #747D97;
+                        transition: .3s;
+
+                    }
+                }
+            }
+
+            &-skillImg {
+                position: relative;
+
+                &.has-shadow {
+                    margin: 80px 80px 0 0;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: -80px;
+                        top: -80px;
+                        background-color: #475274;
+                        width: 100%;
+                        height: 100%;
+
+                        @media #{$sm} {
+                            top: -30px;
+                        }
+                    }
+                }
+
+                img {
+                    position: relative;
+                    z-index: 2;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-experience {
+        &__area {
+            /*
+            CHEF TEMPLATE EXPERIENCE STYLES
+        */
+            padding-bottom: 180px;
+            position: relative;
+
+            @media #{$lg} {
+                padding-bottom: 100px;
+            }
+
+            @media #{$sm} {
+                padding-bottom: 50px;
+            }
+
+            .shape-1 {
+                position: absolute;
+                bottom: -135px;
+                right: 0;
+
+                img {
+                    width: 10.313vw;
+
+                    @media (min-width:1919px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-ex-wrap {
+                background-color: #475274;
+                text-align: center;
+                padding: 70px 40px;
+                max-width: 225px;
+
+                @include light {
+                    background-color: #F5EEE8;
+                }
+
+                @media #{$md} {
+                    padding: 40px 30px;
+                }
+
+                .title {
+                    font-size: 50px;
+                    font-weight: 700;
+                    line-height: 1;
+                    margin-bottom: 10px;
+                }
+
+                .disc {
+                    p {
+                        font-size: 26px;
+                        line-height: 1.23;
+                        font-weight: 600;
+                        font-family: var(--font_tropline);
+                    }
+                }
+            }
+
+            &-content {
+                @media #{$md} {
+                    padding-top: 50px;
+                }
+            }
+
+            &-signature {
+                margin-top: 70px;
+                max-width: 165px;
+
+                @media #{$lg} {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    &-gallary {
+        &__area {
+
+            /*
+            CHEF TEMPLATE GALLARY STYLES
+        */
+            padding-bottom: 70px;
+            position: relative;
+            z-index: 2;
+            @media #{$lg} {
+                padding-bottom: 30px;
+            }
+            @media #{$md} {
+                padding-bottom: 0;
+            }
+
+            .shape-1 {
+                position: absolute;
+                left: 12.500vw;
+                bottom: 380px;
+
+                img {
+                    width: 12.500vw;
+                }
+
+                @media (min-width:1919px) {
+                    left: 240px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-title {
+                font-size: 14.583vw;
+                font-weight: 400;
+                line-height: 1;
+                text-align: center;
+
+                @media (min-width:1919px) {
+                    font-size: 280px;
+
+                }
+            }
+
+            &-rect {
+                background-color: #475274;
+                width: 1085px;
+                height: 490px;
+                position: absolute;
+                left: 0;
+                top: 700px;
+                z-index: -1;
+
+                @include light {
+                    background-color: #F5EEE8;
+                }
+
+                @media #{$sm} {
+                    display: none;
+                }
+            }
+
+            &-items {
+                padding-top: 85px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                @media #{$md} {
+                    gap: 30px;
+                }
+
+                @media #{$sm} {
+                    grid-template-columns: 1fr;
+                    padding-top: 50px;
+                }
+            }
+
+            &-item {
+                margin-bottom: 50px;
+
+                &:nth-child(3n+1) {
+                    max-width: 350px;
+                }
+
+                &:nth-child(3n+2) {
+                    margin-top: 190px;
+                    max-width: 660px;
+
+                    @media #{$sm} {
+                        margin-top: 0;
+                    }
+
+                    .chef-gallary__area-content {
+                        text-align: right;
+                        padding-right: 25px;
+                        margin-right: 45px;
+
+                        &::before {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }
+
+                &:nth-child(3n+3) {
+                    grid-column-start: 1;
+                    grid-column-end: -1;
+                    max-width: fit-content;
+                    margin: 45px auto;
+                    margin-top: 0;
+                    max-width: 470px;
+                    padding-left: 30px;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                        transition: 1s;
+
+                    }
+                }
+            }
+
+            &-thumb {
+                margin-bottom: 30px;
+                overflow: hidden;
+
+                img {
+                    transition: 1s;
+                    width: 100%;
+                }
+            }
+
+            &-content {
+                position: relative;
+                padding-left: 25px;
+                margin-left: 45px;
+
+                @include rtl {
+                    padding-inline-start: 25px;
+                    margin-inline-start: 45px;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 1px;
+                    height: 170px;
+                    background-color: var(--white-19);
+                    bottom: 0;
+
+                    @include rtl {
+                        inset-inline-start: 0;
+                    }
+
+                    @include light {
+                        background-color: var(--purple-4);
+                    }
+                }
+
+                .title {
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 1.15;
+                }
+            }
+        }
+    }
+
+    &-testimonial {
+        &__area {
+
+            /*
+            CHEF TEMPLATE TESTIMONIAL STYLES
+        */
+            padding-bottom: 140px;
+            @media #{$lg} {
+                padding-bottom: 100px;
+            }
+            @media #{$md} {
+                padding-bottom: 50px;
+            }
+
+            &-wrapper {
+                position: relative;
+
+                .swiper-pagination {
+                    span {
+                        color: var(--white-19);
+                        font-size: 14px;
+
+                        @include light {
+                            color: var(--purple-4);
+                        }
+                    }
+                }
+
+                .swiper-pagination-current {
+                    position: relative;
+                    padding: 0 7px;
+
+                    &::before {
+                        content: "0";
+                        position: absolute;
+                        left: -5px;
+                        top: -1px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: -20px;
+                        background-image: url(../imgs/chef/test-arrow-left.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 13px;
+                        width: 9px;
+                        top: 3px;
+
+                        @include light {
+                            filter: brightness(0);
+                        }
+                    }
+                }
+
+                .swiper-pagination-total {
+                    padding: 0 22px;
+                    position: relative;
+
+                    &::before {
+                        content: "0";
+                        position: absolute;
+                        left: 10px;
+                        top: -1px;
+
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 5px;
+                        background-image: url(../imgs/chef/test-arrow-right.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 13px;
+                        width: 9px;
+                        top: 4px;
+
+                        @include light {
+                            filter: brightness(0);
+                        }
+                    }
+                }
+
+                .dash {
+                    width: 100px;
+                    height: 1px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    background: var(--white-19);
+
+                    @include light {
+                        background: var(--purple-4);
+                    }
+                }
+            }
+
+            &-quote {
+                width: 237.815px;
+                height: 152px;
+                transform: rotate(-30deg);
+                border: 1px solid var(--white-19);
+                border-radius: 50%;
+                margin: auto;
+                margin-bottom: -25px;
+                padding-top: 40px;
+
+                @include light {
+                    border: 1px solid var(--purple-4);
+
+                }
+
+                @media #{$sm} {
+                    width: 137.815px;
+                    height: 100px;
+                }
+
+                .quote-image {
+                    transform: rotate(30deg);
+
+                    img {
+                        @include light {
+                            filter: brightness(0);
+                        }
+                    }
+                }
+            }
+
+            &-content {
+                max-width: 910px;
+                margin: auto;
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 120px;
+
+                @media #{$md} {
+                    padding-bottom: 60px;
+                }
+            }
+
+            &-title {
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 1;
+                margin-bottom: 50px;
+
+                @media #{$md} {
+                    font-size: 35px;
+                    margin-bottom: 25px;
+                }
+
+                @media #{$sm} {
+                    font-size: 28px;
+                }
+            }
+
+            &-name {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &-post {
+                p {
+                    color: #ACB2C2;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &-video {
+        &__area {
+            /*
+            CHEF TEMPLATE VIDEO STYLES
+        */
+            padding-bottom: 150px;
+
+            @media #{$lg} {
+                padding-bottom: 100px;
+            }
+            @media #{$md} {
+                padding-bottom: 50px;
+            }
+            &.video-about{
+                padding-bottom: 110px;
+            }
+            &-item {
+                position: relative;
+
+                video {
+                    width: 100%;
+
+                    @media #{$lg} {
+                        height: 400px;
+                        object-fit: cover;
+                    }
+
+                    @media #{$sm} {
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    &-counter {
+        &__area {
+            /*
+            CHEF TEMPLATE COUNTER STYLES
+        */
+            padding-bottom: 150px;
+
+            @media #{$lg} {
+                padding-bottom: 100px;
+            }
+            @media #{$md} {
+                padding-bottom: 50px;
+            }
+
+            &-items {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                text-align: center;
+
+                @media #{$sm} {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+
+                }
+            }
+
+            &-counter {
+                font-size: 100px;
+                font-weight: 400;
+                line-height: 1;
+                text-transform: uppercase;
+
+                @media #{$lg} {
+                    font-size: 70px;
+                }
+
+                @media #{$md} {
+                    font-size: 50px;
+                }
+            }
+
+            &-title {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 1;
+
+                @media #{$md} {
+                    font-size: 24px;
+                }
+            }
+
+            &-thumb {
+                max-width: 840px;
+                margin: auto;
+            }
+        }
+    }
+
+    &-tutorial {
+        &__area {
+            /*
+            CHEF TEMPLATE tutorial STYLES
+        */
+            padding-top: 140px;
+            padding-bottom: 140px;
+            @media #{$lg} {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            @media #{$md} {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            &-sec-wrap {
+                text-align: center;
+                margin-bottom: 55px;
+                @media #{$md}{
+                    margin-bottom: 30px;
+                }
+            }
+
+            &-blogs {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 60px;
+
+                @media #{$md} {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 30px;
+                }
+
+                @media #{$sm} {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            &-blog {
+                max-width: 390px;
+            }
+
+            &-thumb {
+                margin-bottom: 40px;
+                overflow: hidden;
+                @media #{$md}{
+                    margin-bottom: 20px;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    transition: .7s;
+                }
+            }
+
+            &-meta {
+                display: flex;
+                gap: 40px;
+                margin-bottom: 15px;
+
+                li {
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: 1;
+                    position: relative;
+
+                    &:last-child {
+                        font-weight: 300;
+                        color: #747D97;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        inset-inline-end: -30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 20px;
+                        height: 1px;
+                        background-color: var(--white-19);
+
+                        @include light {
+                            background-color: var(--purple-4);
+                        }
+                    }
+
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    &:first-child {
+                        color: var(--white-19);
+
+                        @include light {
+                            color: var(--purple-4);
+                        }
+                    }
+                }
+            }
+
+            &-title {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 1.20;
+                transition: .5s;
+
+                @media #{$md} {
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+
+    }
+
+    &-booking {
+        &__area {
+
+            /*
+            CHEF TEMPLATE BOOKING STYLES
+        */
+            background: url('../imgs/chef/cooking-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 140px;
+            position: relative;
+            @media #{$lg} {
+                padding-top: 100px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #273459;
+                opacity: 0.4;
+
+                @include light {
+                    opacity: .9;
+                }
+            }
+
+            @media #{$md} {
+                padding-top: 50px;
+            }
+
+            &-sec-wrap {
+                margin-bottom: 90px;
+                text-align: center;
+
+                .chef-sec-title {
+                    color: var(--white-19) !important;
+                }
+
+                @media #{$md} {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &-booking-form {
+                max-width: 850px;
+                margin: auto;
+                padding-bottom: 150px;
+                position: relative;
+                z-index: 2;
+
+                @media #{$md} {
+                    padding-bottom: 50px;
+                }
+            }
+
+            &-fields {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 60px 30px;
+
+                @media #{$md} {
+                    gap: 30px;
+                }
+                @media #{$sm} {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+
+                input,
+                textarea,
+                select {
+                    width: 100%;
+                    background-color: transparent;
+                    border: 0;
+                    height: 45px;
+                    color: var(--white-19);
+                    border-bottom: 1px solid #4a5474;
+                    font-size: 30px;
+                    font-weight: 400;
+                    font-family: var(--font_tropline);
+                    resize: none;
+                    overflow-y: hidden;
+                    padding-bottom: 7px;
+                    transition: .5s;
+
+                    @include light {
+                        border-bottom: 1px solid #4F5B80;
+                    }
+
+                    @media #{$md} {
+                        font-size: 18px;
+                    }
+
+                    &::placeholder {
+                        color: var(--white-19);
+                        text-transform: capitalize;
+                    }
+
+                    &:focus {
+                        outline: 0;
+                        border-bottom: 1px solid #fbfaf769;
+                    }
+                }
+
+                button {
+                    padding: 20px 45px;
+                    background-color: var(--white-19);
+                    color: var(--purple-4);
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 1.30;
+                    height: unset;
+                    font-family: var(--font_tropline);
+                    grid-column: 1/-1;
+                    max-width: fit-content;
+                    margin: auto;
+                    margin-top: 10px;
+                    border-bottom: 0;
+
+                    &:focus {
+                        border-bottom: 0;
+                    }
+                }
+
+                textarea {
+                    grid-column: 1/-1;
+                }
+
+                select {
+                    option {
+                        color: var(--purple-4);
+                    }
+                }
+            }
+
+            &-thumb {
+                text-align: center;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    @media #{$md} {
+                        width: 50%;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 50%;
+                    background: var(--purple-4);
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+
+                    @include light {
+                        background-color: var(--white-19);
+                    }
+                }
+            }
+        }
+    }
+
+    &-footer {
+        &__area {
+            /*
+            CHEF TEMPLATE FOOTER STYLES
+        */
+            padding-top: 130px;
+
+            @media #{$md} {
+                padding-top: 50px;
+            }
+            @media #{$sm} {
+                padding-top: 25px;
+            }
+
+            &-top {
+                max-width: 408px;
+                margin: auto;
+            }
+
+            &-logo {
+                max-width: 408px;
+                margin: auto;
+                margin-bottom: 50px;
+
+                @media #{$md} {
+                    max-width: 150px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 60px;
+                position: relative;
+                max-width: 345px;
+                margin: auto;
+                margin-bottom: 60px;
+                @media #{$sm}{
+                    margin-bottom: 30px;
+                }
+                li {
+                    font-family: var(--font_tropline);
+                    color: var(--white-19);
+
+                    @include light {
+                        color: var(--purple-4);
+                    }
+
+                    &:nth-child(odd) {
+                        text-align: end;
+                    }
+
+                    &:nth-child(even) {
+                        text-align: start;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #475272;
+                }
+            }
+
+            &-bottom {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+                padding: 24px 0;
+
+                @media #{$sm} {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                    text-align: center;
+                }
+            }
+
+            &-copyright-text {
+                p {
+                    font-family: var(--font_tropline);
+                    font-size: 16px;
+                }
+            }
+
+            &-menu {
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+
+                @media #{$sm} {
+                    // justify-content: flex-start;
+                }
+
+                li {
+                    position: relative;
+                    line-height: 1;
+
+                    &:last-child {
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: -20px;
+                        top: 2px;
+                        height: 15px;
+                        width: 1px;
+                        background-color: var(--white-19);
+                    }
+
+                    a {
+                        color: var(--white-19);
+                        font-family: var(--font_tropline);
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        @include light {
+                            color: var(--purple-4);
+                        }
+
+                        &:hover {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+
+            &-right {
+                text-align: end;
+
+                @media #{$sm} {
+                    text-align: center;
+                }
+
+                .go-top__btn {
+                    font-family: var(--font_tropline);
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: var(--white-19);
+
+                    @include light {
+                        color: var(--purple-4);
+                    }
+                }
+            }
+
+        }
+    }
+
+    &-inab {
+        &__intro {
+
+            /*
+            CHEF TEMPLATE ABOUT STYLES
+        */
+            padding: 190px 0;
+            background-color: var(--purple-5);
+
+            @include light {
+                background-color: #F5EEE8;
+            }
+
+            @media #{$xxl} {
+                padding: 200px 0 100px 0;
+            }
+
+            @media #{$sm} {
+                padding: 150px 0 50px 0;
+            }
+
+            &-title-wrap {
+                position: relative;
+            }
+
+            &-title {
+                font-size: 14.583vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1;
+
+                @media (min-width:1919px) {
+                    font-size: 280px;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+            }
+
+            &-thumb {
+                max-width: 21.354vw;
+                position: absolute;
+                inset-inline-end: 0;
+                top: 0;
+
+                @media #{$md} {
+                    padding-top: 30px;
+                }
+                @media #{$sm} {
+                    max-width: unset;
+                    position: unset;
+                }
+
+                @media (min-width:1919px) {
+                    max-width: 410px;
+                }
+
+                img {
+                    border-radius: 5px;
+                }
+
+                .chef-subscribe-wrap {
+                    text-align: end;
+                    margin-top: -50px;
+                    margin-inline-end: -50px;
+
+                    @media #{$md} {
+                        margin-inline-end: -10px;
+                    }
+                    @media #{$sm} {
+                        text-align: start;
+                    }
+                }
+
+                .chef-subscribe {
+                    background-color: var(--purple-4);
+                }
+            }
+        }
+
+        &__counter {
+            /*
+            CHEF TEMPLATE COUNTER STYLES
+        */
+            padding-top: 150px;
+
+            @media #{$lg} {
+                padding-top: 100px;
+            }
+
+            @media #{$md} {
+                padding-top: 50px;
+            }
+
+            &-content {
+                padding-bottom: 120px;
+
+                @media #{$lg} {
+                    padding-bottom: 70px;
+                }
+
+                @media #{$md} {
+                    padding-bottom: 50px;
+                }
+            }
+
+            &-title {
+                text-align: center;
+                font-size: 70px;
+                font-weight: 700;
+                line-height: 1.7;
+
+                @media #{$md} {
+                    font-size: 40px;
+                    line-height: 1.5;
+
+                }
+            }
+
+            &-disc {
+                max-width: 630px;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 30px;
+
+                p {
+                    color: #ADB2C2;
+                }
+            }
+        }
+    }
+
+    &-inp {
+        &__intro {
+            /*
+            CHEF TEMPLATE INTRO STYLES
+        */
+            padding-top: 220px;
+
+            @media #{$lg} {
+                padding-top: 150px;
+            }
+
+            @media #{$md} {
+                padding-top: 100px;
+            }
+        }
+    }
+
+    &-inpd {
+        &__details {
+            /*
+            CHEF TEMPLATE PROJECT DETAILS STYLES
+        */
+            padding-top: 240px;
+
+            @media #{$lg} {
+                padding-top: 150px;
+            }
+
+            &-title {
+                text-align: center;
+                @media #{$md}{
+                    font-size: 40px;
+                }
+            }
+
+            &-thumb {
+                padding-top: 65px;
+
+                @media #{$md} {
+                    padding-top: 30px;
+                }
+            }
+
+            &-content {
+                padding-top: 80px;
+                padding-bottom: 40px;
+
+                @media #{$md} {
+                    padding-top: 50px;
+                    padding-bottom: 0;
+
+                }
+            }
+
+            &-disc {
+                padding-bottom: 30px;
+
+                p {
+                    color: #ADB2C2;
+                }
+            }
+        }
+    }
+
+    &-inb {
+        &__blog {
+            /*
+            CHEF TEMPLATE BLOG STYLES
+        */
+            padding-top: 240px;
+
+            @media #{$lg} {
+                padding-top: 150px;
+            }
+
+            @media #{$md} {
+                padding-top: 150px;
+            }
+        }
+    }
+
+    &-inbd {
+        &__details {
+
+            /*
+            CHEF TEMPLATE BLOG DETAILS STYLES
+        */
+            .blog__details-wrap {
+                &.chef-box-wrap {
+                    background-color: var(--purple-4);
+
+                    @include light {
+                        background-color: var(--white-19);
+                    }
+                }
+            }
+
+        }
+    }
+
+    &-contact {
+        &__area {
+
+            /*
+            CHEF TEMPLATE CONTACT STYLES
+        */
+            .pdesigner-contact__type .icon {
+                border: 1px solid #ADB2C2;
+            }
+
+            &-form {
+                .input-item {
+
+                    input,
+                    textarea {
+                        background-color: #252d4460;
+
+                        &::placeholder {
+                            color: #ADB2C2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

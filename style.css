@@ -1,0 +1,864 @@
+/* CUSTOM */
+
+.experience__grid::after {
+  background-image: none !important;
+}
+
+
+.dark img {
+  filter: brightness(0.4) !important;
+}
+
+
+.writer-award__content {
+  grid-template-columns: 1fr;
+}
+
+
+.experience__grid {
+  grid-template-columns: 1fr;
+}
+
+.experience__item:nth-child(even) {
+  margin-inline-start: inherit;
+}
+
+.writer-award__area {
+  background-color:var(--white-3)
+}
+
+.experience__item {
+  padding: 15px;
+}
+
+.developer-resume__tab-menu {
+  font-family:"Prata", serif;
+  /* "euclid_Circular_B" */
+  /* "Prata", serif */
+}
+
+
+/* .anim-reveal-line {
+  text-align: left !important;
+} */
+
+ul.developer-resume-ul {
+  margin-left: 0px;
+}
+
+
+h3#resume-text {
+  text-align-last: start;
+}
+
+h3.exp-title, h4.company, h2.exp-time {
+  font-family:'euclid_Circular_B'
+}
+
+
+.writer-award__area {
+
+  background-color: white;
+}
+
+/* .light .pdesigner-resume__area {
+  background-color: var(--blue-2) !important;
+} */
+
+h3.award__title, h4.award__status, h2.award__date {
+  font-family:'euclid_Circular_B'
+}
+
+
+section.writer-featured__area.pt-20 {
+  background-color: white;
+}
+/* 
+div {
+  color: var(--blue-1) !important;
+} */
+
+.tg-guide__area.tg-pt-80.pb-180 {
+  /* background-color: white; */
+  /* background:  linear-gradient(0deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%); */
+  background-color: var(--white);
+
+}
+
+
+.light .writer-award__title span {
+  background-color: var(--blue-1) !important;
+
+}
+
+
+.light .text_invert > div {
+  background-image: linear-gradient(to right, var(--blue-1) 50%, rgba(66, 60, 60, 0.5) 50%)
+}
+
+
+.writer-award__content p {
+  font-size: 22px;
+}
+
+.light .pdesigner-resume__area {
+  background:  linear-gradient(0deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%);
+  background-color: var(--white);
+}
+
+
+.developer-resume__tab-menu ul li a.active {
+  background-color: #2470c2;
+}
+
+.light .developer-resume__tab-menu ul {
+  background-color: var(--blue-1);
+}
+
+.light .developer-resume__tab-menu ul li a {
+  color: var(--white-3);
+
+}
+
+.developer-resume__tab-menu ul li a::before {
+  background: #2470c2;
+}
+
+.light .experience__item .exp-title {
+  color: var(--blue-1);
+}
+
+section.tg-place__area.pb-160.pt-60 {
+  background:  linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%);
+  background-color: var(--white);
+}
+
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+  color: var(--blue-1);
+
+  
+}
+
+
+.line-col-3 {
+  display: none;
+}
+
+img#header-logo {
+  max-height:700px;
+}
+
+
+.writer-inab__hero-scroll-btn {
+  margin-top:40px;
+  margin-left:0px;
+}
+
+.light .writer-award__content p span {
+  color: var(--blue-1);
+  }
+
+
+  .fixed-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    height: 80px !important; /* Adjust this value as needed */
+    transform: none !important;
+    transition: none !important;
+}
+
+body {
+    padding-top: 80px; /* Should match the height of your header */
+}
+
+
+.header__area {
+  transition: background-color 0.3s ease;
+}
+
+.header__area.scrolled {
+  background-color: var(--blue-2) !important; /* Adjust this to your preferred blue color */
+}
+
+.header__area {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header__area.scrolled {
+  background-color: var(--blue-2) !important; /* Your preferred blue color */
+}
+
+.header__area.header-hidden {
+  transform: translateY(-100%) !important;
+}
+
+
+
+/* Optional: Adjust body padding to account for the header */
+body {
+  padding-top: 80px; /* Adjust to match your header height */
+  transition: padding-top 0.3s ease;
+}
+
+body.header-hidden {
+  padding-top: 0;
+}
+
+.light .footer-sfluence__logo img {
+  filter: brightness(0.03) !important;
+}
+
+
+.footer-sfluence__area {
+  background-color: var(--blue-1);
+}
+
+
+.light .footer-sfluence__menu ul li a {
+  color: white;
+}
+
+h2#black-tg-place {
+  color:black !important;
+}
+
+a#white-link {
+  color: white !important;
+  border: 1.5px solid white !important;
+}
+
+
+
+a#black-tg-link {
+  color: black !important;
+  border: 1.5px solid black !important;
+}
+
+.fa-brands, .fab {
+  color: white;
+}
+
+a#black-text {
+  color: white;
+}
+
+p#black-text {
+  color: white;
+}
+
+.footer-sfluence__logo::after {
+  background-color: white;
+}
+
+.footer-sfluence__logo {
+  filter: brightness(50);
+}
+
+/* img.show-light {
+  max-width: 20%;
+} */
+
+img#resume-icon {
+  max-width: 15%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  h3.tg-sec-title.has_fade_anim, h2.tg-sec-title.has_fade_anim {
+    color: var(--blue-1) !important;
+    mix-blend-mode: normal;
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .writer-award__content p {
+    font-size: 20px !important;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .footer-sfluence__top::before {
+    height: 0px;
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  img#mobile-dark {
+    filter: brightness(0.5)
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1199px) {
+  .brand__logo_flex {
+    gap:60px;
+  }
+}
+
+.writer-award__left {
+  padding-top: 30px;
+}
+
+
+.brand__logo img {
+  max-width: 150px;
+}
+
+/* Hide the shape on mobile devices */
+@media screen and (max-width: 767px) {
+  .shape-1.img_anim_reveal {
+      display: none;
+  }
+}
+
+.writer-award__content {
+  grid-gap: 15px;
+}
+
+.writer-award__content p {
+  margin-bottom: 0;
+}
+
+.writer-award__content .mt-20 {
+  margin-top: 5px; /* Reduced from 20px to 15px for desktop */
+}
+
+/* Slightly reduce spacing further on mobile */
+@media only screen and (max-width: 767px) {
+  .writer-award__content .mt-20 {
+    margin-top: 12px;
+  }
+}
+
+
+
+.offcanvas-3__area {
+  background-color: var(--blue-1);
+}
+
+.offcanvas-3__menu ul li a {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #fff 0) !important;
+}
+
+
+/* CUSTOM END */
+
+
+.dir-rtl .swiper-slide {
+  direction: rtl;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .portfolio-details-light .header__nav {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .portfolio-details-light .main-menu {
+    display: block !important;
+  }
+
+  .portfolio-details-light .main-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Popup styles */
+.mfp-bg {
+  opacity: 0.9;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.9;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.popup-image {
+  cursor: pointer;
+}
+
+/* Make sure images in popup are responsive */
+.mfp-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+}
+
+/* Make list items consistent with other text */
+.list-plus li {
+    font-size: 16px; /* or whatever base font size you're using for paragraphs */
+    line-height: 1.6;
+    font-family: inherit;
+}
+
+/* If needed, also ensure paragraphs have the same size */
+.project_overview p, 
+.project_overview li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-sm-thumb-single {
+  grid-template-columns: 1fr;
+}
+
+
+.fa-brands, .fab{
+  color: var(--blue-1) !important;
+}
+
+#white-text {
+  color: white !important;
+}
+
+.pdesigner-portfolio__area {
+  background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%);
+  background-color: var(--white);
+}
+
+.light .wc-btn-underline {
+  color: var(--blue-1) !important;
+}
+.tg-place__area-disc p {
+  font-family: 'euclid_Circular_B' !important;
+  color: var(--blue-1) !important;
+  text-transform: none !important;
+
+}
+
+
+.wc-btn-default.btn-hover-divide {
+  font-family: 'euclid_Circular_B' !important;
+  text-transform: none !important;
+  color: var(--blue-1) !important;
+
+}
+
+
+
+
+@media (max-width: 767px) {
+  /* Make award images smaller on mobile */
+  .award__item img {
+      max-width: 80px !important;  /* Adjust this value as needed */
+      height: auto !important;
+  }
+
+  /* Adjust the award grid layout */
+  .developer-award__grid {
+      grid-gap: 20px !important;
+  }
+
+  /* Make award items more compact */
+  .award__item {
+      padding: 15px !important;
+  }
+
+  /* Adjust award title size */
+  .award__title {
+      font-size: 16px !important;
+      line-height: 1.4 !important;
+      margin-top: 10px !important;
+  }
+
+  /* Adjust award date size */
+  .award__date {
+      font-size: 18px !important;
+  }
+
+  /* Adjust award status size */
+  .award__status {
+      font-size: 14px !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* Adjust main paragraph text */
+  .writer-award__content p {
+      font-size: 18px !important;
+      line-height: 1.6 !important;
+      margin-bottom: 12px !important;
+  }
+
+  /* Adjust the big letter size */
+  .big-letter {
+      font-size: 24px !important;
+      line-height: 1 !important;
+      margin-right: 2px !important;
+  }
+
+  /* Adjust spacing between paragraphs */
+  .mt-20 {
+      margin-top: 12px !important;
+  }
+
+  /* Make the content wrapper more compact */
+  .writer-award__content {
+      padding: 15px !important;
+  }
+
+
+  div#about-section {
+    padding-bottom: 0px !important;
+  }
+
+
+  /* Make experience items match award items styling */
+  .experience__item {
+    padding: 15px !important;
+  }
+
+  /* Match font sizes with award items */
+  .exp-time {
+    font-size: 18px !important;
+  }
+
+  .exp-title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-top: 10px !important;
+  }
+
+  .company {
+    font-size: 14px !important;
+  }
+
+  /* Adjust spacing */
+  .experience__grid {
+    grid-gap: 20px !important;
+  }
+
+  /* Make the content wrapper more compact */
+  .developer-experience__area {
+    padding: 15px !important;
+  }
+
+  /* Make tab menu text smaller on mobile */
+  .developer-resume__tab-menu ul li a {
+    font-size: 14px !important;
+    padding: 12px 15px !important;  /* Reduce padding to make tabs more compact */
+  }
+
+  /* Adjust the tab menu container */
+  .developer-resume__tab-menu {
+    margin-bottom: 20px !important;
+  }
+
+  /* Make the tab menu more compact */
+  .developer-resume-ul {
+    gap: 10px !important;  /* Reduce space between tabs */
+  }
+
+
+  .sec-title-wrapper {
+    padding-bottom: 20px !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .shape {
+    display: none !important;
+  }
+}
+
+/* Style Swiper navigation buttons */
+.tg-place-active .swiper-button-next,
+.tg-place-active .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  background-color: var(--blue-1);
+  border-radius: 50%;
+  color: white;
+}
+
+/* Style the arrow icons */
+.tg-place-active .swiper-button-next:after,
+.tg-place-active .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Add hover effect */
+.tg-place-active .swiper-button-next:hover,
+.tg-place-active .swiper-button-prev:hover {
+  background-color: var(--blue-1);
+}
+
+/* Position the buttons */
+.tg-place-active .swiper-button-prev {
+  left: 10px;
+}
+
+.tg-place-active .swiper-button-next {
+  right: 10px;
+}
+
+.tg-place__area-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tg-place__area-item {
+  margin: 0 auto !important; /* Override any existing margins */
+  max-width: 300px; /* Adjust this value based on your desired width */
+}
+
+/* Adjust the swiper container to respect the centering */
+.swiper.tg-place-active {
+  width: 100%;
+  max-width: 1200px; /* Adjust this value based on your layout needs */
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Default (mobile) styles */
+.swiper.tg-place-active {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .swiper.tg-place-active {
+    max-width: 900px; /* Reduce max-width for desktop */
+  }
+
+  .tg-place__area-item {
+    max-width: 300px; /* Adjust item width for desktop */
+  }
+
+  /* Adjust space between slides for desktop */
+  .swiper-slide {
+    padding: 0; /* Reduce padding between slides */
+    margin: 0;
+  }
+}
+
+/* Larger desktop styles */
+@media (min-width: 1440px) {
+  .swiper.tg-place-active {
+    max-width: 900px; /* Slightly larger for bigger screens */
+  }
+}
+
+/* Mobile styles for footer */
+@media (max-width: 767px) {
+  .footer-sfluence__area {
+    padding-bottom: 50px; /* Adjust this value as needed */
+  }
+  
+  .footer-sfluence__btm {
+    padding-bottom: 5px; /* Additional padding for the bottom section */
+  }
+}
+
+
+
+/* Initial state - white text */
+a#white-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Change link color to black when the thumbnail area is hovered */
+.tg-place__area-thumb:hover ~ .tg-place__area-content a#white-link {
+  color: black !important;
+}
+
+/* Also change the arrow icon color */
+.tg-place__area-thumb:hover ~ .tg-place__area-content a#white-link i {
+  color: black !important;
+}
+
+/* SmartSaver Roadmap - completely isolated classes */
+/* SmartSaver Roadmap Experience Styles */
+#resume-tab-2 .developer-experience__area {
+  padding: 0 !important;
+}
+
+#resume-tab-2 .experience-timeline {
+  position: relative !important;
+  padding-left: 40px !important;
+  margin-top: 20px !important;
+}
+
+#resume-tab-2 .experience-timeline-line {
+  display: none !important;
+}
+
+#resume-tab-2 .experience-timeline::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 10px !important;
+  width: 2px !important;
+  background-color: #3498db !important;
+  z-index: 1 !important;
+}
+
+#resume-tab-2 .experience-item {
+  position: relative !important;
+  margin-bottom: 40px !important;
+  animation: fadeIn 0.6s ease-in-out forwards !important;
+  opacity: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(1) {
+  animation-delay: 0.2s !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(2) {
+  animation-delay: 0.4s !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(3) {
+  animation-delay: 0.6s !important;
+}
+
+#resume-tab-2 .experience-item:nth-child(4) {
+  animation-delay: 0.8s !important;
+}
+
+#resume-tab-2 .experience-year {
+  display: none !important;
+}
+
+#resume-tab-2 .experience-dot {
+  position: absolute !important;
+  left: -30px !important;
+  top: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  background-color: #2980b9 !important;
+  border: 3px solid #fff !important;
+  box-shadow: 0 0 0 2px #3498db !important;
+  z-index: 2 !important;
+}
+
+#resume-tab-2 .experience-dot.current {
+  background-color: #2980b9 !important;
+}
+
+#resume-tab-2 .experience-content {
+  background-color: #f8f9fa !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+  border-left: 3px solid #3498db !important;
+  transition: transform 0.3s ease !important;
+  margin-left: 0 !important;
+}
+
+#resume-tab-2 .experience-content:hover {
+  transform: translateX(5px) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+}
+
+#resume-tab-2 .experience-content h4 {
+  margin: 0 0 8px 0 !important;
+  color: #2c3e50 !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+}
+
+#resume-tab-2 .experience-date {
+  font-style: italic !important;
+  color: #7f8c8d !important;
+  margin: 0 0 10px 0 !important;
+  font-size: 0.9rem !important;
+}
+
+#resume-tab-2 .experience-details p {
+  font-weight: bold !important;
+  margin: 5px 0 !important;
+  color: #34495e !important;
+}
+
+#resume-tab-2 .experience-highlights {
+  margin: 10px 0 0 !important;
+  padding-left: 20px !important;
+  list-style-type: disc !important;
+}
+
+#resume-tab-2 .experience-highlights li {
+  margin-bottom: 5px !important;
+  color: #333 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #resume-tab-2 .experience-timeline {
+    padding-left: 30px !important;
+  }
+  
+  #resume-tab-2 .experience-content {
+    padding: 15px !important;
+  }
+  
+  #resume-tab-2 .experience-timeline::before {
+    left: 8px !important;
+  }
+  
+  #resume-tab-2 .experience-dot {
+    width: 16px !important;
+    height: 16px !important;
+    left: -24px !important;
+  }
+}

@@ -1,0 +1,170 @@
+.wcf__portfolio-2 {
+
+  a,
+  button {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .wcf__slider {
+    text-align: center;
+    margin: 0 auto;
+    --slides-to-show: 3;
+    --space-between: 80px;
+
+    &:not(.swiper-initialized) {
+      .swiper-wrapper {
+        gap: var(--space-between);
+      }
+
+      .swiper-slide {
+        width: calc((100% / var(--slides-to-show)) - (var(--space-between) * (var(--slides-to-show) - 1) / var(--slides-to-show)));
+      }
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--white, #fff);
+    transition: all 0.3s;
+
+    @include light {
+      color: var(--black-2, #1C1D20);
+    }
+
+    @media #{$sm} {
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: var(--primary, #E8BF96);
+    }
+  }
+
+  .meta {
+
+    a,
+    time {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 2;
+      color: var(--gray-4, #999);
+
+      @include light {
+        color: var(--gray, #666);
+      }
+    }
+
+    a:hover {
+      color: var(--primary, #E8BF96);
+    }
+  }
+
+  .pf-pagination {
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    &-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: var(--primary, #E8BF96);
+    }
+  }
+
+  .pf-navigation {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row-reverse;
+
+    @include rtl {
+      flex-flow: row;
+    }
+  }
+
+
+  &.style {
+    &-1 {
+      .wcf__slider {
+        margin-right: -300px;
+
+        @media #{$xxl} {
+          margin-right: -240px;
+        }
+
+        @media #{$xl} {
+          margin-right: -200px;
+        }
+
+        @media #{$sm} {
+          margin-right: 0;
+        }
+      }
+
+      .image {
+        margin-bottom: 30px;
+
+        @media #{$lg} {
+          margin-bottom: 20px;
+        }
+
+        @media #{$sm} {
+          margin-bottom: 10px;
+        }
+      }
+
+      .title,
+      .subtitle {
+        text-transform: uppercase;
+      }
+
+      .pf-navigation,
+      .pf-pagination {
+        margin-top: 50px;
+
+        @media #{$sm} {
+          margin-top: 30px;
+        }
+      }
+
+      .wcf-arrow {
+        svg {
+          width: 1em;
+          height: 1em;
+          font-size: 22px;
+        }
+
+        i {
+          font-size: 22px;
+          transition: all 0.3s;
+
+          @include light {
+            color: var(--black-2, #1C1D20);
+          }
+        }
+
+        path {
+          transition: all 0.3s;
+
+          @include light {
+            fill: var(--black-2, #1C1D20);
+          }
+        }
+
+        &:hover {
+          path {
+            fill: var(--primary, #E8BF96);
+          }
+
+          i {
+            color: var(--primary, #E8BF96);
+          }
+        }
+      }
+    }
+  }
+}

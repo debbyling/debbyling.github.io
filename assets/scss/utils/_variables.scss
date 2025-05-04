@@ -1,0 +1,197 @@
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Axtra - Digital Agency HTML5 Template
+  Author: Crowdyflow
+  Support: habib.crowdyflow@gmail.com
+  Description: BUILDY – is a  Constructor HTML5 template that comes with high-quality 3 Pre build Home Pages and many built-in awesome inner pages  which are perfect for any creative agencies, designers, digital agencies, freelancers, developers, designers, marketing, startup, blog and portfolio.
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+  01. VARIBALES CSS START
+  02. BASE CSS START
+  03. TYPOGRAPHY CSS START
+  04. BUTTON CSS START
+  05. TITLE CSS START
+  06. WIDGET CSS START
+  07. ANIMATION CSS START
+  08. SCROLL CSS START
+  09. LOADING CSS START
+  10. MODAL CSS START
+  11. HEADER CSS START
+  12. HERO CSS START
+  13. OFFCANVAS CSS START
+  14. BREADCRUMB CSS START
+  15. SLIDER CSS START
+  16. ABOUT CSS START
+  17. SERVICE CSS START
+  18. COUNTER CSS START
+  19. CASE STUDY CSS START
+  20. FAQ CSS START
+  21. TESTIMONIAL CSS START
+  22. TEAM CSS START
+  23. PORTFOLIO CSS START
+  24. COMPANY CSS START
+  25. FEATURE CSS START
+  26. PROGRESS CSS START
+  27. WORKFLOW CSS START
+  28. STEP CSS START
+  29. GALLERY CSS START
+  30. BLOG CSS START
+  31. CONTACT CSS START
+  32. 404 CSS START
+  33. FOOTER CSS START
+**********************************************/
+
+
+/*----------------------------------------*/
+/*  01. VARIBALES CSS START
+/*----------------------------------------*/
+
+
+// Colors
+:root {
+  --primary: #E8BF96;
+  --secondary: #2c2c2c;
+
+  --black: #000;
+  --black-2: #1C1D20;
+  --black-3: #212125;
+  --black-4: #262629;
+  --black-5: #27272B;
+  --black-6: #333337;
+  --black-7: #27292D;
+  --black-8: #222227;
+  --black-9: #999999;
+  --black-10: #272422;
+  --black-11: #1D1917;
+  --black-12: #343231;
+  --black-13: #3C3636;
+  --black-14: #39393D;
+  --black-15: #141415;
+  --black-16: #202C58;
+
+  --white: #fff;
+  --white-2: #F9F9F9;
+  --white-3: #F3F3F3;
+  --white-4: #EFEFEF;
+  --white-5: #C1C1C1;
+  --white-6: #C9C6DE;
+  --white-7: #CDCDCD;
+  --white-8: #C7C7D7;
+  --white-9: #F5F5F5;
+  --white-10: #F0EDEB;
+  --white-11: #F0ECE9;
+  --white-12: #DDD2CC;
+  --white-13: #F6EEEA;
+  --white-14: #F4F0ED;
+  --white-15: #F3F0E4;
+  --white-16: #F2F0E5;
+  --white-17: #F8F8FC;
+  --white-18: #F6F3F0;
+  --white-19: #FBFAF7;
+
+  --gray: #666666;
+  --gray-2: #D9D9D9;
+  --gray-3: #636376;
+  --gray-4: #999999;
+  --gray-5: #232327;
+  --gray-6: #44454A;
+  --gray-7: #63637B;
+  --gray-8: #3B3B3F;
+  --gray-9: #3F3A36;
+  --gray-10: #555555;
+  --gray-11: #89827A;
+  --gray-12: #756F68;
+  --gray-13: #E9E9E9;
+  --gray-14: #3F4044;
+
+  --orange: #FD8F77;
+  --orange-deep: #EF6C22;
+  --orange-light: #BAB0AA;
+  --orange-2: #F56C1F;
+  --orange-3: #F3A072;
+
+
+  --blue-light: #52526C;
+  --blue-2: #3D3F60;
+  --blue-3: #6A6BBF;
+  --blue-4: #494B6C;
+  --blue-5: #BBBCD2;
+  --blue-6: #3F4061;
+  --blue-7: #433E5F;
+  --blue-8: #393B5A;
+  --blue-9: #58597D;
+
+  --yellow: #F4D8BB;
+  --yellow-light: #E8E0DB;
+  --yellow-2: #C2B7A1;
+  --yellow-3: #FFC700;
+  --yellow-4: #F59B14;
+  --yellow-5: #F2DCA1;
+
+  --purple: #AF89FF;
+  --purple-2: #D4BFFF;
+  --purple-3: #8181CB;
+  --purple-4: #384364;
+  --purple-5: #252D44;
+
+  --pink: #F8D3D3;
+  --pink-2: #FFA98D;
+  --pink-3: #F4E5D3;
+  --pink-4: #F2EDE1;
+  --pink-5: #FFD6B0;
+  --pink-6: #E7E2D1;
+  --pink-7: #DAD6C6;
+  --pink-8: #FDC1B4;
+  --pink-9: #F4E6D5;
+  --pink-10: #EEE5DC;
+  --pink-11: #DCAF82;
+  --pink-12: #E4DDD5;
+  --pink-13: #F2F1F0;
+  --pink-14: #FCF8F5;
+
+  --green: #3C524C;
+  --green-2: #668D7F;
+  --green-3: #7BD1C4;
+  --green-4: #B1E9B9;
+  --green-5: #4D605A;
+  --green-6: #3F524C;
+  --green-7: #89D0C3;
+  --green-8: #4C605A;
+  --green-9: #A0C1A8;
+  --green-10: #81C9BC;
+  --green-11: #D2EAF1;
+
+  --blue-1: #0D3570;
+  --blue-2: #E2F3FF;
+
+  --red: #F02E27;
+
+}
+
+
+// Responsive Variable
+$xxxl: 'only screen and (min-width: 1920px)';
+$xxl: 'only screen and (max-width: 1919px)';
+$xl-1: 'only screen and (max-width: 1700px)';
+$xl-2: 'only screen and (max-width: 1300px)';
+$xl: 'only screen and (max-width: 1399px)';
+$lg: 'only screen and (max-width: 1199px)';
+$md: 'only screen and (max-width: 991px)';
+$sm: 'only screen and (max-width: 767px)';
+$xs: '(max-width: 575px)';
+
+// For Box Layout
+$bl: 'only screen and (min-width: 1600px)';
+
+
+// Responsive Variable for container
+$cxxl: '(width > 1919px)';
+$cxl: '(width > 1399px)';
+$clg: '(width > 1199px)';
+$cmd: '(width > 991px)';
+$csm: '(width > 767px)';
+$cxs: '(width > 575px)';

@@ -1,0 +1,374 @@
+/*----------------------------------------*/
+/*  01. THEME CSS START
+/*----------------------------------------*/
+
+// for image transparency 
+// img[src$=".jpg"] {
+//   filter: brightness(0.1);
+// }
+
+
+html {
+  --container-max-widths: 1320px;
+
+  @media #{$xl} {
+    --container-max-widths: 1140px;
+  }
+
+  @media #{$lg} {
+    --container-max-widths: 960px;
+  }
+
+  @media #{$md} {
+    --container-max-widths: 720px;
+  }
+
+  @media #{$sm} {
+    --container-max-widths: 540px;
+  }
+}
+
+
+body {
+  background-color: var(--white-9);
+  color: var(--gray-4);
+
+  &.light {
+    color: var(--gray);
+  }
+}
+
+.body-wrapper {
+  background-color: var(--black-2);
+
+  @include light {
+    background-color: var(--white);
+  }
+}
+
+.img_anim_reveal {
+  visibility: hidden;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    transform-origin: left;
+  }
+}
+
+.anim-reveal {
+  overflow: hidden;
+}
+
+.anim-reveal-line {
+  overflow: hidden;
+}
+
+
+.color {
+  &-white {
+    color: var(--white) !important;
+
+    @include light {
+      color: var(--black-2) !important;
+    }
+  }
+
+  &-dark {
+    color: var(--black-2) !important;
+  }
+
+  &-black {
+    color: var(--black) !important;
+  }
+
+  &-gray {
+    color: var(--gray) !important;
+  }
+
+  &-primary {
+    color: var(--primary) !important;
+  }
+
+  &-secondary {
+    color: var(--secondary) !important;
+  }
+
+  &-blue {
+    color: #6A6BBF !important;
+  }
+
+  &-blue-2 {
+    color: #3F4061 !important;
+  }
+
+  &-red {
+    color: #D20A0A;
+  }
+
+  &-green {
+    color: #83B002;
+  }
+
+  &-light {
+    color: var(--white);
+
+    @include light {
+      color: var(--black-2);
+    }
+  }
+
+  &-purple-light {
+    color: #202C58 !important;
+  }
+
+
+}
+
+
+// BG Color
+.wc-bg {
+  &-dark {
+    background-color: #1C1D20 !important;
+
+    &-2 {
+      background-color: #272422 !important;
+    }
+
+    &-3 {
+      background-color: #262629 !important;
+    }
+
+    &-4 {
+      background-color: #141415 !important;
+    }
+
+    &-5 {
+      background-color: #212125 !important;
+    }
+
+
+  }
+
+  &-light {
+    background-color: #fff !important;
+
+    &-2 {
+      background-color: #F2F0E5 !important;
+    }
+
+    &-3 {
+      background-color: #F9F9F9 !important;
+    }
+
+    &-4 {
+      background-color: #F2F1F0 !important;
+    }
+
+    &-5 {
+      background-color: #F2F1F0 !important;
+    }
+
+    &-6 {
+      background-color: #F6F3F0 !important;
+    }
+
+    &-7 {
+      background-color: #E4F2F6 !important;
+    }
+
+    &-8 {
+      background-color: #F6F6FA !important;
+    }
+
+    &-9 {
+      background-color: #FBF8F3 !important;
+    }
+  }
+
+  &-pink {
+    background-color: #F2EDE1 !important;
+
+    &-2 {
+      background-color: #F4F0ED !important;
+    }
+
+  }
+
+  &-purple {
+    background-color: #D4BFFF !important;
+  }
+
+  &-green {
+    background-color: #3C524C !important;
+  }
+
+  &-blue-6 {
+    background-color: var(--blue-6) !important;
+  }
+
+  &-blue-7 {
+    background-color: var(--blue-7) !important;
+  }
+
+  &-blue-8 {
+    background-color: var(--blue-8) !important;
+  }
+
+  &-transparent {
+    background-color: transparent !important;
+  }
+}
+
+.zi {
+  &-0 {
+    z-index: 0;
+    position: relative;
+  }
+
+  &-1 {
+    z-index: 1;
+    position: relative;
+  }
+
+  &-2 {
+    z-index: 2;
+    position: relative;
+  }
+
+  &-3 {
+    z-index: 3;
+    position: relative;
+  }
+
+  &_3 {
+    z-index: 3;
+  }
+
+  &-5 {
+    z-index: 5;
+    position: relative;
+  }
+
+  &-6 {
+    z-index: 6;
+    position: relative;
+  }
+
+  &-7 {
+    z-index: 7;
+    position: relative;
+  }
+
+  &-8 {
+    z-index: 8;
+    position: relative;
+  }
+
+  &-9 {
+    z-index: 9;
+    position: relative;
+  }
+}
+
+
+// Box Layout
+.box-layout {
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden !important;
+}
+
+
+// Text Border
+.text-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+
+.header__area-6 {
+  position: unset;
+}
+
+.vertically-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Text Indent
+.text-indent {
+  &-40 {
+    text-indent: 40px;
+  }
+
+  &-50 {
+    text-indent: 50px;
+  }
+}
+
+
+
+header {
+  margin-bottom: -1px;
+  z-index: 100;
+}
+
+section {
+  margin-bottom: -1px;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.show-dark {
+  display: inline-block;
+
+  @include light {
+    display: none;
+  }
+}
+
+.show-light {
+  display: none;
+
+  @include light {
+    display: inline-block;
+  }
+}
+
+.line-divider-sm {
+  height: 0.5px;
+  background-color: var(--black-9);
+
+  @include light {
+    background-color: #E9E9E9;
+  }
+}
+
+
+// wordpress reset style 
+.admin-bar header,
+.admin-bar .body-wrapper {
+  margin-top: 32px;
+}
+
+
+
+// swiper rtl support 
+.swiper,
+.swiper-container {
+  direction: ltr;
+}
+
+.border-e-0 {
+  border-inline-end: 0 !important;
+}
+
+.border-s-0 {
+  border-inline-start: 0 !important;
+}

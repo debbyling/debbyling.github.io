@@ -1,0 +1,176 @@
+/*----------------------------------------*/
+/*  01. MIXIN CSS START
+/*----------------------------------------*/
+
+
+
+// Z Index
+@mixin zi($n) {
+  position: relative;
+  z-index: $n;
+}
+
+
+// Align verticaly center
+@mixin vertically_center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+// Align verticaly center
+@mixin vertically_center_2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+// Link border
+@mixin border_btm($color, $hcolor ) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: $color;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: $hcolor;
+
+    &::after {
+      width: 0%;
+      background: $hcolor;
+    }
+  }
+}
+
+
+// Title
+@mixin title($color, $fsize ) {
+  font-family: $font_estedad;
+  font-weight: 500;
+  font-size: $fsize;
+  line-height: 1.5;
+  color: $color;
+}
+
+@mixin title_sm($color) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color;
+  text-transform: uppercase;
+}
+
+@mixin title_md($color ) {
+  font-family: $font_estedad;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.1;
+  color: $color;
+  text-transform: uppercase;
+}
+
+// Social Media
+@mixin social_media($color, $hcolor) {
+  display: inline-block;
+
+  a {
+    display: block;
+    color: $color;
+    font-size: 20px;
+    padding-right: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $hcolor;
+    }
+  }
+}
+
+
+
+@mixin bgLeft($color: var(--black-3)) {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: calc(50% - (var(--container-max-widths) * .25));
+    height: 100%;
+    background-color: $color;
+    inset-inline-start: 0;
+    top: 0;
+    z-index: -1;
+
+    @include light {
+      background-color: var(--white-2);
+    }
+
+    @media #{$sm} {
+      display: none;
+    }
+  }
+}
+
+
+// 
+@mixin wc_overlay($bg_color: rgba(0, 0, 0, 0.3)) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-color: $bg_color;
+  }
+}
+
+// light 
+@mixin light {
+  .light & {
+    @content;
+  }
+}
+
+// Box Layout 
+@mixin boxLayout {
+  .box-layout & {
+    @content;
+  }
+}
+
+// RTL Language 
+@mixin rtl {
+  .dir-rtl & {
+    @content;
+  }
+}
+
+// heading  
+@mixin heading($font_family) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font_family;
+  }
+}

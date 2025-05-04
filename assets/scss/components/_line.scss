@@ -1,0 +1,70 @@
+//  Line CSS
+
+
+.line {
+  position: relative;
+
+  &-col {
+    &-4 {
+      div {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--black-5);
+
+        &:nth-child(2) {
+          left: 33.33%;
+        }
+
+        &:nth-child(3) {
+          left: 66.66%;
+        }
+
+        &:nth-child(4) {
+          left: 100%;
+        }
+      }
+    }
+
+    // Line 3
+    &-3 {
+      div {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--black-5);
+
+        &:nth-child(2) {
+          left: 50%;
+        }
+
+        &:nth-child(3) {
+          left: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Light Version
+.light {
+  .line {
+    &-col {
+
+      &-4,
+      &-3 {
+        div {
+          background: var(--white-4);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>Debby's Projects</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon-dl.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/progressbar.css">
+  <link rel="stylesheet" href="../assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/basictable.min.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+
+<body class="font-heading-romanstory light">
+
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="D" class="characters">D</span>
+          <span data-text="E" class="characters">E</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="Y" class="characters">Y</span>
+
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap d-none">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="dark">dark</button>
+          <button data-mode="light">light</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width">Full Width</button>
+          <button data-mode="box-layout">Box Layout</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+
+
+            
+            <ul>
+
+              <li><a href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a></li>
+
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <h4 class="title">Follow Me</h4>
+            <div class="offcanvas-3__social-links">
+
+
+              <a id="white-text" href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope" id="white-text" ></i></span></a>
+              <a id="white-text" href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin" id="white-text"></i></span></a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#about-section">about me</a></li>
+            <li><a href="#resume-section">Highlighted Projects</a></li>
+            <li><a href="portfolio.html">All Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header class="header__area bg-transparent pos-abs plr-100">
+          <div class="header__inner menu-right">
+            <div class="header__logo">
+              <a href="index.html" target="_blank">
+                <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
+              </a>
+            </div>
+            <div class="header__nav tg-header__nav">
+              <nav class="main-menu menu-dark">
+                <ul>
+                  <li><a href="index.html" target="_blank">home</a></li>
+                  <li><a href="index.html?section=about-section">about</a></li>
+                  <li><a href="index.html?section=resume-section">resume</a></li>
+                  <li class="menu-item-has-children"><a href="#">Projects</a>
+                    <ul class="dp-menu">
+                      <li><a href="index.html?section=highlight-section" target="_blank">Highlighted Projects</a></li>
+                      <li><a href="portfolio.html" target="_blank">All Projects</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index.html?section=contact" target="_blank">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tg-header__navicon">
+              <div class="tg-header__search">
+                <button type="button" class="search-icon" id="search_icon"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="search-icon" id="search_close"><i class="fa-solid fa-xmark"></i></button>
+                <div class="info-search__area tg-search">
+                  <form action="#">
+                    <input type="text" name="search" placeholder="Search keyword">
+                    <button type="submit" class="info-search__area-btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </div>
+              </div>
+              <button onclick="showCanvas3()" class="open-offcanvas">
+                <span class="menu-icon-2"><span></span></span> </button>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+
+        <main>
+
+
+
+          <!-- Portfolio section end -->
+          <section class="pdesigner-portfolio__area" id="work">
+            <div class="container line pt-120 pb-130">
+              <div class="line-col-3">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="sec-title-wrapper">
+                    <div class="pb-20">
+                      <h2 class="sec-sub-title has_char_anim">Portfolio</h2>
+                    </div>
+                    <h3 class="sec-title has_text_reveal_anim">ALL PROJECTS</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="pdesigner-portfolio__btn-list has_pdlist_btn_animation">
+                    <button data-filter="all"><span>01</span> View All</button>
+                    <button data-filter=".data"><span>02</span> Data</button>
+                    <button data-filter=".development"><span>03</span> Development</button>
+                  </div>
+
+                  <div class="mixitup-active">
+                    <div class="pdesigner-portfolio__flex has_pdportfolio_animation">
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-NDR.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/ndr.html" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="projects/ndr.html" target="_blank" class="pdesigner-portfolio__title">National Day Rally Speech Analysis</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="pdesigner-portfolio__item large mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="projects/smartsaver.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/smartsaver-page/smartsaver-homepage2.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/smartsaver.html" target="_blank" class="pdesigner-portfolio__category">Development</a> </li>
+                            <li><a href="projects/smartsaver.html" target="_blank" class="pdesigner-portfolio__title">SmartSaver: Bank Calculator</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="pdesigner-portfolio__item large mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="projects/birdhouse.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-birdhouse.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/birdhouse.html" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="projects/birdhouse.html" target="_blank" class="pdesigner-portfolio__title">Build for Good Hackathon Winning Team</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="pdesigner-portfolio__item large mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="projects/virtual-veteran.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-vv.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/virtual-veteran.html" target="_blank" class="pdesigner-portfolio__category">Development
+                                </a> </li>
+                            <li><a href="projects/virtual-veteran.html" target="_blank" class="pdesigner-portfolio__title">Virtual Veteran RAG Chatbot</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="projects/young-esomar.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-esomar.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/young-esomar.html" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="projects/young-esomar.html" target="_blank" class="pdesigner-portfolio__title">Young ESOMAR Society Award</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="projects/topic-modelling.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-topic-modelling.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/topic-modelling.html" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="projects/topic-modelling.html" target="_blank" class="pdesigner-portfolio__title">Topic modelling by song lyrics</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="projects/kpop.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/kpop.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="projects/kpop.html" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="projects/kpop.html" target="_blank" class="pdesigner-portfolio__title">Network Analysis of K-pop Celebrities</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://public.tableau.com/app/profile/debby2612/viz/OnTrack-RedefiningUrbanTapestryfromRailtoRealEstate/Station1TravelAcrossTime" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/rail_dashboard.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://public.tableau.com/app/profile/debby2612/viz/OnTrack-RedefiningUrbanTapestryfromRailtoRealEstate/Station1TravelAcrossTime" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="https://public.tableau.com/app/profile/debby2612/viz/OnTrack-RedefiningUrbanTapestryfromRailtoRealEstate/Station1TravelAcrossTime" target="_blank" class="pdesigner-portfolio__title">Rail Dashboard (Data and AI Tournament Winning Entry)</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="pdesigner-portfolio__item mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://debby-ling.medium.com/building-a-singapore-sign-language-sgsl-recognition-model-with-opencv-and-mediapipe-7d8a36f35cbd" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-sgsl.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://debby-ling.medium.com/building-a-singapore-sign-language-sgsl-recognition-model-with-opencv-and-mediapipe-7d8a36f35cbd" target="_blank" class="pdesigner-portfolio__category">Development</a> </li>
+                            <li><a href="https://debby-ling.medium.com/building-a-singapore-sign-language-sgsl-recognition-model-with-opencv-and-mediapipe-7d8a36f35cbd" target="_blank" class="pdesigner-portfolio__title">Singapore Sign Language</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="pdesigner-portfolio__item mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://medium.com/@debby-ling/deploying-a-machine-learning-model-using-flask-vue-js-fd5d5f0bb107" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-lyrics.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://medium.com/@debby-ling/deploying-a-machine-learning-model-using-flask-vue-js-fd5d5f0bb107" target="_blank" class="pdesigner-portfolio__category">Data
+                                </a> </li>
+                            <li><a href="https://medium.com/@debby-ling/deploying-a-machine-learning-model-using-flask-vue-js-fd5d5f0bb107" target="_blank" class="pdesigner-portfolio__title">Developing an image classifier (Flask + Vue.js)</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://github.com/dzldebby/finance-tracker" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-stock.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://github.com/dzldebby/finance-tracker" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="https://github.com/dzldebby/finance-tracker" target="_blank" class="pdesigner-portfolio__title">Predicting stock prices and send email alerts</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="pdesigner-portfolio__item mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://github.com/dzldebby/python-charter" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-powerpoint.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://github.com/dzldebby/python-charter" target="_blank" class="pdesigner-portfolio__category">Development</a> </li>
+                            <li><a href="https://github.com/dzldebby/python-charter" target="_blank" class="pdesigner-portfolio__title">Customised powerpoint charting tool with Python</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="pdesigner-portfolio__item mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://debbyling.github.io/covid19.html" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-covid.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://debbyling.github.io/covid19.html" target="_blank" class="pdesigner-portfolio__category">Development</a> </li>
+                            <li><a href="https://debbyling.github.io/covid19.html" target="_blank" class="pdesigner-portfolio__title">COVID-19 Timeline</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="pdesigner-portfolio__item mix development">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://docs.google.com/presentation/d/171YHP3YpzRJdkOS83lq8tJiDvWJj7-dyARoxvoGC4ZU/edit?usp=drive_link" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-react.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://docs.google.com/presentation/d/171YHP3YpzRJdkOS83lq8tJiDvWJj7-dyARoxvoGC4ZU/edit?usp=drive_link" target="_blank" class="pdesigner-portfolio__category">Development</a> </li>
+                            <li><a href="https://docs.google.com/presentation/d/171YHP3YpzRJdkOS83lq8tJiDvWJj7-dyARoxvoGC4ZU/edit?usp=drive_link" target="_blank" class="pdesigner-portfolio__title">ReactJS Pre-Bootcamp Workshop Trainer</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="pdesigner-portfolio__item large mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-techladies.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85" target="_blank" class="pdesigner-portfolio__category">Development</a> </li>
+                            <li><a href="https://debby-ling.medium.com/techladies-bootcamp-6-building-a-volunteer-management-system-for-its-raining-raincoats-483641e04c85" target="_blank" class="pdesigner-portfolio__title">Techladies Bootcamp - Volunteer Management System</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="pdesigner-portfolio__item mix data">
+                        <div class="pdesigner-portfolio__thumb">
+                          <a href="https://public.tableau.com/app/profile/debby2612/viz/Influencinge-commercebehaviour/Dashboard1" target="_blank">
+                            <img src="../assets/imgs/portfolio-page/portfolio-youtube.png" alt="Portfolio Thumbnail">
+                          </a>
+                        </div>
+                        <div class="pdesigner-portfolio__content">
+                          <ul>
+                            <li><a href="https://public.tableau.com/app/profile/debby2612/viz/Influencinge-commercebehaviour/Dashboard1" target="_blank" class="pdesigner-portfolio__category">Data</a> </li>
+                            <li><a href="https://public.tableau.com/app/profile/debby2612/viz/Influencinge-commercebehaviour/Dashboard1" target="_blank" class="pdesigner-portfolio__title">Effect of congruence on advertisements</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="row">
+                <div class="col-xxl-12">
+                  <div class="cf_btn wc-btn has_fade_anim" data-fade-from="top" data-ease="bounce">
+                    <a href="portfolio-light.html" class="btn-hover-mask">Load more works <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          <!-- Portfolio section start -->
+
+
+
+        </main>
+        <!-- Footer area start -->
+        <footer class="footer-sfluence__area" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="footer-sfluence__logo">
+                  <img src="../assets/imgs/logo-white.png" alt="Footer Logo">
+                </div>
+
+                <div class="footer-sfluence__top">
+                  <div class="footer-sfluence__menu">
+                    <ul>
+                      <li><a href="#about-section">About me</a></li>
+                      <li><a href="#resume-section">My Resume</a></li>
+                      <li><a href="#highlight-section">Highlights</a></li>
+                      <li><a href="portfolio.html">All Projects</a></li>
+                      <!-- <li><a href="#">Company</a></li>
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Project</a></li> -->
+                    </ul>
+                  </div>
+
+                  <div class="footer-sfluence__social">
+                    <ul>
+                      <li><a href="#"><span><i class="fa-brands fa-twitter" id="white-text"></i></span></a></li>
+                      <li><a href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope" id="white-text"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin" id="white-text"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-sfluence__btm" id="about-section">
+                  <p id="white-text">© All rights reserved by <a id="white-text" href="http://debbyling.github.io">Debby Ling</a> </p>
+                  <a id="white-text" href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer area end -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/typed.js"></script>
+  <script src="../assets/js/mixitup.min.js"></script>
+  <script src="../assets/js/progressbar.js"></script>
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollSmoother.min.js"></script>
+  <script src="../assets/js/ScrollToPlugin.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/SplitText.min.js"></script>
+  <script src="../assets/js/TweenMax.min.js"></script>
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/error-handling.js"></script>
+  <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor-copy.js"></script>
+
+  <script>
+  // Close offcanvas menu when any navigation link is clicked
+  document.addEventListener('DOMContentLoaded', function() {
+      const offcanvasLinks = document.querySelectorAll('.offcanvas-3__menu a');
+      
+      offcanvasLinks.forEach(link => {
+          link.addEventListener('click', function() {
+              hideCanvas3(); // Call the existing hideCanvas3 function to close the menu
+          });
+      });
+  });
+  </script>
+
+</body>
+
+</html>

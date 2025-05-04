@@ -1,0 +1,1228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG8MJ70B8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SG8MJ70B8B');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>Debby's</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/logo/favicon-dl.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/progressbar.css">
+  <link rel="stylesheet" href="../assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/basictable.min.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* Roadmap Styling for Resume */
+    .roadmap-container {
+      margin: 40px 0;
+      position: relative;
+    }
+    
+    .roadmap-timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+    
+    .roadmap-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 92px;
+      width: 4px;
+      background: linear-gradient(to bottom, 
+        var(--blue-1) 0%, 
+        var(--blue-1) 28%, 
+        #ddd 28%, 
+        #ddd 100%);
+      border-radius: 4px;
+    }
+    
+    .roadmap-item {
+      position: relative;
+      margin-bottom: 50px;
+      display: flex;
+    }
+    
+    .roadmap-version {
+      width: 60px;
+      padding-top: 5px;
+      font-weight: 600;
+      text-align: right;
+      font-size: 16px;
+      color: #555;
+    }
+    
+    .roadmap-dot {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--blue-1);
+      margin: 0 20px;
+      z-index: 1;
+      box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
+    }
+    
+    .roadmap-dot.current {
+      background-color: #2470c2;
+      box-shadow: 0 0 0 6px rgba(36, 112, 194, 0.3), 0 0 0 10px rgba(36, 112, 194, 0.1);
+      animation: pulse 2s infinite;
+    }
+    
+    .roadmap-dot.future {
+      background-color: #9E9E9E;
+      box-shadow: 0 0 0 4px rgba(158, 158, 158, 0.2);
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 6px rgba(36, 112, 194, 0.3), 0 0 0 10px rgba(36, 112, 194, 0.1);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(36, 112, 194, 0.3), 0 0 0 16px rgba(36, 112, 194, 0.1);
+      }
+      100% {
+        box-shadow: 0 0 0 6px rgba(36, 112, 194, 0.3), 0 0 0 10px rgba(36, 112, 194, 0.1);
+      }
+    }
+    
+    .roadmap-content {
+      flex: 1;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .roadmap-item.past .roadmap-content {
+      border-left: 4px solid var(--blue-1);
+    }
+    
+    .roadmap-item.current .roadmap-content {
+      border-left: 4px solid #2470c2;
+      background-color: rgba(36, 112, 194, 0.05);
+    }
+    
+    .roadmap-item.future .roadmap-content {
+      border-left: 4px solid #9E9E9E;
+      opacity: 0.85;
+    }
+    
+    .roadmap-content:hover {
+      transform: translateX(5px);
+    }
+    
+    .roadmap-content h4 {
+      margin: 0 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .roadmap-date {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .roadmap-details p {
+      margin-bottom: 10px;
+    }
+    
+    .roadmap-features {
+      list-style: none;
+      padding-left: 5px;
+      margin: 0;
+    }
+    
+    .roadmap-features li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #555;
+    }
+    
+    .roadmap-features li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--blue-1);
+    }
+    
+    .roadmap-item.future .roadmap-features li:before {
+      content: '○';
+      color: #9E9E9E;
+    }
+    
+    /* Expandable content styling */
+    .roadmap-features {
+      display: none;
+      padding-top: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .roadmap-content {
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .roadmap-content:after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--blue-1);
+      transition: transform 0.3s ease;
+    }
+    
+    .roadmap-item.expanded .roadmap-content:after {
+      content: '−';
+    }
+    
+    .roadmap-item.expanded .roadmap-features {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .roadmap-line {
+        left: 42px;
+      }
+      
+      .roadmap-version {
+        width: 30px;
+        font-size: 14px;
+      }
+      
+      .roadmap-dot {
+        margin: 0 10px 0 5px;
+        width: 20px;
+        height: 20px;
+      }
+      
+      .roadmap-content {
+        padding: 15px;
+      }
+      
+      .roadmap-content h4 {
+        font-size: 16px;
+      }
+    }
+    
+    /* Education section specific overrides */
+    #resume-tab-3 .developer-experience__area {
+      padding: 0px !important;
+    }
+  </style>
+
+</head>
+
+
+
+<body class="font-heading-romanstory light">
+
+          <!-- Header area start -->
+          <header id="main-header"  class="header__area bg-transparent plr-100 fixed-header">
+            <div class="header__inner menu-right">
+              <div class="header__logo">
+                <a href="index.html">
+                  <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
+                </a>
+              </div>
+              <div class="header__nav tg-header__nav">
+                <nav class="main-menu menu-dark">
+                  <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#about-section">about</a></li>
+                    <li><a href="#resume-section" >resume</a></li>
+                    <li class="menu-item-has-children"><a href="#highlight-section">Projects</a>
+                      <ul class="dp-menu">
+                        <li><a href="#highlight-section">Highlighted Projects</a></li>
+                        <li><a href="portfolio.html">All Projects</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="tg-header__navicon">
+                <div class="tg-header__search">
+                  <button type="button" class="search-icon" id="search_icon"><i
+                      class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="search-icon" id="search_close"><i class="fa-solid fa-xmark"></i></button>
+                  <div class="info-search__area tg-search">
+                    <form action="#">
+                      <input type="text" name="search" placeholder="Search keyword">
+                      <button type="submit" class="info-search__area-btn"><i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                  </div>
+                </div>
+                <button onclick="showCanvas3()" class="open-offcanvas">
+                  <span class="menu-icon-2"><span></span></span> </button>
+              </div>
+            </div>
+          </header>
+          <!-- Header area end -->
+  
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="D" class="characters">D</span>
+          <span data-text="E" class="characters">E</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="Y" class="characters">Y</span>
+
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap d-none">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+
+
+
+            <ul>
+
+              <li><a href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a></li>
+
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <h4 class="title">Follow Me</h4>
+            <div class="offcanvas-3__social-links">
+
+
+              <a id="white-text" href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope" id="white-text" ></i></span></a>
+              <a id="white-text" href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin" id="white-text"></i></span></a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#about-section">about me</a></li>
+            <li><a href="#highlight-section">Highlighted Projects</a></li>
+            <li><a href="portfolio.html">All Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-tg">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+
+        <main>
+
+          <!-- intro start  -->
+          <section class="tg-intro__area">
+
+            <div class="container">
+              <div class="tg-intro__area-wrap">
+                <div class="tg-intro__area-title-wrap">
+                  <div class="tg-intro__area-name-wrap">
+                    <p class="tg-intro__area-name">Award winning Product Leader</p>
+                  </div>
+                  <h1 class="tg-intro__area-title">Debby <span class="space-end"></span>  <br> Ling </h1>
+                  <div class="shape-1 img_anim_reveal">
+                    <img src="../assets/imgs/barandcell.png" alt="shape">
+                  </div>
+                </div>
+                <div class="tg-intro__area-arrow-text-wrap">
+                  <div class="tg-intro__area-arrow-wrap">
+                    <img src="../assets/imgs/travel-guide/plane.png" class="plane-ltr" alt="arrow">
+                    <img src="../assets/imgs/travel-guide/plane-rtl.png" class="plane-rtl" alt="arrow">
+                  </div>
+                  <div class="tg-intro__area-disc-wrap has_text_move_anim">
+                    <p> Over <span>10 years</span> of experience
+                      applying statistical analysis and machine learning to complex societal challenges</p>
+
+
+                      <div class="tg-intro__area-disc-btn">
+                        <a href="about.html" class="wc-btn-underline">Know More</a>
+                      </div>
+
+
+                      <div class="writer-inab__hero-btn-wrap has_fade_anim" data-delay="0.3" data-ease="bounce">
+                        <div class="writer-inab__hero-scroll-btn">
+                          <img class="rotate-text show-dark" src="../assets/imgs/writer/Scroll-blue.png" alt="scroll-btn">
+                          <img class="rotate-text show-light" src="../assets/imgs/writer/Scroll-blue.png" alt="scroll-btn">
+                          <img class="scroll-arrow show-dark" src="../assets/imgs/writer/scroll-arrow-blue.png" alt="scroll-btn">
+                          <img class="scroll-arrow show-light" src="../assets/imgs/writer/scroll-arrow-blue.png"
+                            alt="scroll-btn">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- intro end  -->
+  
+                    <!-- guide start  -->
+          <div class="tg-guide__area tg-pt-80 pb-180" id="about-section">
+            <div class="container">
+              <p class="tg-place__area-short-text wc-btn-underline pb-20"> <img
+                src="../assets/imgs/travel-guide/icon-info1.png" id="resume-icon" class="show-light" alt="location icon"> ABOUT ME
+              </p>
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="sec-title-wrap">
+                    <!-- <h3 class="sec-sub-title-11">[ Success and Award ]</h3> -->
+                  </div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5">
+                  <div class="writer-award__left">
+                    <h2 class="writer-award__title text_invert" style="color:red !important;">
+                     Transforming data into <span>actionable</span> insights 
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                  <div class="writer-award__right">
+                    <div class="writer-award__content-pb"> 
+                      <div class="writer-award__content">
+                        <p><span class="big-letter">I</span> love working at the intersection of data science and social impact, transforming complex datasets into actionable insights that drive positive change. From developing RAG chatbots for veterans to analyzing National Day Rally speeches, my work aims to bridges the gap between advanced analytics and real-world applications.</p>
+                        
+                        <p class="mt-20">What drives me? Building solutions that matter. Whether it's creating sign language recognition models, predicting stock market trends, or developing volunteer management systems, I believe in using data and technology to solve meaningful challenges.</p>
+                        
+                        <p class="mt-20">My journey from communication research to data science has given me a unique perspective on how to tell compelling stories with data. When I'm not coding or analyzing datasets, you'll find me tinkering with my next side project.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- guide end  -->
+
+
+
+          
+         <!-- Featured area start -->
+         <section class="writer-featured__area pt-20 pb-60">
+          <img src="../assets/imgs/writer/shape-5.png" alt="Shape Image" class="shape show-dark">
+          <img src="../assets/imgs/writer/shape-5-dark.png" alt="Shape Image" class="shape show-light">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="writer-featured__content">
+                  <h2 class="sec-sub-title-11 has_char_anim">[ AWARDS received ]</h2>
+                  <div class="title-pd">
+                    <h3 class="tg-sec-title has_fade_anim" data-delay="0.02">Recognised by the data community</h3>
+                  </div>
+
+                  <div class="brand__logo_flex justify-content-center">
+                    <div class="brand__logo">
+                      <img src="../assets/imgs/writer/icon-1.png" class="show-dark" alt="Icon">
+                      <img src="../assets/imgs/award/bfg-logo.png" class="show-light" alt="Icon">
+                    </div>
+                    <div class="brand__logo">
+                      <img src="../assets/imgs/writer/icon-2.png" class="show-dark" alt="Icon">
+                      <img src="../assets/imgs/award/esomar-logo.png" class="show-light" alt="Icon">
+                    </div>
+                    <div class="brand__logo">
+                      <img src="../assets/imgs/writer/icon-3.png" class="show-dark" alt="Icon">
+                      <img src="../assets/imgs/award/govtech-logo.png" class="show-light" alt="Icon">
+                    </div>
+                    <div class="brand__logo">
+                      <img src="../assets/imgs/writer/icon-4.png" class="show-dark" alt="Icon">
+                      <img src="../assets/imgs/award/psd-logo.png" class="show-light" alt="Icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- Featured area end -->
+
+
+           <!-- Resume section start -->
+           <section class="pdesigner-resume__area" id="resume-section">
+            <div class="pdesigner-resume__content">
+              <div class="container g-0 pt-130">
+                <p class="tg-place__area-short-text wc-btn-underline"> <img
+                  src="../assets/imgs/travel-guide/location.png" class="show-dark" alt="location icon"> <img id="resume-icon"
+                  src="../assets/imgs/travel-guide/icon-project.png" class="show-light" alt="location icon"> Resume
+                </p>
+                <div class="line-col-3">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="row">
+                  <div class="col-xxl-12">
+                    <div class="sec-title-wrapper">
+                      <div class="pb-20">
+                        <!-- <h2 class="sec-sub-title has_char_anim">Resume</h2> -->
+                      </div>
+                      <h3 class="sec-title has_text_reveal_anim" id="resume-text">My Resume</h3>
+                    </div>
+                  </div>
+
+                  <div class="col-xxl-12">
+                    <div class="developer-resume__tab-wrapper">
+                      <div class="developer-resume__tab-menu">
+                        <ul class="developer-resume-ul">
+                          <!-- <li class="has_fade_anim" data-fade-from="left" data-delay="0.5"><a href="#" 
+                              data-rel="resume-tab-1">about me</a></li> -->
+                          <li class="has_fade_anim" data-fade-from="left" data-delay="0.35"><a href="#" class="active"
+                              data-rel="resume-tab-2" class="">experience</a></li>
+                          <li class="has_fade_anim" data-fade-from="left" data-delay="0.60"><a href="#"
+                              data-rel="resume-tab-3" class="">education</a></li>
+                          <li class="has_fade_anim" data-fade-from="left" data-delay="0.75"><a href="#"
+                              data-rel="resume-tab-4" class="">certificates</a></li>
+                          <li class="has_fade_anim" data-fade-from="left" data-delay="0.9"><a href="#"
+                              data-rel="resume-tab-5" class="">awards</a></li>
+                        </ul>
+                      </div>
+
+
+                        <div class="developer-resume-tab-box" id="resume-tab-2" style="display:block;">
+                          <div class="developer-experience__area">
+                            <div class="roadmap-container">
+                              <div class="roadmap-timeline">
+                                <div class="roadmap-line"></div>
+                                
+                                <div class="roadmap-item current">
+                                  <div class="roadmap-version">2024</div>
+                                  <div class="roadmap-dot current"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>Lead Analyst (Data PrOducts)</b></h4>
+                                    <p class="roadmap-date">Feb 2024 - Present</p>
+                                    <div class="roadmap-details">
+                                      <p>Public Service Division</p>
+                                      <ul class="roadmap-features">
+                                        <li>Owned end-to-end product strategy for a whole-of-government analytics platform, increasing user-friendliness by 12%</li>
+                                        <li>Led stakeholder workshops to develop product vision across multiple HR analytics product lines</li>
+                                        <li>Built and launched a pioneering Whole-of-Government staffing analytics product achieving 138% higher engagement</li>
+                                        <li>Established product development playbook adopted as the standard template for analytics products</li>
+                                        <li>Developed 'Virtual Veteran' AI chatbot using RAG techniques with $1.7M/month potential savings</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2020</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>SeniOr COnsultant, Data Analytics</b></h4>
+                                    <p class="roadmap-date">Apr 2020 - Feb 2024</p>
+                                    <div class="roadmap-details">
+                                      <p>Kantar Public</p>
+                                      <ul class="roadmap-features">
+                                        <li>Built go-to-market strategy for new analytics practice from ground up, including value proposition and pricing model</li>
+                                        <li>Scaled offering to achieve 5% YoY revenue growth and grew team to 4 members</li>
+                                        <li>Pioneered use of Large Language Models for policy analysis, resulting in published commentary</li>
+                                        <li>Created predictive analytics for housing market analysis with industry-leading accuracy (1-2% MAPE)</li>
+                                        <li>Led impact evaluation of Singapore's largest social service fund (S$580m), boosting response rates by 94%</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2018</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>SeniOr Analyst</b></h4>
+                                    <p class="roadmap-date">Apr 2018 - Apr 2020</p>
+                                    <div class="roadmap-details">
+                                      <p>SKIM</p>
+                                      <ul class="roadmap-features">
+                                        <li>Built predictive models through conjoint studies for optimal pricing across FMCG, Technology, and F&B industries</li>
+                                        <li>Won the Young ESOMAR Award 2019 for innovative use of conjoint to quantify social media reactions</li>
+                                        <li>Selected for exclusive 6-month secondment to Netherlands HQ as a high-potential employee</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2016</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>Manager, Management InfOrmatiOn & Analytics</b></h4>
+                                    <p class="roadmap-date">Jul 2016 - Apr 2018</p>
+                                    <div class="roadmap-details">
+                                      <p>Skillsfuture Singapore</p>
+                                      <ul class="roadmap-features">
+                                        <li>Designed and implemented a comprehensive rolling survey system covering all 50 areas of training</li>
+                                        <li>Scaled the project to achieve over 10,000+ unique survey responses through strategic sampling</li>
+                                        <li>Conducted A/B testing using the EAST Framework which improved survey response rates by 21%</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="developer-resume-tab-box" id="resume-tab-3">
+                          <div class="developer-experience__area">
+                            <div class="roadmap-container">
+                              <div class="roadmap-timeline">
+                                <div class="roadmap-line"></div>
+                                
+                                <div class="roadmap-item current">
+                                  <div class="roadmap-version">2024</div>
+                                  <div class="roadmap-dot current"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>Masters Of Science in Analytics</b></h4>
+                                    <p class="roadmap-date">2022 - 2024</p>
+                                    <div class="roadmap-details">
+                                      <p>Georgia Institute of Technology</p>
+                                      <ul class="roadmap-features">
+                                        <li>Graduated with a cGPA: 4.0/4.0</li>
+                                        <li>Specialized in computational data analytics</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="roadmap-item past">
+                                  <div class="roadmap-version">2014</div>
+                                  <div class="roadmap-dot"></div>
+                                  <div class="roadmap-content">
+                                    <h4><b>BachelOr's in COmmunicatiOn Research</b></h4>
+                                    <p class="roadmap-date">2010 - 2014</p>
+                                    <div class="roadmap-details">
+                                      <p>Nanyang Technological University</p>
+                                      <ul class="roadmap-features">
+                                        <li>Graduated with First Class Honours</li>
+                                        <li>Focused on quantitative research methods and data analysis</li>
+                                        <li>Thesis on applying statistical methods to communication patterns</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="developer-resume-tab-box" id="resume-tab-4">
+                          <div class="developer-award__area">
+                            <div class="developer-award__grid">
+                              <div class="award__item">
+                                <h2 class="award__date">01 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/1.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/aws-data-engineer.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">AWS Certified Data Engineer Associate</h3>
+                                <h4 class="award__status"><a href="https://www.credly.com/badges/afc60370-93a0-4eac-b9d1-4777366aeca0/public_url">Link to certificate</a></h4>
+                              </div>
+                              <div class="award__item">
+                                <h2 class="award__date">02 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/2.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/aws-solutions-architect.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">AWS Certified Solutions Architect</h3>
+                                <h4 class="award__status"><a href="https://www.credly.com/badges/2fe3793c-87da-4c24-9458-b000fbf65731/public_url">Link to certificate</a></h4>
+                              </div>
+                              <div class="award__item">
+                                <h2 class="award__date">03 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/3.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/azure-data-engineer.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Microsoft Certified Azure Data Engineer</h3>
+                                <h4 class="award__status"><a href="https://learn.microsoft.com/en-gb/users/debbyling-4188/credentials/9ff636d747f2ceb4">Link to certificate</a></h4>
+                              </div>
+                              <div class="award__item">
+                                <h2 class="award__date">04 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/4.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/azure-powerbi.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Microsoft Certified Power BI Data Analyst</h3>
+                                <h4 class="award__status"><a href="https://learn.microsoft.com/en-us/users/debbyling-4188/credentials/c287442bec0a5fa">Link to certificate</a></h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="developer-resume-tab-box" id="resume-tab-5">
+                          <div class="developer-award__area">
+                            <div class="developer-award__grid">
+                              <div class="award__item">
+                                <h2 class="award__date">02 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/2.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/psd-logo.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Public Service Division</h3>
+                                <h4 class="award__status">Employee of the month</h4>
+                              </div>
+                              <div class="award__item">
+                                <h2 class="award__date">03 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/3.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/govtech-logo.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Data & AI Tournament (Tableau Track)</h3>
+                                <h4 class="award__status">winner</h4>
+                              </div>
+                              <div class="award__item">
+                                <h2 class="award__date">04 <span>2024</span></h2>
+                                <img src="../assets/imgs/award/4.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/bfg-logo.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Build for Good 2024</h3>
+                                <h4 class="award__status">Winning Team</h4>
+                              </div>
+                              <div class="award__item">
+                                <h2 class="award__date">01 <span>2019</span></h2>
+                                <img src="../assets/imgs/award/1.png" alt="Award Image" class="show-dark">
+                                <img src="../assets/imgs/award/esomar-logo.png" alt="Award Image" class="show-light">
+                                <h3 class="award__title">Young ESOMAR Society Award</h3>
+                                <h4 class="award__status">Winner</h4>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- About section end -->
+
+
+
+
+
+
+          <!-- place start  -->
+          <section class="tg-place__area pb-160 pt-60" id="highlight-section">
+            <div class="container">
+              <div class="tg-place__area-wrap">
+                <div class="tg-place__area-left">
+                  <p class="tg-place__area-short-text wc-btn-underline"> <img
+                      src="../assets/imgs/travel-guide/location.png" class="show-dark" alt="location icon"> <img
+                      src="../assets/imgs/travel-guide/location-light.png" class="show-light" alt="location icon" style="color: var(--blue-1)"> Highlighted Projects</p>
+                  <div class="tg-sec-title-wrapper place-title-wrapper pt-200">
+                    <h2 class="tg-sec-title has_fade_anim" data-delay="0.05">Highlighted <br> Projects
+                      
+                    <div class="cf_text tg-place__area-disc pt-20 mb-60 has_text_move_anim" data-delay="0.1">
+                      <p>Explore the projects that I'm the most proud of.</p>
+                    </div>
+                    <div class="cf_btn tg-place__area-btn-wrap has_fade_anim" data-delay="0.1">
+                      <a href="portfolio.html" class="wc-btn-default btn-hover-divide">See all projects</a>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+
+
+                
+                <div class="tg-place__area-right">
+                  <div class="swiper tg-place-active">
+                    <div class="swiper-wrapper">
+
+
+
+                      <!-- Second item  -->
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb dark" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="projects/smartsaver.html">
+                              <img src="../assets/imgs/short-portfolio/smartsaver.png" alt="place image">
+                            </a>
+                          </div>
+                          <div class="tg-place__area-content">
+                            <a href="projects/smartsaver.html">
+                              <h2 class="tg-place__area-title">SmartSaver <br>
+                                Bank <br> Calculator</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="projects/smartsaver.html" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <!-- Second item  -->
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="projects/birdhouse.html">
+                              <img src="../assets/imgs/short-portfolio/birdhouse.png" alt="place image">
+                            </a>
+                          </div>
+                          <div class="tg-place__area-content">
+                            <a href="projects/birdhouse.html">
+                              <h2 class="tg-place__area-title">Build for Good Hackathon <br>
+                                2024 <br> Winner</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="projects/birdhouse.html" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!-- Third item  -->
+
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="projects/topic-modelling.html">
+                              <img src="../assets/imgs/short-portfolio/Untitled.png" alt="place image">
+                            </a>
+                          </div>
+                          <div class="tg-place__area-content">
+                            <a href="projects/topic-modelling.html">
+                              <h2 class="tg-place__area-title">Topic modelling <br> of Song <br> Lyrics</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="projects/topic-modelling.html" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                      <!-- Second item  -->
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb dark" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="projects/kpop.html">
+                              <img src="../assets/imgs/short-portfolio/kpop.png" alt="place image">
+                            </a>
+                          </div>
+                          <div class="tg-place__area-content">
+                            <a href="projects/kpop.html">
+                              <h2 class="tg-place__area-title">Network Analysis
+                                   <br> of K-pop Celebrities</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="projects/kpop.html" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136">
+                              <img src="../assets/imgs/short-portfolio/ndr.png" alt="place image">
+                            </a>
+                          </div>
+                          <div class="tg-place__area-content">
+                            <a href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136">
+                              <h2 class="tg-place__area-title">National Day Rally Text <br>
+                                Analyis <br> Commentary</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="https://www.todayonline.com/commentary/commentary-national-day-rally-themes-singapore-past-present-future-2242136" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="projects/young-esomar.html">
+                              <img src="../assets/imgs/short-portfolio/young-esomar.png" alt="place image">
+                            </a>
+                          </div>
+                          <div class="tg-place__area-content">
+                            <a href="projects/young-esomar.html">
+                              <h2 class="tg-place__area-title">Young <br> ESOMAR Society Award <br> Winner</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="projects/young-esomar.html" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="projects/techladies-bootcamp.html">
+                              <img src="../assets/imgs/short-portfolio/techladies.png" alt="place image">
+                            </a>
+                          </div>
+                          <div  class="tg-place__area-content">
+                            <a href="projects/techladies-bootcamp.html">
+                              <h2 class="tg-place__area-title" id="black-tg-place">Techladies <br> VOlunteer Management <br> System</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="projects/techladies-bootcamp.html" class="wc-btn-default btn-hover-divide" id="black-tg-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="tg-place__area-item">
+                          <div class="tg-place__area-thumb" data-cursor-text="View Project" data-cursor="lg">
+                            <a href="https://public.tableau.com/app/profile/debby2612/viz/OnTrack-RedefiningUrbanTapestryfromRailtoRealEstate/Station1TravelAcrossTime">
+                              <img src="../assets/imgs/short-portfolio/dashboard.png" alt="place image">
+                            </a>
+                          </div>
+                          <div  class="tg-place__area-content">
+                            <a href="https://public.tableau.com/app/profile/debby2612/viz/OnTrack-RedefiningUrbanTapestryfromRailtoRealEstate/Station1TravelAcrossTime">
+                              <h2 class="tg-place__area-title">Award-winning Rail Transport Dashboard</h2>
+                            </a>
+                            <div class="cf_btn tg-place__area-item-btn">
+                              <a href="https://public.tableau.com/app/profile/debby2612/viz/OnTrack-RedefiningUrbanTapestryfromRailtoRealEstate/Station1TravelAcrossTime" class="wc-btn-default btn-hover-divide" id="white-link">Details <i
+                                  class="fa fa-arrow-right"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>                                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- place end  -->
+
+        </main>
+
+        <!-- Footer area start -->
+        <footer class="footer-sfluence__area" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="footer-sfluence__logo">
+                  <img src="../assets/imgs/logo-white.png" alt="Footer Logo">
+                </div>
+
+                <div class="footer-sfluence__top">
+                  <div class="footer-sfluence__menu">
+                    <ul>
+                      <li><a href="#about-section">About me</a></li>
+                      <li><a href="#resume-section">My Resume</a></li>
+                      <li><a href="#highlight-section">Highlights</a></li>
+                      <li><a href="portfolio.html">All Projects</a></li>
+                      <!-- <li><a href="#">Company</a></li>
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Project</a></li> -->
+                    </ul>
+                  </div>
+
+                  <div class="footer-sfluence__social">
+                    <ul>
+                      <li><a href="#"><span><i class="fa-brands fa-twitter" id="white-text"></i></span></a></li>
+                      <li><a href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope" id="white-text"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin" id="white-text"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-sfluence__btm" id="about-section">
+                  <p id="white-text">© All rights reserved by <a id="white-text" href="http://debbyling.github.io">Debby Ling</a> </p>
+                  <a id="white-text" href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer area end -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/typed.js"></script>
+  <script src="../assets/js/mixitup.min.js"></script>
+  <script src="../assets/js/progressbar.js"></script>
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollSmoother.min.js"></script>
+  <script src="../assets/js/ScrollToPlugin.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/SplitText.min.js"></script>
+  <script src="../assets/js/TweenMax.min.js"></script>
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/error-handling.js"></script>
+  <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor-copy.js"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('main-header');
+    const scrollThreshold = 100;
+    let lastScrollTop = 0;
+
+    // Create a div to detect hover at the top of the page
+    const hoverDetector = document.createElement('div');
+    hoverDetector.style.position = 'fixed';
+    hoverDetector.style.top = '0';
+    hoverDetector.style.left = '0';
+    hoverDetector.style.right = '0';
+    hoverDetector.style.height = '20px';
+    hoverDetector.style.zIndex = '9998'; // Just below the header
+    document.body.appendChild(hoverDetector);
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+            // Scrolling down
+            header.classList.add('scrolled', 'header-hidden');
+        } else if (scrollTop <= scrollThreshold) {
+            // At the top
+            header.classList.remove('scrolled', 'header-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    hoverDetector.addEventListener('mouseenter', function() {
+        header.classList.remove('header-hidden');
+    });
+
+    header.addEventListener('mouseleave', function() {
+        if (window.pageYOffset > scrollThreshold) {
+            header.classList.add('header-hidden');
+        }
+    });
+});    
+
+</script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all links that hash
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return; // Ignore empty hash
+      
+      const targetElement = document.querySelector(targetId);
+      if (!targetElement) return; // Ignore if target doesn't exist
+      
+      // Calculate header height - assuming fixed header
+      const headerHeight = document.getElementById('main-header').offsetHeight;
+      
+      // Calculate the final scroll position
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      // Smooth scroll to element
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+
+</script>
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const shouldScroll = urlParams.get('scroll');
+    const hash = window.location.hash;
+    
+    if (shouldScroll && hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+            setTimeout(function() {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the section parameter from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const section = urlParams.get('section');
+    
+    if (section) {
+        // Wait for everything to load
+        setTimeout(() => {
+            const element = document.getElementById(section);
+            if (element) {
+                // Reset any scroll locks
+                document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
+                
+                // Scroll to element
+                window.scrollTo({
+                    top: element.offsetTop - 100, // Adjust 100 based on your header height
+                    behavior: 'smooth'
+                });
+            }
+        }, 500); // Increased delay to ensure page is fully loaded
+    }
+});
+
+</script>
+
+<script>
+// Experience roadmap expand/collapse functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const roadmapItems = document.querySelectorAll('.roadmap-item');
+    
+    roadmapItems.forEach(item => {
+        const content = item.querySelector('.roadmap-content');
+        
+        content.addEventListener('click', function() {
+            // Toggle expanded class on the parent item
+            item.classList.toggle('expanded');
+            
+            // Optional: Close other items when one is opened
+            if (item.classList.contains('expanded')) {
+                roadmapItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('expanded')) {
+                        otherItem.classList.remove('expanded');
+                    }
+                });
+            }
+        });
+    });
+});
+</script>
+
+<script>
+// Close offcanvas menu when any navigation link is clicked
+document.addEventListener('DOMContentLoaded', function() {
+    const offcanvasLinks = document.querySelectorAll('.offcanvas-3__menu a');
+    
+    offcanvasLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hideCanvas3(); // Call the existing hideCanvas3 function to close the menu
+        });
+    });
+});
+</script>
+
+</body>
+
+</html>

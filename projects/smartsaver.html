@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmartSaver: Banking Calculator Tool">
+
+  <title>SmartSaver: Banking Calculator Tool</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="../assets/imgs/debby-logo.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../assets/css/progressbar.css">
+  <link rel="stylesheet" href="../assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/basictable.min.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body class="font-heading-estedad light">
+
+  <div class="next-project-wrapper">
+    <a href="birdhouse.html" class="next-project">
+      <div class="next-project-content">
+        <p class="next-label">Next Project</p>
+        <h3 class="next-title">Birdhouse: Senior Care Monitoring</h3>
+      </div>
+      <div class="next-project-arrows" style="margin-left: 20px;">
+        <span class="arrow-right">→</span>
+      </div>
+      <div class="next-project-preview">
+        <img src="../assets/imgs/portfolio-page/birdhouse-page/birdhouse.png" alt="Birdhouse Project Preview">
+      </div>
+    </a>
+  </div>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="D" class="characters">D</span>
+          <span data-text="E" class="characters">E</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="B" class="characters">B</span>
+          <span data-text="Y" class="characters">Y</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+
+  <!-- Offcanves start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOne">
+      <button class="offcanvas__close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      <div class="offcanvas__body">
+        <div class="offcanvas__logo">
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-light.png" class="show-dark"
+              alt="Offcanvas Logo"></a>
+          <a href="index-light.html"><img src="../assets/imgs/logo/site-logo-dark.png" class="show-light"
+              alt="Offcanvas Logo"></a>
+          <p>Create live segments and target the right people for messages based on their behaviors.</p>
+        </div>
+
+        <div class="offcanvas__menu-area">
+          <div class="offcanvas__menu-wrapper"></div>
+        </div>
+        <div class="offcanvas__gallery">
+          <p class="offcanvas__title">gallery</p>
+          <div class="gallery__items">
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-2.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-3.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-4.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-5.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+            <div class="gallery__item">
+              <a href="#"><img src="../assets/imgs/thumb/gallery-6.jpg" alt="gallery Image">
+                <span><i class="fa-brands fa-instagram"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas__media">
+          <p class="offcanvas__title">Follow</p>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanves end -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-elc">
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header id="main-header" class="header__area bg-transparent plr-100 fixed-header">
+          <div class="header__inner menu-right">
+            <div class="header__logo">
+              <a href="../index.html">
+                <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
+              </a>
+            </div>
+            <div class="header__nav tg-header__nav">
+              <nav class="main-menu menu-dark">
+                <ul>
+                  <li><a href="../index.html" target="_blank">home</a></li>
+                  <li><a href="../index.html?section=about-section">about</a></li>
+                  <li><a href="../index.html?section=resume-section">resume</a></li>
+                  <li class="menu-item-has-children"><a href="#">Projects</a>
+                    <ul class="dp-menu">
+                      <li><a href="../index.html?section=highlight-section" target="_blank">Highlighted Projects</a></li>
+                      <li><a href="../portfolio.html" target="_blank">All Projects</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../index.html?section=contact" target="_blank">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tg-header__navicon">
+              <button onclick="showCanvas3()" class="open-offcanvas">
+                <span class="menu-icon-2"><span></span></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+        <!-- Also add the offcanvas-3 section -->
+        <div class="offcanvas-3__area">
+          <div class="offcanvas-3__inner">
+            <div class="offcanvas-3__meta-wrapper">
+              <div class="">
+                <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="offcanvas-3__menu-wrapper">
+              <nav class="nav-menu offcanvas-3__menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../portfolio.html">Projects</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <main>
+
+          <!-- blog details area start  -->
+          <section class="elc-inbd-hero__area pt-250 pb-150" style="background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%)">
+            <div class="container">
+              <div class="elc-about__sec-title-wrapper">
+                <div class="row align-items-start">
+                  <div class="col-lg-6">
+                    <h1 class="sec-title-9"><b>SmartSaver: <br> Bank Calculator Tool</b></h1>
+                    <p class="mt-20 me-4">Developed an analytics decision platform that transforms complex banking data into actionable financial insights, empowering users to optimize their savings strategy through personalized calculations and an innovative fund distribution algorithm.</p>
+                    <div class="mt-4 mb-2">
+                      <a href="https://smartsaver-sg.vercel.app/" target="_blank" class="wc-btn-default btn-hover-divide try-button">
+                        <span>Try it out here!</span>
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                      </a>
+                    </div>
+                  
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="mt-20"><b>Task</b> <br>
+                    <p class="mt-20">Conceptualized, designed, and developed a comprehensive banking calculator tool that enables users to compare interest rates and potential returns from different banks, considering multiple qualification criteria.</p>
+                  
+                    <ul class="project_info">
+                      <li>
+                        <span class="title">Role</span>
+                        <p class="info">Product Owner & Developer</p>
+                      </li>
+                      <li>
+                        <span class="title">Date</span>
+                        <p class="info">Mar 2025</p>
+                      </li>
+                      <li>
+                        <span class="title">Tools</span>
+                        <p class="info">React, Tailwind CSS, Supabase, Framer Motion</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="elc__blogdetails-metainfo mt-10 mb-20">
+                <p><span class="date">Status: Completed. Available for public use.</span></p>
+              </div>
+              <div class="elc-inbd-hero__thumb cf_parallax_image">
+                <img src="../assets/imgs/portfolio-page/smartsaver-page/smartsaver-homepage.png" alt="SmartSaver Project" data-speed="0.9">
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">DISCOVERY</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">User Research & Insights</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">My discovery process began with a key insight: despite the abundance of financial comparison websites, none effectively addressed the multi-variable qualification criteria that determine actual interest returns.</p>
+                        <p class="mb-25">Through structured interviews with 15 potential users across different financial profiles, I uncovered three critical user pain points:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li><strong>Calculation Complexity:</strong> "I can't manually calculate all these conditional tiers across different banks."</li>
+                          <li><strong>Optimization Challenge:</strong> "Should I put all my money in one bank or split it? I have no way to figure this out."</li>
+                          <li><strong>Information Asymmetry:</strong> "Banks make their interest structures deliberately complicated to prevent easy comparison."</li>
+                        </ul>
+                        <p class="mb-25">Competitive analysis revealed most existing calculators only calculate single bank returns without comparative analysis, ignore multi-variable qualification conditions, present raw numbers without actionable insights, and lack fund distribution optimization capabilities.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">PERSONAS</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">User Personas & Jobs</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Through research, I identified four primary user personas:</p>
+                        <div class="persona-cards">
+                          <!-- Beginner Saver Persona -->
+                          <div class="persona-card">
+                            <div class="persona-header">
+                              <div class="persona-icon">
+                                <i class="fa-solid fa-seedling"></i>
+                              </div>
+                              <h3 class="persona-title">Beginner Saver</h3>
+                            </div>
+                            <div class="persona-demographics">Young, tech-savvy professional</div>
+                            <div class="persona-description">
+                              <ul class="persona-points">
+                                <li>Looking to save for a BTO flat down payment in the next 2-3 years</li>
+                                <li>Already has credit cards with several banks but isn't strategically using them to qualify for higher interest rates</li>
+                                <li>Prefers digital solutions for financial management</li>
+                              </ul>
+                            </div>
+                            <div class="persona-quote">
+                              <i class="fa-solid fa-quote-left quote-icon"></i>
+                              <p>"I need to understand how different banking decisions will affect my financial future."</p>
+                            </div>
+                          </div>
+                          
+                          <!-- Time-Pressed Tactician Persona -->
+                          <div class="persona-card">
+                            <div class="persona-header">
+                              <div class="persona-icon">
+                                <i class="fa-solid fa-clock"></i>
+                              </div>
+                              <h3 class="persona-title">Time-Pressed Tactician</h3>
+                            </div>
+                            <div class="persona-demographics">Mid-career professional with children</div>
+                            <div class="persona-description">
+                              <ul class="persona-points">
+                                <li>Manages family finances and wants to optimize returns without spending hours researching</li>
+                                <li>Has insurance policies and uses GIRO for utility bills and children's school fees</li>
+                                <li>Time-constrained and needs quick, clear financial information</li>
+                              </ul>
+                            </div>
+                            <div class="persona-quote">
+                              <i class="fa-solid fa-quote-left quote-icon"></i>
+                              <p>"I need to quickly determine which bank will give me the best return for my specific situation."</p>
+                            </div>
+                          </div>
+                          
+                          <!-- Optimization Seeker Persona -->
+                          <div class="persona-card">
+                            <div class="persona-header">
+                              <div class="persona-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                              </div>
+                              <h3 class="persona-title">Optimization Seeker</h3>
+                            </div>
+                            <div class="persona-demographics">Small F&B business owner</div>
+                            <div class="persona-description">
+                              <ul class="persona-points">
+                                <li>Has fluctuating monthly income</li>
+                                <li>Uses multiple banks for business and personal finances</li>
+                                <li>Interested in optimizing distribution of funds across banks to maximize interest while maintaining liquidity</li>
+                              </ul>
+                            </div>
+                            <div class="persona-quote">
+                              <i class="fa-solid fa-quote-left quote-icon"></i>
+                              <p>"I need to optimize my banking setup to maximize interest without spending hours on calculations."</p>
+                            </div>
+                          </div>
+
+                          <!-- Retiree Persona -->
+                          <div class="persona-card">
+                            <div class="persona-header">
+                              <div class="persona-icon">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                              </div>
+                              <h3 class="persona-title">Retiree</h3>
+                            </div>
+                            <div class="persona-demographics">Has substantial savings of $200,000+</div>
+                            <div class="persona-description">
+                              <ul class="persona-points">
+                                <li>Less comfortable with technology but willing to use intuitive digital tools</li>
+                                <li>Looking for ways to generate passive income through interest as she transitions to retirement</li>
+                                <li>Concerned about minimum balance requirements and maintaining access to funds</li>
+                              </ul>
+                            </div>
+                            <div class="persona-quote">
+                              <i class="fa-solid fa-quote-left quote-icon"></i>
+                              <p>"I want to keep my money with me but try to maximise my savings. I don't understand all these banking terms and conditions."</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">STRATEGY</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Product Vision & Strategy</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Based on user research, I developed a clear product vision: <em>"To empower users to make optimal banking decisions through transparent analysis of complex interest structures."</em></p>
+                        <p class="mb-25">This vision guided four strategic pillars:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li><strong>Comprehensive Analytics Engine:</strong> Account for all conditional factors impacting interest rates</li>
+                          <li><strong>Insight Transformation:</strong> Convert complex calculations into clear comparative insights</li>
+                          <li><strong>Optimization Intelligence:</strong> Develop algorithms to determine optimal fund distribution</li>
+                          <li><strong>Continuous Learning:</strong> Collect anonymous usage data to enhance calculations</li>
+                        </ul>
+                        <p class="mb-25">For feature prioritization, I developed a comprehensive feature set and prioritized it using a value-effort framework, focusing first on high-value, lower-effort features for the MVP, such as the multi-bank interest calculator, side-by-side comparison table, mobile-responsive interface, and basic feedback collection system.</p>
+
+                        <!-- Value-Effort Framework Visualization -->
+                        <div class="value-effort-container">
+                          <h4 class="value-effort-title">Feature Prioritization Matrix</h4>
+                          <div class="value-effort-matrix">
+                            <!-- Matrix Quadrant Labels -->
+                            <div class="matrix-label label-top">High Value</div>
+                            <div class="matrix-label label-bottom">Lower Value</div>
+                            <div class="matrix-label label-left">Lower Effort</div>
+                            <div class="matrix-label label-right">Higher Effort</div>
+                            
+                            <!-- Matrix Grid -->
+                            <div class="matrix-grid">
+                              <!-- Quadrant 1: High Value, Lower Effort (MVP) -->
+                              <div class="matrix-quadrant q1">
+                                <div class="quadrant-title">MVP Features</div>
+                                <div class="feature-item mvp">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Multi-bank interest calculator</span>
+                                </div>
+                                <div class="feature-item mvp">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Side-by-side comparison table</span>
+                                </div>
+                                <div class="feature-item mvp">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Mobile-responsive interface</span>
+                                </div>
+                                <div class="feature-item mvp">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Basic feedback collection</span>
+                                </div>
+                              </div>
+                              
+                              <!-- Quadrant 2: High Value, Higher Effort (Phase 2) -->
+                              <div class="matrix-quadrant q2">
+                                <div class="quadrant-title">Phase 2 Features</div>
+                                <div class="feature-item phase2">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Fund distribution optimization</span>
+                                </div>
+                                <div class="feature-item phase2">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Tier-by-tier interest breakdown</span>
+                                </div>
+                                <div class="feature-item phase2">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Enhanced visualization</span>
+                                </div>
+                              </div>
+                              
+                              <!-- Quadrant 3: Lower Value, Lower Effort (Nice to Have) -->
+                              <div class="matrix-quadrant q3">
+                                <div class="quadrant-title">Nice to Have</div>
+                                <div class="feature-item">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Dark mode support</span>
+                                </div>
+                                <div class="feature-item">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Share results via social media</span>
+                                </div>
+                                <div class="feature-item">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Multiple language support</span>
+                                </div>
+                              </div>
+                              
+                              <!-- Quadrant 4: Lower Value, Higher Effort (Future Roadmap) -->
+                              <div class="matrix-quadrant q4">
+                                <div class="quadrant-title">Future Roadmap</div>
+                                <div class="feature-item future">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Personalized notifications</span>
+                                </div>
+                                <div class="feature-item future">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Bank product recommendations</span>
+                                </div>
+                                <div class="feature-item future">
+                                  <span class="feature-dot"></span>
+                                  <span class="feature-text">Historical rate tracking</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="matrix-caption">Figure: Value-effort framework used to prioritize SmartSaver features</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">DESIGN</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Analytics-First Design</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Unlike typical calculators that simply present data, I took an analytics-first design approach focused on transforming raw calculations into actionable insights. This included creating a logical flow from input variables to insight presentation, developing progressive disclosure hierarchy for complex information, and designing a comparative visualization framework highlighting key differences.</p>
+                        <p class="mb-25">The technical architecture was designed to support complex calculations while maintaining performance and scalability:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li><strong>Modular Calculation Engine:</strong> Separated core calculation logic from presentation layer</li>
+                          <li><strong>Data Management:</strong> Used Supabase for structured storage of rates and criteria</li>
+                          <li><strong>Performance Optimization:</strong> Implemented calculation memoization to improve response time</li>
+                          <li><strong>Analytics Implementation:</strong> Designed event tracking for feature usage patterns</li>
+                        </ul>
+                        
+                        <div class="ab-test-section mb-30">
+                          <h4 class="mb-3">Data-Driven Input Method Selection</h4>
+                          <p>I implemented an A/B test using Mixpanel to determine the optimal input method for the savings amount:</p>
+                          
+                          <div class="ab-test-results">
+                            <div class="test-variant">
+                              <div class="variant-header">
+                                <div class="variant-icon">
+                                  <i class="fa-solid fa-keyboard"></i>
+                                </div>
+                                <h5>Text Input</h5>
+                              </div>
+                              <div class="variant-metrics">
+                                <div class="metric-value">57.4%</div>
+                                <div class="metric-label">Completion Rate</div>
+                              </div>
+                              <div class="variant-description">
+                                <p>Direct numerical entry allowing precise value input</p>
+                              </div>
+                            </div>
+                            
+                            <div class="test-comparison">
+                              <div class="comparison-arrow">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                              </div>
+                              <div class="comparison-text">vs.</div>
+                            </div>
+                            
+                            <div class="test-variant">
+                              <div class="variant-header">
+                                <div class="variant-icon">
+                                  <i class="fa-solid fa-sliders"></i>
+                                </div>
+                                <h5>Slider Input</h5>
+                              </div>
+                              <div class="variant-metrics">
+                                <div class="metric-value">42.8%</div>
+                                <div class="metric-label">Completion Rate</div>
+                              </div>
+                              <div class="variant-description">
+                                <p>Interactive slider with draggable control</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="significance-test-results">
+                            <div class="significance-icon">
+                              <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div class="significance-details">
+                              <h5>Statistical Significance</h5>
+                              <p>I conducted a chi-square test to validate these findings, which confirmed the difference was statistically significant (p < 0.001).</p>
+                            </div>
+                          </div>
+                          
+                          <p class="ab-test-conclusion">Based on this clear data signal showing a <strong>14.6% higher completion rate</strong>, I selected text inputs for all numerical values in the final interface design, balancing precision with usability.</p>
+                        </div>
+                        
+                        <div class="chatbot-feature-section">
+                          <h4 class="mb-3">Strategic Integration of AI Assistance</h4>
+                          <div class="chatbot-feature-content">
+                            <div class="chatbot-icon">
+                              <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="chatbot-explanation">
+                              <p>I made a deliberate architectural decision to integrate the AI chatbot <strong>after</strong> the calculation process rather than at the beginning of the user journey. This strategic placement was based on careful consideration of the user experience:</p>
+                              
+                              <ul class="chatbot-details">
+                                <li><strong>Input Complexity:</strong> The calculator requires numerous structured inputs (deposit amount, credit card ownership, GIRO payments, etc.) which are more efficiently collected through a form interface.</li>
+                                
+                                <li><strong>Conversation Efficiency:</strong> Having the chatbot collect these inputs would result in a lengthy sequential conversation, creating friction in the user experience.</li>
+                                
+                                <li><strong>Contextual Value:</strong> The chatbot provides maximum value when helping users interpret results and understand the nuances of their calculated interest rates.</li>
+                                
+                                <li><strong>Post-Calculation Support:</strong> After seeing their results, users typically have specific questions about optimization strategies, qualification criteria, and comparative analysis—precisely where AI assistance excels.</li>
+                              </ul>
+                              
+                              <p>This approach balances structured data collection with conversational assistance, allowing each interface method to serve its optimal purpose in the user journey.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">ANALYTICS</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Measurement Framework</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">I established a comprehensive measurement framework to evaluate product success, focusing on these primary metrics:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li><strong>User Confidence Score:</strong> Measured through post-calculation survey</li>
+                          <li><strong>Decision Time:</strong> Time from initial visit to completion of comparison</li>
+                          <li><strong>Optimization Value:</strong> Percentage improvement through fund distribution optimization</li>
+                          <li><strong>Satisfaction Rating:</strong> Post-usage satisfaction survey results</li>
+                        </ul>
+                        <p class="mb-25">I implemented a robust analytics architecture to measure both usage and impact, with an event tracking framework aligned with the user journey, a feedback collection system, and performance monitoring for calculation response time.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">SECURITY</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Security Implementation</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">I implemented a comprehensive security strategy to protect user data and prevent common web vulnerabilities:</p>
+                        
+                        <div class="security-feature-section">
+                          <div class="security-feature">
+                            <div class="security-icon">
+                              <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div class="security-content">
+                              <h4>Input Sanitization</h4>
+                              <ul class="security-details">
+                                <li><strong>DOMPurify Implementation:</strong> Added robust sanitization for all user inputs, configured to strip HTML tags and attributes to prevent XSS attacks</li>
+                                <li><strong>Client-Side Sanitization:</strong> Sanitized user inputs in chat messages and calculator inputs before processing</li>
+                                <li><strong>Server-Side Sanitization:</strong> Implemented middleware to sanitize all incoming requests including body, query parameters, and URL parameters</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <div class="security-feature">
+                            <div class="security-icon">
+                              <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <div class="security-content">
+                              <h4>Rate Limiting</h4>
+                              <ul class="security-details">
+                                <li><strong>API Rate Limiting:</strong> Implemented rate limiting on sensitive APIs (5 requests per minute per user) to prevent abuse</li>
+                                <li><strong>User Experience:</strong> Added user-friendly error messages and visual styling for rate limit notifications</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <div class="security-feature">
+                            <div class="security-icon">
+                              <i class="fa-solid fa-key"></i>
+                            </div>
+                            <div class="security-content">
+                              <h4>Authentication Security</h4>
+                              <ul class="security-details">
+                                <li><strong>Supabase Authentication:</strong> Implemented secure email/password authentication with Google OAuth integration</li>
+                                <li><strong>Auth Flow Protection:</strong> Created secure authentication redirects and properly managed sessions and tokens</li>
+                                <li><strong>Production Configuration:</strong> Configured OAuth providers to only accept redirects to trusted domains</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <div class="security-feature">
+                            <div class="security-icon">
+                              <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div class="security-content">
+                              <h4>API & Data Security</h4>
+                              <ul class="security-details">
+                                <li><strong>CORS Configuration:</strong> Properly configured CORS headers to restrict API access to trusted domains</li>
+                                <li><strong>Secure Error Handling:</strong> Implemented error handling that doesn't leak implementation details</li>
+                                <li><strong>Input Validation:</strong> Added checks for input types and formats before processing</li>
+                                <li><strong>Protected Routes:</strong> Implemented access controls to protect sensitive functionality</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <p class="mb-25">This multi-layered security approach addresses key vulnerabilities including cross-site scripting (XSS), cross-site request forgery (CSRF), injection attacks, and authentication security, providing a robust security posture for the application.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">IMPACT</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Results & User Impact</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">Early results demonstrate significant impact on user financial decision-making:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li>76% of users report increased confidence in their banking decisions</li>
+                          <li>Average optimization value of 21% through the fund distribution algorithm</li>
+                          <li>Decision time reduced by 89% compared to manual comparison methods</li>
+                          <li>4.7/5 average satisfaction rating from post-usage surveys</li>
+                        </ul>
+                        <p class="mb-25">User feedback revealed several key insights: transparency drives trust, with users particularly valuing understanding exactly how interest is calculated; the fund distribution optimization feature receives the highest satisfaction ratings; and mobile usage exceeds expectations, with 68% of users accessing the tool via mobile devices and spending 24% more time exploring different scenarios.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">APPROACH</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Product Management</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">While developing this product independently, I applied enterprise product management methodologies throughout. This included structured stakeholder communication, agile project management with structured sprints, and comprehensive risk management.</p>
+                        <p class="mb-25">I established a structured decision framework to guide product development with a Four-Factor Evaluation Model:</p>
+                        <ul class="elc-inbd-hero__feature list-check mb-30">
+                          <li><strong>User Value:</strong> Does this enhance the user's ability to make better decisions?</li>
+                          <li><strong>Technical Feasibility:</strong> Can this be implemented reliably with available resources?</li>
+                          <li><strong>Maintenance Impact:</strong> How will this affect ongoing maintenance requirements?</li>
+                          <li><strong>Strategic Alignment:</strong> Does this advance the core product vision?</li>
+                        </ul>
+                        <p class="mb-25">Based on usage data and feedback, I've evolved the product roadmap to focus on highest-impact enhancements, including enhanced scenario comparison functionality, personal financial goal integration, rate change alert system, and historical rate tracking visualization.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-60">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <p class="category-text mb-10">PRODUCT ROADMAP</p>
+                      <hr class="category-line mb-30">
+                      <h2 class="elc-insd-challenge-title mb-10 mt-10">Evolution & Future Plans</h2>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mt-50">
+                        <p class="mb-25">SmartSaver has evolved significantly from its initial concept, with each release adding valuable functionality based on user feedback and strategic priorities:</p>
+                        
+                        <div class="roadmap-container">
+                          <!-- Roadmap Timeline -->
+                          <div class="roadmap-timeline">
+                            <div class="roadmap-line"></div>
+                            
+                            <!-- Past Releases -->
+                            <div class="roadmap-item past">
+                              <div class="roadmap-version">v0.1</div>
+                              <div class="roadmap-dot"></div>
+                              <div class="roadmap-content">
+                                <h4>Initial Proof of Concept</h4>
+                                <p class="roadmap-date">Early Jan 2025</p>
+                                <div class="roadmap-details">
+                                  <p>Developed basic calculation functionality using Streamlit to validate core concept.</p>
+                                  <ul class="roadmap-features">
+                                    <li>Basic interest calculator for single bank</li>
+                                    <li>Simple qualification criteria inputs</li>
+                                    <li>Basic results display</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="roadmap-item past">
+                              <div class="roadmap-version">v0.5</div>
+                              <div class="roadmap-dot"></div>
+                              <div class="roadmap-content">
+                                <h4>Initial React Implementation</h4>
+                                <p class="roadmap-date">Early Feb 2025</p>
+                                <div class="roadmap-details">
+                                  <p>Rebuilt application using React for improved UX and performance.</p>
+                                  <ul class="roadmap-features">
+                                    <li>Multi-bank comparison</li>
+                                    <li>Responsive design for mobile and desktop</li>
+                                    <li>Improved visual presentation of results</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="roadmap-item past">
+                              <div class="roadmap-version">v1.0</div>
+                              <div class="roadmap-dot"></div>
+                              <div class="roadmap-content">
+                                <h4>First Production Release</h4>
+                                <p class="roadmap-date">Late Feb 2025</p>
+                                <div class="roadmap-details">
+                                  <p>First full-featured release with core functionality complete.</p>
+                                  <ul class="roadmap-features">
+                                    <li>Comprehensive qualification criteria</li>
+                                    <li>Detailed interest breakdown</li>
+                                    <li>Error reporting system</li>
+                                    <li>Basic analytics tracking</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Current Release -->
+                            <div class="roadmap-item past">
+                              <div class="roadmap-version">v1.03</div>
+                              <div class="roadmap-dot"></div>
+                              <div class="roadmap-content">
+                                <h4>Current Release</h4>
+                                <p class="roadmap-date">Early Mar 2025</p>
+                                <div class="roadmap-details">
+                                  <p>Enhanced with optimization features and AI assistance.</p>
+                                  <ul class="roadmap-features">
+                                    <li>Fund distribution optimization algorithm</li>
+                                    <li>Scenario comparison functionality</li>
+                                    <li>AI chatbot for user assistance</li>
+                                    <li>Enhanced feedback collection system</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Future Releases -->
+                            <div class="roadmap-item current">
+                              <div class="roadmap-version">v1.5</div>
+                              <div class="roadmap-dot current"></div>
+                              <div class="roadmap-content">
+                                <h4>Completed: Enhanced Security & Personalization</h4>
+                                <p class="roadmap-date">End Mar 2025</p>
+                                <div class="roadmap-details">
+                                  <p>Added user authentication and comprehensive security measures.</p>
+                                  <ul class="roadmap-features">
+                                    <li>User authentication system with email and Google OAuth</li>
+                                    <li>Saved scenarios and calculations</li>
+                                    <li>Comprehensive security implementation including input sanitization with DOMPurify</li>
+                                    <li>API rate limiting (5 requests/minute) to prevent abuse</li>
+                                    <li>CORS configuration and protected routes</li>
+                                    <li>Secure error handling and session management</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="roadmap-item future">
+                              <div class="roadmap-version">v2.0</div>
+                              <div class="roadmap-dot future"></div>
+                              <div class="roadmap-content">
+                                <h4>Planned: Financial Intelligence Platform</h4>
+                                <p class="roadmap-date">Early Apr 2025</p>
+                                <div class="roadmap-details">
+                                  <p>Expanding to a comprehensive financial decision platform.</p>
+                                  <ul class="roadmap-features">
+                                    <li>Personalized bank and product recommendations</li>
+                                    <li>Integration with financial planning tools</li>
+                                    <li>Advanced financial goal setting and tracking</li>
+                                    <li>Expanded product coverage (loans, fixed deposits, etc.)</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <p class="mt-30">The roadmap is continuously refined based on user feedback, market trends, and strategic priorities, ensuring SmartSaver remains focused on delivering maximum value to users.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elc-inbd-share__area mt-60 mb-60">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="elc-inbd-share__wrapper">
+                        <p>Share this post</p>
+                        <ul class="elc-social-media">
+
+                          <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="elc-inbd-tags">
+                        <li>Tags</li>
+                        <li><a href="blog-light.html">FinTech</a></li>
+                        <li><a href="blog-light.html">Product Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog details area end  -->
+
+
+        </main>
+
+        <!-- Footer section start -->
+        <footer class="footer-sfluence__area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="footer-sfluence__social">
+                  <ul>
+                    <li><a id="black-text" href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+                    <li><a id="black-text" href="mailto:debby.lingzl@gmail.com"><span><i class="fa fa-envelope"></i></span></a></li>
+                    <li><a id="black-text" href="https://www.linkedin.com/in/debby-ling/"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                  </ul>
+                </div>
+                <div class="footer-sfluence__btm">
+                  <p id="black-text">© All rights reserved by <a id="black-text" href="http://debbyling.github.io">Debby Ling</a></p>
+                  <a id="black-text" href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer section end -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/typed.js"></script>
+  <script src="../assets/js/mixitup.min.js"></script>
+  <script src="../assets/js/progressbar.js"></script>
+  <script src="../assets/js/gsap.min.js"></script>
+  <script src="../assets/js/ScrollSmoother.min.js"></script>
+  <script src="../assets/js/ScrollToPlugin.min.js"></script>
+  <script src="../assets/js/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/SplitText.min.js"></script>
+  <script src="../assets/js/TweenMax.min.js"></script>
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script src="../assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="../assets/js/basictable.min.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/error-handling.js"></script>
+  <script src="../assets/js/offcanvas.js"></script>
+  <script src="../assets/js/wc-cursor.js"></script>
+
+  <script>
+  jQuery(document).ready(function($) {
+    console.log('Document ready');
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile mfp-with-zoom',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300
+      },
+      callbacks: {
+        open: function() {
+          $('body').css('overflow', 'hidden');
+        },
+        close: function() {
+          $('body').css('overflow', '');
+        }
+      }
+    });
+    
+    // Close offcanvas menu when any navigation link is clicked
+    $('.offcanvas-3__menu a').on('click', function() {
+      hideCanvas3(); // Call the existing hideCanvas3 function
+    });
+  });
+  </script>
+
+</body>
+
+
+
+<style> 
+
+.category-line {
+    border-top: 1px solid #000;
+    margin: 0;
+    width: 100%;
+}
+
+.light .body-elc {
+  background-color: var(--blue-2);
+}
+
+.body-wrapper.body-elc {
+  border: 0px;
+}
+
+.next-project-wrapper {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.next-project-preview {
+  position: absolute;
+  right: 0;
+  bottom: 100%; /* Positions it above the wrapper */
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* Adds some space between preview and content */
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.next-project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-project-wrapper:hover .next-project-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    display: none;
+  }
+}
+
+.next-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.next-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.next-title {
+  font-size: 20px;
+  margin: 0;
+  color: #212529;
+}
+
+.next-project-arrows {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.arrow-left, .arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover .arrow-left {
+  transform: translateX(-5px);
+}
+
+.next-project:hover .arrow-right {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .next-project-wrapper {
+    width: 250px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .next-title {
+    font-size: 16px;
+  }
+}
+
+
+
+.elc-inbd-hero__feature li {
+    font-size: 16px;
+}
+
+.light p {
+  color: #000;
+}
+
+li {
+  color: #000;
+}
+
+.try-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: var(--blue-1);
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure EVERYTHING inside the button is white */
+.try-button, 
+.try-button span, 
+.try-button i, 
+.try-button * {
+  color: white !important;
+}
+
+.try-button:hover {
+  transform: translateY(-2px);
+  background: var(--blue-2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.try-button:hover,
+.try-button:hover span,
+.try-button:hover i,
+.try-button:hover * {
+  color: white !important;
+}
+
+.try-button .fa-arrow-right {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.try-button:hover .fa-arrow-right {
+  transform: translateX(4px);
+}
+
+/* Persona Cards Styling */
+.persona-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.persona-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--blue-1);
+}
+
+.persona-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.persona-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.persona-icon {
+  background: var(--blue-1);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.persona-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.persona-demographics {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.persona-description {
+  margin-bottom: 20px;
+}
+
+.persona-description p {
+  margin: 0;
+  color: #444;
+}
+
+.persona-points {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.persona-points li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+.persona-points li:before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+  color: var(--blue-1);
+  font-size: 16px;
+}
+
+.persona-quote {
+  background: rgba(0, 0, 0, 0.03);
+  border-left: 3px solid var(--blue-1);
+  padding: 15px;
+  position: relative;
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-icon {
+  color: var(--blue-1);
+  opacity: 0.3;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.persona-quote p {
+  margin: 0;
+  padding-left: 20px;
+  font-style: italic;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .persona-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Value-Effort Matrix Styling */
+.value-effort-container {
+  margin: 30px 0 50px;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.value-effort-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.value-effort-matrix {
+  position: relative;
+  width: 90%;
+  height: 500px;
+  margin: 40px auto;
+  padding: 0 40px;
+}
+
+.matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.matrix-label {
+  position: absolute;
+  font-weight: 600;
+  color: #555;
+}
+
+.label-top {
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-bottom {
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-left {
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  width: 100px;
+  text-align: center;
+}
+
+.label-right {
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  width: 100px;
+  text-align: center;
+}
+
+.matrix-quadrant {
+  padding: 15px;
+  overflow: auto;
+  border: 1px solid #eee;
+}
+
+.q1 {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.q2 {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.q3 {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.q4 {
+  background-color: rgba(233, 30, 99, 0.1);
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.quadrant-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  color: #444;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateX(5px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #666;
+}
+
+.mvp .feature-dot {
+  background-color: #4CAF50;
+}
+
+.phase2 .feature-dot {
+  background-color: #2196F3;
+}
+
+.future .feature-dot {
+  background-color: #E91E63;
+}
+
+.feature-text {
+  color: #333;
+}
+
+.matrix-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .value-effort-matrix {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .label-left {
+    left: -50px;
+    font-size: 12px;
+  }
+  
+  .label-right {
+    right: -50px;
+    font-size: 12px;
+  }
+}
+
+/* Product Roadmap Styling */
+.roadmap-container {
+  margin: 40px 0;
+  position: relative;
+}
+
+.roadmap-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.roadmap-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 92px;
+  width: 4px;
+  background: linear-gradient(to bottom, 
+    var(--blue-1) 0%, 
+    var(--blue-1) 65%, 
+    #ddd 65%, 
+    #ddd 100%);
+  border-radius: 4px;
+}
+
+.roadmap-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.roadmap-version {
+  width: 60px;
+  padding-top: 5px;
+  font-weight: 600;
+  text-align: right;
+  font-size: 16px;
+  color: #555;
+}
+
+.roadmap-dot {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-1);
+  margin: 0 20px;
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
+}
+
+.roadmap-dot.current {
+  background-color: #4CAF50;
+  box-shadow: 0 0 0 6px rgba(76, 175, 80, 0.3), 0 0 0 10px rgba(76, 175, 80, 0.1);
+  animation: pulse 2s infinite;
+}
+
+.roadmap-dot.future {
+  background-color: #9E9E9E;
+  box-shadow: 0 0 0 4px rgba(158, 158, 158, 0.2);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 6px rgba(76, 175, 80, 0.3), 0 0 0 10px rgba(76, 175, 80, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0.3), 0 0 0 16px rgba(76, 175, 80, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 6px rgba(76, 175, 80, 0.3), 0 0 0 10px rgba(76, 175, 80, 0.1);
+  }
+}
+
+.roadmap-content {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.roadmap-item.past .roadmap-content {
+  border-left: 4px solid var(--blue-1);
+}
+
+.roadmap-item.current .roadmap-content {
+  border-left: 4px solid #4CAF50;
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+.roadmap-item.future .roadmap-content {
+  border-left: 4px solid #9E9E9E;
+  opacity: 0.85;
+}
+
+.roadmap-content:hover {
+  transform: translateX(5px);
+}
+
+.roadmap-content h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.roadmap-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.roadmap-details p {
+  margin-bottom: 10px;
+}
+
+.roadmap-features {
+  list-style: none;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.roadmap-features li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.roadmap-features li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--blue-1);
+}
+
+.roadmap-item.future .roadmap-features li:before {
+  content: '○';
+  color: #9E9E9E;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .roadmap-line {
+    left: 52px;
+  }
+  
+  .roadmap-version {
+    width: 30px;
+    font-size: 14px;
+  }
+  
+  .roadmap-dot {
+    margin: 0 10px 0 15px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .roadmap-content {
+    padding: 15px;
+  }
+  
+  .roadmap-content h4 {
+    font-size: 16px;
+  }
+}
+
+/* AI Chatbot Feature Section Styling */
+.chatbot-feature-section {
+  margin: 30px 0;
+  padding: 25px;
+  background: rgba(236, 246, 255, 0.6);
+  border-radius: 12px;
+  border-left: 4px solid var(--blue-1);
+}
+
+.chatbot-feature-content {
+  display: flex;
+  gap: 20px;
+}
+
+.chatbot-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--blue-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-explanation {
+  flex: 1;
+}
+
+.chatbot-explanation p:first-child {
+  margin-top: 0;
+}
+
+.chatbot-details {
+  margin: 15px 0;
+  padding-left: 5px;
+}
+
+.chatbot-details li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.chatbot-details li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--blue-1);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .chatbot-feature-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .chatbot-icon {
+    margin-bottom: 15px;
+  }
+  
+  .chatbot-details li {
+    text-align: left;
+  }
+}
+
+/* A/B Test Section Styling */
+.ab-test-section {
+  margin: 30px 0;
+  padding: 25px;
+  background: rgba(245, 245, 245, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.ab-test-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.test-variant {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 250px;
+}
+
+.variant-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.variant-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.test-variant:first-child .variant-icon {
+  background: var(--blue-1);
+}
+
+.test-variant:last-child .variant-icon {
+  background: #6c757d;
+}
+
+.variant-header h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.variant-metrics {
+  margin-bottom: 15px;
+}
+
+.metric-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.test-variant:first-child .metric-value {
+  color: var(--blue-1);
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.variant-description p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.test-comparison {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.comparison-arrow {
+  font-size: 24px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.comparison-text {
+  font-weight: 600;
+  color: #666;
+}
+
+.ab-test-conclusion {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  border-left: 3px solid var(--blue-1);
+}
+
+@media (max-width: 768px) {
+  .ab-test-results {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .test-variant {
+    max-width: 100%;
+  }
+  
+  .test-comparison {
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  
+  .comparison-arrow {
+    margin-bottom: 0;
+    margin-right: 10px;
+    transform: rotate(90deg);
+  }
+}
+
+/* Security Feature Section Styling */
+.security-feature-section {
+  margin: 25px 0 35px;
+}
+
+.security-feature {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.security-feature:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.security-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--blue-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.security-content {
+  flex: 1;
+}
+
+.security-content h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.security-details {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.security-details li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+}
+
+.security-details li:before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+  color: var(--blue-1);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .security-feature {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .security-icon {
+    margin-bottom: 10px;
+  }
+}
+
+</style>
+
+</html>

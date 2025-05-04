@@ -1,0 +1,41 @@
+/*----------------------------------------*/
+/*  01. HERO CSS START
+/*----------------------------------------*/
+
+
+.progress {
+  &__item {
+    p.title {
+      padding: 0;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      color: var(--white);
+      padding-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    &-2 {
+      @extend .progress__item;
+      padding-bottom: 25px;
+    }
+  }
+
+}
+
+
+
+// Light Version
+.light {
+  .progress__item p.title {
+    color: var(--black-2);
+  }
+
+  .developer-skill__resume {
+    .sonny_progressbar {
+      .progress-percent {
+        color: var(--black-2);
+      }
+    }
+  }
+}

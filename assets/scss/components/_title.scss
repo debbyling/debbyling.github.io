@@ -1,0 +1,640 @@
+/*----------------------------------------*/
+/*  01. TITLE CSS START
+/*----------------------------------------*/
+
+
+// Section Title
+.sec {
+  &-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    @include zi(1);
+
+    @media #{$xl} {
+      font-size: 36px;
+    }
+
+    @media #{$lg} {
+      font-size: 30px;
+    }
+
+    @media #{$sm} {
+      font-size: 24px;
+    }
+
+    &-2 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 1.3;
+
+      @media #{$xl} {
+        font-size: 24px;
+      }
+
+      @media #{$md} {
+        font-size: 22px;
+      }
+
+      @media #{$sm} {
+        text-align: start;
+        font-size: 28px;
+        padding-bottom: 40px;
+
+        br {
+          display: block;
+        }
+      }
+
+      span {
+        font-weight: 400;
+        font-family: $font_macondo;
+      }
+    }
+
+    &-3 {
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 1.1;
+
+      @media #{$xl} {
+        font-size: 40px;
+      }
+
+      @media #{$md} {
+        font-size: 30px;
+      }
+
+      @media #{$sm} {
+        br {
+          display: block;
+        }
+      }
+    }
+
+    &-4 {
+      font-size: 60px;
+      font-weight: 500;
+    }
+
+    &-5 {
+      font-weight: 600;
+      font-size: 65px;
+      line-height: 1.1;
+
+      @media #{$xl} {
+        font-size: 60px;
+      }
+
+      @media #{$lg} {
+        font-size: 48px;
+      }
+
+      span {
+        display: block;
+        font-weight: 400;
+        font-family: $font_newyork;
+        padding-inline-start: 100px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          inset-inline-start: 0;
+          top: 50%;
+          width: 80px;
+          height: 1px;
+          background-color: var(--white);
+        }
+      }
+    }
+
+    &-6 {
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 1;
+      color: var(--white-11);
+      text-transform: uppercase;
+
+      @media #{$xl} {
+        font-size: 60px;
+      }
+
+      @media #{$lg} {
+        font-size: 48px;
+      }
+
+      @media #{$md} {
+        font-size: 36px;
+      }
+
+      @media #{$sm} {
+        font-size: 30px;
+      }
+    }
+
+    &-7 {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 1;
+      text-transform: uppercase;
+
+      @media #{$xl} {
+        font-size: 48px;
+      }
+
+      @media #{$lg} {
+        font-size: 36px;
+      }
+
+      @media #{$sm} {
+        font-size: 30px;
+      }
+    }
+
+    &-8 {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 1.2;
+      text-transform: capitalize;
+
+      @media #{$lg} {
+        font-size: 35px;
+      }
+
+      @media #{$md} {
+        font-size: 30px;
+      }
+
+      @media #{$sm} {
+        font-size: 30px;
+      }
+    }
+
+    &-9 {
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 1.1;
+
+      @media #{$xl} {
+        font-size: 48px;
+      }
+
+      @media #{$lg} {
+        font-size: 36px;
+      }
+
+      @media #{$sm} {
+        font-size: 32px;
+      }
+    }
+
+    &-10 {
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 1.08;
+
+      @media #{$xl} {
+        font-size: 80px;
+      }
+
+      @media #{$lg} {
+        font-size: 70px;
+      }
+
+      @media #{$md} {
+        font-size: 60px;
+      }
+
+      @media #{$sm} {
+        font-size: 50px;
+      }
+
+      span {
+        display: block;
+        padding-inline-start: 150px;
+
+        @media #{$lg} {
+          padding-inline-start: 100px;
+        }
+      }
+    }
+
+    &-11 {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 1.15;
+      text-transform: uppercase;
+      text-indent: 130px;
+      background-image: url(../imgs/writer/shape-4.png);
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: 85px 18px;
+
+      @include rtl {
+        background-position: calc(100% - 85px) 18px;
+
+      }
+
+      @media #{$lg} {
+        font-size: 48px;
+        background-position: 88px 10px;
+      }
+
+      @media #{$md} {
+        font-size: 40px;
+      }
+
+      @media #{$sm} {
+        font-size: 32px;
+        text-indent: 60px;
+        background-position: 20px 3px;
+      }
+    }
+
+    &-12 {
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 1.05;
+
+      @media #{$xl} {
+        font-size: 80px;
+      }
+
+      @media #{$lg} {
+        font-size: 70px;
+      }
+
+      @media #{$md} {
+        font-size: 60px;
+      }
+
+      @media #{$sm} {
+        font-size: 48px;
+
+        br {
+          display: block;
+        }
+      }
+    }
+
+    &-13 {
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 1.2;
+
+      @media #{$xl} {
+        font-size: 70px;
+      }
+
+      @media #{$lg} {
+        font-size: 60px;
+      }
+
+      @media #{$md} {
+        font-size: 48px;
+      }
+
+      @media #{$sm} {
+        font-size: 40px;
+      }
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    &-14 {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+
+      @media #{$xl} {
+        font-size: 40px;
+      }
+
+      @media #{$md} {
+        font-size: 30px;
+      }
+
+      @media #{$sm} {
+        br {
+          display: block;
+        }
+      }
+    }
+
+    &-15 {
+      font-size: 80px;
+      line-height: 1;
+      font-weight: 600;
+      color: var(--black-2);
+
+      @media #{$lg} {
+        font-size: 60px;
+      }
+
+      @media #{$md} {
+        font-size: 48px;
+      }
+
+      @media #{$sm} {
+        font-size: 28px;
+      }
+    }
+
+    &-16 {
+      font-size: 70px;
+      line-height: 1;
+      font-weight: 500;
+      color: var(--white-14);
+
+      @media #{$xl} {
+        font-size: 60px;
+      }
+
+      @media #{$lg} {
+        font-size: 50px;
+      }
+
+      @media #{$md} {
+        font-size: 40px;
+      }
+
+      @media #{$sm} {
+        font-size: 36px;
+      }
+    }
+
+    &-17 {
+      font-size: 70px;
+      line-height: 0.9;
+      font-weight: 400;
+      color: var(--white-15);
+
+      @include light {
+        color: var(--green-6);
+      }
+
+      @media #{$xl} {
+        font-size: 60px;
+      }
+
+      @media #{$lg} {
+        font-size: 50px;
+      }
+
+      @media #{$md} {
+        font-size: 40px;
+      }
+
+      @media #{$sm} {
+        font-size: 36px;
+      }
+    }
+
+    &-18 {
+      font-size: 170px;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      @media #{$xxl} {
+        font-size: 140px;
+      }
+
+      @media #{$xl} {
+        font-size: 120px;
+      }
+
+      @media #{$lg} {
+        font-size: 90px;
+      }
+
+      @media #{$md} {
+        font-size: 70px;
+      }
+
+      @media #{$sm} {
+        font-size: 60px;
+      }
+
+    }
+  }
+
+
+  // Sub Title
+  &-sub-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--primary);
+    @include zi(1);
+
+    @include light {
+      color: var(--primary);
+    }
+
+    &-2 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--primary);
+      text-transform: capitalize;
+    }
+
+    &-3 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      color: var(--black-2);
+      text-transform: uppercase;
+    }
+
+    &-4 {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--white);
+      position: relative;
+      padding-inline-start: 100px;
+      text-transform: uppercase;
+
+      @media #{$md} {
+        padding-inline-start: 50px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        top: 50%;
+        width: 80px;
+        height: 1px;
+        background-color: var(--white);
+
+        @media #{$md} {
+          width: 40px;
+        }
+      }
+    }
+
+    &-5 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    &-6 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.5;
+      height: 40px;
+      padding: 7px 25px;
+      display: inline-block;
+      color: var(--white-14);
+      background-image: url(../imgs/motivational-speaker/shape-3.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &-11 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: var(--black-9);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-18 {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+// Hero Title
+.hero-title {
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &-5 {
+    font-weight: 500;
+    font-size: 150px;
+    line-height: 1;
+    color: var(--black-2);
+  }
+}
+
+
+
+.section-right {
+  p {
+    font-size: 24px;
+  }
+}
+
+.section_wrapper {
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+}
+
+.dis_6 {
+  font-size: 18px;
+  border-bottom: 1px solid #3F3A36;
+}
+
+.sec-title-4 {
+  &.about-title-7 {
+    font-family: $font_newyork;
+    font-weight: 400;
+  }
+
+}
+
+.title-7 {
+  font-size: 100px;
+  line-height: 1;
+
+  @media #{$lg} {
+    font-size: 60px;
+  }
+
+  @media #{$md} {
+    font-size: 60px;
+  }
+
+  @media #{$sm} {
+    font-size: 30px;
+  }
+
+  &.title-6 {
+    text-transform: uppercase;
+
+    @media #{$lg} {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    @media #{$md} {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    @media #{$sm} {
+      font-size: 30px;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    span {
+      padding-inline-start: 150px;
+
+      @media #{$sm} {
+        padding-inline-start: 0;
+      }
+    }
+  }
+}
+
+
+
+
+// Light Version
+.light {
+
+  .sec-sub-title-6 {
+    background-image: url(../imgs/motivational-speaker/shape-4.png);
+  }
+
+  .sec-title-11 {
+    background-image: url(../imgs/writer/start-dark.png);
+  }
+
+  .sec-title-5 span {
+    padding-inline-start: 70px;
+
+    &::before {
+      width: 60px;
+      background-color: var(--black-2);
+    }
+  }
+
+  .sec-sub-title-4 {
+    &::before {
+      background-color: var(--black-2);
+    }
+  }
+
+  .sec-sub-title-11 {
+    color: var(--gray-10);
+  }
+}

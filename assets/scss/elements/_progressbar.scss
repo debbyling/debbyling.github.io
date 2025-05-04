@@ -1,0 +1,80 @@
+.wcf__progressbar {
+  .title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .progress-percent {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &.style {
+    &-1 {
+      .title {
+        padding-bottom: 15px;
+      }
+    }
+
+    &-2 {
+      text-align: center;
+
+      .pg-circle {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto 20px;
+      }
+
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+
+      .title {
+        color: #FCFAF5;
+      }
+
+      .progress-percent {
+        color: #FCFAF5;
+        font-size: 18px;
+        font-weight: 600;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-3 {
+      gap: 60px;
+      display: flex;
+      margin-bottom: 500px;
+
+      .title {
+        color: #FCFAF5;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+
+      .dots {
+        gap: 10px;
+        display: flex;
+      }
+
+      .dot {
+        border: 1px solid #F9B099;
+        display: inline-block;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+      }
+
+
+    }
+  }
+}

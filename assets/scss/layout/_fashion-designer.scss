@@ -1,0 +1,2052 @@
+.fashion {
+    /*
+        FASHION HEADER AREA SASS
+    */
+
+    &__navicon {
+        z-index: 9;
+        display: none;
+
+        @media #{$lg} {
+            display: block;
+        }
+    }
+
+    &__header {
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+
+
+            @media #{$lg} {
+                padding-top: 30px;
+            }
+
+            @media #{$sm} {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .main-menu li a {
+                font-size: 14px;
+                padding: 30px 19px;
+                text-transform: uppercase;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+
+            @media #{$md} {
+                padding: 30px 25px;
+            }
+
+            @media #{$sm} {
+                padding: 30px 20px;
+            }
+        }
+
+        &-logo {
+            max-width: 160px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-menu {
+            text-align: right;
+            z-index: 9;
+
+            @media #{$lg} {
+                display: none;
+            }
+
+            nav {
+                ul {
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    li {
+                        &:hover {
+                            .dp-menu {
+                                right: 100%;
+                                left: auto;
+                            }
+
+                            a {
+                                &::after {
+                                    left: auto;
+                                    right: auto;
+                                }
+                            }
+                        }
+                    }
+
+                    .dp-menu {
+                        right: calc(100% + 20px);
+                        left: auto;
+                        top: 0;
+
+                        a {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            nav>ul>li {
+
+                >a {
+                    color: var(--white);
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding: 10px 0;
+
+                }
+            }
+        }
+    }
+
+    /*
+        FASHION HERO AREA SASS
+    */
+
+    &__hero {
+        position: relative;
+        text-align: center;
+        background-color: var(--black-10);
+
+        .outshape_1 {
+            position: absolute;
+            right: 0;
+            top: 65%;
+
+            @media #{$lg} {
+                top: 55%;
+            }
+
+            @media #{$sm} {
+                display: none;
+            }
+        }
+    }
+
+
+    &__thumb {
+        display: inline-block;
+        position: relative;
+        transform: translateY(-30px);
+
+        @media #{$sm} {
+            transform: unset;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__content {
+        color: var(--white);
+        text-align: left;
+
+        a {
+            color: var(--white);
+        }
+
+        span {
+            padding-top: 15px;
+            font-weight: 400;
+            display: block;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.4;
+
+            @media #{$md} {
+                font-size: 20px;
+            }
+
+            @media #{$sm} {
+                br {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__middle {
+        &__thumb {
+            max-width: 100%;
+        }
+
+        &__content {
+            position: relative;
+            z-index: 99;
+            text-align: center;
+            color: var(--white);
+
+            @media #{$sm} {
+                margin: 30px 0;
+
+                a {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    &__hero {
+        &-modal {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media #{$sm} {
+                margin-top: 70px;
+            }
+        }
+    }
+
+    &__htitle {
+        margin-bottom: 30px;
+
+        @media #{$sm} {
+            margin-top: 100px;
+        }
+    }
+
+    &__title {
+        font-size: 200px;
+        font-weight: 400;
+        line-height: 0.9;
+        margin-top: -25px;
+        margin-left: -30px;
+
+        @media #{$lg} {
+            font-size: 120px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        @media #{$md} {
+            font-size: 80px;
+            max-width: 520px;
+        }
+
+        @media #{$sm} {
+            font-size: 60px;
+        }
+    }
+
+    &__title2 {
+        font-size: 40px;
+        line-height: 1.05;
+
+        @media #{$sm} {
+            font-size: 30px;
+
+            br {
+                display: block;
+            }
+        }
+
+        span {
+            color: var(--primary);
+        }
+    }
+
+    &__main {
+        position: relative;
+        padding-top: 105px;
+    }
+
+    &__wrapper {
+        &-bottom {
+            gap: 60px;
+            display: flex;
+            align-items: center;
+
+            @media #{$xl} {
+                gap: 30px;
+            }
+
+            @media #{$sm} {
+                justify-content: center;
+                margin-bottom: 70px;
+            }
+        }
+    }
+
+    &__bottom {
+        &-content {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: 40px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+
+            @media #{$md} {
+                margin-right: 0;
+            }
+
+            @media #{$sm} {
+                margin-right: 0;
+                margin: 0 auto;
+            }
+        }
+
+        &-dis p {
+            font-size: 18px;
+            font-weight: 500;
+
+            span {
+                color: var(--white);
+
+                @include light {
+                    color: var(--black-2);
+                }
+            }
+        }
+    }
+
+    /*
+        FASHION WORK AREA SASS
+    */
+
+    &__work {
+        background-color: var(--black-10);
+
+        &.fashion__innerportfolio {
+            padding-bottom: 0;
+        }
+
+        &-htitle {
+            font-size: 100px;
+            color: var(--white);
+            line-height: 1;
+
+            @media #{$lg} {
+                font-size: 60px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+
+                br {
+                    display: block;
+                }
+            }
+        }
+
+        &-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 240px 90px;
+
+            @media #{$xl} {
+                gap: 120px 60px;
+            }
+
+            @media #{$lg} {
+                gap: 70px;
+            }
+
+            @media #{$md} {
+                gap: 60px 40px;
+            }
+
+            @media #{$sm} {
+                gap: 20px;
+                justify-content: center;
+            }
+        }
+
+        &-pt {
+            padding-top: 130px;
+
+            @media #{$xl} {
+                padding-top: 90px;
+            }
+
+            @media #{$lg} {
+                padding-top: 180px;
+            }
+
+            @media #{$md} {
+                padding-top: 140px;
+            }
+
+            @media #{$sm} {
+                padding-top: 15px;
+            }
+        }
+
+        &-ovalbtn {
+            text-align: right;
+
+            @media #{$sm} {
+                text-align: left;
+                margin-bottom: 50px;
+            }
+        }
+
+        &-item {
+            overflow: hidden;
+            position: relative;
+            max-width: 440px;
+
+            @media #{$lg} {
+                max-width: 320px;
+            }
+
+            @media #{$md} {
+                max-width: 280px;
+            }
+
+            @media #{$sm} {
+                max-width: 100%;
+            }
+
+            &.large {
+                max-width: 660px;
+
+                @media #{$xl} {
+                    max-width: 560px;
+                }
+
+                @media #{$lg} {
+                    max-width: 460px;
+                }
+
+                @media #{$md} {
+                    max-width: 360px;
+                }
+
+                @media #{$sm} {
+                    max-width: 100%;
+                }
+            }
+
+            * {
+                color: var(--white);
+            }
+        }
+
+        &-thumb {
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &-dis p {
+            max-width: 275px;
+            margin-left: auto;
+            position: relative;
+            font-size: 18px;
+            padding-bottom: 65px;
+            margin-right: 30px;
+
+            @media #{$sm} {
+                padding: 30px 0;
+                padding-top: 0;
+                margin-right: 0;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: -83%;
+                top: 10px;
+                width: 190px;
+                height: 1px;
+                background-color: var(--white);
+
+                @media #{$lg} {
+                    left: -65%;
+                    width: 130px;
+                }
+
+                @media #{$sm} {
+                    left: -55%;
+                }
+            }
+        }
+
+        &-content {
+            transition: all 0.5s;
+            position: absolute;
+            top: 60px;
+            inset-inline-start: 60px;
+
+            @media #{$lg} {
+                top: unset;
+                inset-inline-start: 30px;
+                bottom: 60px;
+            }
+        }
+
+        &-name {
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--white);
+            position: relative;
+            z-index: 3;
+            top: 15px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 1.1;
+            padding-top: 25px;
+
+            @include light {
+                color: var(--white);
+            }
+
+            @media #{$lg} {
+                font-size: 40px;
+            }
+
+            @media #{$md} {
+                font-size: 30px;
+            }
+        }
+    }
+
+    /*
+        FASHION ABOUT AREA SASS
+    */
+
+    &__about {
+        background-color: var(--black-10);
+
+        &-titlepb {
+            margin-bottom: 15px;
+        }
+
+        &-title {
+            font-size: 100px;
+            color: var(--white);
+            line-height: 1.1;
+
+            @media #{$lg} {
+                font-size: 60px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+            }
+        }
+
+        &-content {
+            text-align: center;
+            border-top: 1px solid var(--black-12);
+            border-bottom: 1px solid var(--black-12);
+            padding: 110px 0 145px;
+
+            @media #{$xl} {
+                padding: 90px 0 120px;
+            }
+
+            @media #{$lg} {
+                padding: 80px 0 90px;
+            }
+
+            @media #{$sm} {
+                padding: 50px 0 60px;
+            }
+        }
+
+        &-text {
+            p {
+                max-width: 630px;
+                margin: 0 auto;
+                font-size: 18px;
+                padding-bottom: 60px;
+                line-height: 1.6;
+
+                @media #{$sm} {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    /*
+        FASHION SERVICE AREA SASS
+    */
+
+    &__service {
+        padding-bottom: 150px;
+        background-color: var(--black-10);
+
+        @media #{$xl} {
+            padding-bottom: 120px;
+        }
+
+        @media #{$lg} {
+            padding-bottom: 100px;
+        }
+
+        @media #{$md} {
+            padding-bottom: 90px;
+        }
+
+        &-header {
+            span {
+                font-weight: 400;
+                color: var(--white);
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            a {
+                font-weight: 400;
+                color: var(--white);
+                display: inline-block;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+
+        &-items {
+            position: relative;
+            flex-direction: column;
+            display: flex;
+            gap: 45px;
+
+            @media #{$sm} {
+                gap: 30px;
+            }
+        }
+
+        &-item {
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+
+                .fashion__service-thumb,
+                .fashion__service-thumb-2 {
+                    opacity: 1;
+                }
+
+                .fashion__service-title {
+                    color: var(--primary);
+                }
+            }
+        }
+
+        &-thumb {
+            position: absolute;
+            width: 330px;
+            height: 450px;
+            bottom: 30px;
+            left: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: opacity 0.5s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+            overflow: hidden;
+            pointer-events: none;
+            opacity: 0;
+
+            @media #{$xl} {
+                left: -50px;
+            }
+
+            @media #{$lg} {
+                left: 0;
+                bottom: 0;
+                width: 280px;
+                height: 360px;
+                object-fit: cover;
+            }
+
+            @media #{$md} {
+                width: 220px;
+                height: 300px;
+            }
+
+            @media #{$sm} {
+                display: none;
+            }
+
+            &-2 {
+                position: absolute;
+                width: 220px;
+                height: 285px;
+                top: 40px;
+                right: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: opacity 0.5s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+                overflow: hidden;
+                pointer-events: none;
+                opacity: 0;
+
+                @media #{$xl} {
+                    right: -50px;
+                }
+
+                @media #{$lg} {
+                    right: 0;
+                    top: 20px;
+                    width: 180px;
+                    height: 240px;
+                    object-fit: cover;
+                }
+
+                @media #{$md} {
+                    width: 120px;
+                    height: 180px;
+                }
+
+                @media #{$sm} {
+                    display: none;
+                }
+            }
+        }
+
+        &-title {
+            font-size: 100px;
+            color: var(--white);
+
+            display: inline-block;
+            position: relative;
+            transition: all 0.3s;
+
+            @media #{$xl} {
+                font-size: 80px;
+            }
+
+            @media #{$lg} {
+                font-size: 60px;
+            }
+
+            @media #{$md} {
+                font-size: 50px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+            }
+        }
+
+        &-sub {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--black-9);
+            display: block;
+        }
+
+        &-header {
+            @media #{$sm} {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+
+    /*
+        FASHION VIDEO AREA SASS
+    */
+    &__video {
+        position: relative;
+        background-color: var(--black-10);
+
+        &-text {
+            display: flex;
+            justify-content: flex-start;
+            max-width: 540px;
+            align-items: center;
+            position: absolute;
+            right: 100px;
+            z-index: 9;
+            bottom: 55px;
+
+            @media #{$md} {
+                bottom: 30px;
+                right: 40px;
+            }
+
+            @media #{$sm} {
+                bottom: 30px;
+                right: 0;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 340px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -23%;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.5);
+
+                @media #{$sm} {
+                    display: none;
+                }
+            }
+        }
+
+        &-left {
+            margin-right: 50px;
+
+            @media #{$md} {
+                margin-right: 30px;
+            }
+        }
+
+        &-dis {
+            @media #{$sm} {
+                margin-right: 30px;
+                text-align: end;
+            }
+
+            p {
+                font-size: 18px;
+                color: var(--white);
+                text-indent: 30px;
+            }
+        }
+
+        &-title {
+            font-size: 60px;
+            color: var(--white) !important;
+            text-indent: 40px;
+            line-height: 1.1;
+            text-transform: uppercase;
+
+
+            @media #{$md} {
+                font-size: 40px;
+                text-indent: 30px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+            }
+        }
+
+        video {
+            max-width: 100%;
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            margin-bottom: -6px;
+
+            @media #{$lg} {
+                height: 500px;
+            }
+
+            @media #{$md} {
+                height: 460px;
+            }
+
+            @media #{$sm} {
+                height: 400px;
+            }
+        }
+    }
+
+    /*
+        FASHION NOMINATED AREA SASS
+    */
+
+    &__nominated {
+        background-color: var(--black-10);
+
+        @media #{$sm} {
+            padding-top: 40px;
+        }
+
+        &-award {
+            float: right;
+
+            @media #{$sm} {
+                float: left;
+                padding-top: 30px;
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 1.05;
+            color: var(--white);
+            text-transform: lowercase;
+            letter-spacing: -3px;
+
+            @media #{$lg} {
+                font-size: 60px;
+                max-width: 800px;
+            }
+
+            @media #{$sm} {
+                font-size: 40px;
+            }
+
+            &-pb {
+                padding-bottom: 50px;
+
+                @media #{$sm} {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        &-dis {
+            max-width: 440px;
+            margin-left: 305px;
+
+            @media #{$lg} {
+                margin-left: 150px;
+            }
+
+            @media #{$md} {
+                max-width: 100%;
+                margin-left: 0;
+            }
+
+            p {
+                font-size: 18px;
+                text-indent: 70px;
+            }
+        }
+    }
+
+    /*
+        FASHION CONTACT AREA SASS
+    */
+
+    &__contact {
+        padding-top: 130px;
+        background-color: var(--black-10);
+
+        @media #{$xl} {
+            padding-top: 120px;
+        }
+
+        @media #{$lg} {
+            padding-top: 100px;
+        }
+
+        @media #{$md} {
+            padding-top: 50px;
+        }
+
+        &-tmb {
+            margin-bottom: 50px;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--black-12);
+            padding-bottom: 15px;
+            margin-bottom: 85px;
+            margin-left: 20px;
+
+            @media #{$sm} {
+                margin-bottom: 50px;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 1.5;
+                color: var(--white);
+            }
+        }
+
+        &-wrapper {
+            padding-left: 520px;
+
+            @media #{$xl} {
+                padding-left: 340px;
+            }
+
+            @media #{$md} {
+                padding-left: 200px;
+            }
+
+            @media #{$sm} {
+                padding-left: 50px;
+            }
+        }
+    }
+
+    /*
+        FASHION FOOTER AREA SASS
+    */
+    &__footer {
+        padding: 85px 50px 80px;
+        border-top: 2px solid var(--black-12);
+        background-color: var(--black-10);
+
+        @media #{$lg} {
+            padding: 70px 50px 60px;
+        }
+
+        @media #{$md} {
+            padding: 50px 30px;
+        }
+
+        &-logo {
+            max-width: 110px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-field {
+            margin-bottom: 30px;
+        }
+
+        &-content {
+            display: grid;
+            grid-template-columns: .99fr .7fr 0.7fr 1.2fr 1.1fr;
+
+            @media #{$lg} {
+                grid-row-gap: 50px;
+                grid-template-columns: repeat(12, 1fr);
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-social {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 100px;
+                height: 1px;
+                background-color: var(--gray-9);
+                bottom: 0;
+            }
+
+            li {
+                display: inline-block;
+                margin-right: 18px;
+
+                a {
+                    color: var(--white);
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+
+        &-logo {
+            @media #{$lg} {
+                grid-column: 1/5;
+            }
+
+            @media #{$sm} {
+                grid-column: unset;
+            }
+        }
+    }
+
+    &__flinks {
+        margin: 0 !important;
+
+        @media #{$lg} {
+            grid-column: 5/9;
+        }
+
+        @media #{$sm} {
+            grid-column: unset;
+        }
+
+        li a {
+            &:hover {
+                color: var(--primary);
+            }
+        }
+
+        &-2 {
+            margin: 0 !important;
+
+            @media #{$lg} {
+                grid-column: 9/-1;
+            }
+
+            @media #{$sm} {
+                grid-column: unset;
+            }
+
+            li a {
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    &__newsletter {
+        @media #{$lg} {
+            grid-row: 2;
+            grid-column: 7/-1;
+
+            @media #{$sm} {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+
+        .wc-btn-oval {
+            padding: 20px 42px;
+        }
+
+        form {
+            input {
+                font-size: 14px;
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid var(--black-13);
+                background-color: transparent;
+                color: var(--black-9);
+                padding: 10px 30px 10px 0;
+
+                &::placeholder {
+                    color: var(--black-9);
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        @media #{$lg} {
+            grid-row: 2;
+            grid-column: 1/7;
+
+            @media #{$sm} {
+                grid-row: 5;
+                grid-column: unset;
+            }
+        }
+
+        p {
+            a {
+                color: var(--white);
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+
+}
+
+.fashion {
+    &__blog {
+        background-color: var(--black-10);
+
+        @include light {
+            background-color: var(--white);
+        }
+
+        @media #{$lg} {
+            padding-top: 120px;
+        }
+
+        @media #{$sm} {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 90px 50px;
+
+            @media #{$xl} {
+                grid-gap: 60px 40px;
+                justify-content: center;
+            }
+
+            @media #{$md} {
+                justify-content: center;
+            }
+
+            @media #{$sm} {
+                gap: 20px;
+            }
+        }
+    }
+
+    &__blogdetails {
+        padding-top: 235px;
+
+        @media #{$md} {
+            padding-top: 150px;
+        }
+    }
+
+    &-blog {
+        &__area {
+            background-color: var(--black-10);
+
+            @include light {
+                background-color: var(--white);
+            }
+        }
+    }
+
+    &__innerblogdetails {
+        background-color: var(--black-10);
+
+        @include light {
+            background-color: var(--white);
+        }
+    }
+}
+
+.line-5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #34302E 0%, rgba(51, 51, 55, 0) 82.15%);
+
+    &.line-2 {
+        left: 325px;
+    }
+
+    &.line-3 {
+        left: 644px;
+    }
+
+    &.line-4 {
+        left: auto;
+        right: 245px;
+    }
+
+    &.line-6 {
+        left: auto;
+        z-index: 9;
+        right: 0;
+    }
+}
+
+.margin_style {
+    &_1 {
+        position: absolute;
+        object-fit: cover;
+        width: 300px;
+        height: auto;
+        top: 280px;
+        left: 0;
+
+        @media #{$lg} {
+            width: 260px;
+            top: 200px;
+        }
+
+        @media #{$md} {
+            top: 160px;
+            width: 220px;
+        }
+
+        @media #{$sm} {
+            top: 140px;
+            width: 170px;
+        }
+    }
+
+    &_2 {
+        position: absolute;
+        object-fit: cover;
+        width: 400px;
+        height: 560px;
+        top: 50px;
+        right: 0;
+        z-index: 50;
+
+        @media #{$xxl} {
+            width: 340px;
+            height: 480px;
+            right: 70px;
+        }
+
+        @media #{$lg} {
+            width: 320px;
+            height: 460px;
+            top: 90px;
+            right: 0;
+        }
+
+        @media #{$md} {
+            width: 280px;
+            height: 380px;
+        }
+
+        @media #{$sm} {
+            top: 100px;
+            width: 200px;
+            height: 260px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+.thumb_shape_5 {
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    top: -40px;
+}
+
+.row.custom-sm-reverse:nth-child(even) {
+    flex-direction: row;
+}
+
+
+
+// Hover Animation
+.fashion__work-hover {
+    .fashion__work-content img {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        transform: translateY(40px) rotate(30deg);
+
+        @include rtl {
+            transform: translateY(40px) rotate(210deg);
+        }
+
+        @media #{$lg} {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(30px) rotate(0);
+        }
+    }
+
+    .fashion__work-name,
+    .fashion__work-title {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        transform: translateY(40px);
+
+        @media #{$lg} {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &:hover {
+        .fashion__work-content img {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) rotate(0);
+
+            @include rtl {
+                transform: translateY(0) rotate(240deg);
+            }
+        }
+
+        .fashion__work-name,
+        .fashion__work-title {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .fashion__work-title {
+            transition-delay: 0.12s;
+        }
+
+        .fashion__work-name {
+            transition-delay: 0.1s;
+        }
+    }
+}
+
+
+/*
+    FASHION INNER SASS
+*/
+
+.fashion {
+    &__abouthero {
+        background-color: var(--black-10);
+
+        @include light {
+            background-color: var(--white);
+        }
+
+        .subscribe-circle-2 {
+            background-color: var(--black-2);
+        }
+
+        .subscribe-circle-2 span::after {
+            border: 1px dashed var(--white);
+        }
+
+        .subscribe-circle-2 span {
+            color: var(--white);
+        }
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            @media #{$lg} {
+                grid-template-columns: .5fr .5fr;
+                gap: 100px;
+            }
+
+            @media #{$md} {
+                gap: 50px;
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+        }
+
+        &-left {
+            position: relative;
+
+            @media #{$sm} {
+                max-width: 250px;
+            }
+
+            img {
+                height: 750px;
+                width: 550px;
+                object-fit: cover;
+                border-radius: 275px;
+
+                @media #{$lg} {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        &-right {
+            padding-left: 90px;
+
+            @media #{$lg} {
+                padding-left: 0;
+            }
+
+            @media #{$md} {
+                padding-left: 0;
+            }
+        }
+
+        &-circle {
+
+            position: absolute;
+            top: 130px;
+            right: 30px;
+            z-index: 3;
+
+            @media #{$xl} {
+                right: -30px;
+            }
+
+            @media #{$lg} {
+                top: 50px;
+                right: -50px;
+            }
+
+            @media #{$md} {
+                top: 0;
+                right: -40px;
+            }
+
+            @media #{$sm} {
+                top: -30px;
+                right: -60px;
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 1;
+            padding-bottom: 25px;
+            color: var(--white);
+
+            @media #{$lg} {
+                font-size: 72px;
+            }
+
+            @media #{$md} {
+                font-size: 60px;
+            }
+
+            @media #{$sm} {
+                font-size: 50px;
+            }
+
+            @include light {
+                color: var(--black-2);
+            }
+        }
+
+        &-dis p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
+    &__aboutAim {
+        background-color: var(--black-10);
+
+        @include light {
+            background-color: var(--white);
+        }
+    }
+
+    &-aboutBrand {
+        &__area {
+            background-color: var(--black-10);
+
+            @include light {
+                background-color: var(--white);
+            }
+        }
+
+        &__inner {
+            max-width: 1390px;
+            margin: auto;
+            padding: 32px 15px;
+            margin-bottom: 1px;
+            border-top: 1px solid var(--gray-13);
+            border-bottom: 1px solid var(--gray-13);
+
+            .brand__logo img {
+                max-width: 180px;
+
+                @media #{$lg} {
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+
+    &__abouthow {
+        background-color: var(--black-10);
+
+        .dancer__abouthow-ititle {
+            @media #{$sm} {
+                font-size: 30px;
+            }
+        }
+
+        @include light {
+            background-color: var(--white);
+        }
+    }
+
+    &__aboutExpose {
+        background-color: var(--black-2);
+
+        .dancer__aboutExpose {
+            background-color: transparent;
+
+            @include light {
+                background-color: transparent;
+            }
+        }
+
+        &-item {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__aboutnominated {
+        background-color: var(--black-10);
+
+        @include light {
+            background-color: var(--white);
+        }
+    }
+
+    &__aboutgallary {
+        padding-left: 40px;
+        background-color: var(--black-10);
+
+        @include light {
+            background-color: var(--white);
+        }
+
+        @media #{$sm} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &.dark-aboutgallary {
+            background-color: var(--black-2);
+        }
+
+        &-grid {
+            max-width: 1920px;
+            margin: auto;
+            display: grid;
+            gap: 120px;
+            grid-template-columns: 0.8fr 1.45fr 1.2fr 0.6fr;
+
+            @media #{$xl-1} {
+                gap: 50px;
+            }
+
+            @media #{$sm} {
+                gap: 15px;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .fashion-gallery {
+                width: 100%;
+
+                &:nth-child(1) {
+                    margin-top: 60px;
+
+                    @media #{$lg} {
+                        margin-top: 40px;
+                    }
+
+                    @media #{$sm} {
+                        margin-top: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-top: 180px;
+
+                    @media #{$lg} {
+                        margin-top: 100px;
+                    }
+
+                    @media #{$md} {
+                        margin-top: 70px;
+                    }
+
+                    @media #{$sm} {
+                        margin-top: 0;
+                    }
+                }
+
+                &:nth-child(4) {
+                    margin-top: 140px;
+
+                    @media #{$lg} {
+                        margin-top: 80px;
+                    }
+
+                    @media #{$md} {
+                        margin-top: 60px;
+                    }
+
+                    @media #{$sm} {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__aboutoverlay {
+        background-image: url('../imgs/inner/fashion/overlay.jpg');
+        background-size: cover;
+        padding: 160px 0;
+        position: relative;
+
+        @media #{$lg} {
+            padding: 100px 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(64, 44, 15, 0.42);
+        }
+
+        &-wrapper {
+            text-align: center;
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 1;
+            color: var(--white);
+            padding-bottom: 40px;
+
+            @media #{$lg} {
+                font-size: 80px;
+            }
+
+            @media #{$md} {
+                font-size: 60px;
+            }
+
+            @include light {
+                color: var(--white);
+            }
+        }
+    }
+
+    &__servicehero {
+        background-color: var(--black-2);
+
+        @include light {
+            background-color: var(--white);
+        }
+
+        &-thumb {
+            img {
+                width: 740px;
+                height: 350px;
+                border-radius: 193px;
+                object-fit: cover;
+
+                @media #{$sm} {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__innerservice {
+        background-color: var(--black-2);
+
+        @include light {
+            background-color: var(--white);
+        }
+    }
+
+    &__innerwork {
+        background: var(--white) !important;
+        padding-bottom: 150px;
+
+        @media #{$md} {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__classDetailHero {
+        @media #{$sm} {
+            padding-top: 120px;
+        }
+
+        .dancer__classDetailHero-list {
+            font-family: $font_newyork;
+        }
+    }
+
+    &__portfolio {
+        &-hero {
+            background-color: var(--black-10);
+
+            @include light {
+                background-color: var(--white);
+            }
+
+            .photographer__portfolio-diswrap {
+                @media #{$md} {
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+.fashion-portf-detail {
+    .photographertwo__hero-title {
+        text-transform: unset;
+    }
+}
+
+
+
+
+// LIGHT VERSION
+.light {
+
+    .fashion__about,
+    .fashion__hero {
+        background-color: var(--white);
+    }
+
+    .fashion__aboutExpose {
+        background-color: #F2EDE1;
+
+        .dancer__aboutExpose {
+            @include light {
+                background-color: var(--black-10);
+            }
+        }
+    }
+
+    .fashion__work,
+    .fashion__aboutgallary.dark-aboutgallary {
+        background-color: var(--white);
+    }
+
+    .fashion__service {
+        padding-bottom: 150px;
+        background-color: var(--white);
+    }
+
+    .fashion__nominated {
+        background-color: var(--white);
+    }
+
+    .fashion__contact {
+        background-color: var(--white);
+    }
+
+    .fashion__footer {
+        background-color: var(--white-2);
+    }
+
+    .service_header {
+        border-color: rgba(227, 227, 227, 0.5);
+    }
+
+    .fashion {
+
+        // hero style
+        &__title {
+            color: var(--black-2);
+        }
+
+        &__title2 {
+            color: var(--black-2);
+        }
+
+        &__content {
+            span {
+                color: var(--black-2);
+            }
+
+            img {
+                filter: invert(0.9);
+            }
+        }
+
+        // about 
+        &__about {
+            &-title {
+                color: var(--black-2);
+            }
+
+            &-content {
+                border-top: 1px solid rgba(227, 227, 227, 0.5);
+                border-bottom: 1px solid rgba(227, 227, 227, 0.5);
+            }
+        }
+
+        // work 
+        &__work {
+            &-htitle {
+                color: var(--black-2);
+            }
+
+            &-dis {
+                &::before {
+                    background-color: var(--black-2);
+                }
+            }
+        }
+
+        // service
+        &__service {
+            &-title {
+                color: var(--black-2);
+            }
+
+            &-header {
+
+                span {
+                    color: var(--black-2);
+                }
+
+                a {
+                    color: var(--black-2);
+
+                    &:hover {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+
+        // video
+        &__video {
+            &-dis {
+                color: var(--white);
+            }
+        }
+
+        // nominated
+        &__nominated {
+            &-title {
+                color: var(--black-2);
+            }
+
+            &-title2 {
+                color: var(--black-2);
+            }
+
+            &-thumb {
+                img {
+                    filter: brightness(0);
+                }
+            }
+        }
+
+        // contact 
+        &__contact {
+            &-header {
+                border-bottom: 1px solid #3f3a3621;
+
+                span {
+                    color: var(--black-2);
+                }
+            }
+        }
+
+        &__newsletter form input {
+            color: var(--black-2);
+            border-color: rgba(227, 227, 227, 0.5);
+        }
+
+        // footer
+        &__footer {
+            &-social {
+                &::before {
+                    background-color: rgba(227, 227, 227, 0.5);
+                }
+
+                li {
+                    a {
+                        color: var(--black-2);
+
+                        &:hover {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__copyright {
+            p {
+                a {
+                    color: var(--black-2);
+                }
+            }
+        }
+
+
+    }
+
+    .footer__links {
+        li {
+            a {
+                color: var(--black-2);
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    .play_btn_5 {
+        border: 1px solid var(--black-2);
+    }
+
+    .line-5 {
+        background: linear-gradient(180deg, #dddddd 0%, rgba(51, 51, 55, 0) 82.15%);
+    }
+
+    &.fashion__innerservice {
+        background: var(--white);
+    }
+
+}
+
+.radius-175 {
+    border-radius: 175px;
+}

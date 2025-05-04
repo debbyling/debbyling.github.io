@@ -1,0 +1,1033 @@
+.light {
+
+
+  .icon-circle {
+    background-color: var(--white-3);
+  }
+}
+
+
+.light {
+  .developer {
+
+    &-skill__area {
+      background-color: var(--white-2);
+    }
+
+    &-portfolio__area {
+      background-color: var(--white-2);
+    }
+
+    &-brand__area {
+      background-color: var(--white-2);
+    }
+
+    &-hero {
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__left {
+        p {
+          color: var(--black-2);
+        }
+      }
+
+      &__social-wrapper {
+        border-color: var(--gray-2);
+
+        .follow-me {
+          color: var(--gray);
+        }
+      }
+    }
+
+    &-experience__item {
+      background-color: var(--white-3);
+
+      .exp-title {
+        color: var(--black-2);
+      }
+
+      .company {
+        color: var(--gray);
+      }
+    }
+
+    &-award {
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__date {
+        color: var(--gray);
+      }
+    }
+
+    &-skill {
+      &__item {
+        background-color: var(--white-3);
+      }
+
+      &__percentage {
+        color: var(--black-2);
+      }
+
+      &__title {
+        color: var(--gray);
+      }
+
+      &__grid .sonny_progressbar .progress-percent {
+        color: var(--black-2);
+      }
+    }
+
+    &-resume {
+      &__tab-menu ul {
+        background-color: var(--white-3);
+
+        li a {
+          color: var(--black-2);
+        }
+      }
+    }
+
+    &-about {
+      &__top {
+        .experience {
+          color: var(--black-2);
+
+          &-title {
+            color: var(--black-2);
+          }
+        }
+      }
+
+      &__info li strong {
+        color: var(--black-2);
+      }
+
+      &__slide {
+        color: var(--white-3);
+      }
+
+    }
+
+    &-portfolio {
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__date {
+        color: var(--gray);
+      }
+    }
+
+    &-service {
+      &__item a {
+        background-color: var(--white-2);
+      }
+
+      &__title {
+        color: var(--black-2);
+      }
+
+    }
+
+    &-testimonial {
+      &__slider .btn-swiper {
+        border: 1px solid var(--gray-4);
+      }
+
+      &__slide {
+        p {
+          color: var(--black-2);
+        }
+
+        .client-name {
+          color: var(--black-2);
+        }
+
+        .client-role {
+          color: var(--gray);
+        }
+      }
+
+    }
+
+    &-brand__title {
+      color: var(--black-2);
+    }
+
+    &-blog {
+      &__title {
+        a {
+          color: var(--black-2);
+        }
+      }
+
+      &__meta li a {
+        color: var(--gray);
+        background-color: var(--white-3);
+
+        &:hover {
+          color: var(--black-2);
+        }
+      }
+
+      &__link {
+        color: var(--gray);
+
+        &::after {
+          background: var(--gray);
+        }
+
+        &:hover {
+          color: var(--black-2);
+        }
+      }
+
+    }
+
+  }
+
+
+}
+
+
+/*----------------------------------------*/
+/*   INDEX LIGHT VERSION
+/*----------------------------------------*/
+
+.light {
+  .sidebar-menu li a {
+    color: var(--white);
+  }
+
+  .pdesigner-blog__area {
+    background: var(--white);
+  }
+
+  .footer__area-2 {
+    background: var(--white);
+  }
+
+  .pdesigner {
+
+    &-hero {
+      &__title {
+        color: var(--black-2);
+      }
+    }
+
+    &-service {
+      &__title {
+        color: var(--black-2);
+
+        &::before {
+          background-color: var(--black-2);
+        }
+      }
+
+      &__item {
+        border-color: var(--gray-2);
+
+        &:hover {
+          .pdesigner-service {
+            &__number {
+              color: var(--black-2);
+            }
+          }
+        }
+
+        ul li {
+          color: var(--black-2);
+        }
+      }
+
+
+    }
+
+    &-portfolio {
+      &__btn-list {
+        button {
+          color: var(--black-2);
+        }
+      }
+    }
+
+    &-contact {
+      &__info {
+        padding-left: 1px;
+      }
+
+      &__type {
+
+        .icon {
+          border-color: var(--white-6);
+        }
+      }
+    }
+
+  }
+}
+
+/*----------------------------------------*/
+/*   FREELANCER LIGHT VERSION
+/*----------------------------------------*/
+
+.light {
+
+  .header__area-3::before {
+    background: var(--white);
+  }
+
+  .sec-title-2 {
+    color: var(--white);
+  }
+
+  .sec-title-2 {
+    color: var(--black-2);
+  }
+
+  .footer__address p {
+    color: var(--black-2);
+  }
+}
+
+/*----------------------------------------*/
+/*   MARKETER LIGHT VERSION
+/*----------------------------------------*/
+.light {
+
+  .marketer {
+
+    &__expertise,
+    &__testimonial {
+      background-color: var(--white-2);
+    }
+  }
+
+  .marketer {
+
+
+    &__hero-line span,
+    &__about-left::after {
+      background-color: var(--black-9);
+    }
+
+    &__hero-shape2,
+    &__hero-shape3,
+    &__hero-shape6,
+    &__hero-shape9 {
+      filter: invert(0.8);
+    }
+
+    &__work-date {
+      color: var(--white);
+    }
+
+    &__expertise-dis p,
+    &__award-content span,
+    &__testimonial-position,
+    &__work-workdetails p,
+    &__expertise-footer p {
+      color: var(--gray);
+    }
+
+    &__expertise-item {
+      background: linear-gradient(180deg, var(--white-3) 0%, rgba(255, 255, 255, 0) 100%);
+
+      &:hover {
+        background-color: var(--white-3);
+      }
+    }
+
+    &__experience-items {
+      border-color: var(--black-9);
+
+      &.b-left::before {
+        background-color: var(--black-9);
+      }
+    }
+
+    &__testimonial-item {
+      background-color: var(--white-4);
+    }
+
+    &__testimonial-wrapper {
+      .swiper-pagination span {
+        color: var(--black-2);
+      }
+
+      .dash {
+        background: var(--black-2);
+      }
+    }
+  }
+
+  .marketer__about .sec-title-3 {
+    color: var(--black-2);
+  }
+
+  .marketer__counter-item .text p {
+    color: var(--black-2);
+  }
+
+  .marketer__about-right a {
+    color: var(--black-2);
+  }
+
+  .marketer__textslider .title {
+    color: var(--black-2);
+  }
+}
+
+/*----------------------------------------*/
+/*   FASHION LIGHT VERSION
+/*----------------------------------------*/
+
+.light {
+  .fashion__hero {
+    background-color: var(--white);
+  }
+
+  .fashion__about {
+    background-color: var(--white-2);
+  }
+
+  .fashion__work {
+    background-color: var(--white);
+  }
+
+  .fashion__service {
+    padding-bottom: 150px;
+    background-color: var(--white);
+  }
+
+  .fashion__nominated {
+    background-color: var(--white);
+  }
+
+  .fashion__contact {
+    background-color: var(--white);
+  }
+
+  .fashion__footer {
+    background-color: var(--white-2);
+  }
+}
+
+
+
+
+/*----------------------------------------*/
+/*   ARCHITECHT LIGHT VERSION
+/*----------------------------------------*/
+
+
+.light {
+  .architect {
+    &-hero__area {
+      background-color: var(--white);
+    }
+
+
+    &-cta__area .line {
+      border-color: var(--white-4);
+      border-bottom: 2px solid var(--white-4);
+    }
+
+    &-text__area {
+      .title {
+        color: var(--black-2);
+      }
+    }
+
+  }
+
+
+  .architect {
+    &-portfolio {
+
+      &__title {
+        color: var(--black-2);
+      }
+    }
+
+    &-award {
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__item {
+        border-color: var(--white-4);
+      }
+    }
+
+    &-cta {
+      &__title {
+        color: var(--black-2);
+      }
+    }
+
+  }
+}
+
+
+/*----------------------------------------*/
+/*   YOGATRAINER LIGHT VERSION
+/*----------------------------------------*/
+
+
+
+
+.light {
+
+  .plan__item {
+    border-color: var(--gray-4);
+
+  }
+
+}
+
+
+.light {
+  .joya__contact-formfield {
+    input {
+      &::placeholder {
+        color: var(--black-2);
+      }
+    }
+  }
+
+  .joya__contact-msg {
+    input {
+      &::placeholder {
+        color: var(--black-2);
+      }
+    }
+  }
+
+  .joya__contact-checkbox {
+    input {
+      border: 1px solid var(--black-2);
+    }
+
+    label {
+      &::before {
+        filter: brightness(0);
+      }
+    }
+  }
+
+  .photographertwo__photo-title2 {
+    color: var(--black-2);
+  }
+}
+
+
+
+/*----------------------------------------*/
+/*   WRITER LIGHT VERSION
+/*----------------------------------------*/
+
+.light {
+
+  .writer {
+    &-hero__area {
+
+      &::after {
+        position: absolute;
+        background: linear-gradient(180deg, rgba(28, 29, 32, 0) 0%, var(--white-9) 85%);
+      }
+    }
+
+    &-about__area {
+
+      .sec-title-11::after {
+        background: var(--gray-2);
+      }
+    }
+
+
+    &-blog__area {
+      .sec-title-wrap {
+        &::after {
+          background: var(--gray-2);
+        }
+
+        a {
+          color: var(--gray-10);
+
+          &:hover {
+            color: var(--black-2);
+          }
+        }
+      }
+    }
+
+  }
+
+  .writer {
+    &-hero {
+      &__top {
+        .link {
+          color: var(--black-2);
+          border-top: 1px solid var(--black-2);
+
+          &::after {
+            filter: invert(1);
+          }
+
+          img {
+            filter: invert(1);
+          }
+
+        }
+      }
+
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__btm {
+        .right {
+          p {
+            color: var(--black-2);
+          }
+
+        }
+      }
+
+
+
+    }
+
+    &-about {
+      &__content .read {
+        color: var(gray-10);
+      }
+    }
+
+    &-featured {
+      &__title {
+        color: var(--black-2);
+      }
+    }
+
+    &-portfolio {
+      &__top {
+        border-color: var(--gray-2);
+
+      }
+
+
+      &__item {
+        .date {
+          color: var(--gray-10);
+        }
+
+        .title {
+          color: var(--black-2);
+        }
+      }
+
+      &__info {
+        a {
+          color: var(--gray-10);
+          border-color: var(--gray-10);
+
+          &:hover {
+            color: var(--black-2);
+            border-color: var(--black-2);
+          }
+        }
+      }
+    }
+
+    &-publish {
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__sub-title {
+        color: var(--black-2);
+
+        span {
+          background: var(--black-2);
+        }
+      }
+
+      &__year {
+        .year {
+          color: var(--black-2);
+        }
+      }
+
+      &__book {
+        .name {
+          color: var(--gray-10);
+        }
+
+        p {
+          color: var(--gray-10);
+        }
+      }
+
+      &__note {
+        border-color: var(--gray-2);
+
+        p {
+          border-color: var(--gray-2);
+          color: var(--gray-10);
+
+          span {
+            color: var(--black-2);
+          }
+        }
+      }
+
+
+    }
+
+    &-award {
+      &__title {
+        color: var(--black-2);
+
+        span {
+          color: var(--white);
+          background-color: var(--black-2);
+        }
+      }
+
+      &__content {
+        p {
+          color: var(--gray-10);
+
+          span {
+            color: var(--black-2);
+          }
+
+          a {
+            color: var(--black-2);
+
+            &::after {
+              background-color: var(--black-2);
+            }
+          }
+        }
+      }
+
+      &__right {
+        .title {
+          color: var(--black-2);
+          border-color: var(--gray-2);
+        }
+      }
+    }
+
+  }
+
+  .follow-instagram p {
+
+    &::after {
+      background-color: var(--black-2);
+    }
+
+    a {
+      color: var(--black-2);
+
+      &:hover {
+        color: var(--gray-10);
+      }
+    }
+  }
+}
+
+
+
+
+
+/*----------------------------------------*/
+/*   ARTIST LIGHT VERSION
+/*----------------------------------------*/
+
+.light {
+  .artist__textslider-area {
+    background-color: var(--black-2);
+  }
+
+  .artist {
+
+    &__header-menu li a {
+      color: var(--black-2);
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    &__showcase {
+      &-name {
+        color: var(--black-2);
+      }
+
+      &-title {
+        color: var(--black-2);
+      }
+    }
+
+    &__gallary-content span {
+      color: var(--black-2);
+    }
+
+    &__exhibition-title {
+      color: var(--black-2);
+    }
+
+    &__exhibition-location * {
+      color: var(--black-2);
+    }
+
+    &__exhibition-location,
+    &__exhibition-item {
+      border-color: var(--gray-4);
+    }
+
+    &__profile {
+      &-name {
+        color: var(--black-2);
+      }
+
+      &-item span:last-of-type {
+        color: var(--black-2);
+      }
+    }
+
+  }
+}
+
+/*----------------------------------------*/
+/*   SOCIAL INFLUENCE LIGHT VERSION
+/*----------------------------------------*/
+
+
+.light {
+
+  .double-border::before,
+  .double-border::after {
+    background-color: var(--black-2);
+  }
+
+  .get-touch {
+    color: var(--black-2);
+    border-color: var(--black-2);
+  }
+
+
+  .sfluence {
+
+    &-brand__area {
+      border-color: var(--white-11);
+
+      .text {
+        background-color: var(--white-2);
+      }
+    }
+
+
+    &-blog__area {
+
+      .sec-text {
+        p {
+          color: var(--gray-10);
+        }
+
+        a {
+          filter: invert(0);
+        }
+      }
+    }
+
+
+  }
+
+
+  .sfluence {
+    &-hero {
+
+
+      &__mid {
+        p {
+          color: var(--gray-10);
+        }
+
+        .subscribe {
+          border-color: var(--gray-10);
+
+          &::after {
+            background: var(--gray-10);
+          }
+
+          li {
+            color: var(--gray-10);
+
+            img {
+              filter: invert(1);
+            }
+
+            a {
+              color: var(--gray-10);
+            }
+          }
+        }
+
+      }
+
+      &__top {
+        .video-wrap {
+
+          button {
+            color: var(--black-2);
+          }
+        }
+
+        .wrap {
+          background-image: url(../imgs/social-influence/shape-5.png);
+        }
+
+      }
+
+      &__btm {
+        .sub-title {
+          color: var(--black-2);
+        }
+
+        .band {
+          p {
+            color: var(--black-2);
+          }
+
+          img {
+            filter: invert(1);
+          }
+        }
+
+        .arrow {
+          filter: invert(1);
+        }
+      }
+    }
+
+    &-service {
+      &__title {
+        color: var(--black-2);
+
+        &::before {
+          background-color: var(--black-2);
+        }
+      }
+
+      &__top {
+        p {
+          color: var(--gray-10);
+        }
+      }
+
+      &__list {
+        border-color: #D7D0CC;
+      }
+
+      &__info {
+        .logos::before {
+          background-color: #D7D0CC;
+        }
+      }
+
+      &__btm {
+        .wc-btn {
+          color: var(--black-2);
+          border-color: var(--black-2);
+        }
+
+        .arrow {
+          filter: invert(1);
+        }
+      }
+
+    }
+
+    &-blog {
+
+      &__item {
+        &::after {
+          background-color: #D7D0CC;
+        }
+
+        .thumb:hover {
+          border-color: #D7D0CC;
+        }
+      }
+    }
+
+    &-video {
+      &__title {
+        color: var(--black-2);
+      }
+
+      &__top {
+        p {
+          color: var(--black-2);
+        }
+      }
+
+      &__btm {
+        .mid-line {
+          background: var(--black-2);
+        }
+
+        .swiper-pagination-fraction {
+          color: var(--black-2);
+        }
+      }
+    }
+
+    &-event {
+      &__top {
+        p {
+          color: var(--gray-10);
+
+          &::before {
+            background: var(--black-2);
+          }
+        }
+      }
+
+      &__list {
+        a {
+          border-color: var(--gray-10);
+        }
+      }
+
+      &__item {
+
+        .title,
+        .text,
+        .date,
+        .location {
+          color: var(--black-2);
+        }
+
+        .link img {
+          filter: invert(1);
+        }
+      }
+    }
+
+
+
+
+
+  }
+}

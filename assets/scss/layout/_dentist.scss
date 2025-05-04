@@ -1,0 +1,2567 @@
+.body-dentist {
+    background-color: #202C58;
+    color: #A6ACC2;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        .anim-reveal-line {
+            padding-bottom: 6px;
+            margin-bottom: -6px;
+        }
+    }
+
+    @include light {
+        background-color: var(--white);
+        color: #555555;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #202C58;
+        }
+    }
+
+    p {
+        color: #A6ACC2;
+
+        @include light {
+            color: #555555;
+        }
+    }
+}
+
+.has-top-line {
+    position: relative;
+    padding-top: 20px;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 2px;
+        background: #202C58;
+        top: 0;
+        inset-inline-start: 0;
+    }
+}
+
+
+.beforeAfter {
+    img {
+        width: 100%;
+    }
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    img {
+        filter: invert(1) grayscale(1) brightness(5);
+
+        @include light {
+            filter: none;
+        }
+    }
+}
+
+
+.dentist {
+    &-container {
+        max-width: 1550px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &-header {
+        padding: 0 50px;
+
+        @media #{$sm} {
+            padding: 0 15px;
+        }
+
+        &__logo {
+            padding: 18px 0;
+            position: relative;
+        }
+
+        &__inner {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+        }
+
+        &__meta {
+            &.content-dark {
+                .call-us a span {
+                    color: #202C58;
+                }
+
+                .call-us a strong {
+                    color: #202C58;
+                }
+
+                .call-us a i {
+                    color: #202C58;
+                }
+            }
+
+            .call-us {
+                text-align: end;
+
+                @media #{$xs} {
+                    display: none;
+                }
+
+
+
+                a {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1.3;
+                    color: var(--white);
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+
+                    span {
+                        transition: all 0.3s;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #A6ACC2;
+
+                        @include light {
+                            color: #202C58;
+                        }
+                    }
+
+                    &:hover {
+                        span {
+                            color: var(--primary);
+                        }
+                    }
+
+                    strong {
+                        display: block;
+                        font-weight: 400;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: #A6ACC2;
+
+                        @include light {
+                            color: #202C58;
+                        }
+                    }
+
+                    i {
+                        font-size: 24px;
+                        transform: rotate(-45deg);
+                        color: #A6ACC2;
+
+                        @include light {
+                            color: #202C58;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media #{$lg} {
+                display: none;
+            }
+
+
+
+            .main-menu>ul>li>a {
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #A6ACC2;
+                padding: 40px 20px;
+
+                @include light {
+                    color: #202C58;
+                }
+            }
+
+            .main-menu.menu-dark>ul>li>a {
+                color: #202C58;
+            }
+        }
+
+        &__others {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        &__navicon {
+            button {
+                width: 60px;
+                height: 60px;
+                background: #FFEDED;
+                border-radius: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                @media #{$xs} {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .menu-icon {
+                width: 18px;
+                height: 14px;
+                margin-top: 0;
+
+                span {
+                    width: 12px;
+                    background-color: #202C58;
+                }
+
+                &::before,
+                &::after {
+                    background: #202C58;
+                }
+            }
+        }
+    }
+
+    &-hero {
+        &__area {
+            background: #D2EAF1;
+            position: relative;
+        }
+
+        &__content-wrapper {
+            position: relative;
+        }
+
+        &__title {
+            font-size: 100px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #202C58;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 215px;
+
+            @media #{$xxl} {
+                font-size: 80px;
+                margin-bottom: 145px;
+            }
+
+            @media #{$xl} {
+                font-size: 70px;
+            }
+
+            @media #{$lg} {
+                font-size: 45px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            @media #{$md} {
+                font-size: 36px;
+                margin-bottom: 100px;
+            }
+
+            @media #{$sm} {
+                font-size: 44px;
+                margin-bottom: 80px;
+                margin-top: 40px;
+            }
+
+            @media #{$xs} {
+                font-size: 38px;
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                color: #202C58;
+                line-height: 1.4;
+                max-width: 330px;
+            }
+        }
+
+        &__btn {
+            margin-top: 43px;
+
+            .wc-btn-primary {
+                font-size: 14px;
+                font-weight: 600;
+                color: #202C58;
+                background: #FFEDED;
+            }
+        }
+
+        &__right-content {
+            width: 330px;
+            position: absolute;
+            bottom: 65px;
+            inset-inline-end: 0;
+
+            @media #{$lg} {
+                position: static;
+                margin-top: 50px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.1;
+                color: #202C58;
+                max-width: 152px;
+            }
+
+
+        }
+
+
+        &__thumb-wrapper {
+            position: absolute;
+            bottom: -265px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media #{$xl} {
+                bottom: -195px;
+            }
+
+            @media #{$lg} {
+                bottom: 50px;
+                inset-inline-end: 0;
+                transform: none;
+                inset-inline-start: auto;
+            }
+
+            @media #{$sm} {
+                position: relative;
+                top: 0;
+                margin-top: 50px;
+            }
+
+
+        }
+
+        &__circle-btn {
+            position: absolute;
+            top: 30px;
+            inset-inline-start: 0;
+            z-index: 2;
+
+            .circle-text {
+                width: 140px;
+                height: 140px;
+                background: #FFFFFF29;
+
+                @media #{$md} {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+        }
+
+        &__thumb {
+            position: relative;
+            width: 470px;
+            z-index: 1;
+
+            @media #{$xxl} {
+                width: 420px;
+            }
+
+            @media #{$xl} {
+                width: 380px;
+            }
+
+            @media #{$md} {
+                width: 320px;
+            }
+
+            .bg {
+                position: absolute;
+                width: 100%;
+                height: 95%;
+                background: #FFEDED;
+                bottom: 0;
+                inset-inline-start: 0;
+                border-radius: 262px;
+                z-index: -1;
+            }
+        }
+
+        &__img-01 {
+            position: absolute;
+            top: 26%;
+            inset-inline-start: 8%;
+            transform: rotate(-15deg);
+
+            @media #{$lg} {
+                inset-inline-start: -6%;
+                top: 16%;
+            }
+
+            @media #{$md} {
+                display: none;
+            }
+        }
+
+        &__img-02 {
+            position: absolute;
+            bottom: -5%;
+            inset-inline-end: 21%;
+            transform: rotate(31deg);
+
+            @media #{$md} {
+                display: none;
+            }
+        }
+
+        &__img-03 {
+            position: absolute;
+            top: 36%;
+            inset-inline-start: 8%;
+            transform: rotate(-43deg);
+
+            @media #{$md} {
+                top: 29%;
+                inset-inline-start: 1%;
+            }
+
+            @media #{$sm} {
+                top: 18%;
+            }
+        }
+
+        &__img-04 {
+            position: absolute;
+            bottom: 6%;
+            inset-inline-start: 30%;
+            transform: rotate(31deg);
+
+            @media #{$md} {
+                inset-inline-start: 52%;
+                bottom: 25px;
+            }
+        }
+
+        &__img-05 {
+            position: absolute;
+            top: 52%;
+            inset-inline-end: 9%;
+            transform: rotate(-30deg);
+
+            @media #{$lg} {
+                top: 33%;
+                inset-inline-end: 2%;
+            }
+        }
+    }
+
+    &-degrees {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D0E2E9;
+        margin-bottom: 20px;
+        margin-top: 38px;
+    }
+
+    &-degree-years {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #202C58;
+        }
+    }
+
+    &-service {
+        &__sec-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--white);
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: calc(100% - 630px);
+                height: 1px;
+                background: #ffffff10;
+                inset-inline-start: 100px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include light {
+                    background: #F2F2F2;
+                }
+
+                @media #{$md} {
+                    width: calc(100% - 480px);
+                }
+
+                @media #{$sm} {
+                    width: calc(100% - 330px);
+                }
+            }
+        }
+
+        &__sec-title-wrapper {
+            max-width: 440px;
+            margin-inline-start: auto;
+            margin-top: -23px;
+
+            @media #{$md} {
+                max-width: 330px;
+            }
+
+            @media #{$sm} {
+                margin-top: 25px;
+                margin-inline-start: 0;
+            }
+        }
+
+        &__content-wrapper {
+            margin-top: 115px;
+
+            @media #{$xl} {
+                margin-top: 75px;
+            }
+
+            @media #{$md} {
+                margin-top: 0;
+            }
+
+            .dentist-service__btn {
+                max-width: 440px;
+                margin-inline-start: auto;
+                display: block;
+                margin-top: 45px;
+
+                @media #{$md} {
+                    max-width: 330px;
+                }
+
+                @media #{$sm} {
+                    margin-inline-start: 0;
+                }
+
+                .wc-btn-underline {
+                    @include light {
+                        color: #202C58;
+
+                        &:after {
+                            background: #202C58;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__thumb-wrapper {
+            display: flex;
+            align-items: flex-end;
+            gap: 30px;
+        }
+
+        &__number {
+            font-size: 18px;
+            font-weight: 400;
+            color: #545E81;
+            line-height: 1;
+            writing-mode: tb;
+            transform: rotate(180deg);
+            padding-top: 60px;
+            position: relative;
+
+            @include light {
+                color: #999999;
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 50px;
+                background: #545E81;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+                @include light {
+                    background: #999999;
+                }
+            }
+        }
+
+        &__thumb {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__content {
+            width: 300px;
+            margin-inline-start: 80px;
+
+            @media #{$md} {
+                width: 100%;
+                margin-inline-start: 0;
+            }
+        }
+
+        &__title {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.16;
+            margin-bottom: 23px;
+
+            @media #{$md} {
+                font-size: 24px;
+            }
+
+            a:hover {
+                color: #AEDBE9;
+
+                @include light {
+                    color: #2b97b9;
+                }
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #A6ACC2;
+                line-height: 1.5;
+
+                @include light {
+                    color: #555555;
+                }
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            @media #{$sm} {
+                padding-top: 0px;
+                padding-bottom: 0;
+            }
+
+
+        }
+
+        &__items-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            margin-top: -78px;
+            column-gap: 100px;
+
+            @media #{$md} {
+                column-gap: 70px;
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 1fr;
+                margin-top: 0px;
+                row-gap: 60px;
+            }
+        }
+
+        &__item {
+            &.content-first {
+                flex-direction: column-reverse;
+
+                @media #{$sm} {
+                    flex-direction: column;
+                }
+            }
+
+            &.number-right {
+                .dentist-service__thumb-wrapper {
+                    flex-direction: row-reverse;
+
+                    @media #{$sm} {
+                        flex-direction: row;
+                    }
+                }
+            }
+
+            &.number-top {
+                .dentist-service__thumb-wrapper {
+                    align-items: flex-start;
+
+                    @media #{$sm} {
+                        align-items: unset;
+                    }
+                }
+            }
+
+            &.space-left {
+                margin-inline-start: 65px;
+
+                @media #{$lg} {
+                    margin-inline-start: 35px;
+                }
+
+                @media #{$md} {
+                    margin-inline-start: 0;
+                }
+            }
+
+            &.space-right {
+                margin-inline-end: 65px;
+
+                @media #{$lg} {
+                    margin-inline-end: 35px;
+                }
+
+                @media #{$md} {
+                    margin-inline-end: 0;
+                }
+            }
+        }
+    }
+
+    &-about {
+        &__area {
+            background: #FFEDED;
+        }
+
+        &__sec-title-wrapper {
+            max-width: 1070px;
+            margin-bottom: 100px;
+
+            @media #{$lg} {
+                max-width: 650px;
+
+            }
+
+            @media #{$md} {
+                margin-bottom: 60px;
+            }
+
+            .sec-title-9 {
+                color: #202C58;
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 18px;
+                color: #202C58;
+            }
+        }
+
+        &__btn {
+            margin-top: 45px;
+            margin-bottom: 90px;
+        }
+
+        &__content {
+
+
+            p {
+                font-size: 18px;
+                color: #202C58;
+            }
+
+            .wc-btn-underline {
+                color: #202C58;
+
+                &:after {
+                    background: #202C58;
+                }
+            }
+
+
+        }
+
+        &__thumb {
+            max-width: 770px;
+            position: relative;
+
+
+        }
+
+        &__service-list {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 95px;
+
+            li {
+                font-size: 18px;
+                font-weight: 500;
+                list-style: decimal-leading-zero;
+                padding-inline-start: 10px;
+                margin-inline-start: 30px;
+                line-height: 1.4;
+                color: #202C58;
+            }
+        }
+
+        &__curved-line {
+            position: absolute;
+            inset-inline-start: 52%;
+            top: 98px;
+            z-index: 2;
+        }
+
+    }
+
+    &-counter {
+        &__title {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.16;
+            color: #202C58;
+            margin-bottom: 55px;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-columns: 46% auto;
+
+        }
+
+        &__number {
+            font-size: 60px;
+            font-weight: 200;
+            color: #202C58;
+            line-height: .9;
+        }
+
+        &__text {
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #202C58;
+            }
+        }
+
+        &__box {
+            max-width: 410px;
+
+            li:not(:last-child) {
+                padding-bottom: 35px;
+                border-bottom: 1px solid #202C58;
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    &-choose {
+        &__area-inner {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: space-between;
+            gap: 100px;
+
+            @media #{$md} {
+                gap: 60px;
+                grid-template-columns: auto;
+            }
+        }
+
+        &__list {
+            li {
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+
+                @include light {
+                    color: #202C58;
+                }
+
+                &:before {
+                    content: url(../imgs/dentist/check-mark.png);
+                    margin-inline-end: 10px;
+
+                    @include rtl {
+                        transform: rotateY(180deg);
+                    }
+
+                    @include light {
+                        content: url(../imgs/dentist/check-mark-dark.png);
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        &__thumb-wrapper {
+            display: flex;
+            gap: 10px;
+
+            .dentist-choose__thumb {
+                &:nth-child(1) {
+                    margin-top: 13%;
+                }
+
+                &:nth-child(3) {
+                    margin-top: 27%;
+                }
+            }
+        }
+
+        &__text-wrapper {
+            max-width: 625px;
+        }
+
+        &__sec-title-wrapper {
+            margin-bottom: 30px;
+
+        }
+
+        &__text {
+            margin-bottom: 18px;
+
+            p {
+                font-size: 18px;
+                color: #A6ACC2;
+                max-width: 440px;
+
+                @include light {
+                    color: #555555;
+                }
+            }
+        }
+
+
+
+        &__btn {
+            margin-top: 50px;
+
+            .wc-btn-primary {
+                font-size: 14px;
+                font-weight: 600;
+                background: #AEDBE9;
+                color: #202C58;
+            }
+        }
+    }
+
+    &-compare {
+
+        &__area {
+            background: #E4F2F6;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__area-bg {
+            width: 100%;
+            height: 300px;
+            background: #202C58;
+            position: absolute;
+            inset-inline-start: 0;
+            bottom: -1px;
+            z-index: -1;
+
+            @include light {
+                background: var(--white);
+            }
+
+            @media #{$md} {
+                height: 180px;
+            }
+
+            @media #{$sm} {
+                height: 150px;
+            }
+        }
+
+        &__text-wrapper {
+            max-width: 690px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+
+        }
+
+        &__text {
+            max-width: 600px;
+            margin: 0 auto;
+
+            p {
+                font-size: 18px;
+                color: #202C58;
+
+            }
+        }
+
+        &__sec-title-wrapper {
+            margin-bottom: 25px;
+
+            .sec-title-9 {
+                color: #202C58;
+            }
+        }
+
+        &__img-wrapper {
+            position: relative;
+
+            .before-text {
+                position: absolute;
+                inset-inline-end: calc(100% + 70px);
+                bottom: 40%;
+                mix-blend-mode: difference;
+            }
+
+            .after-text {
+                position: absolute;
+                inset-inline-start: calc(100% + 70px);
+                bottom: 28%;
+                mix-blend-mode: difference;
+            }
+        }
+    }
+
+    &-ins {
+        &__text-wrapper {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+    }
+
+    &-video {
+        &__area {
+            position: relative;
+        }
+
+        &__thumb {
+
+            img {
+                min-height: 200px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        &__btn {
+
+            .circle-text {
+                background: #202C58;
+            }
+        }
+    }
+
+    &-testimonial {
+        &__area-inner {
+            display: grid;
+            grid-template-columns: 25% calc(75% - 110px);
+            grid-gap: 110px;
+
+            @media #{$lg} {
+                grid-gap: 60px;
+                grid-template-columns: 30% calc(70% - 60px);
+            }
+
+            @media #{$sm} {
+                grid-template-columns: 100%;
+            }
+        }
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 25px auto;
+            align-items: flex-start;
+            justify-content: flex-end;
+            gap: 105px;
+            position: relative;
+
+
+            @media #{$md} {
+                grid-template-columns: 100%;
+            }
+
+            .dentist-testimonial__slider-wrapper {
+                max-width: 520px;
+
+                @media #{$lg} {
+
+                    max-width: 420px;
+
+                }
+            }
+        }
+
+        &__slider {
+            position: static;
+
+            .swiper-pagination {
+                bottom: 20px;
+                color: var(--white);
+                text-align: start;
+
+                @include light {
+                    color: #202C58;
+                }
+
+                @media #{$lg} {
+                    position: static;
+                    margin-top: 30px;
+                }
+
+                &-total {
+                    color: var(--gray-4);
+                }
+            }
+
+            .mid-line {
+                width: 70px;
+                height: 1px;
+                display: inline-block;
+                background: var(--white);
+                position: relative;
+                bottom: 5px;
+                margin-inline-start: 8px;
+                margin-inline-end: 8px;
+
+                @include light {
+                    background: #202C58;
+                }
+            }
+        }
+
+        &__quote-icon {
+            min-width: 40px;
+        }
+
+        &__text {
+            margin-bottom: 50px;
+
+            p {
+                font-size: 30px;
+                line-height: 1.1;
+                color: var(--white);
+
+                @include light {
+                    color: #202C58;
+                }
+
+                @media #{$lg} {
+                    font-size: 24px;
+                }
+
+                @media #{$md} {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &__client-name {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        &__client-role {
+            font-size: 14px;
+            font-weight: 400;
+            color: #A6ACC2;
+
+            @include light {
+                color: #555555;
+            }
+        }
+
+        &__sec-title-wrapper {
+            margin-bottom: 55px;
+
+        }
+
+        &__clients-rating {
+            margin-bottom: 70px;
+        }
+
+        &__rating-text {
+            max-width: 126px;
+            margin-top: 12px;
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #A6ACC2;
+                line-height: 16px;
+
+                @include light {
+                    color: #555555;
+                }
+            }
+        }
+    }
+
+    &-blog {
+        &__sec-title-wrapper {
+            text-align: center;
+            margin-bottom: 70px;
+
+        }
+
+        &__items-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px;
+
+            @media #{$sm} {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__thumb {
+            overflow: hidden;
+
+            @media #{$lg} {
+                max-height: 400px;
+            }
+
+            @media #{$md} {
+                max-height: 300px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            background: #2A3661;
+            padding: 60px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+
+            @include light {
+                background: #F7F7FA;
+            }
+
+            @media #{$xl} {
+                padding: 50px 35px;
+            }
+
+            @media #{$xs} {
+                padding: 40px 35px;
+            }
+        }
+
+        &__title {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 27px;
+
+            @media #{$md} {
+                font-size: 28px;
+            }
+
+            br {
+                @media #{$lg} {
+                    display: none;
+                }
+            }
+
+            a:hover {
+                color: #AEDBE9;
+
+                @include light {
+                    color: #2b97b9;
+                }
+            }
+        }
+
+
+
+        &__meta-items {
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--white);
+                display: inline-block;
+                position: relative;
+                padding-top: 9px;
+                line-height: 1;
+
+                @include light {
+                    color: #202C58;
+                }
+
+                &.has-top-line {
+                    padding-top: 9px;
+
+                    &:before {
+                        width: 50px;
+                        height: 1px;
+                        background: var(--white);
+
+                        @include light {
+                            background: #202C58;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &__item {
+            display: grid;
+            grid-template-columns: 48% 1fr;
+
+            @media #{$lg} {
+                grid-template-columns: 1fr;
+            }
+
+            .wc-btn-primary {
+                height: 45px;
+                padding: 0 30px;
+                font-size: 14px;
+                background: var(--white);
+                color: #202C58;
+                border-color: var(--white);
+                text-transform: uppercase;
+                font-weight: 600;
+
+                @include light {
+                    color: var(--white);
+                    background: #202C58;
+                }
+
+                &:after {
+                    background-color: #AEDBE9;
+                }
+            }
+        }
+
+
+    }
+
+    &-copyright {
+        &__area {
+            background: #FFEDED;
+            border-top: 1px solid #202C5810;
+        }
+
+        &__text {
+            padding: 16px 0;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #202C58;
+                text-align: center;
+
+                a {
+                    color: #202C58;
+                }
+            }
+        }
+    }
+
+    &-footer {
+        &__area {
+            background: #FFEDED;
+        }
+
+        &__sec-title-wrapper {
+            .sec-title-9 {
+                color: #202C58;
+            }
+        }
+
+        &__header {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 80px;
+            grid-gap: 20px;
+
+            @media #{$sm} {
+                grid-template-columns: auto;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: calc(100% - 550px);
+                height: 1px;
+                background: #202C5810;
+                inset-inline-end: 180px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @media #{$lg} {
+                    width: calc(100% - 420px);
+                }
+
+                @media #{$md} {
+                    width: calc(100% - 390px);
+                }
+
+                @media #{$sm} {
+                    width: calc(100% - 300px);
+                    inset-inline-end: 0;
+                    top: 22px;
+                }
+            }
+
+
+        }
+
+        &__widget-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #202C58;
+            margin-bottom: 30px;
+        }
+
+        &__menu {
+            li {
+                font-size: 16px;
+                color: #202C58;
+
+
+                &:not(:last-child) {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+
+        &__widgets-wrapper {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 50px;
+            justify-content: space-between;
+
+            @media #{$md} {
+                grid-template-columns: auto auto;
+            }
+
+            @media #{$xs} {
+                grid-template-columns: auto;
+            }
+        }
+    }
+
+    &-social-media {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            font-size: 22px;
+            color: #202C58;
+
+            &:hover {
+                color: #AEDBE9;
+            }
+        }
+    }
+
+    &__accordion {
+        max-width: 1070px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+
+        @include light {
+            border-color: var(--green-6);
+        }
+
+        .accordion-button {
+            gap: 5px;
+            font-size: 25px;
+            font-weight: 600;
+            border: 0;
+            color: var(--white);
+            padding: 25px 0;
+            background-color: transparent;
+            text-align: start;
+
+            @include light {
+                color: #202C58;
+            }
+
+            @media #{$lg} {
+                font-size: 22px;
+            }
+
+            @media #{$sm} {
+                font-size: 20px;
+            }
+
+            &:last-of-type {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+
+            &::after {
+                background-image: none;
+                position: absolute;
+                content: "\2b";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 700;
+                inset-inline-end: 0;
+                transform: unset;
+                transition: all 0.5s;
+                font-size: 18px;
+
+                @include light {
+                    color: var(--green-6);
+                }
+
+                @include rtl {
+                    margin-left: unset;
+                    margin-inline-end: auto;
+                }
+            }
+
+            &:not(.collapsed) {
+                border-color: transparent !important;
+                box-shadow: none;
+
+                &::after {
+                    content: "\f068";
+                }
+            }
+
+            span {
+                font-size: 24px;
+                display: inline-block;
+                font-family: $font_newyork;
+                text-transform: uppercase;
+            }
+        }
+
+        .accordion-item {
+            border: 0;
+            border-radius: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #A6ACC220;
+
+            @include light {
+                border-color: var(--pink-7);
+            }
+
+            p {
+                font-size: 18px;
+                padding-inline-end: 30px;
+                color: #A6ACC2;
+
+                @include light {
+                    color: var(--green-6);
+                }
+
+                @media #{$sm} {
+                    padding-inline-end: 0;
+                }
+            }
+        }
+
+        .accordion-body {
+            gap: 5px;
+            display: flex;
+            padding: 0;
+            padding-top: 10px;
+            padding-bottom: 25px;
+
+
+            span {
+                display: inline-block;
+                color: #A6ACC2;
+                text-transform: uppercase;
+
+                @include light {
+                    color: var(--green-6);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// dentist inner about
+
+.dt {
+    &-inab {
+        &__hero {
+            &-title {
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 1.1;
+                margin-top: 15px;
+                margin-bottom: 20px;
+
+                @media #{$xxl} {
+                    font-size: 80px;
+                }
+
+                @media #{$xl} {
+                    font-size: 70px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                @media #{$lg} {
+                    font-size: 45px;
+
+
+                }
+
+                @media #{$md} {
+                    font-size: 36px;
+                }
+
+                @media #{$sm} {
+                    font-size: 44px;
+                }
+
+                @media #{$xs} {
+                    font-size: 38px;
+                }
+            }
+
+            p {
+                color: #A6ACC2;
+                font-size: 18px;
+
+                @include light {
+                    color: #555555;
+                }
+            }
+
+            &-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 130px;
+                align-items: center;
+
+                @media #{$xxl} {
+                    grid-template-columns: 0.5fr 1fr;
+                    gap: 100px;
+                }
+
+                @media #{$lg} {
+                    gap: 60px;
+                }
+
+                @media #{$md} {
+                    display: block;
+                }
+
+                @media #{$sm} {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            &-left {
+                @media #{$md} {
+                    max-width: 300px;
+                    float: left;
+                    margin-inline-end: 60px;
+                    margin-bottom: 40px;
+                }
+
+                @media #{$sm} {
+                    float: none;
+                    max-width: 500px;
+                    margin-inline-end: 0;
+                    margin-bottom: 50px;
+                }
+            }
+
+            &-title-two {
+                font-size: 20px;
+            }
+
+            .has-left-line {
+                padding-inline-start: 110px;
+                font-size: 16px;
+                color: #AEDBE9;
+
+                &::before {
+                    width: 90px;
+                    background: #AEDBE9;
+                }
+            }
+        }
+
+        &__choose-area {
+
+            .dentist-choose__text p {
+                max-width: 565px;
+            }
+
+            .has-left-line {
+                padding-inline-start: 110px;
+                font-size: 16px;
+                color: #AEDBE9;
+
+                &::before {
+                    width: 90px;
+                    background: #AEDBE9;
+                }
+            }
+        }
+
+        &__vision-area {
+            background-color: #253364;
+
+            @include light {
+                background-color: #F7F7FA;
+            }
+
+            .dentist-choose__text p {
+                max-width: 565px;
+            }
+
+            .has-left-line {
+                padding-inline-start: 110px;
+                font-size: 16px;
+                color: #AEDBE9;
+
+                &::before {
+                    width: 90px;
+                    background: #AEDBE9;
+                }
+            }
+        }
+
+        &__testimonial-area {
+            .dentist-testimonial__slider .swiper-pagination {
+                color: #202C58;
+            }
+        }
+    }
+
+    &-invdo {
+        &__testimonial {
+            .dentist-testimonial__wrapper {
+                gap: 25px;
+                justify-content: flex-start;
+            }
+
+            .dentist-testimonial__quote-icon {
+                min-width: unset;
+                max-width: 28px;
+            }
+
+            .dentist-testimonial__text p {
+                font-size: 20px;
+                line-height: 1.5;
+                color: #A6ACC2;
+
+                @include light {
+                    color: #202C58;
+                }
+            }
+
+            .dentist-testimonial__clients-rating {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                position: relative;
+                margin-inline-start: 50px;
+                padding-inline-start: 230px;
+                margin-bottom: 50px;
+
+                @media #{$lg} {
+                    padding-inline-start: 180px;
+                }
+
+                @media #{$md} {
+                    margin-inline-start: 0;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 7px;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #2F3E72;
+                    width: 200px;
+                    inset-inline-start: 0;
+
+                    @include light {
+                        background-color: #B5B5B5;
+                    }
+
+                    @media #{$lg} {
+                        width: 150px;
+                    }
+                }
+            }
+
+            &-wrapper {
+                display: grid;
+                grid-template-columns: 47% 45%;
+                gap: 80px;
+                align-items: center;
+                justify-content: space-between;
+
+                @media #{$xl} {
+                    grid-template-columns: 52% 40%;
+                }
+
+                @media #{$md} {
+                    grid-template-columns: 50% 43%;
+                    gap: 50px;
+                }
+
+                @media #{$sm} {
+                    grid-template-columns: 100%;
+                }
+            }
+
+            &-video-item {
+                position: relative;
+                max-width: 200px;
+
+
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    inset-inline-start: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000A0D 100%);
+                    mix-blend-mode: hard-light;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 1s;
+                }
+            }
+
+            &-btn-wrapper {
+                position: absolute;
+                bottom: 20px;
+                inset-inline-start: 20px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 1.5s;
+            }
+
+            &-play-btn {
+                height: 42px;
+                width: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--white);
+                border-radius: 50px;
+            }
+        }
+    }
+
+    &-incs {
+
+        &-pagination {
+            display: flex;
+            gap: 20px;
+
+            li {
+                a {
+                    &.active {
+                        color: var(--white);
+
+                        @include light {
+                            color: #202C58;
+                        }
+                    }
+
+                    color: #A7A7A7;
+
+                    &:hover {
+                        color: var(--white);
+
+                        @include light {
+                            color: #202C58;
+                        }
+                    }
+
+                    i {
+                        padding-inline-start: 8px;
+
+                        @include rtl {
+                            transform: rotateY(180deg)
+                        }
+                    }
+                }
+            }
+        }
+
+        &__intro {
+            background-color: var(--green-11);
+            position: relative;
+
+            @media #{$sm} {
+                padding-top: 120px;
+            }
+
+            &-title {
+                color: var(--black-16);
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 1.1;
+                margin-bottom: 30px;
+
+                @media #{$lg} {
+                    font-size: 45px;
+                }
+
+                @media #{$sm} {
+                    font-size: 28px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &-wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+
+                @media #{$xl} {
+                    grid-template-columns: 1fr 1.5fr;
+                }
+
+                @media #{$lg} {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media #{$md} {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            &-content-wrap {
+                max-width: 520px;
+
+                @media #{$md} {
+                    order: 2;
+                }
+
+                @media #{$sm} {
+                    padding-top: 30px;
+                }
+
+                p {
+                    color: var(--black-16);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 1.4;
+                }
+            }
+
+            &-item {
+                @media #{$md} {
+                    order: 1;
+                }
+            }
+
+            &-bg-shape {
+                position: relative;
+
+                @media #{$md} {
+                    max-width: 500px;
+                }
+
+                .mask-bg {
+                    position: absolute;
+                    left: 89px;
+                    top: 56px;
+                    max-height: 640px;
+
+                    @media #{$lg} {
+                        left: 30px;
+                        top: 100px;
+                        max-height: 500px;
+                    }
+
+                    @media #{$md} {
+                        max-height: 500px;
+                        top: 100px;
+                    }
+
+                    @media #{$sm} {
+                        display: none;
+                    }
+                }
+            }
+
+            &-img-wrap {
+                -webkit-mask-image: url('../imgs/dentist/intro-mask-shape.png');
+                mask-image: url('../imgs/dentist/intro-mask-shape.png');
+                -webkit-mask-size: contain;
+                mask-size: contain;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                display: flex;
+                position: relative;
+                z-index: 2;
+
+                img {
+                    height: 707px;
+                    object-fit: cover;
+                    width: 100%;
+
+                    @media #{$sm} {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &-incd {
+        &-case {
+            &__content {
+                max-width: 930px;
+                margin-inline-start: auto;
+            }
+
+            &__title-wrapper {
+                display: flex;
+                gap: 40px;
+
+                @media #{$sm} {
+                    flex-wrap: wrap;
+                    gap: 15px;
+                }
+
+                .title {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 1.2;
+
+                    @media #{$lg} {
+                        font-size: 26px;
+                    }
+
+                    @media #{$sm} {
+                        font-size: 24px;
+                    }
+                }
+
+                p {
+                    color: #A6ACC2;
+                }
+            }
+        }
+    }
+
+    &-inap {
+        &__appointment {
+            .doctor__appointment-wrapper {
+                gap: 80px;
+            }
+
+            .doctor__appointment-thumbs {
+                max-width: 630px;
+                filter: drop-shadow(25px 25px 0px #6A6BBF);
+                padding-inline-end: 25px;
+                padding-bottom: 25px;
+
+                @include rtl {
+                    filter: drop-shadow(-25px 25px 0px #6A6BBF);
+                }
+
+                @include light {
+                    filter: drop-shadow(25px 25px 0px #FFEDED);
+                }
+
+                @media #{$xxl} {
+                    margin-inline-end: 50px;
+                }
+
+                @media #{$md} {
+                    margin-inline-start: 30px;
+                }
+
+                @media #{$sm} {
+                    margin-inline-start: 15px;
+                }
+
+            }
+
+            label {
+                color: #A6ACC2;
+            }
+
+            input {
+                background-color: #2A3661;
+                color: #B1B1BE;
+
+                &::placeholder {
+                    color: #B1B1BE;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+
+            textarea {
+                @extend input;
+            }
+
+            .submit {
+                background-color: #FFEDED;
+                color: #202C58;
+
+                @include light {
+                    background-color: #AEDBE9;
+                }
+            }
+        }
+    }
+
+
+    &-inbd {
+        &-details {
+
+            .lawyer__blog-related-item {
+                border-bottom: 1px dashed #D0D0D0;
+            }
+
+
+            .cf_text.lawyer__blogdetails-quote-text p {
+                font-size: 28px;
+                font-weight: 500;
+                color: var(--black-2);
+
+                @media #{$md} {
+                    font-size: 20px;
+                }
+            }
+
+            .dancer__blogdetails-metainfo p span::before {
+                background: var(--black-2);
+            }
+
+            .elc-insd-challenge-title {
+                font-size: 30px;
+            }
+
+
+            .elc-inbd-share__area {
+                border-top: 0;
+            }
+
+            .elc-inbd-tags li {
+                background: var(--white-2);
+                color: var(--black-2);
+                text-align: center;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                border-radius: 0;
+            }
+
+            .elc-inbd-tags li:first-child {
+                background: var(--white-2);
+            }
+
+            .elc-social-media a {
+                background: transparent;
+                border: 0;
+                color: var(--black-2);
+                height: unset;
+                width: unset;
+            }
+
+            .elc-inbd-comment__field {
+                input {
+                    background: var(--white-9);
+                    color: var(--black-2);
+                }
+            }
+
+            .wc-btn-default {
+                border: 0;
+            }
+
+            .wc-btn-primary {
+                background: var(--blue-3);
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.dentist-chamber__area {
+    background-color: #2A3661;
+
+    @include light {
+        background-color: #6A6BBF;
+    }
+
+    .doctor-chamber__item {
+        border-color: #344171;
+
+        @include light {
+            border-color: #8181CB;
+        }
+    }
+
+    .doctor-chamber__item span::after {
+        background-color: #344171;
+
+        @include light {
+            background-color: #8181CB;
+        }
+    }
+
+    .doctor-chamber__width {
+        margin-inline-start: auto;
+    }
+
+    .sec-title-wrap {
+        max-width: 50%;
+        margin-inline-start: auto;
+
+        @media #{$md} {
+            max-width: 100%;
+        }
+
+        .sec-title-9 {
+            @include light {
+                color: var(--white);
+            }
+        }
+    }
+
+    .doctor-chamber__img {
+        inset-inline-start: 0;
+        inset-inline-end: auto;
+    }
+}
+
+.swiper-slide-thumb-active {
+    .dt-invdo__testimonial-video-item {
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dt-invdo__testimonial-btn-wrapper {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.dt-nav-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+    @include light {
+        border-color: #555555;
+    }
+
+    &:hover {
+        background-color: #D2EAF1;
+        border-color: transparent;
+
+        @include light {
+            background-color: #202C58;
+        }
+
+        img {
+            filter: none;
+
+            @include light {
+                filter: brightness(100);
+            }
+        }
+    }
+
+    img {
+        filter: brightness(100);
+
+        @include rtl {
+            transform: rotate(181deg);
+        }
+
+        @include light {
+            filter: none;
+        }
+    }
+}
+
+.dentist-testimonial__nav {
+    display: flex;
+    gap: 10px;
+}
+
+.dentist-testimonial-thumbs {
+    .top-margin {
+        margin-top: 80px;
+    }
+}
+
+// blog details area style 
+.blog__details-dentist {
+    .cf_details__title-main {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.1;
+
+        @media #{$xl} {
+            font-size: 48px;
+        }
+
+        @media #{$lg} {
+            font-size: 40px;
+        }
+
+        @media #{$sm} {
+            font-size: 32px;
+        }
+    }
+
+    .cf_details__title-sub {
+        font-size: 30px;
+        font-weight: 600;
+
+        @media #{$sm} {
+            font-size: 24px;
+        }
+    }
+
+    .cf_details__meta {
+        display: flex;
+        gap: 10px;
+
+        .has-left-line:before {
+            background: var(--white);
+        }
+    }
+
+    .cf_details__image-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media #{$sm} {
+            gap: 15px;
+        }
+    }
+
+    .list-check li {
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        &::before {
+            background-image: url("../imgs/dentist/check-mark.png");
+
+            @include light {
+                background-image: url("../imgs/dentist/check-mark-dark.png");
+            }
+        }
+    }
+
+    .cf_details__list {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        @media #{$xs} {
+            grid-template-columns: auto;
+        }
+    }
+
+
+    .cf_details__quote-icon img {
+        margin-top: 7px;
+    }
+
+    .cf_details__quote-text {
+        font-size: 28px;
+        font-weight: 500;
+        max-width: 760px;
+        line-height: 1.3;
+
+        @media #{$xl} {
+            font-size: 24px;
+        }
+
+        @media #{$sm} {
+            font-size: 20px;
+        }
+    }
+
+    .cf_details__quote-author {
+        font-size: 14px;
+
+        &:before {
+            background-color: #A6ACC2;
+        }
+    }
+
+    .list-tags a {
+        font-size: 12px;
+        padding: 4px 10px;
+        line-height: 1;
+        background-color: #2A3661;
+        display: inline-block;
+
+        @include light {
+            background-color: #F9F9F9;
+            color: var(--black-2);
+        }
+    }
+
+    .list-tags {
+        gap: 8px;
+    }
+
+    .list-social-media {
+        gap: 12px;
+
+        a:hover {
+            color: #AEDBE9;
+        }
+    }
+
+    .cf_details__share {
+        display: flex;
+        gap: 15px;
+    }
+
+    .cf_details__share p {
+        font-size: 14px;
+    }
+
+    .cf_details__footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px 50px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #A6ACC2;
+        padding-bottom: 20px;
+    }
+
+    .cf-details-comment__field input,
+    .cf-details-comment__field textarea {
+        background-color: #2A3661;
+        color: #A6ACC2;
+
+        &::placeholder {
+            color: #A6ACC2;
+        }
+    }
+
+    .wc-btn-primary {
+        background-color: #AEDBE9;
+        color: #202C58;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        @include light {
+            background-color: #202C58;
+            color: var(--white);
+        }
+    }
+}
+
+.details__sidebar-dentist {
+    .cf-sidebar__widget {
+        background-color: #2A3661;
+        padding: 35px 30px;
+
+        @media #{$lg} {
+            padding: 25px 20px;
+        }
+    }
+
+    .cf-sidebar__recent-item-title {
+        font-weight: 600;
+    }
+
+    .cf-sidebar__recent-item {
+        border-color: #445284;
+
+        @include light {
+            border-color: #D0D0D0;
+        }
+    }
+
+    .wc-btn-primary {
+        background-color: #AEDBE9;
+        color: #202C58;
+    }
+
+    .cf-sidebar__w-title {
+        background-color: #374471;
+        color: #E2E2E2;
+
+        @include light {
+            background-color: #EEEEEE;
+            color: var(--black-2);
+        }
+    }
+}

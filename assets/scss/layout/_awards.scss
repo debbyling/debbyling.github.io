@@ -1,0 +1,86 @@
+// Award Style
+
+
+.award {
+  &__item {
+    padding: 30px 40px;
+    background-color: var(--black-4);
+
+    @media #{$xl} {
+      padding: 30px;
+    }
+
+    @media #{$lg} {
+      padding: 20px;
+    }
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    &-2 {
+      img {
+        margin-bottom: 15px;
+        max-width: 65px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--white);
+    padding-bottom: 5px;
+
+    &-2 {
+      @extend .award__title;
+      font-weight: 500;
+    }
+  }
+
+  &__status {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary);
+    text-transform: capitalize;
+
+    &-2 {
+      @extend .award__status;
+      font-size: 14px;
+    }
+  }
+
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--gray-4);
+    padding-bottom: 80px;
+
+    @media #{$sm} {
+      padding-bottom: 30px;
+    }
+  }
+
+
+}
+
+
+
+// Light
+.light {
+
+  .award__title,
+  .award__title-2 {
+    color: var(--black-2);
+  }
+
+  .award__item {
+    background-color: var(--white-3);
+  }
+
+}

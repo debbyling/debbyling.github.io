@@ -1,0 +1,385 @@
+/*----------------------------------------*/
+/*  01. CURSOR CSS START
+/*----------------------------------------*/
+
+
+.cursor {
+	position: fixed;
+	pointer-events: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+	color: var(--var(--white));
+	background: var(--black-2);
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	opacity: 0;
+	mix-blend-mode: hard-light;
+	transition: all 0.3s;
+
+	&.large {
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		font-size: 19px;
+		font-weight: 400;
+	}
+}
+
+
+.cursor1 {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--primary);
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	transition: 0.15s;
+	z-index: 999;
+	mix-blend-mode: difference;
+
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.cursor2 {
+	position: fixed;
+	width: 8px;
+	height: 8px;
+	background-color: var(--primary);
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	transition: 0.2s;
+	z-index: 999;
+	mix-blend-mode: difference;
+
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.cursor-testi {
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	background-color: var(--black-2);
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	transition: 0.2s;
+	z-index: 999;
+
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+
+
+// ==================================
+// .wc-cursor {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 150;
+// 	contain: layout style size;
+// 	pointer-events: none;
+// 	will-change: transform;
+// 	-webkit-transition: opacity 0.3s, color 0.4s;
+// 	-o-transition: opacity 0.3s, color 0.4s;
+// 	-moz-transition: opacity 0.3s, color 0.4s;
+// 	transition: opacity 0.3s, color 0.4s;
+// }
+
+// .wc-cursor:before {
+// 	content: "";
+// 	position: absolute;
+// 	top: -24px;
+// 	left: -24px;
+// 	display: block;
+// 	width: 48px;
+// 	height: 48px;
+// 	-webkit-transform: scale(0);
+// 	-moz-transform: scale(0);
+// 	-ms-transform: scale(0);
+// 	-o-transform: scale(0);
+// 	transform: scale(0);
+// 	background: currentColor;
+// 	-webkit-border-radius: 50%;
+// 	-moz-border-radius: 50%;
+// 	border-radius: 50%;
+// 	-webkit-transition: opacity 0.1s, -webkit-transform 0.3s ease-in-out;
+// 	transition: opacity 0.1s, -webkit-transform 0.3s ease-in-out;
+// 	-o-transition: opacity 0.1s, -o-transform 0.3s ease-in-out;
+// 	-moz-transition: transform 0.3s ease-in-out, opacity 0.1s, -moz-transform 0.3s ease-in-out;
+// 	transition: transform 0.3s ease-in-out, opacity 0.1s;
+// 	transition: transform 0.3s ease-in-out, opacity 0.1s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+// }
+
+@supports (mix-blend-mode: exclusion) {
+
+	.wc-cursor.exclusion,
+	.wc-cursor.opaque {
+		mix-blend-mode: exclusion;
+	}
+}
+
+@supports (mix-blend-mode: exclusion) {
+
+	.wc-cursor.exclusion:before,
+	.wc-cursor.opaque:before {
+		background: var(--white);
+	}
+}
+
+.wc-cursor.normal,
+.wc-cursor.text {
+	mix-blend-mode: normal;
+}
+
+.wc-cursor.normal:before,
+.wc-cursor.text:before {
+	background: currentColor;
+}
+
+.wc-cursor.inverse {
+	color: var(--white);
+}
+
+.wc-cursor.visible:before {
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	transform: scale(0.2);
+}
+
+.wc-cursor.visible.active:before {
+	-webkit-transform: scale(0.23);
+	-moz-transform: scale(0.23);
+	-ms-transform: scale(0.23);
+	-o-transform: scale(0.23);
+	transform: scale(0.23);
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+.wc-cursor.pointer:before {
+	-webkit-transform: scale(0.15);
+	-moz-transform: scale(0.15);
+	-ms-transform: scale(0.15);
+	-o-transform: scale(0.15);
+	transform: scale(0.15);
+}
+
+.wc-cursor.text:before {
+	opacity: 0.85;
+	-webkit-transform: scale(1.7);
+	-moz-transform: scale(1.7);
+	-ms-transform: scale(1.7);
+	-o-transform: scale(1.7);
+	transform: scale(1.7);
+}
+
+.wc-cursor.text.active:before {
+	transform: scale(1.6);
+	transition-duration: 0.2s;
+}
+
+.wc-cursor.opaque:before {
+	transform: scale(1.32);
+}
+
+.wc-cursor.opaque.active:before {
+	transform: scale(1.2);
+}
+
+.wc-cursor.sm:before {
+	transform: scale(1.25);
+}
+
+.wc-cursor.md:before {
+	transform: scale(1.5);
+}
+
+.wc-cursor.lg:before {
+	transform: scale(2);
+}
+
+.wc-cursor.xl:before {
+	transform: scale(2.5);
+}
+
+.wc-cursor.xxl:before {
+	transform: scale(3);
+}
+
+.wc-cursor.hidden:before {
+	transform: scale(0);
+}
+
+.color-accent-lilac {
+	color: #8d53e9;
+}
+
+.color-accent-lilac-bg {
+	background: #8d53e9;
+}
+
+/* Cursor CSS */
+.wc-cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 150;
+	contain: layout style size;
+	pointer-events: none;
+	will-change: transform;
+	color: var(--primary);
+	transition: opacity 0.3s, color 0.4s;
+}
+
+.wc-cursor:before {
+	content: "";
+	position: absolute;
+	top: -24px;
+	left: -24px;
+	display: block;
+	width: 48px;
+	height: 48px;
+	transform: scale(0);
+	background: currentColor;
+	border-radius: 50%;
+	transition: transform 0.3s ease-in-out, opacity 0.1s;
+}
+
+.wc-cursor-text {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0) rotate(10deg);
+	opacity: 0;
+	color: var(--white);
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	transition: opacity 0.4s, transform 0.3s;
+}
+
+.wc-cursor.text .wc-cursor-text {
+	opacity: 1;
+	transform: scale(1);
+}
+
+@supports (mix-blend-mode: exclusion) {
+
+	.wc-cursor.-exclusion,
+	.wc-cursor.-opaque {
+		mix-blend-mode: exclusion;
+	}
+}
+
+@supports (mix-blend-mode: exclusion) {
+
+	.wc-cursor.exclusion:before,
+	.wc-cursor.opaque:before {
+		background: var(--white);
+	}
+}
+
+.wc-cursor.normal,
+.wc-cursor.text {
+	mix-blend-mode: normal;
+}
+
+.wc-cursor.normal:before,
+.wc-cursor.text:before {
+	background: currentColor;
+}
+
+.wc-cursor.inverse {
+	color: var(--white);
+}
+
+.wc-cursor.visible:before {
+	transform: scale(0.2);
+}
+
+.wc-cursor.visible.active:before {
+	transform: scale(0.23);
+	transition-duration: 0.2s;
+}
+
+.wc-cursor.pointer:before {
+	transform: scale(0.15);
+}
+
+.wc-cursor.text:before {
+	opacity: 0.85;
+	transform: scale(1.7);
+}
+
+.wc-cursor.text.active:before {
+	transform: scale(1.6);
+	transition-duration: 0.2s;
+}
+
+.wc-cursor.opaque:before {
+	transform: scale(1.32);
+}
+
+.wc-cursor.opaque.active:before {
+	transform: scale(1.2);
+}
+
+.wc-cursor.sm:before {
+	transform: scale(1.25);
+}
+
+.wc-cursor.md:before {
+	transform: scale(1.5);
+}
+
+.wc-cursor.lg:before {
+	transform: scale(2);
+}
+
+.wc-cursor.xl:before {
+	transform: scale(2.5);
+}
+
+.wc-cursor.xxl:before {
+	transform: scale(3);
+}
+
+.wc-cursor.xxxl:before {
+	transform: scale(3.5);
+}
+
+.wc-cursor.hidden:before {
+	transform: scale(0);
+}

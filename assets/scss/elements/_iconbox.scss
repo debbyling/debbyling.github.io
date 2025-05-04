@@ -1,0 +1,392 @@
+// Icon Box CSS
+
+.wcf__iconbox {
+  display: inline-block;
+
+  .link {
+    color: var(--white);
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+
+    @include light {
+      color: var(--black-2);
+    }
+  }
+
+  &.style {
+    &-1 {
+      padding: 35px 30px 30px;
+      border-radius: 30px;
+      background: #FAF2E7;
+      text-align: center;
+
+      .icon {
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+        background-color: #FFDAA2;
+        border-radius: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+        img {
+          max-height: 34px;
+        }
+      }
+
+      .title {
+        color: #16254C;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+
+      .desc {
+        color: #16254C;
+      }
+    }
+
+    &-2 {
+      .icon {
+        margin-bottom: 50px;
+      }
+
+      .title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+
+      .desc {
+        font-size: 18px;
+      }
+    }
+
+    &-3 {
+      .icon {
+        margin-bottom: 40px;
+      }
+
+      .title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1;
+        margin-bottom: 30px;
+        color: var(--white-15);
+
+        @include light {
+          color: var(--black-2);
+        }
+
+        @media #{$lg} {
+          font-size: 32px;
+        }
+      }
+
+      .desc {
+        font-size: 18px;
+        color: var(--white-15);
+
+        @include light {
+          color: var(--black-2);
+        }
+      }
+    }
+
+    &-4 {
+      .icon {
+        margin-bottom: 40px;
+      }
+
+      .title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 15px;
+        color: var(--white);
+        text-transform: uppercase;
+
+        @include light {
+          color: var(--black-2);
+        }
+
+        @media #{$md} {
+          font-size: 24px;
+        }
+      }
+
+      .desc {
+        font-size: 18px;
+        color: var(--white);
+
+        @include light {
+          color: var(--black-2);
+        }
+      }
+    }
+
+    &-5 {
+      padding: 40px 40px 40px;
+      background-color: #B1DED9;
+
+      @media #{$xl} {
+        padding: 30px 30px 30px;
+      }
+
+      &:hover {
+        .icon {
+
+          img,
+          svg,
+          i {
+            transform: rotate(40deg);
+
+            @include rtl {
+              transform: rotate(-40deg);
+            }
+          }
+
+          &:after {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+
+      .icon {
+        position: relative;
+        margin-bottom: 40px;
+
+        img,
+        svg,
+        i {
+          transition: all 0.3s;
+        }
+
+        i {
+          font-size: 120px;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 156px;
+          height: 15px;
+          flex-shrink: 0;
+          background: linear-gradient(90deg, rgba(42, 42, 90, 0.28) 0%, rgba(42, 42, 90, 0.00) 100%);
+          filter: blur(4px);
+          inset-inline-start: 0;
+          bottom: 8px;
+          opacity: 0;
+          transform: scale(0);
+          transition: all .3s;
+
+          @include rtl {
+            background: linear-gradient(270deg, rgba(42, 42, 90, 0.28) 0%, rgba(42, 42, 90, 0.00) 100%);
+          }
+        }
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.17;
+        margin-bottom: 17px;
+        color: #143935;
+
+        @media #{$md} {
+          font-size: 24px;
+        }
+      }
+
+      .desc {
+        font-size: 18px;
+        color: #2E5853;
+      }
+
+      .link {
+        border: 1px solid #143935;
+        color: #143935;
+        text-transform: uppercase;
+        padding: 14px 26px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        background: transparent;
+        border-radius: 100px;
+        display: inline-block;
+        margin-top: 33px;
+
+        &:hover {
+          color: var(--white);
+          background-color: #143935;
+        }
+      }
+    }
+
+    &-6 {
+      position: relative;
+      margin: 5px;
+      overflow: hidden;
+      transition: all 0.5s;
+      padding: 50px;
+      background-color: var(--black-4);
+      z-index: 3;
+
+      @include light {
+        background-color: var(--white-2);
+      }
+
+      &::before {
+        position: absolute;
+        content: "\f061";
+        font-weight: 700;
+        font-size: 20px;
+        font-family: "Font Awesome 6 Free";
+        inset-inline-end: 20px;
+        top: 0;
+        color: var(--black-2);
+        transform: rotate(-45deg) translate(-50px, 20px);
+        transition: all 0.3s;
+        opacity: 0;
+
+        @include rtl {
+          content: "\f062";
+          transform: rotate(-45deg) translate(-25px, 50px);
+        }
+      }
+
+      &:hover {
+        // background-color: var(--white-6);
+        background-color: transparent;
+
+        &::before {
+          opacity: 1;
+          transform: rotate(-45deg) translate(-30px, 10px);
+
+          @include rtl {
+            transform: rotate(-45deg) translate(-15px, 25px);
+          }
+        }
+
+        .icon {
+          img {
+            filter: brightness(0);
+          }
+
+          i {
+            color: var(--black-2);
+          }
+
+          svg {
+            fill: var(--black-2);
+          }
+        }
+
+        .title,
+        .desc {
+          color: var(--black-2);
+        }
+      }
+
+      .icon {
+        margin-bottom: 115px;
+
+        @media #{$lg} {
+          margin-bottom: 80px;
+        }
+
+        @media #{$md} {
+          margin-bottom: 60px;
+        }
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--black-9);
+        margin-bottom: 12px;
+        transition: all 0.3s;
+      }
+
+      .desc {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        transition: all 0.3s;
+
+        @media #{$lg} {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-7 {
+      padding: 50px 40px;
+      background-color: var(--black-4);
+
+      @include light {
+        background-color: var(--white-2);
+      }
+
+      @media #{$xl} {
+        padding: 40px 25px;
+      }
+
+      @media #{$lg} {
+        padding: 40px 15px;
+      }
+
+      @media #{$md} {
+        padding: 50px 40px;
+      }
+
+      &:hover {
+        .title {
+          color: var(--primary);
+        }
+      }
+
+      .title {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.1;
+        padding-bottom: 80px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+
+        @media #{$lg} {
+          font-size: 22px;
+          padding-bottom: 50px;
+        }
+
+        @media #{$sm} {
+          padding-bottom: 50px;
+        }
+      }
+
+      .icon {
+        margin-bottom: 75px;
+
+        @media #{$lg} {
+          margin-bottom: 40px;
+        }
+
+        @media #{$sm} {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+
+
+  }
+}

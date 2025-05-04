@@ -1,0 +1,86 @@
+// CTA area style 
+.cf-cta {
+    &__text-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 45px;
+
+        @media #{$md} {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__btn {
+        .wc-btn-default {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 35px 75px;
+            background-color: var(--white);
+            color: var(--black-2);
+            text-transform: uppercase;
+            border-width: 0;
+
+
+            @include light {
+                background-color: var(--black-2);
+                color: var(--white);
+            }
+
+            @media #{$lg} {
+                padding: 20px 40px;
+                font-weight: 500;
+            }
+
+            &:hover {
+                @include light {
+                    color: var(--black-2);
+                }
+            }
+        }
+    }
+
+    &__text {
+        max-width: 250px;
+        position: absolute;
+        inset-inline-end: -30px;
+        top: 47%;
+        transform: translateY(-50%);
+
+        @media #{$lg} {
+            inset-inline-end: -130px;
+            max-width: 270px;
+        }
+
+        @media #{$md} {
+            inset-inline-end: 0;
+            max-width: 270px;
+        }
+
+        @media #{$sm} {
+            position: static;
+            transform: none;
+        }
+
+        p {
+            font-size: 18px;
+
+            @include light {
+                color: #555555;
+            }
+        }
+    }
+
+    &__sec-title-wrapper {
+        position: relative;
+
+        .sec-title-18 {
+
+            @media #{$sm} {
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+        }
+    }
+}

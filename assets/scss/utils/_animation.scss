@@ -1,0 +1,126 @@
+/*----------------------------------------*/
+/*  01. ANIMATION CSS START
+/*----------------------------------------*/
+
+.cf_parallax_image {
+  overflow: hidden;
+}
+
+// Bubble
+@keyframes wcBubble {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.5;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+
+// Zoom
+@keyframes wcZoom {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 0.5;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+// Zoom 2
+@keyframes wcZoom_2 {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 0.9;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+
+// Slide 
+@keyframes wcSlideBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+// 
+@keyframes reveal {
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+// Fade Up
+@keyframes wcfadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes characters {
+
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes sheen {
+  50% {
+    transform: translateY(-20px);
+    color: var(--primary);
+  }
+}

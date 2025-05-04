@@ -1,0 +1,675 @@
+/*----------------------------------------*/
+/*  01. TYPOGRAPHY CSS START
+/*----------------------------------------*/
+
+
+// ----------------------------
+// Font Family
+// ---------------------------
+
+// Euclid Circular B
+@font-face {
+  font-family: euclid_Circular_B;
+  src: url('../fonts/euclid-circular-b/Euclid-Circular-B-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: euclid_Circular_B;
+  src: url('../fonts/euclid-circular-b/Euclid-Circular-B-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: euclid_Circular_B;
+  src: url('../fonts/euclid-circular-b/Euclid-Circular-B-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: euclid_Circular_B;
+  src: url('../fonts/euclid-circular-b/Euclid-Circular-B-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: euclid_Circular_B;
+  src: url('../fonts/euclid-circular-b/Euclid-Circular-B-Bold.ttf');
+  font-weight: 700;
+}
+
+
+// Estedad
+@font-face {
+  font-family: Estedad;
+  src: url('../fonts/estedad/Estedad-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Estedad;
+  src: url('../fonts/estedad/Estedad-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Estedad;
+  src: url('../fonts/estedad/Estedad-Regular.ttf');
+  font-weight: 400;
+}
+
+
+//  newYork
+@font-face {
+  font-family: newYork;
+  src: url('../fonts/newyork/FontsFree-Net-NewYork.ttf');
+  font-weight: 400;
+}
+
+//  gallient
+@font-face {
+  font-family: gallient;
+  src: url('../fonts/gallient/GallientRegular-eZoMp.ttf');
+  font-weight: 400;
+}
+
+//  Roman-Story
+@font-face {
+  font-family: RomanStory;
+  src: url('../fonts/roman/Romans-Story.ttf');
+  font-weight: 400;
+}
+
+//  Clash Display
+@font-face {
+  font-family: ClashDisplay;
+  src: url('../fonts/ClashDisplay/ClashDisplay-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url('../fonts/ClashDisplay/ClashDisplay-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url('../fonts/ClashDisplay/ClashDisplay-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url('../fonts/ClashDisplay/ClashDisplay-Semibold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url('../fonts/ClashDisplay/ClashDisplay-Bold.ttf');
+  font-weight: 700;
+}
+
+//  Glorify DEMO
+@font-face {
+  font-family: Glorify DEMO;
+  src: url('../fonts/glorify/Glorifydemo-BW3J3.otf');
+  font-weight: 400;
+}
+
+//  CANELA
+@font-face {
+  font-family: Canela;
+  src: url('../fonts/canela/Canela-Regular-Trial.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Canela;
+  src: url('../fonts/canela/Canela-Medium-Trial.otf');
+  font-weight: 500;
+}
+
+//  graphik
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/graphik/GraphikBold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/graphik/GraphikMedium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/graphik/GraphikRegular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/graphik/GraphikSemibold.otf');
+  font-weight: 600;
+}
+
+// tropline font-family
+@font-face {
+  font-family: tropline;
+  src: url('../fonts/tropline/Tropiline-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: tropline;
+  src: url('../fonts/tropline/Tropiline-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: tropline;
+  src: url('../fonts/tropline/Tropiline-Bold.ttf');
+  font-weight: 700;
+}
+
+// larken font-family
+@font-face {
+  font-family: larken;
+  src: url('../fonts/larken/LarkenDEMO-Regular.otf');
+  font-weight: 400;
+}
+
+// moret font-family
+@font-face {
+  font-family: moret;
+  src: url('../fonts/moret/Moret-Book.otf');
+  font-weight: 350;
+}
+
+@font-face {
+  font-family: moret;
+  src: url('../fonts/moret/Moret-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: moret;
+  src: url('../fonts/moret/Moret-Semibold.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: moret;
+  src: url('../fonts/moret/Moret-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: moret;
+  src: url('../fonts/moret/Moret-Extrabold.otf');
+  font-weight: 800;
+}
+
+// Monument font-family
+
+@font-face {
+  font-family: monument;
+  src: url('../fonts/monument/MonumentExtended-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: monument;
+  src: url('../fonts/monument/MonumentExtended-Ultrabold.otf');
+  font-weight: 800;
+}
+
+
+
+
+// SangBleu font-family
+
+@font-face{
+  font-family: SangBleu;
+  src: url('../fonts/sangBleu/SangBleu-Sunrise.ttf');
+  font-weight: 400;
+}
+
+
+// Messiri
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Prata&display=swap&family=Bentham&display=swap&family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+// Kumbh Sans
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+// Overlock
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap');
+
+// Manrope 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+// Jakarta
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+// kanit 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//Macondo
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+
+
+:root {
+  // Downloaded Fonts
+  --font_primary: 'euclid_Circular_B';
+  --font_estedad: 'Estedad';
+  --font_newyork: 'newYork';
+  --font_gallient: 'gallient';
+  --font_lora: 'Lora', serif;
+  --font_prata: 'Prata', serif;
+  --font_bentham: 'Bentham', serif;
+  --font_romanstory: 'RomanStory', serif;
+  --font_clashDisplay: 'ClashDisplay';
+  --font_glorifydemo: 'Glorify DEMO';
+  --font_canela: 'Canela';
+  --font_graphik: 'Graphik';
+  --font_tropline: 'tropline';
+  --font_larken: 'larken';
+  --font_moret: 'moret';
+  --font_monument: 'monument';
+  --font_SangBleu: 'SangBleu';
+
+
+  // Google Fonts
+  --font_kanit: 'Kanit', sans-serif;
+  --font_macondo: 'Macondo', cursive;
+  --font_teko: 'Teko', sans-serif;
+  --font_jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font_kumbh: 'Kumbh Sans', sans-serif;
+  --font_overlock: 'Overlock', cursive;
+  --font_manrope: 'Manrope', sans-serif;
+
+
+  // Fonts Awesome
+  --font_awesome: 'Font Awesome 6 Free';
+}
+
+
+// Downloaded Fonts
+$font_primary: 'euclid_Circular_B';
+$font_estedad: 'Estedad';
+$font_newyork: 'newYork';
+$font_gallient: 'gallient';
+$font_lora: 'Lora', serif;
+$font_prata: 'Prata', serif;
+$bentham: 'Bentham', serif;
+$romanstory: 'RomanStory', serif;
+$font_clashDisplay: 'ClashDisplay';
+$font_glorifydemo: 'Glorify DEMO';
+$font_canela: 'Canela';
+$font_graphik: 'Graphik';
+$font_tropline: 'tropline';
+$font_larken: 'larken';
+$font_moret: 'moret';
+$font_Monument: 'monument';
+$font_SangBleu: 'SangBleu';
+
+
+// Google Fonts
+$font_kanit: 'Kanit', sans-serif;
+$font_macondo: 'Macondo', cursive;
+$teko: 'Teko', sans-serif;
+$font_jakarta: 'Plus Jakarta Sans', sans-serif;
+$font_kumbh: 'Kumbh Sans', sans-serif;
+$font_overlock: 'Overlock', cursive;
+$font_manrope: 'Manrope', sans-serif;
+
+
+// Fonts Awesome
+$font_awesome: 'Font Awesome 6 Free';
+
+
+
+// Font Family Classes
+.font {
+  &-body {
+
+    &-euclid {
+      font-family: $font_primary;
+    }
+
+    &-estedad {
+      font-family: $font_estedad;
+    }
+
+    &-newyork {
+      font-family: $font_newyork;
+    }
+
+    &-gallient {
+      font-family: $font_gallient;
+    }
+
+    &-lora {
+      font-family: $font_lora;
+    }
+
+    &-prata {
+      font-family: $font_prata;
+    }
+
+    &-bentham {
+      font-family: $bentham;
+    }
+
+    &-romanstory {
+      font-family: $romanstory;
+    }
+
+    &-clashDisplay {
+      font-family: $font_clashDisplay;
+    }
+
+    &-glorifydemo {
+      font-family: $font_glorifydemo;
+    }
+
+    &-canela {
+      font-family: $font_canela;
+    }
+
+    &-graphik {
+      font-family: $font_graphik;
+    }
+
+    &-kanit {
+      font-family: $font_kanit;
+    }
+
+    &-macondo {
+      font-family: $font_macondo;
+    }
+
+    &-teko {
+      font-family: $teko;
+    }
+
+    &-jakarta {
+      font-family: $font_jakarta;
+    }
+
+    &-kumbh {
+      font-family: $font_kumbh;
+    }
+
+    &-overlock {
+      font-family: $font_overlock;
+    }
+
+    &-manrope {
+      font-family: $font_manrope;
+    }
+
+    &-tropline {
+      font-family: $font_tropline;
+    }
+
+    &-monument {
+      font-family: $font_Monument;
+    }
+
+    &-SangBleu{
+      font-family: $font_SangBleu;
+    }
+
+    &-moret {
+      font-family: $font_moret;
+    }
+
+    &-moret {
+      font-family: $font_moret;
+    }
+
+  }
+
+  &-heading {
+
+    &-euclid {
+      @include heading ($font_primary);
+    }
+
+    &-estedad {
+      @include heading ($font_estedad);
+
+      .nav-menu li a {
+        font-family: $font_estedad;
+      }
+    }
+
+    &-newyork {
+      @include heading ($font_newyork);
+
+      .nav-menu li a {
+        font-family: $font_newyork;
+      }
+    }
+
+    &-gallient {
+      @include heading ($font_gallient);
+    }
+
+    &-lora {
+      @include heading ($font_lora);
+    }
+
+    &-prata {
+      @include heading ($font_prata);
+    }
+
+    &-bentham {
+      @include heading ($bentham);
+    }
+
+    &-romanstory {
+      @include heading ($romanstory);
+    }
+
+    &-clashDisplay {
+      @include heading ($font_clashDisplay);
+    }
+
+    &-glorifydemo {
+      @include heading ($font_glorifydemo);
+    }
+
+    &-canela {
+      @include heading ($font_canela);
+    }
+
+    &-graphik {
+      @include heading ($font_graphik);
+    }
+
+    &-kanit {
+      @include heading ($font_kanit);
+    }
+
+    &-teko {
+      @include heading ($teko);
+    }
+
+    &-jakarta {
+      @include heading ($font_jakarta);
+    }
+
+    &-kumbh {
+      @include heading ($font_kumbh);
+    }
+
+    &-overlock {
+      @include heading ($font_overlock);
+    }
+
+    &-manrope {
+      @include heading ($font_manrope);
+    }
+
+    &-tropline {
+      @include heading ($font_tropline);
+    }
+
+    &-moret {
+      @include heading ($font_moret);
+    }
+    &-SangBleu{
+      @include heading ($font_SangBleu);
+    }
+    &-monument{
+      @include heading ($font_Monument);
+    }
+  }
+}
+
+
+// Defalut Style
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font_primary;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+
+  @include light {
+    color: var(--black-2);
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-4);
+
+  @include light {
+    color: var(--gray);
+  }
+}
+
+strong {
+  font-weight: 500;
+}
+
+video,
+iframe,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.medium {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+// No Gutter
+@media #{$sm} {
+  .g-0 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .row.g-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}

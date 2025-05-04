@@ -1,0 +1,281 @@
+<style>
+  body {
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #f3f3f3;
+    background-color: #181A1B;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  svg {
+    height: 800px !important;
+  }
+  
+  .links line {
+    stroke: #4ecca3;
+    stroke-opacity: 0.5;
+    transition: stroke 0.3s, stroke-opacity 0.3s;
+  }
+  
+  .nodes circle {
+    stroke: #23272b;
+    stroke-width: 2.5px;
+    filter: drop-shadow(0 2px 8px rgba(78,204,163,0.18));
+    transition: filter 0.3s, stroke 0.3s;
+  }
+  .nodes circle:hover {
+    filter: drop-shadow(0 0 16px #4ecca3cc);
+    stroke: #4ecca3;
+  }
+
+
+  p {
+    font-size: 10px;
+  }
+
+  li {
+    font-size: 10px;
+  }
+
+  .nodes title {
+    font-weight:bold;
+  }
+
+  /* style the elements with CSS */
+  #pleaserotate-graphic{
+      fill: #fff;
+      margin-left: 100px;
+      width: 400px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  }
+
+  #pleaserotate-container {
+    font-size: 60px;
+    width: 600px;
+  }
+
+  #pleaserotate-backdrop {
+      color: #fff;
+      background-color: #000;
+  }
+
+
+  .container {
+    padding-top: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Modern card style for summary panel */
+  .summary-card {
+    background: #23272b;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 28px 22px;
+    margin-top: 16px;
+    color: #f3f3f3;
+  }
+
+  /* Modern search bar */
+  .search-bar {
+    background: #23272b;
+    border-radius: 12px;
+    padding: 10px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .search-bar input[type="text"] {
+    background: #181A1B;
+    border: none;
+    outline: none;
+    color: #f3f3f3;
+    font-size: 1rem;
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 7px;
+  }
+  .search-bar input[type="button"] {
+    background: #4ecca3;
+    color: #181A1B;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 18px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .search-bar input[type="button"]:hover {
+    background: #38b992;
+  }
+
+      /* style the elements with CSS */
+      #pleaserotate-graphic{
+        fill: #fff;
+    }
+
+    #pleaserotate-backdrop {
+        color: #fff;
+        background-color: #000;
+    }
+
+    .resp {
+  max-width: 100%;
+  height: auto;
+}
+
+.resp1 {
+  width: 100%;
+  height: auto;
+}
+
+
+
+    /* Rotate overlay styles */
+  #pleaserotate-backdrop {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #181A1B;
+    z-index: 9999;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: inherit;
+  }
+  #pleaserotate-backdrop.active {
+    display: flex;
+  }
+  #pleaserotate-graphic {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  #pleaserotate-container {
+    text-align: center;
+    max-width: 90vw;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 28px 16px;
+    border-radius: 16px;
+    background: #23272b;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+  .rotate-message {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-top: 14px;
+    color: #fff;
+    line-height: 1.15;
+  }
+</style>
+
+<!-- Mobile rotate overlay -->
+<div id="pleaserotate-backdrop">
+  <div id="pleaserotate-container">
+    <div id="pleaserotate-graphic"></div>
+    <div class="rotate-message">Please rotate your device to landscape mode.</div>
+  </div>
+</div>
+
+<script>
+// Utility: Detect mobile device
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function checkOrientationAndShowOverlay() {
+  var overlay = document.getElementById('pleaserotate-backdrop');
+  if (isMobileDevice()) {
+    if (window.innerHeight > window.innerWidth) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    } else {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  } else {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+window.addEventListener('DOMContentLoaded', checkOrientationAndShowOverlay);
+window.addEventListener('orientationchange', checkOrientationAndShowOverlay);
+window.addEventListener('resize', checkOrientationAndShowOverlay);
+</script>
+  <!-- CSS only -->
+  <body class="bg-dark">
+
+
+
+  <!-- Centered Title and Subtitle -->
+  <div style="text-align:center; margin-top:38px; margin-bottom:6px;">
+    <h2 style="color:white; font-size:2.3rem; font-weight:700; letter-spacing:-1px; margin-bottom:0.5rem;">Network Analysis on K-pop celebrities</h2>
+    <p style="color:#e0e0e0; font-size:1.15rem;">Exploring how K-pop celebrities connect and interact on X / Twitter</p>
+  </div>
+
+  <div class="container bg-dark resp1" >
+    <div class="row">
+      <div class="col-8">
+        <div class="col">
+
+            <div class="row">
+              <center>
+                <svg width="800" height="550"></svg>
+              </center> 
+            </div>
+        </div> 
+        
+      </div>
+      <div class="col-4 summary-card">
+        <h5 style="color:#4ecca3;font-weight:700;">Summary:</h5>
+        <p>This interactive visualization explores the Twitter network of selected K-pop celebrities, highlighting how they connect and interact online. Each node represents a K-pop celebrities, with node colors indicating the talent management company they are signed under.
+
+        </p>
+        <div><img src="images/explain-network.png" class="resp"></div>
+        
+        <hr>
+        <h5>Features:</h5>
+        <li><b>Node Details:</b> Hover over any node to view the celebrities' name, group affiliation (if applicable), and company.</li>
+        <li><b>Intuitive Navigation: </b>Easily drag, drop, zoom in, and zoom out to explore the network from different perspectives.</li>
+        <li><b>Connection Discovery: </b>Click on an celebrities to instantly reveal their immediate connections within the network.</li>
+        <li><b>Ariste Search: </b>Use the search bar below to find a K-pop celebrity by their Twitter handle. </li>
+        <li><b>Highlighting Key Influencers: </b>The most central and influential celebrities are visually emphasized with a distinctive yellow glow. </li>
+
+        <hr>
+        <h5>References:</h5>
+        <li>Network Analysis: Handbook of Graphs and Networks in People Analytics by <a href="https://www.linkedin.com/in/keith-mcnulty/">Keith McNulty</a>. An online version of the book is available <a href="https://ona-book.org/index.html">here.</a></li>
+        <li>List of Twitter Accounts of Kpop Celebrities: Scrapped from <a href="https://www.allkpop.com/article/2020/06/top-25-most-followed-k-pop-accounts-on-twitter">Allkpop Website</a></li>
+        <li>pleaserotate.js: <a href="https://github.com/arscan/pleaserotate.js">Arscan</a></li>
+      </div>
+    </div>
+  </div>
+  
+
+
+  </body>
+  <!-- CSS only -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="kpop.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+<script src="pleaserotate.js"></script>
+
